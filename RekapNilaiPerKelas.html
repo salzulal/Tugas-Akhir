@@ -312,10 +312,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Ranking IPK</li>
+              <li class="breadcrumb-item active" aria-current="page">Rekapitulasi Nilai Per Kelas</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing-1">Ranking IPK</h4>
+          <h4 class="mg-b-0 tx-spacing-1">Rekapitulasi Nilai Per Kelas</h4>
         </div>
 
       </div>
@@ -328,12 +328,12 @@
 
             <div class="d-flex justify-content-center">
               <form class="form-inline">
-                <span class="tx-medium mr-5">Angkatan</span>
+                <span class="tx-medium mr-5">Periode</span>
                 <select class="form-control selectbiasa" style="width: 175px;">
-                  <option selected>2018</option>
-                  <option value="1">2017</option>
-                  <option value="2">2018</option>
-                  <option value="3">2019</option>
+                  <option value="1" selected> Gasal 2019/2020</option>
+                  <option value="2">Genap 2018/2019</option>
+                  <option value="3">Gasal 2018/2019</option>
+                  <option value="4">Genap 2017/2018</option>
                 </select>
                 <a href="" class="btn btn-primary ml-2 mr-2">Tampilkan</a>
               </form>
@@ -350,31 +350,61 @@
           <div class="card">
             <div class="card-body">
 
-              <table id="tabelranking" class="table">
+              <table id="tabelkelas" class=" table">
                 <thead>
                   <tr>
-                    <th class="text-center" style="width: 7%;">No</th>
-                    <th class="text-center" style="width: 25%;">NRP</th>
-                    <th class="text-center">Nama</th>
-                    <th class="text-center" style="width: 10%;">SKS Lulus</th>
-                    <th class="text-center" style="width: 10%;">IPK</th>
+                    <th rowspan="2" class="text-center align-middle" style="width: 7%;">No</th>
+                    <th rowspan="2" class="text-center align-middle">Mata Kuliah</th>
+                    <th rowspan="2" class="text-center align-middle" style="width: 10%;">Kelas</th>
+                    <th colspan="8" class="text-center">Rekapitulasi Nilai</th>
+                    <th colspan="2" class="text-center">Rata-rata</th>
+                  </tr>
+                  <tr>
+                    <th class="text-center">A</th>
+                    <th class="text-center">AB</th>
+                    <th class="text-center">B</th>
+                    <th class="text-center">BC</th>
+                    <th class="text-center">C</th>
+                    <th class="text-center">D</th>
+                    <th class="text-center">E</th>
+                    <th class="text-center">Jml</th>
+                    <th class="text-center">Raw</th>
+                    <th class="text-center">IP</th>
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
                     <td class="text-center">1</td>
-                    <td class="text-center">05111640000009</td>
-                    <td>Sal Zulal</td>
-                    <td class="text-center">144</td>
-                    <td class="text-center">3.41</td>
+                    <td>KM4101 - Matematika 1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">4</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">14</td>
+                    <td class="text-center">60</td>
+                    <td class="text-center">2.4</td>
                   </tr>
+                </tbody>
+                <tbody>
                   <tr>
-                    <td class="text-center">250</td>
-                    <td class="text-center">05111640000090</td>
-                    <td>Sal Zulal 2</td>
-                    <td class="text-center">144</td>
-                    <td class="text-center">2.41</td>
+                    <td class="text-center">17</td>
+                    <td>RE4801 - Keselamatan dan Kesehatan Kerja</td>
+                    <td class="text-center">B</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">83.3</td>
+                    <td class="text-center">3.5</td>
                   </tr>
                 </tbody>
               </table>
@@ -424,21 +454,21 @@
       });
 
 
-      $('#tabelranking').dataTable({
-        // responsive: true,
-        // paging: false,
-        // bInfo: false,
-        // searching: false,
-        // order: false,
+      // $('#tabelkelas').dataTable({
+      //   // responsive: true,
+      //   // paging: false,
+      //   // bInfo: false,
+      //   // searching: false,
+      //   // order: false,
 
-        "columns": [
-          { "orderable": true },
-          { "orderable": true },
-          { "orderable": false },
-          { "orderable": false },
-          { "orderable": true }
-        ]
-      });
+      //   "columns": [
+      //     { "orderable": true },
+      //     { "orderable": true },
+      //     { "orderable": false },
+      //     { "orderable": false },
+      //     { "orderable": true }
+      //   ]
+      // });
 
 
 
