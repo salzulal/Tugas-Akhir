@@ -312,57 +312,28 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Daftar Anak Wali Per Dosen</li>
+              <li class="breadcrumb-item active" aria-current="page">Ranking IPS</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Daftar Anak Wali Per Dosen (Informatika)</h4>
+          <h4 class="mg-b-0 tx-spacing-1">Ranking IPS</h4>
         </div>
 
       </div>
 
       <div class="row row-xs justify-content-center">
 
-        <div class="col-lg-10 mb-3">
-          <div class="card card-body bg-gray-100">
-            <div class="d-flex justify-content-between">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Dosen Wali</div>
-
-              <form class="form-inline">
-                <select class="form-control selectdosen" style="width: 700px;">
-                  <option label="Pilih Dosen"></option>
-                  <option value="1">Anton</option>
-                  <option value="2">Budi</option>
-                  <option value="3">Caca</option>
-                  <option value="4">Dimas</option>
-                </select>
-                <a href="" class="btn btn-primary ml-2">Ganti</a>
-              </form>
-            </div>
-
-          </div>
-
-        </div>
-
-
         <div class="col-lg-10">
           <div class="card">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <span>
-                <h5 class="tx-16">Daftar Anak Wali</h5>
-              </span>
-              <span>
-                <a href="#modal" class="btn btn-primary" data-toggle="modal">Ubah Data</a>
-              </span>
-            </div>
-
             <div class="card-body">
 
-              <table id="tabelanakwali" class="table">
+              <table id="tabelranking" class="table">
                 <thead>
                   <tr>
-                    <th class="text-center" style="width: 10%;">No</th>
-                    <th class="text-center" style="width: 25%;">NRP</th>
+                    <th class="text-center">No</th>
+                    <th class="text-center">NRP</th>
                     <th class="text-center">Nama</th>
+                    <th class="text-center">SKS</th>
+                    <th class="text-center">IPS</th>
                   </tr>
                 </thead>
 
@@ -398,65 +369,6 @@
 
 
 
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Ubah Data Anak Wali</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="d-sm-flex justify-content-center mb-3">
-            <form class="form-inline">
-              <select class="form-control selectmhs" style="width: 400px;">
-                <option label="Mahasiswa"></option>
-                <option value="1">Anton</option>
-                <option value="2">Budi</option>
-                <option value="3">Caca</option>
-                <option value="4">Dimas</option>
-              </select>
-              <a href="" class="btn btn-primary  ml-2">Tambahkan</a>
-            </form>
-          </div>
-          <table id="tabelanakwali" class="table">
-            <thead>
-              <tr>
-                <th class="text-center" style="width: 10%;">No</th>
-                <th class="text-center" style="width: 25%;">NRP</th>
-                <th class="text-center">Nama</th>
-                <th class="text-center" style="width: 10%;">Hapus</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td class="text-center">1</td>
-                <td class="text-center">05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center"><button type="button" data-feather="trash-2"></button></td>
-              </tr>
-
-              <tr>
-                <td class="text-center">3</td>
-                <td class="text-center">05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center"><button type="button" data-feather="trash-2"></button></td>
-              </tr>
-
-            </tbody>
-          </table>
-
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary tx-13">Selesai</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -486,20 +398,20 @@
       });
 
 
-      // $('#tabelanakwali').dataTable({
-      //   // responsive: true,
-      //   paging: false,
-      //   bInfo: false,
-      //   searching: false,
-      //   order: false,
+      $('#tabelranking').dataTable({
+        // responsive: true,
+        // paging: false,
+        // bInfo: false,
+        // searching: false,
+        // order: false,
 
-      //   "columns": [
-      //     { "orderable": false },
-      //     { "orderable": false },
-      //     { "orderable": false },
-      //     { "orderable": false }
-      //   ]
-      // });
+        "columns": [
+          { "orderable": false },
+          { "orderable": false },
+          { "orderable": false },
+          { "orderable": false }
+        ]
+      });
 
 
 
