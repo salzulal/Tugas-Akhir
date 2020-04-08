@@ -312,10 +312,12 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data Evaluasi Berkala</li>
+              <li class="breadcrumb-item active" aria-current="page">Daftar Nilai Per Kelas
+              </li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Data Evaluasi Berkala</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Daftar Nilai Per Kelas (Fisika)
+          </h4>
         </div>
 
       </div>
@@ -325,7 +327,36 @@
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
 
-            <div class="row">
+            <div class="d-flex justify-content-between">
+              <span class="tx-medium mt-2 mr-2">Periode</span>
+              <form class="form-inline">
+                <select class="form-control selectsmt">
+                  <option value="1" selected> Semester Gasal 2019/2020</option>
+                  <option value="2">Semester Genap 2018/2019</option>
+                  <option value="3">Semester Gasal 2018/2019</option>
+                  <option value="4">Semester Genap 2017/2018</option>
+                </select>
+                <a href="" class="btn btn-primary ml-2" style="width: 100px">Tampilkan</a>
+              </form>
+            </div>
+
+            <div class="d-flex justify-content-between mt-2">
+              <span class="tx-medium mt-2 mr-2">Kelas</span>
+              <form class="form-inline">
+                <select class="form-control selectkelas">
+                  <option label="Pilih Kelas"></option>
+                  <option value="1">IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
+                  <option value="2">IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
+                  <option value="3">IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
+                  <option value="4">IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
+                  <option value="5">IF184101 Dasar Pemrograman (4) _ 19/30</option>
+                </select>
+                <a href="" class="btn btn-primary ml-2" style="width: 100px">Pilih</a>
+              </form>
+
+            </div>
+
+            <div class="row mt-2">
               <div class="col-lg-6">
                 <li class="d-flex justify-content-between">
                   <span class="tx-medium">Mata Kuliah</span>
@@ -360,18 +391,6 @@
           </div> <!-- cardbody -->
         </div>
 
-        <div class="col-lg-10">
-          <div class="alert alert-warning" role="alert">
-            <ul style="list-style-type:circle; margin: 0px;">
-              <li>Sebelum mengisi nilai masing-masing mahasiswa, anda harus mengisi
-                komposisi dan jenis penilaian yang akan anda berikan pada form berikut ini.</li>
-              <li>Komposisi harus diisi minimal sesuai dengan peraturan akademik
-                tahun
-                2009 pasal 18 ayat 1.</li>
-              <li>Jumlah total persentase harus 100%.</li>
-            </ul>
-          </div>
-        </div>
 
         <div class="col-lg-10 mb-3">
           <div class="card">
@@ -382,54 +401,57 @@
                 <table class="table">
                   <thead>
                     <tr>
-                      <th class="text-center">No</th>
-                      <th class="text-center">Jenis Penilaian</th>
-                      <th class="text-center" style="width: 15%;">Persentase (%)</th>
+                      <th class="text-center" style="width: 25%;">NRP</th>
+                      <th class="text-center">Nama Mahasiswa</th>
+                      <th class="text-center" style="width: 15%;">Nilai</th>
                     </tr>
                   </thead>
 
                   <tbody>
                     <tr>
-                      <td class="text-center align-middle">1</td>
-                      <td><input type="text" class="form-control" value="Kehadiran"></td>
-                      <td><input type="text" class="form-control" value="5"></td>
+                      <td class="text-center">05111640000009</td>
+                      <td>Sal Zulal</td>
+                      <td class="text-center">A</td>
                     </tr>
                     <tr>
-                      <td class="text-center align-middle">2</td>
-                      <td><input type="text" class="form-control" value="Sikap"></td>
-                      <td><input type="text" class="form-control" value="5"></td>
+                      <td class="text-center">05111640000013</td>
+                      <td>Muhammad Raihan Anindita</td>
+                      <td class="text-center">A</td>
+                    </tr>
+                    <tr class="bg-warning">
+                      <td class="text-center align-middle">05111640000014</td>
+                      <td>Sal Zulal<br>
+                        <small><i>Belum Mengisi Kuesioner<i></small>
+                      </td>
+                      <td class="text-center align-middle">*</td>
                     </tr>
                     <tr>
-                      <td class="text-center align-middle">3</td>
-                      <td><input type="text" class="form-control" value="Tugas 1"></td>
-                      <td><input type="text" class="form-control" value="10"></td>
+                      <td class="text-center">05111640000015</td>
+                      <td>Muhammad Raihan Anindita</td>
+                      <td class="text-center">A</td>
                     </tr>
                     <tr>
-                      <td class="text-center align-middle">4</td>
-                      <td><input type="text" class="form-control" value="Tugas Kelompok 1"></td>
-                      <td><input type="text" class="form-control" value="10"></td>
+                      <td class="text-center">05111640000009</td>
+                      <td>Sal Zulal</td>
+                      <td class="text-center">A</td>
                     </tr>
                     <tr>
-                      <td class="text-center align-middle">5</td>
-                      <td><input type="text" class="form-control" value="ETS"></td>
-                      <td><input type="text" class="form-control" value="20"></td>
+                      <td class="text-center">05111640000013</td>
+                      <td>Muhammad Raihan Anindita</td>
+                      <td class="text-center">A</td>
+                    </tr>
+                    <tr class="bg-warning">
+                      <td class="text-center align-middle">05111640000014</td>
+                      <td>Sal Zulal<br>
+                        <small><i>Belum Mengisi Kuesioner<i></small>
+                      </td>
+                      <td class="text-center align-middle">*</td>
                     </tr>
                     <tr>
-                      <td class="text-center align-middle">6</td>
-                      <td><input type="text" class="form-control" value="Kuis 1"></td>
-                      <td><input type="text" class="form-control" value="15"></td>
+                      <td class="text-center">05111640000015</td>
+                      <td>Muhammad Raihan Anindita</td>
+                      <td class="text-center">A</td>
                     </tr>
-                    <tr>
-                      <td class="text-center align-middle">7</td>
-                      <td><input type="text" class="form-control" value="Kuis 2"></td>
-                      <td><input type="text" class="form-control" value="15"></td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">8</td>
-                      <td><input type="text" class="form-control" value="EAS"></td>
-                      <td><input type="text" class="form-control" value="20"></td>
-                    </tr>
-
                   </tbody>
                 </table>
               </div><!-- card-body -->
@@ -437,209 +459,6 @@
           </div>
         </div><!-- row -->
 
-        <div class="col-lg-12 mb-3">
-          <div class="card">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
-              <div class="card-body">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th rowspan="2" class="text-center align-middle">NRP</th>
-                      <th rowspan="2" class="text-center align-middle">Nama Mahasiswa</th>
-                      <th class="text-center align-middle" style="width: 6%;">Kehadiran</th>
-                      <th class="text-center align-middle" style="width: 6%;">Sikap</th>
-                      <th class="text-center align-middle" style="width: 6%;">Tugas 1</th>
-                      <th class="text-center align-middle" style="width: 6%;">Tugas Kelompok 1</th>
-                      <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                      <th class="text-center align-middle" style="width: 6%;">Kuis 1</th>
-                      <th class="text-center align-middle" style="width: 6%;">Kuis 2</th>
-                      <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                      <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.A.</th>
-                      <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.H.</th>
-                    </tr>
-                    <tr>
-                      <th class="text-center">5 %</th>
-                      <th class="text-center">5 %</th>
-                      <th class="text-center">10 %</th>
-                      <th class="text-center">10 %</th>
-                      <th class="text-center">20 %</th>
-                      <th class="text-center">15 %</th>
-                      <th class="text-center">15 %</th>
-                      <th class="text-center">20 %</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td class="text-center align-middle">01111440000017</td>
-                      <td class="align-middle">Dimas Bagus Yudhistira</td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td class="text-center align-middle">2.0</td>
-                      <td class="text-center align-middle">E</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">01111640000010</td>
-                      <td class="align-middle">Hilmy Yafi' Zuhair</td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td class="text-center align-middle">2.0</td>
-                      <td class="text-center align-middle">E</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">01111640000015</td>
-                      <td class="align-middle">Lintang Kinasih Wibawaning Utomo</td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td class="text-center align-middle">2.0</td>
-                      <td class="text-center align-middle">E</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">01111440000017</td>
-                      <td class="align-middle">Dimas Bagus Yudhistira</td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td class="text-center align-middle">2.0</td>
-                      <td class="text-center align-middle">E</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">01111640000010</td>
-                      <td class="align-middle">Hilmy Yafi' Zuhair</td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td class="text-center align-middle">2.0</td>
-                      <td class="text-center align-middle">E</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">01111640000015</td>
-                      <td class="align-middle">Lintang Kinasih Wibawaning Utomo</td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td align="center"><input type="text" class="form-control" style="width: 50px;"></td>
-                      <td class="text-center align-middle">2.0</td>
-                      <td class="text-center align-middle">E</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-                <div class="d-flex justify-content-between">
-                  <div></div>
-                  <form class="form-inline">
-                    <a href="" class="btn btn-primary ml-2">Simpan Nilai</a>
-                    <a href="" class="btn btn-primary ml-2">Simpan Nilai Permanen</a>
-                  </form>
-                </div>
-
-                <hr class="mb-3 mt-3">
-                <span>Unggah nilai melalui berkas</span>
-                <div class="d-flex justify-content-between mt-2">
-                  <form class="form-inline">
-                    <div class="custom-file" style="width: 300px;">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label" for="customFile">Pilih Berkas</label>
-                    </div>
-                    <a href="" class="btn btn-primary ml-2 mr-2">Unggah</a>
-                    <span><a href="">Unduh <i>template</i> berkas</a></span>
-                  </form>
-                  <!-- <form class="form-inline">
-                    <a href="" class="btn btn-primary ml-2">Simpan Nilai</a>
-                    <a href="" class="btn btn-primary ml-2">Simpan Nilai Permanen</a>
-                  </form> -->
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-10 mb-3">
-          <div class="card bg-gray-100">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <h5 class="tx-16">Statistik</h5>
-            </div>
-            <div class="card-body" style="padding-top: 0px;">
-              <div class="row">
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium">Nilai Minimum</span>
-                    <span class="">0</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Nilai Maksimum</span>
-                    <span class="">0</span>
-                  </li>
-                </div>
-
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium">Rata-rata</span>
-                    <span class="">0 (0)</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Standar Deviasi</span>
-                    <span class="">0</span>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-10 mb-3">
-          <div class="card bg-gray-100">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <h5 class="tx-16">Distribusi Nilai</h5>
-            </div>
-
-            <div class="card-body" style="padding-top: 0px;">
-              <div class="text-right">Total Data: <b>40</b></div>
-
-              <canvas id="myChart" width="100" height="35"></canvas>
-
-              <div class="text-center mt-2">
-                <medium>A: 86-100; AB: 76-85; B: 66-75; BC: 61-65; C: 56-60; D: 41-55; E:
-                  0-40</medium>
-              </div>
-
-            </div>
-          </div>
-        </div>
 
       </div><!-- row -->
     </div><!-- container -->
@@ -665,31 +484,19 @@
     $(function () {
       'use strict'
 
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: [['A', '5', '12.5 %'], ['AB', '15', '37.5 %'], ['B', '10', '25 %'], ['BC', '5', '12.5 %'], ['C', '3', '7.5 %'], ['D', '2', '5 %'], ['E', '0', '0 %']],
-          datasets: [{
-            label: 'Presentase Data',
-            data: [12.5, 37.5, 25, 12.5, 7.5, 5, 0],
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
+      $('.selectsmt').select2({
+        minimumResultsForSearch: Infinity
       });
 
+      $('.selectmhs').select2({
+        placeholder: 'NRP - Nama',
+        searchInputPlaceholder: 'Cari Mahasiswa'
+      });
 
+      $('.selectkelas').select2({
+        placeholder: 'Pilih Kelas',
+        searchInputPlaceholder: 'Cari Kelas'
+      });
 
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
     });
