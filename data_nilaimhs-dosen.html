@@ -312,10 +312,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Daftar Perwalian Mahasiswa</li>
+              <li class="breadcrumb-item active" aria-current="page">Daftar Anak Wali Per Dosen</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Daftar Perwalian Mahasiswa</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Daftar Anak Wali Per Dosen (Informatika)</h4>
         </div>
 
       </div>
@@ -324,59 +324,22 @@
 
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
-            <div class="row">
-
-              <div class="col-lg-6">
-                <div class="d-flex justify-content-between mb-2">
-                  <div class="tx-medium align-middle" style="padding-top: 7.5px;">Angkatan</div>
-                  <select class="form-control selectbiasa" style="width: 100px;">
-                    <option selected>2018</option>
-                    <option value="1">2017</option>
-                    <option value="2">2018</option>
-                    <option value="3">2019</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="d-flex justify-content-between mb-2">
-                  <div class="tx-medium align-middle" style="padding-top: 7.5px; ">Periode</div>
-                  <form class="form-inline">
-                    <div class="mr-2">
-                      <select class="form-control selectbiasa" style="width: 100px;">
-                        <option selected>Gasal</option>
-                        <option value="1">Gasal</option>
-                        <option value="2">Genap</option>
-                        <option value="3">Pendek</option>
-                        <option value="4">Sisipan</option>
-                      </select>
-                    </div>
-                    <select class="form-control selectbiasa" style="width: 100px;">
-                      <option selected>2018</option>
-                      <option value="1">2017</option>
-                      <option value="2">2018</option>
-                      <option value="3">2019</option>
-                    </select>
-                  </form>
-                </div>
-              </div>
-
-            </div>
             <div class="d-flex justify-content-between">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Dosen Wali</div>
+              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Mahasiswa</div>
 
               <form class="form-inline">
-                <select class="form-control selectdosen " style="width: 700px;">
-                  <option label="Pilih Dosen"></option>
-                  <option value="1">Anton</option>
-                  <option value="2">Budi</option>
-                  <option value="3">Caca</option>
-                  <option value="4">Dimas</option>
+                <select class="form-control selectmhs" style="width: 700px;">
+                  <option label="Pilih Mahasiswa"></option>
+                  <option value="1">05111640000009 - Sal Zulal</option>
+                  <option value="2">05111640000010 - Faridatul Nur Aidah</option>
+                  <option value="3">05111640000011 - Dandy Naufaldi</option>
+                  <option value="4">05111640000012 - Raden Teja Kusuma</option>
+                  <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
+                  <option value="6">05111640000014 - Nuzha Musyarifa</option>
                 </select>
                 <a href="" class="btn btn-primary ml-2">Ganti</a>
               </form>
             </div>
-
 
           </div>
 
@@ -384,78 +347,76 @@
 
 
         <div class="col-lg-10">
-          <div class="card">
+          <div class="card mb-2">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <div class="mg-b-10 mg-sm-b-0">
-                <h5 class="mg-b-5 tx-16">Daftar Anak Wali</h5>
-              </div>
-
+              <h5 class="tx-16">Perkuliahan pada: 2017/GASAL</h5>
             </div>
 
             <div class="card-body">
 
-              <table id="tabelanakwali" class="table">
+              <table id="tabelnilaisemester" class="table">
                 <thead>
                   <tr>
-                    <th class="text-center">FRS</th>
-                    <th class="text-center">NRP</th>
-                    <th class="text-center">Nama</th>
-                    <th class="text-center">Detail</th>
+                    <th class="text-center">Kode</th>
+                    <th class="text-center">Mata Kuliah</th>
+                    <th class="text-center">Kelas</th>
+                    <th class="text-center">Nilai</th>
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
-                    <td><b>OK</b></td>
-                    <td>05111640000009</td>
-                    <td>Sal Zulal</td>
-                    <td class="text-center">
-                      <div class="dropdown">
-                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                          data-feather="more-horizontal">
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
-                        </div>
-                      </div>
-                    </td>
+                    <td>KI141301</td>
+                    <td>Dasar Pemrograman</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">A</td>
                   </tr>
-
                   <tr>
-                    <td><b>OK</b></td>
-                    <td>05111640000010</td>
-                    <td>Sal Zulal 2</td>
-                    <td class="text-center">
-                      <div class="dropdown">
-                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                          data-feather="more-horizontal">
-                        </button>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
-                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
-                        </div>
-                      </div>
-                    </td>
+                    <td>KI141302</td>
+                    <td>Matematika Diskrit</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">A</td>
                   </tr>
-
                 </tbody>
               </table>
 
+            </div><!-- card-body -->
+          </div>
+          <div class="card">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <h5 class="tx-16">Perkuliahan pada: 2017/GENAP</h5>
+            </div>
+
+            <div class="card-body">
+
+              <table id="tabelnilaisemester" class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center">Kode</th>
+                    <th class="text-center">Mata Kuliah</th>
+                    <th class="text-center">Kelas</th>
+                    <th class="text-center">Nilai</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>KI141301</td>
+                    <td>Dasar Pemrograman</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">A</td>
+                  </tr>
+                  <tr>
+                    <td>KI141302</td>
+                    <td>Matematika Diskrit</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">A</td>
+                  </tr>
+                </tbody>
+              </table>
 
             </div><!-- card-body -->
-
           </div><!-- col -->
-          <br>
         </div>
 
 
@@ -467,23 +428,61 @@
 
 
 
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content tx-14">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Lorem Ipsum</h6>
+          <h6 class="modal-title" id="exampleModalLabel4">Ubah Data Anak Wali</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-
         <div class="modal-body">
-          Lorem Ipsum
+          <div class="d-sm-flex justify-content-center mb-3">
+            <form class="form-inline">
+              <select class="form-control selectmhs" style="width: 400px;">
+                <option label="Mahasiswa"></option>
+                <option value="1">Anton</option>
+                <option value="2">Budi</option>
+                <option value="3">Caca</option>
+                <option value="4">Dimas</option>
+              </select>
+              <a href="" class="btn btn-primary  ml-2">Tambahkan</a>
+            </form>
+          </div>
+          <table id="tabelanakwali" class="table">
+            <thead>
+              <tr>
+                <th class="text-center">No</th>
+                <th class="text-center">NRP</th>
+                <th class="text-center">Nama</th>
+                <th class="text-center">Hapus</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td>05111640000009</td>
+                <td>Sal Zulal</td>
+                <td class="text-center"><button type="button" data-feather="trash-2"></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">3</td>
+                <td>05111640000009</td>
+                <td>Sal Zulal</td>
+                <td class="text-center"><button type="button" data-feather="trash-2"></button></td>
+              </tr>
+
+            </tbody>
+          </table>
+
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary tx-13">Lorem Ipsum</button>
+          <button type="button" class="btn btn-primary tx-13">Selesai</button>
         </div>
       </div>
     </div>
@@ -505,11 +504,12 @@
     $(function () {
       'use strict'
 
-      $('.selectdosen').select2({
-        placeholder: 'Pilih Dosen',
-      });
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
+      });
+
+      $('.selectmhs').select2({
+        placeholder: 'NRP - Nama Mahasiswa',
       });
 
 
@@ -518,10 +518,11 @@
       //   paging: false,
       //   bInfo: false,
       //   searching: false,
+      //   order: false,
 
       //   "columns": [
       //     { "orderable": false },
-      //     { "orderable": true },
+      //     { "orderable": false },
       //     { "orderable": false },
       //     { "orderable": false }
       //   ]
@@ -531,7 +532,6 @@
 
       // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
-
     });
   </script>
 </body>
