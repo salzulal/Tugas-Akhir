@@ -312,53 +312,33 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Ranking IPS</li>
+              <li class="breadcrumb-item active" aria-current="page">Daftar Anak Wali Per Dosen</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing-1">Ranking IPS</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Daftar Anak Wali Per Dosen (Informatika)</h4>
         </div>
 
       </div>
 
       <div class="row row-xs justify-content-center">
 
-
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
-            <div class="row">
+            <div class="d-flex justify-content-between">
+              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Dosen Wali</div>
 
-              <div class="col-lg-5">
-                <div class="d-flex justify-content-between">
-                  <div class="tx-medium align-middle" style="padding-top: 7.5px;">Angkatan</div>
-                  <select class="form-control selectbiasa" style="width: 175px;">
-                    <option selected>2018</option>
-                    <option value="1">2017</option>
-                    <option value="2">2018</option>
-                    <option value="3">2019</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-lg-5">
-                <div class="d-flex justify-content-between">
-                  <div class="tx-medium align-middle" style="padding-top: 7.5px; ">Periode</div>
-                  <form class="form-inline">
-                    <select class="form-control selectbiasa" style="width: 175px;">
-                      <option value="1" selected> Gasal 2019/2020</option>
-                      <option value="2">Genap 2018/2019</option>
-                      <option value="3">Gasal 2018/2019</option>
-                      <option value="4">Genap 2017/2018</option>
-                    </select>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="d-flex justify-content-between">
-                  <div></div>
-                  <a href="" class="btn btn-primary ml-2">Tampilkan</a>
-                </div>
-              </div>
+              <form class="form-inline">
+                <select class="form-control selectdosen" style="width: 700px;">
+                  <option label="Pilih Dosen"></option>
+                  <option value="1">Anton</option>
+                  <option value="2">Budi</option>
+                  <option value="3">Caca</option>
+                  <option value="4">Dimas</option>
+                </select>
+                <a href="" class="btn btn-primary ml-2">Ganti</a>
+              </form>
             </div>
+
           </div>
 
         </div>
@@ -366,16 +346,18 @@
 
         <div class="col-lg-10">
           <div class="card">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <h5 class="tx-16">Daftar Anak Wali</h5>
+            </div>
+
             <div class="card-body">
 
-              <table id="tabelranking" class="table">
+              <table id="tabelanakwali" class="table">
                 <thead>
                   <tr>
-                    <th class="text-center" style="width: 7%;">No</th>
+                    <th class="text-center" style="width: 10%;">No</th>
                     <th class="text-center" style="width: 25%;">NRP</th>
                     <th class="text-center">Nama</th>
-                    <th class="text-center" style="width: 10%;">SKS</th>
-                    <th class="text-center" style="width: 10%;">IPS</th>
                   </tr>
                 </thead>
 
@@ -384,16 +366,14 @@
                     <td class="text-center">1</td>
                     <td class="text-center">05111640000009</td>
                     <td>Sal Zulal</td>
-                    <td class="text-center">18</td>
-                    <td class="text-center">3.41</td>
                   </tr>
+
                   <tr>
-                    <td class="text-center">250</td>
-                    <td class="text-center">05111640000090</td>
-                    <td>Sal Zulal 2</td>
-                    <td class="text-center">18</td>
-                    <td class="text-center">2.41</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">05111640000009</td>
+                    <td>Sal Zulal</td>
                   </tr>
+
                 </tbody>
               </table>
 
@@ -442,21 +422,20 @@
       });
 
 
-      $('#tabelranking').dataTable({
-        // responsive: true,
-        // paging: false,
-        // bInfo: false,
-        // searching: false,
-        // order: false,
+      // $('#tabelanakwali').dataTable({
+      //   // responsive: true,
+      //   paging: false,
+      //   bInfo: false,
+      //   searching: false,
+      //   order: false,
 
-        "columns": [
-          { "orderable": true },
-          { "orderable": true },
-          { "orderable": false },
-          { "orderable": false },
-          { "orderable": true }
-        ]
-      });
+      //   "columns": [
+      //     { "orderable": false },
+      //     { "orderable": false },
+      //     { "orderable": false },
+      //     { "orderable": false }
+      //   ]
+      // });
 
 
 

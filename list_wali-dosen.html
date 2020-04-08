@@ -312,16 +312,15 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Ranking IPS</li>
+              <li class="breadcrumb-item active" aria-current="page">Daftar Perwalian Mahasiswa</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing-1">Ranking IPS</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Daftar Perwalian Mahasiswa</h4>
         </div>
 
       </div>
 
       <div class="row row-xs justify-content-center">
-
 
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
@@ -366,33 +365,77 @@
 
         <div class="col-lg-10">
           <div class="card">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <div class="mg-b-10 mg-sm-b-0">
+                <h5 class="mg-b-5 tx-16">Daftar Anak Wali</h5>
+              </div>
+
+            </div>
+
             <div class="card-body">
 
-              <table id="tabelranking" class="table">
+              <table id="tabelanakwali" class="table">
                 <thead>
                   <tr>
-                    <th class="text-center" style="width: 7%;">No</th>
+                    <th class="text-center" style="width: 10%;">FRS</th>
                     <th class="text-center" style="width: 25%;">NRP</th>
                     <th class="text-center">Nama</th>
-                    <th class="text-center" style="width: 10%;">SKS</th>
-                    <th class="text-center" style="width: 10%;">IPS</th>
+                    <th class="text-center" style="width: 10%;">Detail</th>
                   </tr>
                 </thead>
 
                 <tbody>
+
                   <tr>
-                    <td class="text-center">1</td>
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
                     <td class="text-center">05111640000009</td>
                     <td>Sal Zulal</td>
-                    <td class="text-center">18</td>
-                    <td class="text-center">3.41</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
-                    <td class="text-center">250</td>
-                    <td class="text-center">05111640000090</td>
-                    <td>Sal Zulal 2</td>
-                    <td class="text-center">18</td>
-                    <td class="text-center">2.41</td>
+                    <td colspan="2" class="text-center bg-gray-100"><small>
+                        Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                        SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                      </small></td>
+                  <tr>
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
+                    <td class="text-center">05111640000013</td>
+                    <td>Muhammad Raihan Anindita</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="text-center bg-gray-100"><small>
+                        Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                        SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                      </small></td>
                   </tr>
                 </tbody>
               </table>
@@ -413,6 +456,27 @@
 
 
 
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel3">Lorem Ipsum</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          Lorem Ipsum
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary tx-13">Lorem Ipsum</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -430,38 +494,33 @@
     $(function () {
       'use strict'
 
+      $('.selectdosen').select2({
+        placeholder: 'Pilih Dosen',
+      });
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectdosen').select2({
-        placeholder: 'Pilih Dosen',
-      });
-      $('.selectmhs').select2({
-        placeholder: 'NRP - Nama Mahasiswa',
-      });
 
+      // $('#tabelanakwali').dataTable({
+      //   // responsive: true,
+      //   paging: false,
+      //   bInfo: false,
+      //   searching: false,
 
-      $('#tabelranking').dataTable({
-        // responsive: true,
-        // paging: false,
-        // bInfo: false,
-        // searching: false,
-        // order: false,
-
-        "columns": [
-          { "orderable": true },
-          { "orderable": true },
-          { "orderable": false },
-          { "orderable": false },
-          { "orderable": true }
-        ]
-      });
+      //   "columns": [
+      //     { "orderable": false },
+      //     { "orderable": true },
+      //     { "orderable": false },
+      //     { "orderable": false }
+      //   ]
+      // });
 
 
 
       // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
     });
   </script>
 </body>
