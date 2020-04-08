@@ -312,10 +312,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Daftar Anak Wali Per Dosen</li>
+              <li class="breadcrumb-item active" aria-current="page">Data Nilai Kuliah Per Mahasiswa</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Daftar Anak Wali Per Dosen (Informatika)</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Data Nilai Kuliah Per Mahasiswa</h4>
         </div>
 
       </div>
@@ -337,7 +337,7 @@
                   <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
                   <option value="6">05111640000014 - Nuzha Musyarifa</option>
                 </select>
-                <a href="" class="btn btn-primary ml-2">Ganti</a>
+                <a href="" class="btn btn-primary ml-2">Tampilkan</a>
               </form>
             </div>
 
@@ -345,6 +345,13 @@
 
         </div>
 
+        <!-- <div class="col-lg-10 mb-3">
+          <div class="d-flex justify-content-between">
+            <div></div>
+            <a href="" class="btn btn-primary" data-toggle="modal">Ubah Data
+              Keseluruhan</a>
+          </div>
+        </div> -->
 
         <div class="col-lg-10">
           <div class="card mb-2">
@@ -419,12 +426,93 @@
 
             </div><!-- card-body -->
           </div>
+
+          <div class="card mb-2">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <span>
+                <h5 class="tx-16">Perkuliahan pada: 2017/GENAP</h5>
+              </span>
+              <!-- <span>
+                <a href="#modal" class="btn btn-primary" data-toggle="modal">Ubah Data</a>
+              </span> -->
+            </div>
+
+            <div class="card-body">
+
+              <table id="tabelnilaisemester" class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center">Kode</th>
+                    <th class="text-center">Mata Kuliah</th>
+                    <th class="text-center">Kelas</th>
+                    <th class="text-center">Nilai</th>
+                    <th class="text-center">Ubah Nilai</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>KI141301</td>
+                    <td>Dasar Pemrograman</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">
+                      <select class="form-control selectbiasa" style="width: 100px;">
+                        <option value="1">A</option>
+                        <option value="2">AB</option>
+                        <option value="3">B</option>
+                        <option value="4">BC</option>
+                        <option value="5">C</option>
+                        <option value="5">D</option>
+                        <option value="5">E</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>KI141302</td>
+                    <td>Matematika Diskrit</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">
+                      <select class="form-control selectbiasa" style="width: 100px;">
+                        <option value="1">A</option>
+                        <option value="2">AB</option>
+                        <option value="3">B</option>
+                        <option value="4">BC</option>
+                        <option value="5">C</option>
+                        <option value="5">D</option>
+                        <option value="5">E</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="text-center">
+                      <a href="#modal" class="btn btn-primary" data-toggle="modal" style="width: 100px;">Ubah Data</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div><!-- card-body -->
+          </div>
         </div>
 
+        <div class="col-lg-10 mt-2">
+          <div class="d-flex justify-content-between">
+            <div></div>
+            <a href="" class="btn btn-primary" data-toggle="modal">Ubah Data
+              Keseluruhan</a>
+          </div>
+        </div>
 
-      </div><!-- row -->
+      </div>
 
-    </div><!-- row -->
+
+    </div>
   </div><!-- container -->
   </div><!-- content -->
 
