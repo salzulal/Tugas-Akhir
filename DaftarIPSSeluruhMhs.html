@@ -411,12 +411,6 @@
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectdosen').select2({
-        placeholder: 'Pilih Dosen',
-      });
-      $('.selectmhs').select2({
-        placeholder: 'NRP - Nama Mahasiswa',
-      });
 
 
       $('#tabelips').dataTable({
@@ -428,7 +422,7 @@
 
         "columns": [
           { "orderable": true },
-          { "orderable": false },
+          { "orderable": true },
           { "orderable": false },
           { "orderable": true }
         ]
