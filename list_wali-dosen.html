@@ -374,7 +374,7 @@
 
             <div class="card-body">
 
-              <table id="tabelanakwali" class="table">
+              <table id="tabelanakwali" class="table table-hover">
                 <thead>
                   <tr>
                     <th class="text-center" style="width: 10%;">FRS</th>
@@ -386,9 +386,9 @@
 
                 <tbody>
 
-                  <tr>
+                  <tr data-toggle="collapse" data-target="#accordion1" class="clickable">
                     <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
-                    <td class="text-center">05111640000009</td>
+                    <td class="text-center align-middle">05111640000009</td>
                     <td>Sal Zulal</td>
                     <td rowspan="2" class="text-center align-middle">
                       <div class="dropdown">
@@ -407,14 +407,18 @@
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" class="text-center bg-gray-100"><small>
-                        Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
-                        SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
-                      </small></td>
-                  <tr>
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion1" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
+                    </td>
+                  </tr>
+
+                  <tr data-toggle="collapse" data-target="#accordion2" class="clickable">
                     <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
-                    <td class="text-center">05111640000013</td>
-                    <td>Muhammad Raihan Anindita</td>
+                    <td class="text-center align-middle">05111640000013</td>
+                    <td>Sal Zulal 2</td>
                     <td rowspan="2" class="text-center align-middle">
                       <div class="dropdown">
                         <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -432,10 +436,69 @@
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" class="text-center bg-gray-100"><small>
-                        Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
-                        SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
-                      </small></td>
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion2" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
+                    </td>
+                  </tr>
+                  <tr data-toggle="collapse" data-target="#accordion3" class="clickable">
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
+                    <td class="text-center align-middle">05111640000009</td>
+                    <td>Sal Zulal</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion3" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
+                    </td>
+                  </tr>
+
+                  <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
+                    <td class="text-center align-middle">05111640000013</td>
+                    <td>Sal Zulal 2</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion4" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
