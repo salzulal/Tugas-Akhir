@@ -312,157 +312,82 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Daftar Nilai Per Kelas
-              </li>
+              <li class="breadcrumb-item active" aria-current="page">Daftar IPS untuk Seluruh Angkatan</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Daftar Nilai Per Kelas (Fisika)
-          </h4>
+          <h4 class="mg-b-0 tx-spacing-1">Daftar IPS untuk Seluruh Angkatan</h4>
         </div>
 
       </div>
 
       <div class="row row-xs justify-content-center">
 
-        <div class="col-lg-10 mb-3">
+
+
+        <div class="col-lg-6 mb-3">
           <div class="card card-body bg-gray-100">
-
-            <div class="d-flex justify-content-between">
-              <span class="tx-medium mt-2 mr-2">Periode</span>
+            <div class="d-flex justify-content-center">
+              <div class="tx-medium align-middle mr-5" style="padding-top: 7.5px; ">Periode</div>
               <form class="form-inline">
-                <select class="form-control selectsmt">
-                  <option value="1" selected> Semester Gasal 2019/2020</option>
-                  <option value="2">Semester Genap 2018/2019</option>
-                  <option value="3">Semester Gasal 2018/2019</option>
-                  <option value="4">Semester Genap 2017/2018</option>
+                <select class="form-control selectbiasa" style="width: 175px;">
+                  <option value="1" selected> Gasal 2019/2020</option>
+                  <option value="2">Genap 2018/2019</option>
+                  <option value="3">Gasal 2018/2019</option>
+                  <option value="4">Genap 2017/2018</option>
                 </select>
-                <a href="" class="btn btn-primary ml-2" style="width: 100px">Tampilkan</a>
+                <a href="" class="btn btn-primary ml-2">Tampilkan</a>
               </form>
             </div>
 
-            <div class="d-flex justify-content-between mt-2">
-              <span class="tx-medium mt-2 mr-2">Kelas</span>
-              <form class="form-inline">
-                <select class="form-control selectkelas">
-                  <option label="Pilih Kelas"></option>
-                  <option value="1">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
-                  <option value="2">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
-                  <option value="3">2018 - IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
-                  <option value="4">2018 - IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
-                  <option value="5">2018 - IF184101 Dasar Pemrograman (4) _ 19/30</option>
-                </select>
-                <a href="" class="btn btn-primary ml-2" style="width: 100px">Pilih</a>
-              </form>
+          </div>
 
-            </div>
-            <hr class="mt-3 mb-2">
-            <div class="row mt-2">
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between">
-                  <span class="tx-medium">Mata Kuliah</span>
-                  <span class="">SF4404 - Fisika Matematika III</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Kelas</span>
-                  <span class="">A</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Jurusan</span>
-                  <span class="">S1 Fisika</span>
-                </li>
-              </div>
-
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between">
-                  <span class="tx-medium">Kurikulum</span>
-                  <span class="">2018</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Periode</span>
-                  <span class="">Semester Genap 2018/2019</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Pengajar</span>
-                  <span class="">Dr. Dra. Melania Suweni Muntini, MT</span>
-                </li>
-              </div>
-
-            </div> <!-- row -->
-          </div> <!-- cardbody -->
         </div>
 
 
-        <div class="col-lg-10 mb-3">
+        <div class="col-lg-10">
           <div class="card">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
-              <div class="card-body">
+            <div class="card-body">
 
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th class="text-center" style="width: 25%;">NRP</th>
-                      <th class="text-center">Nama Mahasiswa</th>
-                      <th class="text-center" style="width: 15%;">Nilai</th>
-                    </tr>
-                  </thead>
+              <table id="tabelips" class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center" style="width: 25%;">NRP</th>
+                    <th class="text-center">Nama</th>
+                    <th class="text-center" style="width: 10%;">SKS</th>
+                    <th class="text-center" style="width: 10%;">IPS</th>
+                  </tr>
+                </thead>
 
-                  <tbody>
-                    <tr>
-                      <td class="text-center">05111640000009</td>
-                      <td>Sal Zulal</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">05111640000013</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                    <tr class="bg-warning">
-                      <td class="text-center align-middle">05111640000014</td>
-                      <td>Sal Zulal<br>
-                        <small><i>Belum Mengisi Kuesioner<i></small>
-                      </td>
-                      <td class="text-center align-middle">*</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">05111640000015</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">05111640000009</td>
-                      <td>Sal Zulal</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">05111640000013</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                    <tr class="bg-warning">
-                      <td class="text-center align-middle">05111640000014</td>
-                      <td>Sal Zulal<br>
-                        <small><i>Belum Mengisi Kuesioner<i></small>
-                      </td>
-                      <td class="text-center align-middle">*</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">05111640000015</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div><!-- card-body -->
-            </div><!-- col -->
-          </div>
-        </div><!-- row -->
+                <tbody>
+                  <tr>
+                    <td class="text-center">05111640000009</td>
+                    <td>Sal Zulal</td>
+                    <td class="text-center">18</td>
+                    <td class="text-center">3.41</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">05111640000090</td>
+                    <td>Sal Zulal 2</td>
+                    <td class="text-center">18</td>
+                    <td class="text-center">2.41</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+            </div><!-- card-body -->
+
+          </div><!-- col -->
+          <br>
+        </div>
 
 
       </div><!-- row -->
-    </div><!-- container -->
+
+    </div><!-- row -->
+  </div><!-- container -->
   </div><!-- content -->
+
 
 
 
@@ -476,28 +401,42 @@
   <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
   <script src="../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
   <script src="../../lib/select2/js/select2.min.js"></script>
-  <script src="../../lib/chart.js/Chart.bundle.min.js"></script>
 
-  <script src="../../assets/js/chart.chartjs.js"></script>
   <script src="../../assets/js/dashforge.js"></script>
   <script>
     $(function () {
       'use strict'
 
-      $('.selectsmt').select2({
+      $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
 
+      $('.selectdosen').select2({
+        placeholder: 'Pilih Dosen',
+      });
       $('.selectmhs').select2({
-        placeholder: 'NRP - Nama',
-        searchInputPlaceholder: 'Cari Mahasiswa'
+        placeholder: 'NRP - Nama Mahasiswa',
       });
 
-      $('.selectkelas').select2({
-        placeholder: 'Pilih Kelas',
-        searchInputPlaceholder: 'Cari Kelas'
+
+      $('#tabelips').dataTable({
+        // responsive: true,
+        // paging: false,
+        // bInfo: false,
+        // searching: false,
+        // order: false,
+
+        "columns": [
+          { "orderable": true },
+          { "orderable": false },
+          { "orderable": false },
+          { "orderable": true }
+        ]
       });
 
+
+
+      // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
     });
   </script>

@@ -312,12 +312,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Daftar Nilai Per Kelas
-              </li>
+              <li class="breadcrumb-item active" aria-current="page">Data Evaluasi Berkala</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Daftar Nilai Per Kelas (Fisika)
-          </h4>
+          <h4 class="mg-b-0 tx-spacing--1">Data Evaluasi Berkala</h4>
         </div>
 
       </div>
@@ -327,36 +325,7 @@
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
 
-            <div class="d-flex justify-content-between">
-              <span class="tx-medium mt-2 mr-2">Periode</span>
-              <form class="form-inline">
-                <select class="form-control selectsmt">
-                  <option value="1" selected> Semester Gasal 2019/2020</option>
-                  <option value="2">Semester Genap 2018/2019</option>
-                  <option value="3">Semester Gasal 2018/2019</option>
-                  <option value="4">Semester Genap 2017/2018</option>
-                </select>
-                <a href="" class="btn btn-primary ml-2" style="width: 100px">Tampilkan</a>
-              </form>
-            </div>
-
-            <div class="d-flex justify-content-between mt-2">
-              <span class="tx-medium mt-2 mr-2">Kelas</span>
-              <form class="form-inline">
-                <select class="form-control selectkelas">
-                  <option label="Pilih Kelas"></option>
-                  <option value="1">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
-                  <option value="2">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
-                  <option value="3">2018 - IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
-                  <option value="4">2018 - IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
-                  <option value="5">2018 - IF184101 Dasar Pemrograman (4) _ 19/30</option>
-                </select>
-                <a href="" class="btn btn-primary ml-2" style="width: 100px">Pilih</a>
-              </form>
-
-            </div>
-            <hr class="mt-3 mb-2">
-            <div class="row mt-2">
+            <div class="row">
               <div class="col-lg-6">
                 <li class="d-flex justify-content-between">
                   <span class="tx-medium">Mata Kuliah</span>
@@ -391,73 +360,213 @@
           </div> <!-- cardbody -->
         </div>
 
+        <div class="col-lg-10">
+          <div class="alert alert-warning text-center" role="alert">
+            Data ini <b class="text-danger">BELUM</b> disimpan secara permanen oleh dosen yang bersangkutan
+          </div>
+        </div>
 
         <div class="col-lg-10 mb-3">
           <div class="card">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
               <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
               <div class="card-body">
+                <div class="mb-2">Tanggal Ujian: </div>
 
                 <table class="table">
                   <thead>
                     <tr>
-                      <th class="text-center" style="width: 25%;">NRP</th>
-                      <th class="text-center">Nama Mahasiswa</th>
-                      <th class="text-center" style="width: 15%;">Nilai</th>
+                      <th class="text-center">No</th>
+                      <th class="text-center">Jenis Penilaian</th>
+                      <th class="text-center" style="width: 15%;">Persentase (%)</th>
                     </tr>
                   </thead>
 
                   <tbody>
                     <tr>
-                      <td class="text-center">05111640000009</td>
-                      <td>Sal Zulal</td>
-                      <td class="text-center">A</td>
+                      <td class="text-center">1</td>
+                      <td>Kehadiran</td>
+                      <td class="text-center">5</td>
                     </tr>
                     <tr>
-                      <td class="text-center">05111640000013</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                    <tr class="bg-warning">
-                      <td class="text-center align-middle">05111640000014</td>
-                      <td>Sal Zulal<br>
-                        <small><i>Belum Mengisi Kuesioner<i></small>
-                      </td>
-                      <td class="text-center align-middle">*</td>
+                      <td class="text-center">2</td>
+                      <td>Sikap</td>
+                      <td class="text-center">5</td>
                     </tr>
                     <tr>
-                      <td class="text-center">05111640000015</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
+                      <td class="text-center">3</td>
+                      <td>Tugas 1</td>
+                      <td class="text-center">10</td>
                     </tr>
                     <tr>
-                      <td class="text-center">05111640000009</td>
-                      <td>Sal Zulal</td>
-                      <td class="text-center">A</td>
+                      <td class="text-center">4</td>
+                      <td>Tugas Kelompok 1</td>
+                      <td class="text-center">10</td>
                     </tr>
                     <tr>
-                      <td class="text-center">05111640000013</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
-                    </tr>
-                    <tr class="bg-warning">
-                      <td class="text-center align-middle">05111640000014</td>
-                      <td>Sal Zulal<br>
-                        <small><i>Belum Mengisi Kuesioner<i></small>
-                      </td>
-                      <td class="text-center align-middle">*</td>
+                      <td class="text-center">5</td>
+                      <td>ETS</td>
+                      <td class="text-center">20</td>
                     </tr>
                     <tr>
-                      <td class="text-center">05111640000015</td>
-                      <td>Muhammad Raihan Anindita</td>
-                      <td class="text-center">A</td>
+                      <td class="text-center">6</td>
+                      <td>Kuis 1</td>
+                      <td class="text-center">15</td>
                     </tr>
+                    <tr>
+                      <td class="text-center">7</td>
+                      <td>Kuis </td>
+                      <td class="text-center">15</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">8</td>
+                      <td>EAS</td>
+                      <td class="text-center">20</td>
+                    </tr>
+
                   </tbody>
                 </table>
               </div><!-- card-body -->
             </div><!-- col -->
           </div>
         </div><!-- row -->
+
+        <div class="col-lg-12 mb-3">
+          <div class="card">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th rowspan="2" class="text-center align-middle">NRP</th>
+                      <th rowspan="2" class="text-center align-middle">Nama Mahasiswa</th>
+                      <th class="text-center align-middle" style="width: 6%;">Kehadiran</th>
+                      <th class="text-center align-middle" style="width: 6%;">Sikap</th>
+                      <th class="text-center align-middle" style="width: 6%;">Tugas 1</th>
+                      <th class="text-center align-middle" style="width: 6%;">Tugas Kelompok 1</th>
+                      <th class="text-center align-middle" style="width: 6%;">ETS</th>
+                      <th class="text-center align-middle" style="width: 6%;">Kuis 1</th>
+                      <th class="text-center align-middle" style="width: 6%;">Kuis 2</th>
+                      <th class="text-center align-middle" style="width: 6%;">ETS</th>
+                      <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.A.</th>
+                      <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.H.</th>
+                    </tr>
+                    <tr>
+                      <th class="text-center">5 %</th>
+                      <th class="text-center">5 %</th>
+                      <th class="text-center">10 %</th>
+                      <th class="text-center">10 %</th>
+                      <th class="text-center">20 %</th>
+                      <th class="text-center">15 %</th>
+                      <th class="text-center">15 %</th>
+                      <th class="text-center">20 %</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-center">01111440000017</td>
+                      <td>Dimas Bagus Yudhistira</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">50</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">100</td>
+                      <td class="text-center">85</td>
+                      <td class="text-center">AB</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">01111640000010</td>
+                      <td>Hilmy Yafi' Zuhair</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">50</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">100</td>
+                      <td class="text-center">85</td>
+                      <td class="text-center">AB</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">01111640000015</td>
+                      <td>Lintang Kinasih Wibawaning Utomo</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">50</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">100</td>
+                      <td class="text-center">85</td>
+                      <td class="text-center">AB</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">01111440000017</td>
+                      <td>Dimas Bagus Yudhistira</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">50</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">100</td>
+                      <td class="text-center">85</td>
+                      <td class="text-center">AB</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">01111640000010</td>
+                      <td>Hilmy Yafi' Zuhair</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">50</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">100</td>
+                      <td class="text-center">85</td>
+                      <td class="text-center">AB</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">01111640000015</td>
+                      <td>Lintang Kinasih Wibawaning Utomo</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">50</td>
+                      <td class="text-center">80</td>
+                      <td class="text-center">100</td>
+                      <td class="text-center">85</td>
+                      <td class="text-center">AB</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <div class="text-center mt-2">
+                  <medium>A: 86-100; AB: 76-85; B: 66-75; BC: 61-65; C: 56-60; D: 41-55; E:
+                    0-40</medium>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div></div>
+                  <form class="form-inline">
+                    <a href="" class="btn btn-primary ml-2">Verifikasi</a>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
 
       </div><!-- row -->
@@ -484,19 +593,6 @@
     $(function () {
       'use strict'
 
-      $('.selectsmt').select2({
-        minimumResultsForSearch: Infinity
-      });
-
-      $('.selectmhs').select2({
-        placeholder: 'NRP - Nama',
-        searchInputPlaceholder: 'Cari Mahasiswa'
-      });
-
-      $('.selectkelas').select2({
-        placeholder: 'Pilih Kelas',
-        searchInputPlaceholder: 'Cari Kelas'
-      });
 
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
     });
