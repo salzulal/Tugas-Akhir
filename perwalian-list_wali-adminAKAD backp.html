@@ -385,35 +385,132 @@
 
             <div class="card-body">
 
-              <table id="tabelanakwali" class="table">
+              <table id="tabelanakwali" class="table table-hover">
                 <thead>
                   <tr>
-                    <th class="text-center" style="width: 10%;">No</th>
-                    <th class="text-center">Mahasiswa</th>
-                    <th class="text-center" style="width: 40%;">Status</th>
+                    <th class="text-center" style="width: 10%;">FRS</th>
+                    <th class="text-center" style="width: 25%;">NRP</th>
+                    <th class="text-center">Nama</th>
+                    <th class="text-center" style="width: 10%;">Detail</th>
                   </tr>
                 </thead>
 
                 <tbody>
-                  <tr>
-                    <td class="text-center align-middle">1</td>
-                    <td class="align-middle"><a href="#modaldetail" data-toggle="modal">Sal
-                        Zulal</a><br>
-                      05111640000009
+
+                  <tr data-toggle="collapse" data-target="#accordion1" class="clickable">
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
+                    <td class="text-center align-middle">05111640000009</td>
+                    <td>Sal Zulal</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
                     </td>
-                    <td class="align-middle">FRS: <b class="text-success">OK</b><br>Mahasiswa aktif (18 SKS)</td>
                   </tr>
                   <tr>
-                    <td class="text-center align-middle">2</td>
-                    <td class="align-middle"><a href="#modaldetail" data-toggle="modal">Sal
-                        Zulal</a><br>
-                      05111640000009
-                    </td>
-                    <td class="align-middle">FRS: <b class="text-danger">Belum disetujui</b><br>Mahasiswa tidak aktif
-                      (18 SKS)
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion1" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
                     </td>
                   </tr>
 
+                  <tr data-toggle="collapse" data-target="#accordion2" class="clickable">
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
+                    <td class="text-center align-middle">05111640000013</td>
+                    <td>Sal Zulal 2</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion2" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
+                    </td>
+                  </tr>
+                  <tr data-toggle="collapse" data-target="#accordion3" class="clickable">
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
+                    <td class="text-center align-middle">05111640000009</td>
+                    <td>Sal Zulal</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion3" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
+                    </td>
+                  </tr>
+
+                  <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+                    <td rowspan="2" class="text-center align-middle text-success"><b>OK</b></td>
+                    <td class="text-center align-middle">05111640000013</td>
+                    <td>Sal Zulal 2</td>
+                    <td rowspan="2" class="text-center align-middle">
+                      <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          data-feather="more-horizontal">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">FRS</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Nilai Gs 17/18</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Transkrip</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Biodata</a>
+                          <a class="dropdown-item" href="#modal" data-toggle="modal">Ekiv 14-18</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="text-center bg-gray-100">
+                      <div id="accordion4" class="collapse"><small>
+                          Status: <b>Normal</b> | SKS Ambil: <b>23</b> | IPSLalu: <b>3.41</b> | IP: <b>3.28</b> |
+                          SKSTempuh: <b>81</b> | SKSLulus: <b>58</b>
+                        </small> </div>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
 
@@ -433,251 +530,27 @@
 
 
 
-  <div class="modal fade" id="modaldetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
       <div class="modal-content tx-14">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Detail Mahasiswa</h6>
+          <h6 class="modal-title" id="exampleModalLabel3">Lorem Ipsum</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
 
         <div class="modal-body">
-          <div class="row row-xs justify-content-center">
-            <div class="col-lg-10 mb-3">
-              <div class="card card-body bg-gray-100">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <li class="d-flex justify-content-between mb-2">
-                      <span class="tx-medium ">Mahasiswa</span>
-                      <span class="">05111640000009 - Sal Zulal</span>
-                    </li>
-                    <li class="d-flex justify-content-between mb-2">
-                      <span class="tx-medium ">SKS Ambil</span>
-                      <span class="">23</span>
-                    </li>
-                    <li class="d-flex justify-content-between mb-2">
-                      <span class="tx-medium ">SKS Tempuh</span>
-                      <span class="">81</span>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                      <span class="tx-medium ">SKS Lulus</span>
-                      <span class="">58</span>
-                    </li>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <li class="d-flex justify-content-between mb-2">
-                      <span class="tx-medium ">Status</span>
-                      <span class="">Normal</span>
-                    </li>
-                    <li class="d-flex justify-content-between mb-2">
-                      <span class="tx-medium ">Status Semester Lalu</span>
-                      <span class="">Normal</span>
-                    </li>
-                    <li class="d-flex justify-content-between mb-2">
-                      <span class="tx-medium ">IPS Lalu</span>
-                      <span class="">3.41</span>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                      <span class="tx-medium ">IPK</span>
-                      <span class="">3.28</span>
-                    </li>
-                  </div>
-                </div> <!-- row -->
-              </div> <!-- card -->
-            </div>
-          </div>
-
-          <ul class="nav nav-line nav-justified" id="tabedit" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="tab-nilai" data-toggle="tab" href="#tab_nilai" role="tab"
-                aria-controls="nilai" aria-selected="true">Nilai</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="tab-nilai-kmrn" data-toggle="tab" href="#tab_nilai_kmrn" role="tab"
-                aria-controls="nilaikmrn" aria-selected="false">Nilai Semester Sebelumnya</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="tab-transkrip" data-toggle="tab" href="#tab_transkrip" role="tab"
-                aria-controls="transkrip" aria-selected="false">Transkrip</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="tab-biodata" data-toggle="tab" href="#tab_biodata" role="tab"
-                aria-controls="biodata" aria-selected="false">Biodata</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="tab-ekiv" data-toggle="tab" href="#tab_ekiv" role="tab" aria-controls="ekiv"
-                aria-selected="false">Ekivalensi 2014-2018</a>
-            </li>
-          </ul>
-
-          <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="tabContent">
-            <div class="tab-pane fade show active text-center" id="tab_nilai" role="tabpanel"
-              aria-labelledby="nilai-tab">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center">Kode</th>
-                    <th class="text-center">Mata Kuliah</th>
-                    <th class="text-center">SKS</th>
-                    <th class="text-center">Kelas</th>
-                    <th class="text-center">Dosen</th>
-                    <th class="text-center">Nilai</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td class="text-center align-middle">KI141301</td>
-                    <td class="align-middle">Dasar Pemrograman</td>
-                    <td class="text-center align-middle">4</td>
-                    <td class="text-center align-middle">C</td>
-                    <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom. </td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle">Matematika Diskrit</td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr class="bg-gray-100">
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Kelas paket tidak dapat dibatalkan<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester atas<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester bawah<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </div>
-            <div class="tab-pane fade text-center" id="tab_nilai_kmrn" role="tabpanel" aria-labelledby="nilaikmrn-tab">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center">Kode</th>
-                    <th class="text-center">Mata Kuliah</th>
-                    <th class="text-center">SKS</th>
-                    <th class="text-center">Kelas</th>
-                    <th class="text-center">Dosen</th>
-                    <th class="text-center">Nilai</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td class="text-center align-middle">KI141301</td>
-                    <td class="align-middle">Dasar Pemrograman</td>
-                    <td class="text-center align-middle">4</td>
-                    <td class="text-center align-middle">C</td>
-                    <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom. </td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle">Matematika Diskrit</td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr class="bg-gray-100">
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Kelas paket tidak dapat dibatalkan<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester atas<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester bawah<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">A</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="tab-pane fade text-center" id="tab_transkrip" role="tabpanel" aria-labelledby="transkrip-tab">
-              transkrip
-            </div>
-            <div class="tab-pane fade text-center" id="tab_biodata" role="tabpanel" aria-labelledby="biodata-tab">
-              biodata
-            </div>
-            <div class="tab-pane fade text-center" id="tab_ekiv" role="tabpanel" aria-labelledby="ekiv-tab">
-              ekiv 14-18
-            </div>
-          </div>
-
-
+          Lorem Ipsum
         </div>
 
-        <div class="modal-footer d-flex justify-content-center">
-          <div class="col-lg-10 mb-2">
-            <div class="d-flex justify-content-center">
-              <a href="#modalriwayat" class="btn btn-link btn-block" data-toggle="modal">Lihat FRS Mahasiswa</a>
-            </div>
-          </div>
-
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary tx-13">Lorem Ipsum</button>
         </div>
       </div>
     </div>
   </div>
-
-
 
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>

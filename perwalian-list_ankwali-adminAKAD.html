@@ -351,7 +351,7 @@
                 <h5 class="tx-16">Daftar Anak Wali</h5>
               </span>
               <span>
-                <a href="#modal" class="btn btn-primary" data-toggle="modal">Ubah Data</a>
+                <a href="#modal" class="btn btn-primary" data-toggle="modal">Tambah</a>
               </span>
             </div>
 
@@ -363,6 +363,7 @@
                     <th class="text-center" style="width: 10%;">No</th>
                     <th class="text-center" style="width: 25%;">NRP</th>
                     <th class="text-center">Nama</th>
+                    <th class="text-center" style="width: 10%;">Hapus</th>
                   </tr>
                 </thead>
 
@@ -371,12 +372,16 @@
                     <td class="text-center">1</td>
                     <td class="text-center">05111640000009</td>
                     <td>Sal Zulal</td>
+                    <td class="text-center align-middle"><button type="button" data-feather="trash-2"
+                        style="width:20px; height:20px;"></button>
                   </tr>
 
                   <tr>
                     <td class="text-center">2</td>
                     <td class="text-center">05111640000009</td>
                     <td>Sal Zulal</td>
+                    <td class="text-center align-middle"><button type="button" data-feather="trash-2"
+                        style="width:20px; height:20px;"></button>
                   </tr>
 
                 </tbody>
@@ -403,7 +408,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content tx-14">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Ubah Data Anak Wali</h6>
+          <h6 class="modal-title" id="exampleModalLabel4">Tambah Data Anak Wali</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -418,7 +423,7 @@
                 <option value="3">Caca</option>
                 <option value="4">Dimas</option>
               </select>
-              <a href="" class="btn btn-primary  ml-2">Tambahkan</a>
+              <a href="" class="btn btn-primary  ml-2">Pilih</a>
             </form>
           </div>
           <table id="tabelanakwali" class="table">
@@ -427,7 +432,7 @@
                 <th class="text-center" style="width: 10%;">No</th>
                 <th class="text-center" style="width: 25%;">NRP</th>
                 <th class="text-center">Nama</th>
-                <th class="text-center" style="width: 10%;">Hapus</th>
+                <th class="text-center" style="width: 10%;">Batal</th>
               </tr>
             </thead>
 
@@ -436,7 +441,7 @@
                 <td class="text-center">1</td>
                 <td class="text-center">05111640000009</td>
                 <td>Sal Zulal</td>
-                <td class="text-center align-middle"><button type="button" data-feather="trash-2"
+                <td class="text-center align-middle"><button type="button" data-feather="minus-circle"
                     style="width:20px; height:20px;"></button>
               </tr>
 
@@ -444,7 +449,7 @@
                 <td class="text-center">3</td>
                 <td class="text-center">05111640000009</td>
                 <td>Sal Zulal</td>
-                <td class="text-center align-middle"><button type="button" data-feather="trash-2"
+                <td class="text-center align-middle"><button type="button" data-feather="minus-circle"
                     style="width:20px; height:20px;"></button>
               </tr>
 
@@ -454,7 +459,7 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary tx-13">Selesai</button>
+          <button type="button" class="btn btn-primary tx-13">Tambahkan</button>
         </div>
       </div>
     </div>
