@@ -312,10 +312,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Daftar Anak Wali Per Dosen</li>
+              <li class="breadcrumb-item active" aria-current="page">Daftar Anak Wali per Dosen</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Daftar Anak Wali Per Dosen (Informatika)</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Daftar Anak Wali per Dosen</h4>
         </div>
 
       </div>
@@ -325,22 +325,20 @@
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
             <div class="d-flex justify-content-between">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Dosen Wali</div>
+              <div class="tx-medium align-middle col-2" style="padding-top: 7.5px;">Dosen Wali</div>
 
-              <form class="form-inline">
-                <select class="form-control selectdosen" style="width: 700px;">
+              <form class="form-inline d-sm-flex justify-content-end col-10">
+                <select class="form-control selectdosen  col-10">
                   <option label="Pilih Dosen"></option>
-                  <option value="1">Anton</option>
-                  <option value="2">Budi</option>
-                  <option value="3">Caca</option>
-                  <option value="4">Dimas</option>
+                  <option value="1">Anton (9 Mahasiswa Wali Terdaftar)</option>
+                  <option value="2">Budi (4 Mahasiswa Wali Terdaftar)</option>
+                  <option value="3">Caca (6 Mahasiswa Wali Terdaftar)</option>
+                  <option value="4">Dimas (2 Mahasiswa Wali Terdaftar)</option>
                 </select>
-                <a href="" class="btn btn-primary ml-2">Ganti</a>
+                <a href="" class="btn btn-primary ml-2">Tampilkan</a>
               </form>
             </div>
-
           </div>
-
         </div>
 
 
@@ -354,20 +352,6 @@
             </div>
 
             <div class="card-body">
-
-              <div class="d-sm-flex justify-content-center mb-3">
-                <form class="form-inline">
-                  <select class="form-control selectmhs" style="width: 400px;">
-                    <option label="Mahasiswa"></option>
-                    <option value="1">Anton</option>
-                    <option value="2">Budi</option>
-                    <option value="3">Caca</option>
-                    <option value="4">Dimas</option>
-                  </select>
-                  <a href="" class="btn btn-primary  ml-2">Tambahkan</a>
-                </form>
-              </div>
-
 
               <table id="tabelanakwali" class="table">
                 <thead>
@@ -385,7 +369,7 @@
                     <td class="text-center">05111640000009</td>
                     <td>Sal Zulal</td>
                     <td class="text-center align-middle"><button type="button" data-feather="trash-2"
-                        style="width:20px; height:20px;"></button>
+                        style="width:20px; height:20px;"></button></td>
                   </tr>
 
                   <tr>
@@ -393,12 +377,23 @@
                     <td class="text-center">05111640000009</td>
                     <td>Sal Zulal</td>
                     <td class="text-center align-middle"><button type="button" data-feather="trash-2"
-                        style="width:20px; height:20px;"></button>
+                        style="width:20px; height:20px;"></button></td>
                   </tr>
 
                 </tbody>
               </table>
 
+              <form class="form-inline d-sm-flex justify-content-center col-12 mb-3">
+                <select class="form-control selectmhs col-10">
+                  <option label="Mahasiswa"></option>
+                  <option value="1">Anton</option>
+                  <option value="2">Budi</option>
+                  <option value="3">Caca</option>
+                  <option value="4">Dimas</option>
+                </select>
+                <a href="#modal" class="btn btn-primary ml-2" data-toggle="modal">Tambahkan</a>
+
+              </form>
 
             </div><!-- card-body -->
 
@@ -414,64 +409,23 @@
   </div><!-- content -->
 
 
-
   <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content tx-14">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Tambah Data Anak Wali</h6>
+          <h6 class="modal-title" id="exampleModalLabel4">Menambahkan Mahasiswa Wali</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <div class="d-sm-flex justify-content-center mb-3">
-            <form class="form-inline">
-              <select class="form-control selectmhs" style="width: 400px;">
-                <option label="Mahasiswa"></option>
-                <option value="1">Anton</option>
-                <option value="2">Budi</option>
-                <option value="3">Caca</option>
-                <option value="4">Dimas</option>
-              </select>
-              <a href="" class="btn btn-primary  ml-2">Pilih</a>
-            </form>
-          </div>
-          <table id="tabelanakwali" class="table">
-            <thead>
-              <tr>
-                <th class="text-center" style="width: 10%;">No</th>
-                <th class="text-center" style="width: 25%;">NRP</th>
-                <th class="text-center">Nama</th>
-                <th class="text-center" style="width: 10%;">Batal</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td class="text-center">1</td>
-                <td class="text-center">05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center align-middle"><button type="button" data-feather="minus-circle"
-                    style="width:20px; height:20px;"></button>
-              </tr>
-
-              <tr>
-                <td class="text-center">3</td>
-                <td class="text-center">05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center align-middle"><button type="button" data-feather="minus-circle"
-                    style="width:20px; height:20px;"></button>
-              </tr>
-
-            </tbody>
-          </table>
-
+          <p>Mahasiswa dengan nama (...) tercatat sebagai mahasiswa wali dari dosen wali (...). Apakah yakin
+            memindahkannya ke dosen (...)?</p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary tx-13">Tambahkan</button>
+          <button type="button" class="btn btn-primary tx-13">Pindahkan</button>
         </div>
       </div>
     </div>

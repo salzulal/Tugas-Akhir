@@ -312,10 +312,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data Nilai Kuliah Per Mahasiswa</li>
+              <li class="breadcrumb-item active" aria-current="page">Hasil Evaluasi per Mahasiswa</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Data Nilai Kuliah Per Mahasiswa</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Hasil Evaluasi per Mahasiswa</h4>
         </div>
 
       </div>
@@ -357,7 +357,7 @@
           <div class="card mb-2">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
               <span>
-                <h5 class="tx-16">Perkuliahan pada: 2017/GENAP</h5>
+                <h5 class="tx-16">Perkuliahan pada: GENAP 2017/2018</h5>
               </span>
               <!-- <span>
                 <a href="#modal" class="btn btn-primary" data-toggle="modal">Ubah Data</a>
@@ -414,7 +414,7 @@
           <div class="card mb-2">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
               <span>
-                <h5 class="tx-16">Perkuliahan pada: 2017/GASAL</h5>
+                <h5 class="tx-16">Perkuliahan pada: GASAL 2017/2018</h5>
               </span>
               <!-- <span>
                 <a href="#modal" class="btn btn-primary" data-toggle="modal">Ubah Data</a>
@@ -503,9 +503,8 @@
                 <th class="text-center align-middle" style="width: 6%;">Kuis 1</th>
                 <th class="text-center align-middle" style="width: 6%;">Kuis 2</th>
                 <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.A.</th>
-                <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.Huruf</th>
-                <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.Ubah</th>
+                <th colspan="2" class="text-center align-middle">Sebelum</th>
+                <th colspan="2" class="text-center align-middle">Sesudah</th>
               </tr>
               <tr>
                 <th class="text-center">5 %</th>
@@ -516,6 +515,10 @@
                 <th class="text-center">15 %</th>
                 <th class="text-center">15 %</th>
                 <th class="text-center">20 %</th>
+                <th class="text-center">N.A.</th>
+                <th class="text-center">N.H.</th>
+                <th class="text-center">N.A.</th>
+                <th class="text-center">N.H.</th>
               </tr>
             </thead>
 
@@ -540,8 +543,9 @@
                 <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
                     value="50"></td>
                 <td class="text-center align-middle">2.0</td>
-                <td class="text-center align-middle">A</td>
                 <td class="text-center align-middle">E</td>
+                <td class="text-center align-middle"></td>
+                <td class="text-center align-middle"></td>
               </tr>
             </tbody>
           </table>
@@ -549,7 +553,8 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary tx-13">Selesai</button>
+          <button type="button" class="btn btn-secondary">Batal</button>
+          <button type="button" class="btn btn-primary">Simpan</button>
         </div>
       </div>
     </div>

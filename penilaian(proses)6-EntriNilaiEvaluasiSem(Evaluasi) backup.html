@@ -304,6 +304,7 @@
   </header><!-- navbar -->
 
 
+
   <div class="content content-fixed">
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
       <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
@@ -311,10 +312,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data Nilai Huruf Mahasiswa</li>
+              <li class="breadcrumb-item active" aria-current="page">Evaluasi Pembelajaran</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Data Nilai Huruf Mahasiswa</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Evaluasi Pembelajaran</h4>
         </div>
 
       </div>
@@ -358,6 +359,203 @@
             </div> <!-- row -->
           </div> <!-- cardbody -->
         </div>
+
+        <div class="col-lg-10">
+          <div class="alert alert-warning" role="alert">
+            <ul style="list-style-type:circle; margin: 0px;">
+              <li>Sebelum mengisi nilai masing-masing mahasiswa, anda harus mengisi
+                komposisi dan asesmen yang akan anda berikan pada form berikut ini.</li>
+              <li>Komposisi harus diisi minimal sesuai dengan peraturan akademik
+                tahun
+                2009 pasal 18 ayat 1.</li>
+              <li>Jumlah total persentase harus 100%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-10 mb-3">
+          <div class="card">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
+              <div class="card-body">
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="text-center">No</th>
+                      <th class="text-center">Asesmen</th>
+                      <th class="text-center">CP MK yang Terpenuhi</th>
+                      <th class="text-center" style="width: 15%;">Bobot (%)</th>
+                      <th class="text-center"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-center align-middle">1</td>
+                      <td><input type="text" class="form-control" value="Kehadiran"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="5"></td>
+
+                      <td class="text-center align-middle"><button type="button" class="ibtnDel" data-feather="trash-2"
+                          style="width:20px; height:20px;"></button></td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center align-middle">2</td>
+                      <td><input type="text" class="form-control" value="Sikap"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="5"></td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center align-middle">3</td>
+                      <td><input type="text" class="form-control" value="Tugas 1"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="10"></td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center align-middle">4</td>
+                      <td><input type="text" class="form-control" value="Tugas Kelompok 1"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="10"></td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center align-middle">5</td>
+                      <td><input type="text" class="form-control" value="ETS"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="20"></td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center align-middle">6</td>
+                      <td><input type="text" class="form-control" value="Kuis 1"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="15"></td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center align-middle">7</td>
+                      <td><input type="text" class="form-control" value="Kuis 2"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="15"></td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center align-middle">8</td>
+                      <td><input type="text" class="form-control" value="EAS"></td>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option disabled selected>Pilih Sub CP</option>
+                          <option value="1">Sub CP MK 1.1</option>
+                          <option value="2">Sub CP MK 1.2</option>
+                          <option value="3">Sub CP MK 2.1</option>
+                          <option value="4">Sub CP MK 2.2</option>
+                          <option value="5">Sub CP MK 2.3</option>
+                          <option value="6">Sub CP MK 3.1</option>
+                          <option value="7">...</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control" value="20"></td>
+                    </tr>
+
+                  </tbody>
+
+                  <tfoot>
+                    <tr>
+                      <th class="text-center"></th>
+                      <th class="text-center"></th>
+                      <th class="text-right">Total Bobot (%):</th>
+                      <th class="text-center">100</th>
+                    </tr>
+                  </tfoot>
+                </table>
+
+
+              </div><!-- card-body -->
+            </div><!-- col -->
+          </div>
+        </div><!-- row -->
+
         <div class="col-lg-12 mb-3">
           <div class="card">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
@@ -394,7 +592,6 @@
                       <th class="text-center">N.H.</th>
                     </tr>
                   </thead>
-
                   <tbody>
                     <tr>
                       <td class="text-center align-middle">01111440000017</td>
@@ -554,7 +751,7 @@
                 <div class="d-flex justify-content-between mt-2">
                   <a href="" class="btn btn-outline-primary ">Unduh <i>template</i> berkas</a>
 
-                  <form class="form-inline d-flex justify-content-end col-8 pd-0">
+                  <form class="form-inline d-flex justify-content-end col-8">
                     <div class="custom-file col-6">
                       <input type="file" class="custom-file-input" id="customFile">
                       <label class="custom-file-label" for="customFile">Pilih Berkas</label>
@@ -563,13 +760,68 @@
                   </form>
                 </div>
 
+                <hr class="mb-0 mt-3">
+
 
               </div>
             </div>
-            <div class="d-flex justify-content-end bg-gray-200">
+            <div class="d-flex justify-content-end bg-gray-100">
               <form class="form-inline mr-4">
                 <a href="" class="btn btn-primary m-3">Simpan Nilai Permanen</a>
               </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-10 mb-3">
+          <div class="card bg-gray-100">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <h5 class="tx-16">Statistik</h5>
+            </div>
+            <div class="card-body" style="padding-top: 0px;">
+              <div class="row">
+                <div class="col-lg-6">
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium">Nilai Minimum</span>
+                    <span class="">0</span>
+                  </li>
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium ">Nilai Maksimum</span>
+                    <span class="">0</span>
+                  </li>
+                </div>
+
+                <div class="col-lg-6">
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium">Rata-rata</span>
+                    <span class="">0 (0)</span>
+                  </li>
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium ">Standar Deviasi</span>
+                    <span class="">0</span>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-10 mb-3">
+          <div class="card bg-gray-100">
+            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+              <h5 class="tx-16">Distribusi Nilai</h5>
+            </div>
+
+            <div class="card-body" style="padding-top: 0px;">
+              <div class="text-right">Total Data: <b>40</b></div>
+
+              <canvas id="myChart" width="100" height="35"></canvas>
+
+              <div class="text-center mt-2">
+                <medium>A: 86-100; AB: 76-85; B: 66-75; BC: 61-65; C: 56-60; D: 41-55; E:
+                  0-40</medium>
+              </div>
+
             </div>
           </div>
         </div>
@@ -622,10 +874,14 @@
         }
       });
 
-
-
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
+
+
+
     });
+
+
   </script>
 </body>
 
