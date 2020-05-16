@@ -324,12 +324,12 @@
 
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
-            <div class="d-flex justify-content-between mb-3">
-              <div class="tx-medium align-middle col-2" style="padding-top: 7.5px;">Dosen Wali</div>
+            <div class="d-flex justify-content-between mb-3 col-12">
+              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Dosen Wali</div>
 
-              <form class="form-inline d-sm-flex justify-content-end col-10">
+              <form class="form-inline d-sm-flex justify-content-end" style="width: 90%;">
                 <select class="form-control selectdosen  col-12">
-                  <option label="Pilih Dosen"></option>
+                  <option label="Contoh: (?)"></option>
 
                   <option value="1">Anton</option>
                   <option value="2">Budi</option>
@@ -339,10 +339,10 @@
               </form>
             </div>
 
-            <div class="col-12 d-sm-flex justify-content-between">
-              <div class="d-flex justify-content-start col-5 pd-0">
-                <div class="tx-medium align-middle mr-4" style="padding-top: 7.5px;">Angkatan</div>
-                <select class="form-control selectbiasa col-10">
+            <div class="d-flex justify-content-between col-12">
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Angkatan</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
                   <option selected>2018</option>
                   <option value="1">2017</option>
                   <option value="2">2018</option>
@@ -350,9 +350,9 @@
                 </select>
               </div>
 
-              <div class="d-flex justify-content-start col-5 pd-0">
-                <div class="tx-medium align-middle mr-4" style="padding-top: 7.5px; ">Periode</div>
-                <select class="form-control selectbiasa col-10">
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle text-center" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
                   <option value="1" selected> Gasal 2019/2020</option>
                   <option value="2">Genap 2018/2019</option>
                   <option value="3">Gasal 2018/2019</option>
@@ -360,8 +360,8 @@
                 </select>
               </div>
 
-              <div>
-                <a href="" class="btn btn-primary">Tampilkan</a>
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
               </div>
             </div>
 
@@ -413,18 +413,16 @@
               </table>
 
 
-            </div><!-- card-body -->
+            </div>
 
-          </div><!-- col -->
-          <br>
+          </div>
         </div>
 
 
-      </div><!-- row -->
-
-    </div><!-- row -->
-  </div><!-- container -->
-  </div><!-- content -->
+      </div>
+    </div>
+  </div>
+  </div>
 
 
 
@@ -792,27 +790,12 @@
     $(function () {
       'use strict'
 
-      $('.selectdosen').select2({
-        placeholder: 'Pilih Dosen',
-      });
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
-
-
-      // $('#tabelanakwali').dataTable({
-      //   // responsive: true,
-      //   paging: false,
-      //   bInfo: false,
-      //   searching: false,
-
-      //   "columns": [
-      //     { "orderable": false },
-      //     { "orderable": true },
-      //     { "orderable": false },
-      //     { "orderable": false }
-      //   ]
-      // });
+      $('.selectdosen').select2({
+        placeholder: 'Contoh: (?)',
+      });
 
 
 

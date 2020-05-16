@@ -304,8 +304,6 @@
     </div><!-- navbar-search -->
   </header><!-- navbar -->
 
-
-
   <div class="content content-fixed">
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
       <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
@@ -361,11 +359,13 @@
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
 
-            <div class="d-flex justify-content-between mb-2">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Mahasiswa</div>
-              <div class="wd-md-80p">
-                <select class="form-control selectmhs">
-                  <option label="Pilih Mahasiswa"></option>
+            <div class="d-flex justify-content-between col-12 pd-0 mb-2">
+              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Mahasiswa</div>
+
+              <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
+                <select class="form-control selectmhs col-12">
+                  <option label="Contoh: 05111640000009 - Sal Zulal"></option>
+
                   <option value="1">05111640000009 - Sal Zulal</option>
                   <option value="2">05111640000010 - Faridatul Nur Aidah</option>
                   <option value="3">05111640000011 - Dandy Naufaldi</option>
@@ -373,9 +373,13 @@
                   <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
                   <option value="6">05111640000014 - Nuzha Musyarifa</option>
                 </select>
+              </form>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Ganti</a>
               </div>
-              <a href="" class="btn btn-primary">Ganti</a>
             </div>
+
             <hr class="mb-2 mt-0">
 
             <div class="row">
@@ -405,9 +409,9 @@
 
               <div class="col-lg-6">
                 <li class="d-flex justify-content-between">
-                  <span class="tx-medium mt-2">Semester</span>
+                  <span class="tx-medium mt-2">Periode</span>
                   <span>
-                    <div class="wd-md-175p">
+                    <div>
                       <select class="form-control selectsmt">
                         <option value="1" selected> Gasal 2019/2020</option>
                         <option value="2">Genap 2018/2019</option>
@@ -435,8 +439,8 @@
                 </li>
               </div>
 
-            </div> <!-- row -->
-          </div> <!-- cardbody -->
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-10 d-flex justify-content-between mb-3">
@@ -554,149 +558,13 @@
 
             </div>
 
-          </div><!-- card-body -->
-        </div><!-- col -->
+          </div>
+        </div>
       </div>
 
-      <!-- <div class="col-lg-10 mb-2">
-          <div class="card bg-white">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <div class="mg-b-10 mg-sm-b-0">
-                <h5 class="mg-b-5 tx-16">Pilihan Kelas dalam Antrian</h5>
-              </div>
-            </div>
-
-            <div class="card-body">
-
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center">Kode</th>
-                    <th class="text-center">Mata Kuliah</th>
-                    <th class="text-center">SKS</th>
-                    <th class="text-center">Kelas</th>
-                    <th class="text-center">Dosen</th>
-                    <th class="text-center">Kuota</th>
-                    <th class="text-center">Status</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td>KI141301</td>
-                    <td>Dasar Pemrograman</td>
-                    <td class="text-center">4</td>
-                    <td class="text-center">
-                      C
-                    </td>
-                    <td>Dwi Sunaryono, S.Kom., M.Kom. </td>
-                    <td class="text-center">40</td>
-                    <td class="text-center">
-                      <span style="display:inline-block; width:90px" class="badge badge-warning">Dalam Antrian</span>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>KI141302</td>
-                    <td>Matematika Diskrit</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">
-                      A
-                    </td>
-                    <td>Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center">40</td>
-                    <td class="text-center">
-                      <span style="display:inline-block; width:90px" class="badge badge-warning">Dalam Antrian</span>
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div> -->
-
-      <!-- <div class="col-lg-10 mb-2">
-          <div class="d-flex justify-content-center">
-            <a href="#modalriwayat" class="btn btn-link btn-block" data-toggle="modal">Lihat Seluruh Riwayat Pemilihan
-              Kelas</a>
-          </div>
-        </div> -->
-
-
-      <!-- <div class="col-lg-10 mb-3">
-          <div class="card bg-white">
-            <div class="card-body bg-gray-100">
-
-              <div class="d-flex mb-2">
-                <div class="tx-medium align-middle mr-auto" style="padding-top: 7.5px;">Kelas Dep.</div>
-                <div class="wd-md-60p mr-2">
-                  <select class="form-control selectkelas">
-                    <option label="Pilih Kelas"></option>
-                    <option value="1">IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
-                    <option value="2">IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
-                    <option value="3">IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
-                    <option value="4">IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
-                    <option value="5">IF184101 Dasar Pemrograman (4) _ 19/30</option>
-                  </select>
-                </div>
-                <a href="" class="btn btn-primary mr-2">Ambil</a>
-                <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
-                  data-dismiss="modal">Peserta</a>
-              </div>
-
-              <div class="d-flex mb-2">
-                <div class="tx-medium align-middle mr-auto" style="padding-top: 7.5px;">Kelas UPMB</div>
-                <div class="wd-md-60p mr-2">
-                  <select class="form-control selectkelas">
-                    <option label="Pilih Kelas"></option>
-                    <option value="1">UG184905 Agama Buddha (2)</option>
-                    <option value="2">UG184905 Agama Buddha (2)</option>
-                    <option value="3">UG184905 Agama Buddha (2)</option>
-                    <option value="4">UG184905 Agama Buddha (2)</option>
-                    <option value="5">UG184905 Agama Buddha (2)</option>
-                  </select>
-                </div>
-                <a href="" class="btn btn-primary mr-2">Ambil</a>
-                <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
-                  data-dismiss="modal">Peserta</a>
-              </div>
-
-              <divclass="wd-md-60p class="d-flex mb-2">
-                <div class="tx-medium align-middle mr-auto" style="padding-top: 7.5px;">Kelas Pengayaan</div>
-                <div class="wd-md-60p mr-2">
-                  <select class="form-control selectkelas">
-                    <option label="Pilih Kelas"></option>
-                    <option value="1">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
-                      FTIK</option>
-                    <option value="2">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
-                      FTIK</option>
-                    <option value="3">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
-                      FTIK</option>
-                    <option value="4">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
-                      FTIK</option>
-                    <option value="5">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
-                      FTIK</option>
-                  </select>
-                </div>
-                <a href="" class="btn btn-primary mr-2">Ambil</a>
-                <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
-                  data-dismiss="modal">Peserta</a>
-            </div>
-          </div> -->
-
-
-
-
-
-    </div><!-- card-body -->
-  </div><!-- col -->
-  </div>
-
-  </div>
-  </div><!-- row -->
-  </div><!-- container -->
+    </div><!-- container -->
   </div><!-- content -->
+
 
   <div class="modal fade" id="modalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
     aria-hidden="true">
@@ -723,18 +591,18 @@
 
             <tbody>
               <tr>
-                <td>IF184802</td>
-                <td>Dasar Pemrograman</td>
-                <td class="text-center">4</td>
-                <td class="text-center">C</td>
-                <td class="text-center">A</td>
+                <td class="text-center align-middle">KI141301</td>
+                <td class="align-middle">Dasar Pemrograman</td>
+                <td class="text-center align-middle">4</td>
+                <td class="text-center align-middle">C</td>
+                <td class="text-center align-middle">A</td>
               </tr>
               <tr>
-                <td>IF184802</td>
-                <td>Matematika Diskrit</td>
-                <td class="text-center">4</td>
-                <td class="text-center">C</td>
-                <td class="text-center">A</td>
+                <td class="text-center align-middle">KI141301</td>
+                <td class="align-middle">Matematika Diskrit</td>
+                <td class="text-center align-middle">4</td>
+                <td class="text-center align-middle">C</td>
+                <td class="text-center align-middle">A</td>
               </tr>
             </tbody>
           </table>
@@ -771,47 +639,38 @@
 
             <tbody>
               <tr>
-                <td>KI141301</td>
-                <td>Dasar Pemrograman</td>
-                <td class="text-center">4</td>
-                <td class="text-center">
-                  C
-                </td>
-                <td>Dwi Sunaryono, S.Kom., M.Kom. </td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-warning">Dalam Antrian</span>
+                <td class="text-center align-middle">KI141301</td>
+                <td class="align-middle">Dasar Pemrograman</td>
+                <td class="text-center align-middle">4</td>
+                <td class="text-center align-middle">C</td>
+                <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom.</td>
+                <td class="text-center align-middle">40</td>
+                <td class="text-center align-middle">
+                  <span style="display:inline-block; width:90px" class="badge badge-warning">Dalam Antrian</span>
                 </td>
               </tr>
-
               <tr>
-                <td>KI141302</td>
-                <td>Matematika Diskrit</td>
-                <td class="text-center">3</td>
-                <td class="text-center">
-                  A
-                </td>
-                <td>Ir. Esther Hanaya, M.Sc</td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-danger">Gagal</span>
+                <td class="text-center align-middle">KI141302</td>
+                <td class="align-middle">Matematika Diskrit</td>
+                <td class="text-center align-middle">3</td>
+                <td class="text-center align-middle">A</td>
+                <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
+                <td class="text-center align-middle">40</td>
+                <td class="text-center align-middle">
+                  <span style="display:inline-block; width:90px" class="badge badge-danger">Gagal</span>
                 </td>
               </tr>
-
               <tr>
-                <td>KI141302</td>
-                <td>Matematika Diskrit</td>
-                <td class="text-center">3</td>
-                <td class="text-center">
-                  A
-                </td>
-                <td>Ir. Esther Hanaya, M.Sc</td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-success">Berhasil</span>
+                <td class="text-center align-middle">KI141302</td>
+                <td class="align-middle">Matematika Diskrit</td>
+                <td class="text-center align-middle">3</td>
+                <td class="text-center align-middle">A</td>
+                <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
+                <td class="text-center align-middle">40</td>
+                <td class="text-center align-middle">
+                  <span style="display:inline-block; width:90px" class="badge badge-success">Berhasil</span>
                 </td>
               </tr>
-
             </tbody>
           </table>
 
@@ -847,14 +706,14 @@
             <tbody>
               <tr>
                 <td class="text-center">1</td>
-                <td>05111640000009</td>
+                <td class="text-center">05111640000009</td>
                 <td>Sal Zulal</td>
                 <td class="text-center">19 Maret 2020 - 13.50</td>
               </tr>
 
               <tr>
                 <td class="text-center">2</td>
-                <td>05111640000009</td>
+                <td class="text-center">05111640000009</td>
                 <td>Sal Zulal</td>
                 <td class="text-center">19 Maret 2020 - 13.51</td>
               </tr>
@@ -865,7 +724,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -890,13 +748,7 @@
       });
 
       $('.selectmhs').select2({
-        placeholder: 'NRP - Nama',
-        searchInputPlaceholder: 'Cari Mahasiswa'
-      });
-
-      $('.selectkelas').select2({
-        placeholder: 'Pilih Kelas',
-        searchInputPlaceholder: 'Cari Kelas'
+        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
       });
 
     });

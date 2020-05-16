@@ -324,12 +324,12 @@
 
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
-            <div class="d-flex justify-content-between">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Mahasiswa</div>
+            <div class="d-flex justify-content-between col-12">
+              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Mahasiswa</div>
 
-              <form class="form-inline">
-                <select class="form-control selectmhs" style="width: 700px;">
-                  <option label="Pilih Mahasiswa"></option>
+              <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
+                <select class="form-control selectmhs  col-12">
+                  <option label="Contoh: 05111640000009 - Sal Zulal"></option>
                   <option value="1">05111640000009 - Sal Zulal</option>
                   <option value="2">05111640000010 - Faridatul Nur Aidah</option>
                   <option value="3">05111640000011 - Dandy Naufaldi</option>
@@ -337,13 +337,16 @@
                   <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
                   <option value="6">05111640000014 - Nuzha Musyarifa</option>
                 </select>
-                <a href="" class="btn btn-primary ml-2">Tampilkan</a>
               </form>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+              </div>
             </div>
-
           </div>
-
         </div>
+
+
 
 
         <div class="col-lg-10">
@@ -380,7 +383,7 @@
                 </tbody>
               </table>
 
-            </div><!-- card-body -->
+            </div>
           </div>
           <div class="card">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
@@ -415,16 +418,12 @@
                 </tbody>
               </table>
 
-            </div><!-- card-body -->
-          </div><!-- col -->
+            </div>
+          </div>
         </div>
-      </div><!-- row -->
-
-
-
-    </div><!-- row -->
-  </div><!-- container -->
-  </div><!-- content -->
+      </div>
+    </div>
+  </div>
 
 
 
@@ -450,25 +449,8 @@
       });
 
       $('.selectmhs').select2({
-        placeholder: 'NRP - Nama Mahasiswa',
+        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
       });
-
-
-      // $('#tabelanakwali').dataTable({
-      //   // responsive: true,
-      //   paging: false,
-      //   bInfo: false,
-      //   searching: false,
-      //   order: false,
-
-      //   "columns": [
-      //     { "orderable": false },
-      //     { "orderable": false },
-      //     { "orderable": false },
-      //     { "orderable": false }
-      //   ]
-      // });
-
 
 
       // Select2

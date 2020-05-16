@@ -325,23 +325,28 @@
 
         <div class="col-lg-6 mb-3">
           <div class="card card-body bg-gray-100">
-            <div class="d-flex justify-content-center">
-              <div class="tx-medium align-middle mr-5" style="padding-top: 7.5px; ">Periode</div>
-              <form class="form-inline">
-                <select class="form-control selectbiasa" style="width: 175px;">
+
+            <div class="d-flex justify-content-between col-12">
+
+              <div class="d-flex justify-content-between" style="width: 70%;">
+                <div class="tx-medium align-middle text-center" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
                   <option value="1" selected> Gasal 2019/2020</option>
                   <option value="2">Genap 2018/2019</option>
                   <option value="3">Gasal 2018/2019</option>
                   <option value="4">Genap 2017/2018</option>
                 </select>
-                <a href="" class="btn btn-primary ml-2">Tampilkan</a>
-              </form>
+              </div>
+
+              <div class="d-flex justify-content-end" style="width: 30%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-10">
-          <div class="alert alert-warning text-center" role="alert">
+          <div class="alert alert-primary text-center" role="alert">
 
             <b>DIF</b> : Jarak antara pengumpulan nilai dengan waktu ujian (hari)<br>
             <span class="bg-success" style="width: 50px;">&emsp;&emsp;</span>: DIF antara 0 sampai 7<br>
@@ -357,16 +362,16 @@
               <table id="tabel" class="table">
                 <thead>
                   <tr>
-                    <th class="text-center">Kode MK</th>
-                    <th class="text-center">Mata Kuliah</th>
-                    <th class="text-center">Kelas</th>
-                    <th class="text-center">NIP</th>
-                    <th class="text-center">Dosen</th>
-                    <th class="text-center">Simpan</th>
-                    <th class="text-center">Ujian</th>
-                    <th class="text-center">DIF</th>
-                    <th class="text-center">Permanen</th>
-                    <th class="text-center">Verifier</th>
+                    <th class="text-center align-middle">Kode MK</th>
+                    <th class="text-center align-middle">Mata Kuliah</th>
+                    <th class="text-center align-middle">Kelas</th>
+                    <th class="text-center align-middle">NIP</th>
+                    <th class="text-center align-middle">Dosen</th>
+                    <th class="text-center align-middle">Simpan</th>
+                    <th class="text-center align-middle">Ujian</th>
+                    <th class="text-center align-middle">DIF</th>
+                    <th class="text-center align-middle">Permanen</th>
+                    <th class="text-center align-middle">Verifier</th>
                   </tr>
                 </thead>
 
@@ -402,18 +407,16 @@
               </table>
 
 
-            </div><!-- card-body -->
+            </div>
 
-          </div><!-- col -->
-          <br>
+          </div>
         </div>
 
 
-      </div><!-- row -->
+      </div>
 
-    </div><!-- row -->
-  </div><!-- container -->
-  </div><!-- content -->
+    </div>
+  </div>
 
 
 
@@ -436,13 +439,6 @@
 
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
-      });
-
-      $('.selectdosen').select2({
-        placeholder: 'Pilih Dosen',
-      });
-      $('.selectmhs').select2({
-        placeholder: 'NRP - Nama Mahasiswa',
       });
 
 

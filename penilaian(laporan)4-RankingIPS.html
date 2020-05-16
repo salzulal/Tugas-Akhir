@@ -306,6 +306,7 @@
 
 
   <div class="content content-fixed">
+
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
       <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
         <div>
@@ -322,46 +323,36 @@
 
       <div class="row row-xs justify-content-center">
 
-
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
-            <div class="row">
 
-              <div class="col-lg-5">
-                <div class="d-flex justify-content-between">
-                  <div class="tx-medium align-middle" style="padding-top: 7.5px;">Angkatan</div>
-                  <select class="form-control selectbiasa" style="width: 175px;">
-                    <option selected>2018</option>
-                    <option value="1">2017</option>
-                    <option value="2">2018</option>
-                    <option value="3">2019</option>
-                  </select>
-                </div>
+            <div class="d-flex justify-content-between col-12">
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Angkatan</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option selected>2018</option>
+                  <option value="1">2017</option>
+                  <option value="2">2018</option>
+                  <option value="3">2019</option>
+                </select>
               </div>
 
-              <div class="col-lg-5">
-                <div class="d-flex justify-content-between">
-                  <div class="tx-medium align-middle" style="padding-top: 7.5px; ">Periode</div>
-                  <form class="form-inline">
-                    <select class="form-control selectbiasa" style="width: 175px;">
-                      <option value="1" selected> Gasal 2019/2020</option>
-                      <option value="2">Genap 2018/2019</option>
-                      <option value="3">Gasal 2018/2019</option>
-                      <option value="4">Genap 2017/2018</option>
-                    </select>
-                  </form>
-                </div>
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle text-center" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option value="1" selected> Gasal 2019/2020</option>
+                  <option value="2">Genap 2018/2019</option>
+                  <option value="3">Gasal 2018/2019</option>
+                  <option value="4">Genap 2017/2018</option>
+                </select>
               </div>
-              <div class="col-lg-2">
-                <div class="d-flex justify-content-end">
-                  <a href="" class="btn btn-primary ml-2">Tampilkan</a>
-                </div>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
               </div>
             </div>
           </div>
-
         </div>
-
 
         <div class="col-lg-10">
           <div class="card">
@@ -397,18 +388,16 @@
               </table>
 
 
-            </div><!-- card-body -->
+            </div>
 
-          </div><!-- col -->
-          <br>
+          </div>
         </div>
 
 
-      </div><!-- row -->
 
-    </div><!-- row -->
-  </div><!-- container -->
-  </div><!-- content -->
+      </div>
+    </div>
+  </div>
 
 
 
@@ -433,12 +422,6 @@
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectdosen').select2({
-        placeholder: 'Pilih Dosen',
-      });
-      $('.selectmhs').select2({
-        placeholder: 'NRP - Nama Mahasiswa',
-      });
 
 
       $('#tabelranking').dataTable({

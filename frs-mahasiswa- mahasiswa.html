@@ -361,22 +361,6 @@
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
 
-            <!-- <div class="d-flex justify-content-between mb-2">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px;">Mahasiswa</div>
-              <div class="wd-md-80p">
-                <select class="form-control selectmhs">
-                  <option label="Pilih Mahasiswa"></option>
-                  <option value="1">05111640000009 - Sal Zulal</option>
-                  <option value="2">05111640000010 - Faridatul Nur Aidah</option>
-                  <option value="3">05111640000011 - Dandy Naufaldi</option>
-                  <option value="4">05111640000012 - Raden Teja Kusuma</option>
-                  <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
-                  <option value="6">05111640000014 - Nuzha Musyarifa</option>
-                </select>
-              </div>
-              <a href="" class="btn btn-primary">Ganti</a>
-            </div>
-            <hr class="mb-2 mt-0"> -->
 
             <div class="row">
               <div class="col-lg-6">
@@ -405,9 +389,9 @@
 
               <div class="col-lg-6">
                 <li class="d-flex justify-content-between">
-                  <span class="tx-medium mt-2">Semester</span>
+                  <span class="tx-medium mt-2">Periode</span>
                   <span>
-                    <div class="wd-md-175p">
+                    <div class="">
                       <select class="form-control selectsmt">
                         <option value="1" selected> Gasal 2019/2020</option>
                         <option value="2">Genap 2018/2019</option>
@@ -435,8 +419,8 @@
                 </li>
               </div>
 
-            </div> <!-- row -->
-          </div> <!-- cardbody -->
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-10 d-flex justify-content-between mb-3">
@@ -469,7 +453,7 @@
                     <th class="text-center">SKS</th>
                     <th class="text-center">Kelas</th>
                     <th class="text-center">Dosen</th>
-                    <th class="text-center">Nilai</th>
+                    <th class="text-center"></th>
                   </tr>
                 </thead>
 
@@ -480,7 +464,7 @@
                     <td class="text-center align-middle">4</td>
                     <td class="text-center align-middle">C</td>
                     <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom. </td>
-                    <td class="align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
+                    <td class="text-center align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
                   </tr>
 
                   <tr>
@@ -489,7 +473,7 @@
                     <td class="text-center align-middle">3</td>
                     <td class="text-center align-middle">A</td>
                     <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
+                    <td class="text-center align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
                   </tr>
 
                   <tr class="bg-gray-100">
@@ -500,7 +484,7 @@
                     <td class="text-center align-middle">3</td>
                     <td class="text-center align-middle">A</td>
                     <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
+                    <td class="text-center align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
                   </tr>
 
                   <tr>
@@ -511,7 +495,7 @@
                     <td class="text-center align-middle">3</td>
                     <td class="text-center align-middle">A</td>
                     <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
+                    <td class="text-center align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
                   </tr>
 
                   <tr>
@@ -522,7 +506,7 @@
                     <td class="text-center align-middle">3</td>
                     <td class="text-center align-middle">A</td>
                     <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
+                    <td class="text-center align-middle"><a href="#" class="text-danger text-bold">Batalkan</a></td>
                   </tr>
                 </tbody>
                 <tfoot>
@@ -542,8 +526,8 @@
               </div>
 
 
-            </div><!-- card-body -->
-          </div><!-- col -->
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-10 mb-2">
@@ -594,8 +578,8 @@
 
                 </tbody>
               </table>
-            </div><!-- card-body -->
-          </div><!-- col -->
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-10 mb-2">
@@ -610,45 +594,54 @@
           <div class="card bg-white">
             <div class="card-body bg-gray-100">
 
-              <div class="d-flex mb-2">
-                <div class="tx-medium align-middle mr-auto" style="padding-top: 7.5px;">Kelas Dep.</div>
-                <div class="wd-md-60p mr-2">
-                  <select class="form-control selectkelas">
-                    <option label="Pilih Kelas"></option>
+              <div class="d-flex justify-content-between col-12 pd-0 mb-2">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 20%;">Kelas Dep.</div>
+
+                <form class="form-inline d-sm-flex justify-content-end" style="width: 60%;">
+                  <select class="form-control selectkelas col-12">
+                    <option label="Contoh: AA000001 Bahasa Indonesia"></option>
                     <option value="1">IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
                     <option value="2">IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
                     <option value="3">IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
                     <option value="4">IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
                     <option value="5">IF184101 Dasar Pemrograman (4) _ 19/30</option>
                   </select>
+                </form>
+
+                <div class="d-flex justify-content-end" style="width: 20%">
+                  <a href="" class="btn btn-primary mr-2">Ambil</a>
+                  <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
+                    data-dismiss="modal">Peserta</a>
                 </div>
-                <a href="" class="btn btn-primary mr-2">Ambil</a>
-                <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
-                  data-dismiss="modal">Peserta</a>
               </div>
 
-              <div class="d-flex mb-2">
-                <div class="tx-medium align-middle mr-auto" style="padding-top: 7.5px;">Kelas UPMB</div>
-                <div class="wd-md-60p mr-2">
-                  <select class="form-control selectkelas">
-                    <option label="Pilih Kelas"></option>
+              <div class="d-flex justify-content-between col-12 pd-0 mb-2">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 20%;">Kelas UPMB</div>
+
+                <form class="form-inline d-sm-flex justify-content-end" style="width: 60%;">
+                  <select class="form-control selectkelas col-12">
+                    <option label="Contoh: AA000001 Bahasa Indonesia"></option>
                     <option value="1">UG184905 Agama Buddha (2)</option>
                     <option value="2">UG184905 Agama Buddha (2)</option>
                     <option value="3">UG184905 Agama Buddha (2)</option>
                     <option value="4">UG184905 Agama Buddha (2)</option>
                     <option value="5">UG184905 Agama Buddha (2)</option>
                   </select>
+                </form>
+
+                <div class="d-flex justify-content-end" style="width: 20%">
+                  <a href="" class="btn btn-primary mr-2">Ambil</a>
+                  <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
+                    data-dismiss="modal">Peserta</a>
                 </div>
-                <a href="" class="btn btn-primary mr-2">Ambil</a>
-                <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
-                  data-dismiss="modal">Peserta</a>
               </div>
 
-              <divclass="wd-md-60p class="d-flex mb-2">
-                <div class="tx-medium align-middle mr-auto" style="padding-top: 7.5px;">Kelas Pengayaan</div>
-                <div class="wd-md-60p mr-2">
-                  <select class="form-control selectkelas">
-                    <option label="Pilih Kelas"></option>
+              <div class="d-flex justify-content-between col-12 pd-0 mb-2">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 20%;">Kelas Pengayaan</div>
+
+                <form class="form-inline d-sm-flex justify-content-end" style="width: 60%;">
+                  <select class="form-control selectkelas col-12">
+                    <option label="Contoh: AA000001 Bahasa Indonesia"></option>
                     <option value="1">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
                       FTIK</option>
                     <option value="2">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
@@ -660,10 +653,16 @@
                     <option value="5">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik Informatika
                       FTIK</option>
                   </select>
+                </form>
+
+                <div class="d-flex justify-content-end" style="width: 20%">
+                  <a href="" class="btn btn-primary mr-2">Ambil</a>
+                  <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
+                    data-dismiss="modal">Peserta</a>
                 </div>
-                <a href="" class="btn btn-primary mr-2">Ambil</a>
-                <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalpeserta"
-                  data-dismiss="modal">Peserta</a>
+              </div>
+
+
             </div>
           </div>
 
@@ -671,13 +670,9 @@
 
 
 
-        </div><!-- card-body -->
-      </div><!-- col -->
-    </div>
-
-  </div>
-  </div><!-- row -->
-  </div><!-- container -->
+        </div>
+      </div>
+    </div><!-- container -->
   </div><!-- content -->
 
   <div class="modal fade" id="modalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
@@ -858,20 +853,13 @@
 
       // Select2
 
+
       $('.selectsmt').select2({
         minimumResultsForSearch: Infinity
       });
-
-      $('.selectmhs').select2({
-        placeholder: 'NRP - Nama',
-        searchInputPlaceholder: 'Cari Mahasiswa'
-      });
-
       $('.selectkelas').select2({
-        placeholder: 'Pilih Kelas',
-        searchInputPlaceholder: 'Cari Kelas'
+        placeholder: 'Contoh: AA000001 Bahasa Indonesia',
       });
-
     });
   </script>
 </body>

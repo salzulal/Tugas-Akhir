@@ -43,11 +43,12 @@
   <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
   <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
   <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+  <link href="../../lib/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet">
+
 
   <!-- DashForge CSS -->
   <link rel="stylesheet" href="../../assets/css/dashforge.css">
   <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
-
 
 </head>
 
@@ -313,390 +314,119 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Formulir Rencana Studi</li>
+              <li class="breadcrumb-item active" aria-current="page">Pengaturan Jadwal FRS</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Formulir Rencana Studi</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Pengaturan Jadwal FRS</h4>
         </div>
 
       </div>
 
       <div class="row row-xs justify-content-center">
 
-        <div class="col-lg-10 mb-4 d-flex justify-content-center">
 
-          <ul class="steps">
-            <li class="step-item disabled">
-              <div class="step-link">
-                <span class="step-icon"><i data-feather="file-plus"></i></span>
-                <div>
-                  <span class="step-title">Masa Pengisian</span>
-                  <span class="step-desc">27 Januari 2020 - 31 Januari 2020</span>
-                </div>
-              </div>
-            </li>
-            <li class="step-item disabled">
-              <div class="step-link">
-                <span class="step-icon"><i data-feather="edit-2"></i></span>
-                <div>
-                  <span class="step-title">Masa Perubahan</span>
-                  <span class="step-desc">1 Februari - 21 Februari</span>
-                </div>
-              </div>
-            </li>
-            <li class="step-item active">
-              <div class="step-link">
-                <span class="step-icon"><i data-feather="trash"></i></span>
-                <div>
-                  <span class="step-title">Masa Pembatalan</span>
-                  <span class="step-desc">22 Februari 2020 - 10 April 2020</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-        </div>
-
-
-        <div class="col-lg-10 mb-3">
-          <div class="card card-body bg-gray-100">
-            <div class="row">
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium">NRP</span>
-                  <span class="">05111640000009</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Nama</span>
-                  <span class="">Sal Zulal</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Program Studi</span>
-                  <span class="">S1 Informatika</span>
-                </li>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Semester Tempuh</span>
-                  <span class="">7 / 8</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Status Keaktifan Semester Lalu</span>
-                  <span class="">Aktif</span>
-                </li>
-              </div>
-
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between">
-                  <span class="tx-medium mt-2">Periode</span>
-                  <span>
-                    <div class="">
-                      <select class="form-control selectsmt">
-                        <option value="1" selected> Gasal 2019/2020</option>
-                        <option value="2">Genap 2018/2019</option>
-                        <option value="3">Gasal 2018/2019</option>
-                        <option value="4">Genap 2017/2018</option>
-                      </select>
-                    </div>
-                  </span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Dosen Wali</span>
-                  <span class="">Yudhi Purwananto, S.Kom, M.Kom</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">IPK / IPS</span>
-                  <span class="">4,00 / 4,00</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">IP SKEM</span>
-                  <span class="">3,2 (Lulus)</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Batas / Sisa SKS</span>
-                  <span class="">18 / 3</span>
-                </li>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-10 d-flex justify-content-between mb-3">
-          <div class="">
-            <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary mr-2">Mata Kuliah Harus
-              Diulang</a>
-            <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary mr-2">Mata Kuliah Wajib
-              Diambil</a>
-            <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary">Pengambilan Melanggar
-              Prasyarat</a>
-          </div>
-          <a href="" class="btn btn-sm btn-primary">Cetak KRSM</a>
-        </div>
-
-        <div class="col-lg-10 mb-3">
+        <div class="col-lg-12">
           <div class="card">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <div class="mg-b-10 mg-sm-b-0">
-                <h5 class="mg-b-5 tx-16">Kelas yang Berhasil Diambil Semester Ini</h5>
-              </div>
-            </div>
+              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th rowspan="2" class="text-center align-middle" style="width: 18%;">Periode</th>
+                      <th colspan="2" class="text-center align-middle">Pengisian</th>
+                      <th colspan="2" class="text-center align-middle">Perubahan</th>
+                      <th colspan="2" class="text-center align-middle">Pembatalan</th>
+                      <th rowspan="2" style="width: 8%;"></th>
+                    </tr>
+                    <tr>
+                      <th class="text-center">Mulai</th>
+                      <th class="text-center">Selesai</th>
+                      <th class="text-center">Mulai</th>
+                      <th class="text-center">Selesai</th>
+                      <th class="text-center">Mulai</th>
+                      <th class="text-center">Selesai</th>
 
-            <div class="card-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center">Kode</th>
-                    <th class="text-center">Mata Kuliah</th>
-                    <th class="text-center">SKS</th>
-                    <th class="text-center">Kelas</th>
-                    <th class="text-center">Dosen</th>
-                    <th class="text-center">Nilai</th>
-                  </tr>
-                </thead>
+                    </tr>
+                  </thead>
 
-                <tbody>
-                  <tr>
-                    <td class="text-center align-middle">KI141301</td>
-                    <td class="align-middle">Dasar Pemrograman</td>
-                    <td class="text-center align-middle">4</td>
-                    <td class="text-center align-middle">C</td>
-                    <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom. </td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">Gasal 2019/2020</td>
+                      <td class="text-center">27 Januari 2020</td>
+                      <td class="text-center">31 Januari 2020</td>
+                      <td class="text-center">1 Februari 2020</td>
+                      <td class="text-center">21 Februari 2020</td>
+                      <td class="text-center">22 Februari 2020</td>
+                      <td class="text-center">10 April 2020</td>
+                      <td class="text-center align-middle">
+                        <button type="button" class="ibtnEdit" data-feather="edit"
+                          style="width:20px; height:20px;"></button>
+                        <button type="button" class="ibtnDel" data-feather="trash-2"
+                          style="width:20px; height:20px;"></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center align-middle">
+                        <select class="form-control selectbiasa">
+                          <option value="1" selected> Gasal 2019/2020</option>
+                          <option value="2">Genap 2018/2019</option>
+                          <option value="3">Gasal 2018/2019</option>
+                          <option value="4">Genap 2017/2018</option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="">
+                          <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker1">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="">
+                          <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker2">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="">
+                          <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker3">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="">
+                          <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker4">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="">
+                          <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker5">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="">
+                          <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker6">
+                        </div>
+                      </td>
+                      <td class="text-center align-middle">
+                        <button type="button" class="addrow" data-feather="plus-circle"
+                          style="width:20px; height:20px;"></button>
+                      </td>
+                  </tfoot>
+                </table>
 
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle">Matematika Diskrit</td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
 
-                  <tr class="bg-gray-100">
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Kelas paket tidak dapat dibatalkan<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
+              </div><!-- card-body -->
 
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester atas<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester bawah<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td></td>
-                    <td class="text-right">Total SKS</td>
-                    <td class="text-center">16</td>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-
-                </tfoot>
-              </table>
-              <div class="alert alert-primary text-center tx-medium" role="alert">Formulir Rencana Studi telah disetujui
-              </div>
-
-            </div>
+            </div><!-- col -->
           </div>
-        </div>
+
+
+        </div><!-- row -->
 
       </div><!-- row -->
-
     </div><!-- container -->
   </div><!-- content -->
 
-  <div class="modal fade" id="modalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Mata Kuliah Harus Diulang</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="text-center">Kode</th>
-                <th class="text-center">Mata Kuliah</th>
-                <th class="text-center">SKS</th>
-                <th class="text-center">Kelas</th>
-                <th class="text-center">Nilai</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td class="text-center align-middle">KI141301</td>
-                <td class="align-middle">Dasar Pemrograman</td>
-                <td class="text-center align-middle">4</td>
-                <td class="text-center align-middle">C</td>
-                <td class="text-center align-middle">A</td>
-              </tr>
-              <tr>
-                <td class="text-center align-middle">KI141301</td>
-                <td class="align-middle">Matematika Diskrit</td>
-                <td class="text-center align-middle">4</td>
-                <td class="text-center align-middle">C</td>
-                <td class="text-center align-middle">A</td>
-              </tr>
-            </tbody>
-          </table>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modalriwayat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Riwayat Pemilihan Kelas</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="text-center">Kode</th>
-                <th class="text-center">Mata Kuliah</th>
-                <th class="text-center">SKS</th>
-                <th class="text-center">Kelas</th>
-                <th class="text-center">Dosen</th>
-                <th class="text-center">Kuota</th>
-                <th class="text-center">Status</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>KI141301</td>
-                <td>Dasar Pemrograman</td>
-                <td class="text-center">4</td>
-                <td class="text-center">
-                  C
-                </td>
-                <td>Dwi Sunaryono, S.Kom., M.Kom. </td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-warning">Dalam Antrian</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>KI141302</td>
-                <td>Matematika Diskrit</td>
-                <td class="text-center">3</td>
-                <td class="text-center">
-                  A
-                </td>
-                <td>Ir. Esther Hanaya, M.Sc</td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-danger">Gagal</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>KI141302</td>
-                <td>Matematika Diskrit</td>
-                <td class="text-center">3</td>
-                <td class="text-center">
-                  A
-                </td>
-                <td>Ir. Esther Hanaya, M.Sc</td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-success">Berhasil</span>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Daftar Peserta: KI141301 - Dasar Pemrograman - C</h6>
-          <button type="button" class="close" data-toggle="modal" data-target="#modaltambahkelas" data-dismiss="modal"
-            aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <table id="tabelpeserta" class="table">
-            <thead>
-              <tr>
-                <th class="text-center">No</th>
-                <th class="text-center">NRP</th>
-                <th class="text-center">Nama</th>
-                <th class="text-center">Waktu Pengambilan</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td class="text-center">1</td>
-                <td>05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center">19 Maret 2020 - 13.50</td>
-              </tr>
-
-              <tr>
-                <td class="text-center">2</td>
-                <td>05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center">19 Maret 2020 - 13.51</td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <script src="../../lib/jquery/jquery.min.js"></script>
@@ -704,6 +434,7 @@
   <script src="../../lib/feather-icons/feather.min.js"></script>
   <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="../../lib/prismjs/prism.js"></script>
+  <script src="../../lib/jqueryui/jquery-ui.min.js"></script>
   <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
   <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
@@ -715,12 +446,32 @@
     $(function () {
       'use strict'
 
-      // Select2
-
-      $('.selectsmt').select2({
+      $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
 
+
+      $('#datepicker1').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker2').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker3').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker4').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker5').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker6').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+
+      // Select2
+      $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
     });
   </script>
 </body>

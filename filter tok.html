@@ -48,7 +48,6 @@
   <link rel="stylesheet" href="../../assets/css/dashforge.css">
   <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
 
-
 </head>
 
 <body>
@@ -308,395 +307,206 @@
 
   <div class="content content-fixed">
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
-      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
-        <div>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Formulir Rencana Studi</li>
-            </ol>
-          </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Formulir Rencana Studi</h4>
-        </div>
 
-      </div>
 
       <div class="row row-xs justify-content-center">
 
-        <div class="col-lg-10 mb-4 d-flex justify-content-center">
-
-          <ul class="steps">
-            <li class="step-item disabled">
-              <div class="step-link">
-                <span class="step-icon"><i data-feather="file-plus"></i></span>
-                <div>
-                  <span class="step-title">Masa Pengisian</span>
-                  <span class="step-desc">27 Januari 2020 - 31 Januari 2020</span>
-                </div>
-              </div>
-            </li>
-            <li class="step-item disabled">
-              <div class="step-link">
-                <span class="step-icon"><i data-feather="edit-2"></i></span>
-                <div>
-                  <span class="step-title">Masa Perubahan</span>
-                  <span class="step-desc">1 Februari - 21 Februari</span>
-                </div>
-              </div>
-            </li>
-            <li class="step-item active">
-              <div class="step-link">
-                <span class="step-icon"><i data-feather="trash"></i></span>
-                <div>
-                  <span class="step-title">Masa Pembatalan</span>
-                  <span class="step-desc">22 Februari 2020 - 10 April 2020</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-
+        <!-- 1 -->
+        <div class="col-12">
+          <h1>1</h1>
         </div>
-
-
+        <!-- copy div bawah -->
         <div class="col-lg-10 mb-3">
           <div class="card card-body bg-gray-100">
-            <div class="row">
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium">NRP</span>
-                  <span class="">05111640000009</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Nama</span>
-                  <span class="">Sal Zulal</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Program Studi</span>
-                  <span class="">S1 Informatika</span>
-                </li>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Semester Tempuh</span>
-                  <span class="">7 / 8</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Status Keaktifan Semester Lalu</span>
-                  <span class="">Aktif</span>
-                </li>
-              </div>
+            <div class="d-flex justify-content-between mb-3 col-12">
+              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Dosen Wali</div>
 
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between">
-                  <span class="tx-medium mt-2">Periode</span>
-                  <span>
-                    <div class="">
-                      <select class="form-control selectsmt">
-                        <option value="1" selected> Gasal 2019/2020</option>
-                        <option value="2">Genap 2018/2019</option>
-                        <option value="3">Gasal 2018/2019</option>
-                        <option value="4">Genap 2017/2018</option>
-                      </select>
-                    </div>
-                  </span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Dosen Wali</span>
-                  <span class="">Yudhi Purwananto, S.Kom, M.Kom</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">IPK / IPS</span>
-                  <span class="">4,00 / 4,00</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">IP SKEM</span>
-                  <span class="">3,2 (Lulus)</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3">
-                  <span class="tx-medium ">Batas / Sisa SKS</span>
-                  <span class="">18 / 3</span>
-                </li>
-              </div>
+              <form class="form-inline d-sm-flex justify-content-end" style="width: 90%;">
+                <select class="form-control selectdosen  col-12">
+                  <option label="Pilih Dosen"></option>
 
+                  <option value="1">Anton</option>
+                  <option value="2">Budi</option>
+                  <option value="3">Caca</option>
+                  <option value="4">Dimas</option>
+                </select>
+              </form>
             </div>
+
+            <div class="d-flex justify-content-between col-12">
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Angkatan</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option selected>2018</option>
+                  <option value="1">2017</option>
+                  <option value="2">2018</option>
+                  <option value="3">2019</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle text-center" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option value="1" selected> Gasal 2019/2020</option>
+                  <option value="2">Genap 2018/2019</option>
+                  <option value="3">Gasal 2018/2019</option>
+                  <option value="4">Genap 2017/2018</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="col-lg-10 d-flex justify-content-between mb-3">
-          <div class="">
-            <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary mr-2">Mata Kuliah Harus
-              Diulang</a>
-            <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary mr-2">Mata Kuliah Wajib
-              Diambil</a>
-            <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary">Pengambilan Melanggar
-              Prasyarat</a>
-          </div>
-          <a href="" class="btn btn-sm btn-primary">Cetak KRSM</a>
+        <!-- 2 -->
+        <div class="col-12">
+          <h1>2</h1>
         </div>
-
+        <!-- copy div bawah -->
         <div class="col-lg-10 mb-3">
-          <div class="card">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <div class="mg-b-10 mg-sm-b-0">
-                <h5 class="mg-b-5 tx-16">Kelas yang Berhasil Diambil Semester Ini</h5>
+          <div class="card card-body bg-gray-100">
+            <div class="d-flex justify-content-between col-12">
+              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Dosen Wali</div>
+
+              <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
+                <select class="form-control selectdosen  col-12">
+                  <option label="Pilih Dosen"></option>
+
+                  <option value="1">Anton</option>
+                  <option value="2">Budi</option>
+                  <option value="3">Caca</option>
+                  <option value="4">Dimas</option>
+                </select>
+              </form>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
               </div>
-            </div>
-
-            <div class="card-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center">Kode</th>
-                    <th class="text-center">Mata Kuliah</th>
-                    <th class="text-center">SKS</th>
-                    <th class="text-center">Kelas</th>
-                    <th class="text-center">Dosen</th>
-                    <th class="text-center">Nilai</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td class="text-center align-middle">KI141301</td>
-                    <td class="align-middle">Dasar Pemrograman</td>
-                    <td class="text-center align-middle">4</td>
-                    <td class="text-center align-middle">C</td>
-                    <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom. </td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle">Matematika Diskrit</td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
-
-                  <tr class="bg-gray-100">
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Kelas paket tidak dapat dibatalkan<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester atas<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
-
-                  <tr>
-                    <td class="text-center align-middle">KI141302</td>
-                    <td class="align-middle"> Matematika Diskrit<br>
-                      <small><i>Mata kuliah semester bawah<i></small>
-                    </td>
-                    <td class="text-center align-middle">3</td>
-                    <td class="text-center align-middle">A</td>
-                    <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                    <td class="text-center align-middle">-</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td></td>
-                    <td class="text-right">Total SKS</td>
-                    <td class="text-center">16</td>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-
-                </tfoot>
-              </table>
-              <div class="alert alert-primary text-center tx-medium" role="alert">Formulir Rencana Studi telah disetujui
-              </div>
-
             </div>
           </div>
         </div>
 
-      </div><!-- row -->
 
-    </div><!-- container -->
+        <!-- 3 -->
+        <div class="col-12">
+          <h1>3</h1>
+        </div>
+        <!-- copy div bawah -->
+        <div class="col-lg-10 mb-3">
+          <div class="card card-body bg-gray-100">
+
+            <div class="d-flex justify-content-between col-12">
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Angkatan</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option selected>2018</option>
+                  <option value="1">2017</option>
+                  <option value="2">2018</option>
+                  <option value="3">2019</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle text-center" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option value="1" selected> Gasal 2019/2020</option>
+                  <option value="2">Genap 2018/2019</option>
+                  <option value="3">Gasal 2018/2019</option>
+                  <option value="4">Genap 2017/2018</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-12">
+          <h1>4</h1>
+        </div>
+        <!-- copy div bawah -->
+        <div class="col-lg-10 mb-3 ">
+          <div class="card card-body bg-gray-100 ">
+
+            <div class="d-flex justify-content-center mb-3 col-12">
+
+              <div class="d-flex justify-content-between" style="width: 40%;">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option value="1" selected> Gasal 2019/2020</option>
+                  <option value="2">Genap 2018/2019</option>
+                  <option value="3">Gasal 2018/2019</option>
+                  <option value="4">Genap 2017/2018</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+              </div>
+            </div>
+            <hr class="pd-0 mt-0 mb-3">
+            <div class="d-flex justify-content-between col-12">
+              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Kelas</div>
+
+              <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
+                <select class="form-control selectdosen  col-12">
+                  <option label="Pilih Kelas"></option>
+
+                  <option value="1">A</option>
+                  <option value="2">B</option>
+                  <option value="3">C</option>
+                  <option value="4">D</option>
+                </select>
+              </form>
+
+              <div class="d-flex justify-content-end" style="width: 20%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Pilih</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-12">
+          <h1>5</h1>
+        </div>
+        <!-- copy div bawah -->
+        <div class="col-lg-6 mb-3">
+          <div class="card card-body bg-gray-100">
+
+            <div class="d-flex justify-content-between col-12">
+
+              <div class="d-flex justify-content-between" style="width: 70%;">
+                <div class="tx-medium align-middle text-center" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                <select class="form-control selectbiasa" style="width: 75%;">
+                  <option value="1" selected> Gasal 2019/2020</option>
+                  <option value="2">Genap 2018/2019</option>
+                  <option value="3">Gasal 2018/2019</option>
+                  <option value="4">Genap 2017/2018</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-end" style="width: 30%">
+                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </div><!-- content -->
 
-  <div class="modal fade" id="modalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Mata Kuliah Harus Diulang</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="text-center">Kode</th>
-                <th class="text-center">Mata Kuliah</th>
-                <th class="text-center">SKS</th>
-                <th class="text-center">Kelas</th>
-                <th class="text-center">Nilai</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td class="text-center align-middle">KI141301</td>
-                <td class="align-middle">Dasar Pemrograman</td>
-                <td class="text-center align-middle">4</td>
-                <td class="text-center align-middle">C</td>
-                <td class="text-center align-middle">A</td>
-              </tr>
-              <tr>
-                <td class="text-center align-middle">KI141301</td>
-                <td class="align-middle">Matematika Diskrit</td>
-                <td class="text-center align-middle">4</td>
-                <td class="text-center align-middle">C</td>
-                <td class="text-center align-middle">A</td>
-              </tr>
-            </tbody>
-          </table>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modalriwayat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Riwayat Pemilihan Kelas</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="text-center">Kode</th>
-                <th class="text-center">Mata Kuliah</th>
-                <th class="text-center">SKS</th>
-                <th class="text-center">Kelas</th>
-                <th class="text-center">Dosen</th>
-                <th class="text-center">Kuota</th>
-                <th class="text-center">Status</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>KI141301</td>
-                <td>Dasar Pemrograman</td>
-                <td class="text-center">4</td>
-                <td class="text-center">
-                  C
-                </td>
-                <td>Dwi Sunaryono, S.Kom., M.Kom. </td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-warning">Dalam Antrian</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>KI141302</td>
-                <td>Matematika Diskrit</td>
-                <td class="text-center">3</td>
-                <td class="text-center">
-                  A
-                </td>
-                <td>Ir. Esther Hanaya, M.Sc</td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-danger">Gagal</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>KI141302</td>
-                <td>Matematika Diskrit</td>
-                <td class="text-center">3</td>
-                <td class="text-center">
-                  A
-                </td>
-                <td>Ir. Esther Hanaya, M.Sc</td>
-                <td class="text-center">40</td>
-                <td class="text-center">
-                  <span style="display:inline-block; width:100px" class="badge badge-success">Berhasil</span>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-        </div>
-
-      </div>
-    </div>
   </div>
 
-  <div class="modal fade" id="modalpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Daftar Peserta: KI141301 - Dasar Pemrograman - C</h6>
-          <button type="button" class="close" data-toggle="modal" data-target="#modaltambahkelas" data-dismiss="modal"
-            aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <table id="tabelpeserta" class="table">
-            <thead>
-              <tr>
-                <th class="text-center">No</th>
-                <th class="text-center">NRP</th>
-                <th class="text-center">Nama</th>
-                <th class="text-center">Waktu Pengambilan</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td class="text-center">1</td>
-                <td>05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center">19 Maret 2020 - 13.50</td>
-              </tr>
-
-              <tr>
-                <td class="text-center">2</td>
-                <td>05111640000009</td>
-                <td>Sal Zulal</td>
-                <td class="text-center">19 Maret 2020 - 13.51</td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <script src="../../lib/jquery/jquery.min.js"></script>
@@ -715,11 +525,32 @@
     $(function () {
       'use strict'
 
-      // Select2
-
-      $('.selectsmt').select2({
+      $('.selectdosen').select2({
+        placeholder: 'Pilih Dosen',
+      });
+      $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
+
+
+      // $('#tabelanakwali').dataTable({
+      //   // responsive: true,
+      //   paging: false,
+      //   bInfo: false,
+      //   searching: false,
+
+      //   "columns": [
+      //     { "orderable": false },
+      //     { "orderable": true },
+      //     { "orderable": false },
+      //     { "orderable": false }
+      //   ]
+      // });
+
+
+
+      // Select2
+      $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
 
     });
   </script>
