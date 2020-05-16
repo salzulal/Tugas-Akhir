@@ -382,13 +382,27 @@
                     <td class="text-center align-middle"><button type="button" data-feather="trash-2"
                         style="width:20px; height:20px;"></button></td>
                   </tr>
-
                 </tbody>
+                <!-- <tfoot>
+                  <td></td>
+                  <td colspan="2">
+                    <select class="form-control selectmhs col-12">
+                      <option label="Contoh: 05111640000009 - Sal Zulal"></option>
+                      <option value="1">Anton</option>
+                      <option value="2">Budi</option>
+                      <option value="3">Caca</option>
+                      <option value="4">Dimas</option>
+                    </select>
+                  </td>
+                  <td class="text-center align-middle"><button type="button" class="addrow" data-feather="plus-circle"
+                      style="width:20px; height:20px;"></button>
+                  </td>
+                </tfoot> -->
               </table>
 
               <form class="form-inline d-sm-flex justify-content-center col-12 mb-3">
                 <select class="form-control selectmhs col-10">
-                  <option label="Mahasiswa"></option>
+                  <option label="Contoh: 05111640000009 - Sal Zulal"></option>
                   <option value="1">Anton</option>
                   <option value="2">Budi</option>
                   <option value="3">Caca</option>
@@ -454,6 +468,9 @@
 
       $('.selectdosen').select2({
         placeholder: 'Contoh: (?)',
+      });
+      $('.selectmhs').select2({
+        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
       });
 
 
