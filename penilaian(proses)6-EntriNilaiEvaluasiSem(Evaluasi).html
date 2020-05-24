@@ -303,8 +303,6 @@
     </div><!-- navbar-search -->
   </header><!-- navbar -->
 
-
-
   <div class="content content-fixed">
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
       <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
@@ -382,18 +380,18 @@
                 <table id="myTable" class=" table asesmen">
                   <thead>
                     <tr>
-                      <th class="text-center">No</th>
+                      <th class="text-center" style="width: 5%;">No</th>
                       <th class="text-center">CP MK yang Terpenuhi</th>
-                      <th class="text-center">Asesmen</th>
+                      <th class="text-center" style="width: 30%;">Asesmen</th>
                       <th class="text-center" style="width: 15%;">Bobot (%)</th>
-                      <th class="text-center"></th>
+                      <th class="text-center" style="width: 5%;"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td class="text-center align-middle">1</td>
                       <td class="text-center align-middle">
-                        <select class="form-control selectbiasa">
+                        <select class="form-control selectbiasa" style="width: 100%;">
                           <option disabled selected>Pilih Sub CP</option>
                           <option value="1">Sub CP MK 1.1</option>
                           <option value="2">Sub CP MK 1.2</option>
@@ -414,7 +412,7 @@
                     <tr>
                       <td class="text-center align-middle">2</td>
                       <td class="text-center align-middle">
-                        <select class="form-control selectbiasa">
+                        <select class="form-control selectbiasa" style="width: 100%;">
                           <option disabled selected>Pilih Sub CP</option>
                           <option value="1">Sub CP MK 1.1</option>
                           <option value="2">Sub CP MK 1.2</option>
@@ -434,7 +432,7 @@
                     <tr>
                       <td class="text-center align-middle">3</td>
                       <td class="text-center align-middle">
-                        <select class="form-control selectbiasa">
+                        <select class="form-control selectbiasa" style="width: 100%;">
                           <option disabled selected>Pilih Sub CP</option>
                           <option value="1">Sub CP MK 1.1</option>
                           <option value="2">Sub CP MK 1.2</option>
@@ -455,7 +453,7 @@
                     <tr>
                       <td class="text-center align-middle">4</td>
                       <td class="text-center align-middle">
-                        <select class="form-control selectbiasa">
+                        <select class="form-control selectbiasa" style="width: 100%;">
                           <option disabled selected>Pilih Sub CP</option>
                           <option value="1">Sub CP MK 1.1</option>
                           <option value="2">Sub CP MK 1.2</option>
@@ -478,7 +476,7 @@
                     <tr>
                       <td class="text-center align-middle"></td>
                       <td class="text-center align-middle">
-                        <select class="form-control selectbiasa">
+                        <select class="form-control selectbiasa" style="width: 100%;">
                           <option disabled selected></option>
                           <option value="1">Sub CP MK 1.1</option>
                           <option value="2">Sub CP MK 1.2</option>
@@ -838,6 +836,7 @@
     $(function () {
       'use strict'
 
+
       var ctx = document.getElementById('grafikdistribusi').getContext('2d');
       var myChart = new Chart(ctx, {
         type: 'bar',
@@ -927,9 +926,6 @@
 
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
 
-
-
-
     });
 
     var counter = 5;
@@ -940,7 +936,7 @@
       var cols = "";
 
       cols += '<td class="text-center align-middle" name="noasesmen' + counter + '">' + counter + '</td>';
-      cols += '<td class="text-center align-middle" name="selectcp' + counter + '"><select class="form-control selectbiasa"><option disabled selected > Pilih Sub CP</><option value="1">Sub CP MK 1.1</option><option value="2">Sub CP MK 1.2</option><option value="3">Sub CP MK 2.1</option><option value="4">Sub CP MK 2.2</option><option value="5">Sub CP MK 2.3</option><option value="6">Sub CP MK 3.1</option><option value="7">...</option></select></td> ';
+      cols += '<td class="text-center align-middle" name="selectcp' + counter + '"><select class="form-control selectbiasa" style="width: 100%;"><option disabled selected > Pilih Sub CP</><option value="1">Sub CP MK 1.1</option><option value="2">Sub CP MK 1.2</option><option value="3">Sub CP MK 2.1</option><option value="4">Sub CP MK 2.2</option><option value="5">Sub CP MK 2.3</option><option value="6">Sub CP MK 3.1</option><option value="7">...</option></select></td> ';
       cols += '<td><input type="text" class="form-control" name="namaasesmen' + counter + '" value="... (nama asesmen dari kurikulum)"></td>';
       cols += '<td><input type="text" class="form-control" name="bobotasesmen' + counter + '" value=""></td>';
 
@@ -949,11 +945,18 @@
       $("table.asesmen").append(newRow);
       counter++;
       feather.replace();
+      $('.selectbiasa').select2({
+        minimumResultsForSearch: Infinity
+      });
     });
 
     $("table.asesmen").on("click", ".ibtnDel", function (event) {
       $(this).closest("tr").remove();
       counter -= 1
+    });
+
+    $('.selectbiasa').select2({
+      minimumResultsForSearch: Infinity
     });
 
   </script>
