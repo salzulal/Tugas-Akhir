@@ -43,6 +43,8 @@
   <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
   <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
   <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+  <link href="../../lib/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet">
+
 
   <!-- DashForge CSS -->
   <link rel="stylesheet" href="../../assets/css/dashforge.css">
@@ -312,10 +314,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Hasil Evaluasi per Mahasiswa</li>
+              <li class="breadcrumb-item active" aria-current="page">Pengaturan Jadwal</li>
             </ol>
           </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Hasil Evaluasi per Mahasiswa</h4>
+          <h4 class="mg-b-0 tx-spacing--1">Pengaturan Jadwal</h4>
         </div>
 
       </div>
@@ -323,230 +325,22 @@
       <div class="row row-xs justify-content-center">
 
 
-        <div class="col-lg-10 mb-3">
-          <div class="card card-body bg-gray-100">
-            <div class="d-flex justify-content-between col-12">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Mahasiswa</div>
-
-              <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
-                <select class="form-control selectmhs  col-12">
-                  <option label="Contoh: 05111640000009 - Sal Zulal"></option>
-                  <option value="1">05111640000009 - Sal Zulal</option>
-                  <option value="2">05111640000010 - Faridatul Nur Aidah</option>
-                  <option value="3">05111640000011 - Dandy Naufaldi</option>
-                  <option value="4">05111640000012 - Raden Teja Kusuma</option>
-                  <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
-                  <option value="6">05111640000014 - Nuzha Musyarifa</option>
-                </select>
-              </form>
-
-              <div class="d-flex justify-content-end" style="width: 20%">
-                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-10">
-          <div class="card mb-2">
+        <div class="col-lg-12">
+          <div class="card">
             <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <span>
-                <h5 class="tx-16">Perkuliahan pada: GENAP 2017/2018</h5>
-              </span>
+              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
+              <div class="card-body">
+                <div class="table-responsive">
 
-            </div>
-
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th class="text-center">Kode</th>
-                      <th class="text-center">Mata Kuliah</th>
-                      <th class="text-center">Kelas</th>
-                      <th class="text-center">Nilai</th>
-                      <th class="text-center"></th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td class="text-center align-middle">KI141301</td>
-                      <td class="align-middle">Dasar Pemrograman</td>
-                      <td class="text-center align-middle">C</td>
-                      <td class="text-center align-middle">A</td>
-                      <td class="text-center align-middle">
-                        <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                          style="width:20px; height:20px;"></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">KI141302</td>
-                      <td class="align-middle">Matematika Diskrit</td>
-                      <td class="text-center align-middle">A</td>
-                      <td class="text-center align-middle">A</td>
-                      <td class="text-center align-middle">
-                        <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                          style="width:20px; height:20px;"></a>
-                      </td>
-
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <span>
-                <h5 class="tx-16">Perkuliahan pada: GASAL 2017/2018</h5>
-              </span>
 
-            </div>
-
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th class="text-center">Kode</th>
-                      <th class="text-center">Mata Kuliah</th>
-                      <th class="text-center">Kelas</th>
-                      <th class="text-center">Nilai</th>
-                      <th class="text-center"></th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td class="text-center align-middle">KI141301</td>
-                      <td class="align-middle">Dasar Pemrograman</td>
-                      <td class="text-center align-middle">C</td>
-                      <td class="text-center align-middle">A</td>
-                      <td class="text-center align-middle">
-                        <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                          style="width:20px; height:20px;"></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle">KI141302</td>
-                      <td class="align-middle">Matematika Diskrit</td>
-                      <td class="text-center align-middle">A</td>
-                      <td class="text-center align-middle">A</td>
-                      <td class="text-center align-middle">
-                        <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                          style="width:20px; height:20px;"></a>
-                      </td>
-
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
             </div>
           </div>
 
+
         </div>
 
-      </div>
-
-
-    </div>
-  </div>
-
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Ubah Nilai Mahasiswa</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th rowspan="2" class="text-center align-middle">NRP</th>
-                  <th rowspan="2" class="text-center align-middle">Nama Mahasiswa</th>
-                  <th class="text-center align-middle" style="width: 6%;">Kehadiran</th>
-                  <th class="text-center align-middle" style="width: 6%;">Sikap</th>
-                  <th class="text-center align-middle" style="width: 6%;">Tugas 1</th>
-                  <th class="text-center align-middle" style="width: 6%;">Tugas Kelompok 1</th>
-                  <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                  <th class="text-center align-middle" style="width: 6%;">Kuis 1</th>
-                  <th class="text-center align-middle" style="width: 6%;">Kuis 2</th>
-                  <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                  <th colspan="2" class="text-center align-middle">Sebelum</th>
-                  <th colspan="2" class="text-center align-middle">Sesudah</th>
-                </tr>
-                <tr>
-                  <th class="text-center">5 %</th>
-                  <th class="text-center">5 %</th>
-                  <th class="text-center">10 %</th>
-                  <th class="text-center">10 %</th>
-                  <th class="text-center">20 %</th>
-                  <th class="text-center">15 %</th>
-                  <th class="text-center">15 %</th>
-                  <th class="text-center">20 %</th>
-                  <th class="text-center">N.A.</th>
-                  <th class="text-center">N.H.</th>
-                  <th class="text-center">N.A.</th>
-                  <th class="text-center">N.H.</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td class="text-center align-middle">01111440000017</td>
-                  <td class="align-middle">Dimas Bagus Yudhistira</td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td class="text-center align-middle">2.0</td>
-                  <td class="text-center align-middle">E</td>
-                  <td class="text-center align-middle"></td>
-                  <td class="text-center align-middle"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary">Batal</button>
-          <button type="button" class="btn btn-primary">Simpan</button>
-        </div>
       </div>
     </div>
   </div>
@@ -558,6 +352,7 @@
   <script src="../../lib/feather-icons/feather.min.js"></script>
   <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="../../lib/prismjs/prism.js"></script>
+  <script src="../../lib/jqueryui/jquery-ui.min.js"></script>
   <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
   <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
@@ -573,10 +368,25 @@
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectmhs').select2({
-        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
-      });
 
+      $('#datepicker1').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker2').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker3').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker4').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker5').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker6').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
 
       // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
