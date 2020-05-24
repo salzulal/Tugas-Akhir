@@ -48,9 +48,10 @@
   <!-- DashForge CSS -->
   <link rel="stylesheet" href="../../assets/css/dashforge.css">
   <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
-  <style>
-    .ui-datepicker-div {
-      z-index: 10000 !important;
+  <style type="text/css">
+    #ui-datepicker-div {
+      z-index: 99999999 !important;
+      /* must be > than popup window */
     }
   </style>
 </head>
@@ -401,9 +402,9 @@
                     </td>
                     <td class="align-middle">FRS: <b class="text-success">OK</b><br>Mahasiswa aktif (18 SKS)</td>
                   </tr>
-                  <tr href="#modaltes" data-toggle="modal">
+                  <tr href="#modaldetail" data-toggle="modal">
                     <td class="text-center align-middle">2</td>
-                    <td class="align-middle"><a href="#modaltes" data-toggle="modal"> <b>Sal Zulal</b></a><br>
+                    <td class="align-middle"><a href="#modaldetail" data-toggle="modal"> <b>Sal Zulal</b></a><br>
                       05111640000009
                     </td>
                     <td class="align-middle">FRS: <b class="text-danger">Belum disetujui</b><br>Mahasiswa tidak aktif
@@ -553,22 +554,24 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">Alamat Tinggal</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 25%;">Jalan</td>
-                                    <td class="">Jl. Keputih</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 25%;">Kota</td>
-                                    <td class="">Surabaya</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 25%;">Kode Pos</td>
-                                    <td class="">60000</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 25%;">Jalan</td>
+                                      <td class="">Jl. Keputih</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 25%;">Kota</td>
+                                      <td class="">Surabaya</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 25%;">Kode Pos</td>
+                                      <td class="">60000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">Telepon</span>
@@ -655,22 +658,24 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">Alamat Tinggal</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium align-middle" style="width: 25%;">Jalan</td>
-                                    <td><textarea class="form-control">Jl. Keputih</textarea></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium align-middle" style="width: 25%;">Kode Kota</td>
-                                    <td><input type="text" class="form-control" value="Surabaya"></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium align-middle" style="width: 25%;">Kode Pos</td>
-                                    <td><input type="text" class="form-control" value="60000"></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium align-middle" style="width: 25%;">Jalan</td>
+                                      <td><textarea class="form-control">Jl. Keputih</textarea></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium align-middle" style="width: 25%;">Kode Kota</td>
+                                      <td><input type="text" class="form-control" value="Surabaya"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium align-middle" style="width: 25%;">Kode Pos</td>
+                                      <td><input type="text" class="form-control" value="60000"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">Telepon</span>
@@ -685,7 +690,8 @@
                               <input type="text" class="form-control" value="-">
                             </li>
                             <li class="d-flex justify-content-start mb-2">
-                              <span class="tx-medium col-4" style="padding-top: 7.5px;">Tanggal Lahir</span>
+                              <span class="tx-medium col-4" style="padding-top: 7.5px;">Tanggal Lahir
+                                (dd-mm-yyyy)</span>
                               <input type="text" class="form-control" id="datepicker1" value="01 Januari 2001">
                             </li>
                             <li class="d-flex justify-content-start mb-2">
@@ -762,90 +768,98 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">SLTA Asal</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">SLTA </td>
-                                    <td class="">20523844</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kode Jurusan</td>
-                                    <td class="">015</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Tahun Ijazah</td>
-                                    <td class="">2016</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kota/Kab.</td>
-                                    <td class="">-</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">SLTA </td>
+                                      <td class="">20523844</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kode Jurusan</td>
+                                      <td class="">015</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Tahun Ijazah</td>
+                                      <td class="">2016</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kota/Kab.</td>
+                                      <td class="">-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">SLTA STK</span>
-                              <table class="table table-bordered col-7">
-                                <thead>
-                                  <tr>
-                                    <td colspan="5" class="">Menyerahkan STK: Tidak</td>
-                                  </tr>
-                                  <tr>
-                                    <th colspan="2" class="tx-medium text-center">NEM</th>
-                                    <th colspan="3" class="tx-medium text-center">Nilai</th>
-                                  </tr>
-                                  <tr>
-                                    <th class="tx-medium text-center">Tmp</th>
-                                    <th class="tx-medium text-center">Nilai</th>
-                                    <th class="tx-medium text-center">Fisika</th>
-                                    <th class="tx-medium text-center">Mat</th>
-                                    <th class="tx-medium text-center">Bhs Ing</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td class="text-center">6 </td>
-                                    <td class="text-center">466.5</td>
-                                    <td class="text-center">90</td>
-                                    <td class="text-center">90</td>
-                                    <td class="text-center">90</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <thead>
+                                    <tr>
+                                      <td colspan="5" class="">Menyerahkan STK: Tidak</td>
+                                    </tr>
+                                    <tr>
+                                      <th colspan="2" class="tx-medium text-center">NEM</th>
+                                      <th colspan="3" class="tx-medium text-center">Nilai</th>
+                                    </tr>
+                                    <tr>
+                                      <th class="tx-medium text-center">Tmp</th>
+                                      <th class="tx-medium text-center">Nilai</th>
+                                      <th class="tx-medium text-center">Fisika</th>
+                                      <th class="tx-medium text-center">Mat</th>
+                                      <th class="tx-medium text-center">Bhs Ing</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="text-center">6 </td>
+                                      <td class="text-center">466.5</td>
+                                      <td class="text-center">90</td>
+                                      <td class="text-center">90</td>
+                                      <td class="text-center">90</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">Prestasi</span>
-                              <table class="table table-bordered col-7">
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Pendidikan</td>
-                                  <td class="">Tidak</td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Seni</td>
-                                  <td class="">Tidak</td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Olahraga</td>
-                                  <td class="">Tidak</td>
-                                </tr>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Pendidikan</td>
+                                    <td class="">Tidak</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Seni</td>
+                                    <td class="">Tidak</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Olahraga</td>
+                                    <td class="">Tidak</td>
+                                  </tr>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">Nilai Test</span>
-                              <table class="table table-bordered col-7">
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Toefl</td>
-                                  <td class="">-</td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">TPA</td>
-                                  <td class="">-</td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Psikotest</td>
-                                  <td class="">-</td>
-                                </tr>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Toefl</td>
+                                    <td class="">-</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">TPA</td>
+                                    <td class="">-</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Psikotest</td>
+                                    <td class="">-</td>
+                                  </tr>
+                                </table>
+                              </div>
                             </li>
                           </div>
                         </div>
@@ -858,18 +872,20 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">Pendidikan S1</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Asal </td>
-                                    <td class="">-</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Jurusan</td>
-                                    <td class="">-</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Asal </td>
+                                      <td class="">-</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Jurusan</td>
+                                      <td class="">-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">IPK S1</span>
@@ -917,7 +933,8 @@
                               </form>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
-                              <span class="tx-medium col-4" style="padding-top: 7.5px;">Tgl Masuk ITS</span>
+                              <span class="tx-medium col-4" style="padding-top: 7.5px;">Tgl Masuk ITS
+                                (dd-mm-yyyy)</span>
                               <input type="text" class="form-control" id="datepicker2" value="1 Juni 2016">
                             </li>
                             <li class="d-flex justify-content-start mb-2">
@@ -942,112 +959,120 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">SLTA Asal</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">SLTA </td>
-                                    <td><input type="text" class="form-control" value="20523844"></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kode Jurusan</td>
-                                    <td><input type="text" class="form-control" value="015"></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Tahun Ijazah</td>
-                                    <td><input type="text" class="form-control" value="2016"></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kota/Kab.</td>
-                                    <td><input type="text" class="form-control" value="-"></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">SLTA </td>
+                                      <td><input type="text" class="form-control" value="20523844"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kode Jurusan</td>
+                                      <td><input type="text" class="form-control" value="015"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Tahun Ijazah</td>
+                                      <td><input type="text" class="form-control" value="2016"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kota/Kab.</td>
+                                      <td><input type="text" class="form-control" value="-"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">SLTA STK</span>
-                              <table class="table table-bordered col-7">
-                                <thead>
-                                  <tr>
-                                    <td colspan="5" class="">Menyerahkan STK:
-                                      <select class="form-control selectbiasa2" style="width: 50%;">
-                                        <option value="1"> Ya</option>
-                                        <option value="2" selected>Tidak</option>
-                                      </select>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <thead>
+                                    <tr>
+                                      <td colspan="5" class="">Menyerahkan STK:
+                                        <select class="form-control selectbiasa2" style="width: 50%;">
+                                          <option value="1"> Ya</option>
+                                          <option value="2" selected>Tidak</option>
+                                        </select>
 
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th colspan="2" class="tx-medium text-center">NEM</th>
-                                    <th colspan="3" class="tx-medium text-center">Nilai</th>
-                                  </tr>
-                                  <tr>
-                                    <th class="tx-medium text-center">Tmp</th>
-                                    <th class="tx-medium text-center">Nilai</th>
-                                    <th class="tx-medium text-center">Fisika</th>
-                                    <th class="tx-medium text-center">Mat</th>
-                                    <th class="tx-medium text-center">Bhs Ing</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr class="">
-                                    <td><input type="text" class="form-control" value="6"></td>
-                                    <td><input type="text" class="form-control" value="466.5"></td>
-                                    <td><input type="text" class="form-control" value="90"></td>
-                                    <td><input type="text" class="form-control" value="90"></td>
-                                    <td><input type="text" class="form-control" value="90"></td>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th colspan="2" class="tx-medium text-center">NEM</th>
+                                      <th colspan="3" class="tx-medium text-center">Nilai</th>
+                                    </tr>
+                                    <tr>
+                                      <th class="tx-medium text-center">Tmp</th>
+                                      <th class="tx-medium text-center">Nilai</th>
+                                      <th class="tx-medium text-center">Fisika</th>
+                                      <th class="tx-medium text-center">Mat</th>
+                                      <th class="tx-medium text-center">Bhs Ing</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="">
+                                      <td><input type="text" class="form-control" value="6"></td>
+                                      <td><input type="text" class="form-control" value="466.5"></td>
+                                      <td><input type="text" class="form-control" value="90"></td>
+                                      <td><input type="text" class="form-control" value="90"></td>
+                                      <td><input type="text" class="form-control" value="90"></td>
 
-                                  </tr>
-                                </tbody>
-                              </table>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">Prestasi</span>
-                              <table class="table table-bordered col-7">
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Pendidikan</td>
-                                  <td>
-                                    <select class="form-control selectbiasa2" style="width: 100%;">
-                                      <option value="1"> Ya</option>
-                                      <option value="2" selected>Tidak</option>
-                                    </select>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Seni</td>
-                                  <td>
-                                    <select class="form-control selectbiasa2" style="width: 100%;">
-                                      <option value="1"> Ya</option>
-                                      <option value="2" selected>Tidak</option>
-                                    </select>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Olahraga</td>
-                                  <td>
-                                    <select class="form-control selectbiasa2" style="width: 100%;">
-                                      <option value="1"> Ya</option>
-                                      <option value="2" selected>Tidak</option>
-                                    </select>
-                                  </td>
-                                </tr>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Pendidikan</td>
+                                    <td>
+                                      <select class="form-control selectbiasa2" style="width: 100%;">
+                                        <option value="1"> Ya</option>
+                                        <option value="2" selected>Tidak</option>
+                                      </select>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Seni</td>
+                                    <td>
+                                      <select class="form-control selectbiasa2" style="width: 100%;">
+                                        <option value="1"> Ya</option>
+                                        <option value="2" selected>Tidak</option>
+                                      </select>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Olahraga</td>
+                                    <td>
+                                      <select class="form-control selectbiasa2" style="width: 100%;">
+                                        <option value="1"> Ya</option>
+                                        <option value="2" selected>Tidak</option>
+                                      </select>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">Nilai Test</span>
-                              <table class="table table-bordered col-7">
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Toefl</td>
-                                  <td><input type="text" class="form-control" value="-"></td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">TPA</td>
-                                  <td><input type="text" class="form-control" value="-"></td>
-                                </tr>
-                                <tr>
-                                  <td class="tx-medium " style="width: 35%;">Psikotest</td>
-                                  <td><input type="text" class="form-control" value="-"></td>
-                                </tr>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Toefl</td>
+                                    <td><input type="text" class="form-control" value="-"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">TPA</td>
+                                    <td><input type="text" class="form-control" value="-"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tx-medium " style="width: 35%;">Psikotest</td>
+                                    <td><input type="text" class="form-control" value="-"></td>
+                                  </tr>
+                                </table>
+                              </div>
                             </li>
                           </div>
                         </div>
@@ -1066,18 +1091,20 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">Pendidikan S1</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Asal </td>
-                                    <td><input type="text" class="form-control" value="-"></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Jurusan</td>
-                                    <td><input type="text" class="form-control" value="-"></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Asal </td>
+                                      <td><input type="text" class="form-control" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Jurusan</td>
+                                      <td><input type="text" class="form-control" value="-"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">IPK S1</span>
@@ -1261,22 +1288,24 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">Alamat Orang Tua</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 25%;">Jalan </td>
-                                    <td class="">Jl. Doho</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kota</td>
-                                    <td class="">205024</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kode Pos</td>
-                                    <td class="">68122</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 25%;">Jalan </td>
+                                      <td class="">Jl. Doho</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kota</td>
+                                      <td class="">205024</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kode Pos</td>
+                                      <td class="">68122</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4 ">Telepon</span>
@@ -1359,23 +1388,25 @@
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">Alamat Orang Tua</span>
-                              <table class="table table-bordered col-7">
-                                <tbody>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 25%;">Jalan </td>
-                                    <td><textarea class="form-control">Jl. Doho</textarea></td>
+                              <div class="table-responsive">
+                                <table class="table table-bordered col-7">
+                                  <tbody>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 25%;">Jalan </td>
+                                      <td><textarea class="form-control">Jl. Doho</textarea></td>
 
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kode Kota</td>
-                                    <td><input type="text" class="form-control" value="205024"></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="tx-medium " style="width: 35%;">Kode Pos</td>
-                                    <td><input type="text" class="form-control" value="68122"></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kode Kota</td>
+                                      <td><input type="text" class="form-control" value="205024"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Kode Pos</td>
+                                      <td><input type="text" class="form-control" value="68122"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </li>
                             <li class="d-flex justify-content-start mb-2">
                               <span class="tx-medium col-4" style="padding-top: 7.5px;">Telepon</span>
@@ -1640,26 +1671,6 @@
     </div>
   </div>
 
-  <div class="modal fade" id="modaltes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Detail Mahasiswa</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <div class="card card-body bg-gray-100  mb-3">
-            <input type="text" class="form-control datepicker" id="datepicker0">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1699,9 +1710,6 @@
         $(target).show();
       })
 
-      $('#datepicker0').datepicker({
-        dateFormat: 'dd-mm-yy'
-      });
       $('#datepicker1').datepicker({
         dateFormat: 'dd-mm-yy'
       });
