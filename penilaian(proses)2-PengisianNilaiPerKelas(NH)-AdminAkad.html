@@ -600,32 +600,6 @@
     $(function () {
       'use strict'
 
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: [['A', '5', '12.5 %'], ['AB', '15', '37.5 %'], ['B', '10', '25 %'], ['BC', '5', '12.5 %'], ['C', '3', '7.5 %'], ['D', '2', '5 %'], ['E', '0', '0 %']],
-          datasets: [{
-            label: 'Presentase Data',
-            data: [12.5, 37.5, 25, 12.5, 7.5, 5, 0],
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
-      });
-
-
-
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
     });
   </script>
