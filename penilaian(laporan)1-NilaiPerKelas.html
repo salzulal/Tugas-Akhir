@@ -47,430 +47,573 @@
   <!-- DashForge CSS -->
   <link rel="stylesheet" href="../../assets/css/dashforge.css">
   <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
+  <link rel="stylesheet" href="../../assets/css/dashforge.customs.css">
+
+  <style>
+    .nav-aside .with-sub .nav-link::after {
+      margin-right: 20px;
+    }
+  </style>
 
 </head>
 
 <body>
-  <header class="navbar navbar-header navbar-header-fixed">
-    <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
-    <div class="navbar-brand">
-      <a href="../../index.html" class="df-logo">dash<span>forge</span></a>
-    </div><!-- navbar-brand -->
-    <div id="navbarMenu" class="navbar-menu-wrapper">
-      <div class="navbar-menu-header">
-        <a href="../../index.html" class="df-logo">dash<span>forge</span></a>
-        <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
-      </div><!-- navbar-menu-header -->
-      <ul class="nav navbar-menu">
-        <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
-        <li class="nav-item with-sub active">
-          <a href="" class="nav-link"><i data-feather="pie-chart"></i> Dashboard</a>
-          <ul class="navbar-menu-sub">
-            <li class="nav-sub-item"><a href="dashboard-one.html" class="nav-sub-link"><i
-                  data-feather="bar-chart-2"></i>Sales Monitoring</a></li>
-            <li class="nav-sub-item"><a href="dashboard-two.html" class="nav-sub-link"><i
-                  data-feather="bar-chart-2"></i>Website Analytics</a></li>
-            <li class="nav-sub-item"><a href="dashboard-three.html" class="nav-sub-link"><i
-                  data-feather="bar-chart-2"></i>Cryptocurrency</a></li>
-            <li class="nav-sub-item"><a href="dashboard-four.html" class="nav-sub-link"><i
-                  data-feather="bar-chart-2"></i>Helpdesk Management</a></li>
-          </ul>
+  <aside class="aside aside-fixed">
+    <div class="aside-header">
+      <a href="{{ url() }}" class="aside-logo">
+        <img class="ht-40-f pt-0 pt-lg-2" src="../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
+      </a>
+      <a href="" class="aside-menu-link">
+        <i data-feather="menu"></i>
+        <i data-feather="x"></i>
+      </a>
+    </div>
+    <div class="aside-body">
+      <ul class="nav nav-aside">
+        <li class="nav-item">
+          <a href="{{ url('dashboard') }}" class="nav-link">
+            <i data-feather="home"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url() }}" class="nav-link">
+            <i data-feather="user"></i>
+            <span>Biodata</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url() }}" class="nav-link">
+            <i data-feather="activity"></i>
+            <span>Keaktifan per semester</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Administrasi</li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="file-text"></i>
+            <span>Permohonan Surat Aktif</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="file"></i>
+            <span>Pengajuan Cuti</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Kurikulum</li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/rmk') }}" class="nav-link">
+            <i data-feather="grid"></i><span>Rumpun Mata Kuliah</span>
+          </a>
         </li>
         <li class="nav-item with-sub">
-          <a href="" class="nav-link"><i data-feather="package"></i> Apps</a>
-          <ul class="navbar-menu-sub">
-            <li class="nav-sub-item"><a href="app-calendar.html" class="nav-sub-link"><i
-                  data-feather="calendar"></i>Calendar</a></li>
-            <li class="nav-sub-item"><a href="app-chat.html" class="nav-sub-link"><i
-                  data-feather="message-square"></i>Chat</a></li>
-            <li class="nav-sub-item"><a href="app-contacts.html" class="nav-sub-link"><i
-                  data-feather="users"></i>Contacts</a></li>
-            <li class="nav-sub-item"><a href="app-file-manager.html" class="nav-sub-link"><i
-                  data-feather="file-text"></i>File Manager</a></li>
-            <li class="nav-sub-item"><a href="app-mail.html" class="nav-sub-link"><i data-feather="mail"></i>Mail</a>
+          <a href="" class="nav-link"><i data-feather="file"></i><span>Mata Kuliah</span></a>
+          <ul>
+            <li>
+              <a href="{{ url('kurikulum/matakuliah') }}">
+                <i data-feather="book-open"></i><span>Daftar Mata Kuliah</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('kurikulum/matakuliah/matkulprasyarat') }}">
+                <i data-feather="check-square"></i><span>Mata Kuliah Prasyarat</span>
+              </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item with-sub">
-          <a href="" class="nav-link"><i data-feather="layers"></i> Pages</a>
-          <div class="navbar-menu-sub">
-            <div class="d-lg-flex">
-              <ul>
-                <li class="nav-label">Authentication</li>
-                <li class="nav-sub-item"><a href="page-signin.html" class="nav-sub-link"><i data-feather="log-in"></i>
-                    Sign In</a></li>
-                <li class="nav-sub-item"><a href="page-signup.html" class="nav-sub-link"><i
-                      data-feather="user-plus"></i> Sign Up</a></li>
-                <li class="nav-sub-item"><a href="page-verify.html" class="nav-sub-link"><i
-                      data-feather="user-check"></i> Verify Account</a></li>
-                <li class="nav-sub-item"><a href="page-forgot.html" class="nav-sub-link"><i
-                      data-feather="shield-off"></i> Forgot Password</a></li>
-                <li class="nav-label mg-t-20">User Pages</li>
-                <li class="nav-sub-item"><a href="page-profile-view.html" class="nav-sub-link"><i
-                      data-feather="user"></i> View Profile</a></li>
-                <li class="nav-sub-item"><a href="page-connections.html" class="nav-sub-link"><i
-                      data-feather="users"></i> Connections</a></li>
-                <li class="nav-sub-item"><a href="page-groups.html" class="nav-sub-link"><i data-feather="users"></i>
-                    Groups</a></li>
-                <li class="nav-sub-item"><a href="page-events.html" class="nav-sub-link"><i data-feather="calendar"></i>
-                    Events</a></li>
-              </ul>
-              <ul>
-                <li class="nav-label">Error Pages</li>
-                <li class="nav-sub-item"><a href="page-404.html" class="nav-sub-link"><i data-feather="file"></i> 404
-                    Page Not Found</a></li>
-                <li class="nav-sub-item"><a href="page-500.html" class="nav-sub-link"><i data-feather="file"></i> 500
-                    Internal Server</a></li>
-                <li class="nav-sub-item"><a href="page-503.html" class="nav-sub-link"><i data-feather="file"></i> 503
-                    Service Unavailable</a></li>
-                <li class="nav-sub-item"><a href="page-505.html" class="nav-sub-link"><i data-feather="file"></i> 505
-                    Forbidden</a></li>
-                <li class="nav-label mg-t-20">Other Pages</li>
-                <li class="nav-sub-item"><a href="page-timeline.html" class="nav-sub-link"><i
-                      data-feather="file-text"></i> Timeline</a></li>
-                <li class="nav-sub-item"><a href="page-pricing.html" class="nav-sub-link"><i
-                      data-feather="file-text"></i> Pricing</a></li>
-                <li class="nav-sub-item"><a href="page-help-center.html" class="nav-sub-link"><i
-                      data-feather="file-text"></i> Help Center</a></li>
-                <li class="nav-sub-item"><a href="page-invoice.html" class="nav-sub-link"><i
-                      data-feather="file-text"></i> Invoice</a></li>
-              </ul>
-            </div>
-          </div><!-- nav-sub -->
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/datakurikulum') }}" class="nav-link">
+            <i data-feather="briefcase"></i><span>Daftar Kurikulum</span>
+          </a>
         </li>
-        <li class="nav-item"><a href="../../components/" class="nav-link"><i data-feather="box"></i>
-            Components</a></li>
-        <li class="nav-item"><a href="../../collections/" class="nav-link"><i data-feather="archive"></i>
-            Collections</a></li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/cpl') }}" class="nav-link">
+            <i data-feather="check"></i><span>Manajemen CPL</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/profillulusan') }}" class="nav-link">
+            <i data-feather="users"></i><span>Profil Lulusan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/pustaka') }}" class="nav-link">
+            <i data-feather="book"></i><span>Manajemen Pustaka</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Ekuivalensi</li>
+        <li class="nav-item">
+          <a href="{{ url('ekuivalensi') }}" class="nav-link">
+            <i data-feather="refresh-cw"></i>
+            <span>Proses Ekuivalensi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ekuivalensi/dataekuivalensi') }}" class="nav-link">
+            <i data-feather="database"></i>
+            <span>Data Ekuivalensi</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Penjadwalan</li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan/ruangan') }}" class="nav-link">
+            <i data-feather="box"></i>
+            <span>Ruangan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan/periode') }}" class="nav-link">
+            <i data-feather="clock"></i>
+            <span>Periode Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan/kelas') }}" class="nav-link">
+            <i data-feather="clipboard"></i>
+            <span>Kelas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan') }}" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Penjadwalan Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">FRS</li>
+        <li class="nav-item">
+          <a href="{{ url('frs') }}" class="nav-link">
+            <i data-feather="book"></i>
+            <span>FRS</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('frs/perwalian') }}" class="nav-link">
+            <i data-feather="users"></i>
+            <span>Perwalian</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Penilaian</li>
+        <li class="nav-item">
+          <a href="{{ url('penilaian/pengisianNilai/kelas') }}" class="nav-link">
+            <i data-feather="users"></i>
+            <span>Pengisian Nilai Per Kelas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penilaian/pengisianNilai/mahasiswa') }}" class="nav-link">
+            <i data-feather="user"></i>
+            <span>Pengisian Nilai Per Mahasiswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penilaian/evaluasi') }}" class="nav-link">
+            <i data-feather="check-square"></i>
+            <span>Entri Nilai Evaluasi Sem</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penilaian/validasiNina') }}" class="nav-link">
+            <i data-feather="list"></i>
+            <span>List Validasi NINA</span>
+          </a>
+        </li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="bar-chart"></i>
+            <span>Laporan</span>
+          </a>
+          <ul>
+            <li><a href="{{ url('penilaian/laporan?page=nilai_per_kelas') }}">Nilai Per Kelas</a></li>
+            <li><a href="{{ url('penilaian/laporan?page=nilai_per_semester') }}">Nilai Per Semester</a></li>
+            <li><a href="{{ url('penilaian/laporan?page=ranking_ipk') }}">Ranking IPK</a></li>
+            <li><a href="{{ url('penilaian/laporan?page=ranking_ips') }}">Ranking IPS</a></li>
+            <li><a href="{{ url('penilaian/laporan?page=daftar_ips_seluruh_mhs') }}">Daftar IPS Mahasiswa</a></li>
+            <li><a href="{{ url('penilaian/laporan?page=rekap_nilai_per_kelas') }}">Rekap Nilai Per Kelas</a></li>
+            <li><a href="{{ url('penilaian/laporan?page=persentase_pengumpulan_nilai') }}">Persentase Pengumpulan
+                Nilai</a></li>
+          </ul>
+        </li>
+        <li class="nav-label mg-t-25">Presensi</li>
+        <li class="nav-item">
+          <a href="{{ url('presensi') }}" class="nav-link">
+            <i data-feather="check-square"></i>
+            <span>Presensi Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('presensi?page=prodi') }}" class="nav-link">
+            <i data-feather="list"></i>
+            <span>Daftar Presensi Prodi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('presensi?page=rekap') }}" class="nav-link">
+            <i data-feather="bar-chart-2"></i>
+            <span>Rekapitulasi Kehadiran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('presensi?page=validasi') }}" class="nav-link">
+            <i data-feather="check"></i>
+            <span>Validasi Izin Mahasiswa</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">IPD</li>
+        <li class="nav-item"><a href="{{ url('ipd/kuesioner') }}" class="nav-link">
+            <i data-feather="slack"></i>
+            <span>Kuesioner</span>
+          </a>
+        </li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="bar-chart"></i>
+            <span>Rekapitulasi IPD</span>
+          </a>
+          <ul>
+            <li><a href="{{ url('ipd') }}">Rerata IPD Departemen</a></li>
+            <li><a href="{{ url('ipd/chart/rerataipddosen') }}">Rerata IPD Dosen</a></li>
+            <li><a href="{{ url('ipd/chart/rerataitempertanyaan') }}">Rerata Item Pertanyaan</a></li>
+            <li><a href="{{ url('ipd/chart/prosentasenaikturunipd') }}">Prosentase Naik Turun IPD</a></li>
+            <li><a href="{{ url('ipd/chart/prosentaseitempertanyaan') }}">Prosentase Item Pertanyaan</a>
+            </li>
+            <li><a href="{{ url('ipd/chart/trenrerataipd') }}">Tren Rerata IPD</a></li>
+          </ul>
+        </li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="help-circle"></i>
+            <span>Pertanyaan</span>
+          </a>
+          <ul>
+            <li><a href="{{ url('ipd/pertanyaan') }}">Pertanyaan IPD</a></li>
+            <li><a href="{{ url('ipd/pertanyaan/jeniskuesioner') }}">Jenis Kuesioner</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="{{ url('ipd/hasil') }}" class="nav-link"><i data-feather="book"></i>
+            <span>Hasil Kuesioner</span></a></li>
+        <li class="nav-label mg-t-25">SAR</li>
+        <li class="nav-item">
+          <a href="{{ url('sar') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 1 - Tim Mutu ITS</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/sar-fakultas') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 2 - Tim Mutu Fakultas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/sar-departemen') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 3 - Tim Mutu Departemen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/sar-rmk-dosen') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 4 & 5 - SAR RMK & Dosen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/rekap-sar') }}" class="nav-link">
+            <i data-feather="pie-chart"></i>
+            <span>Rekap SAR Semester</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/laporan-sar') }}" class="nav-link">
+            <i data-feather="bar-chart-2"></i>
+            <span>Laporan Evaluasi SAR</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Tugas Akhir</li>
+        <li class="nav-item">
+          <a href="{{ url('ta/tasaya') }}" class="nav-link">
+            <i data-feather="file-text"></i>
+            <span>TA saya</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/sidangta') }}" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Sidang TA</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/tawarantopik') }}" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Tawaran Topik</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/bimbingansaya') }}" class="nav-link">
+            <i data-feather="check"></i>
+            <span>Bimbingan Saya</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/daftartaprodi') }}" class="nav-link">
+            <i data-feather="book"></i>
+            <span>Daftar TA Prodi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/pengaturanta') }}" class="nav-link">
+            <i data-feather="book"></i>
+            <span>Pengaturan TA</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Referensi</li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="arrow-down-circle"></i>
+            <span>Jalur Masuk</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="link"></i>
+            <span>Kerjasama</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Pengaturan</li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="settings"></i>
+            <span>Jadwal</span>
+          </a>
+          <ul>
+            <li>
+              <a href="#">FRS</a>
+            </li>
+            <li>
+              <a href="{{ url('ipd/setting') }}">IPD</a>
+            </li>
+            <li>
+              <a href="#">SAR</a>
+            </li>
+          </ul>
+        </li>
       </ul>
-    </div><!-- navbar-menu-wrapper -->
-    <div class="navbar-right">
-      <a id="navbarSearch" href="" class="search-link"><i data-feather="search"></i></a>
-      <div class="dropdown dropdown-message">
-        <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
-          <i data-feather="message-square"></i>
-          <span>5</span>
+    </div>
+  </aside>
+
+  <div class="content ht-100v pd-0">
+    <div class="content-header align-items-center justify-content-between">
+      <nav class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="dropdown">
+            ID <i data-feather="chevron-down" class="wd-15 ht-15"></i>
+          </a>
+          <div class="dropdown-menu tx-13">
+            <a href="{{ url('lang') }}?locale=id-ID"
+              class="dropdown-item {% if locale == 'id-ID' %}active{% endif %}">ID</a>
+            <a href="{{ url('lang') }}?locale=en-US"
+              class="dropdown-item {% if locale == 'en-US' %}active{% endif %}">EN</a>
+          </div>
+        </li>
+      </nav>
+      <nav class="nav">
+        <a href="{{ url('presensi/kehadiran/qrscan') }}" class="btn btn-outline-secondary btn-sm rounded-pill mr-2">
+          <i class="fa fa-qrcode mr-1"></i> Scan QR
         </a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <div class="dropdown-header">New Messages</div>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <strong>Socrates Itumay</strong>
-                <p>nam libero tempore cum so...</p>
-                <span>Mar 15 12:32pm</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <strong>Joyce Chua</strong>
-                <p>on the other hand we denounce...</p>
-                <span>Mar 13 04:16am</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/600"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <strong>Althea Cabardo</strong>
-                <p>is there anyone who loves...</p>
-                <span>Mar 13 02:56am</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <strong>Adrian Monino</strong>
-                <p>duis aute irure dolor in repre...</p>
-                <span>Mar 12 10:40pm</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <div class="dropdown-footer"><a href="">View all Messages</a></div>
-        </div><!-- dropdown-menu -->
-      </div><!-- dropdown -->
-      <div class="dropdown dropdown-notification">
-        <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
-          <i data-feather="bell"></i>
-          <span>2</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <div class="dropdown-header">Notifications</div>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
-                <span>Mar 15 12:32pm</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <p><strong>Joyce Chua</strong> just created a new blog post</p>
-                <span>Mar 13 04:16am</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/600"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <p><strong>Althea Cabardo</strong> just created a new blog post</p>
-                <span>Mar 13 02:56am</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <a href="" class="dropdown-item">
-            <div class="media">
-              <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500"
-                  class="rounded-circle" alt=""></div>
-              <div class="media-body mg-l-15">
-                <p><strong>Adrian Monino</strong> added new comment on your photo</p>
-                <span>Mar 12 10:40pm</span>
-              </div><!-- media-body -->
-            </div><!-- media -->
-          </a>
-          <div class="dropdown-footer"><a href="">View all Notifications</a></div>
-        </div><!-- dropdown-menu -->
-      </div><!-- dropdown -->
-      <div class="dropdown dropdown-profile">
-        <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
-          <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-        </a><!-- dropdown-link -->
-        <div class="dropdown-menu dropdown-menu-right tx-13">
-          <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle"
-              alt=""></div>
-          <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
-          <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
-
-          <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
-          <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
-          <div class="dropdown-divider"></div>
-          <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help
-            Center</a>
-          <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
-          <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
-          <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
-          <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
-        </div><!-- dropdown-menu -->
-      </div><!-- dropdown -->
-    </div><!-- navbar-right -->
-    <div class="navbar-search">
-      <div class="navbar-search-header">
-        <input type="search" class="form-control" placeholder="Type and hit enter to search...">
-        <button class="btn"><i data-feather="search"></i></button>
-        <a id="navbarSearchClose" href="" class="link-03 mg-l-5 mg-lg-l-10"><i data-feather="x"></i></a>
-      </div><!-- navbar-search-header -->
-      <div class="navbar-search-body">
-        <label class="tx-10 tx-medium tx-uppercase tx-spacing-1 tx-color-03 mg-b-10 d-flex align-items-center">Recent
-          Searches</label>
-        <ul class="list-unstyled">
-          <li><a href="dashboard-one.html">modern dashboard</a></li>
-          <li><a href="app-calendar.html">calendar app</a></li>
-          <li><a href="../../collections/modal.html">modal examples</a></li>
-          <li><a href="../../components/el-avatar.html">avatar</a></li>
-        </ul>
-
-        <hr class="mg-y-30 bd-0">
-
-        <label class="tx-10 tx-medium tx-uppercase tx-spacing-1 tx-color-03 mg-b-10 d-flex align-items-center">Search
-          Suggestions</label>
-
-        <ul class="list-unstyled">
-          <li><a href="dashboard-one.html">cryptocurrency</a></li>
-          <li><a href="app-calendar.html">button groups</a></li>
-          <li><a href="../../collections/modal.html">form elements</a></li>
-          <li><a href="../../components/el-avatar.html">contact app</a></li>
-        </ul>
-      </div><!-- navbar-search-body -->
-    </div><!-- navbar-search -->
-  </header><!-- navbar -->
-
-
-
-  <div class="content content-fixed">
-    <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
-      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
-        <div>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Nilai per Kelas
-              </li>
-            </ol>
-          </nav>
-          <h4 class="mg-b-0 tx-spacing--1">Nilai per Kelas
-          </h4>
-        </div>
-
-      </div>
-
-      <div class="row row-xs justify-content-center">
-
-        <div class="col-lg-10 mb-3">
-          <div class="card card-body bg-gray-100">
-            <div class="d-flex justify-content-center col-12 pd-0">
-
-              <div class="d-flex justify-content-between" style="width: 40%;">
-                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Periode</div>
-                <select class="form-control selectbiasa" style="width: 75%;">
-                  <option value="1" selected> Gasal 2019/2020</option>
-                  <option value="2">Genap 2018/2019</option>
-                  <option value="3">Gasal 2018/2019</option>
-                  <option value="4">Genap 2017/2018</option>
-                </select>
-              </div>
-
-              <div class="d-flex justify-content-end" style="width: 20%">
-                <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
-              </div>
+        <div class="dropdown dropdown-profile">
+          <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+            <div class="avatar avatar-sm">
+              <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
             </div>
-            <hr class="mt-3 mb-2">
-            <div class="d-flex justify-content-center col-12 pd-0">
-              <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Kelas</div>
-
-              <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
-                <select class="form-control selectkelas col-12">
-                  <option label="Pilih Kelas"></option>
-                  <option value="1">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
-                  <option value="2">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
-                  <option value="3">2018 - IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
-                  <option value="4">2018 - IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
-                  <option value="5">2018 - IF184101 Dasar Pemrograman (4) _ 19/30</option>
-                </select>
-              </form>
-
-              <div class="d-flex justify-content-end" style="width: 20%">
-                <a href="" class="btn btn-primary" style="width: 80%;">Pilih</a>
-              </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="avatar avatar-lg mg-b-15">
+              <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
             </div>
-
-            <!-- <hr class="mt-3 mb-2"> -->
-
-            <div class="row mt-2">
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between">
-                  <span class="tx-medium">Mata Kuliah</span>
-                  <span class="">SF4404 - Fisika Matematika III</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Kelas</span>
-                  <span class="">A</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Program Studi</span>
-                  <span class="">S1 Fisika</span>
-                </li>
-              </div>
-
-              <div class="col-lg-6">
-                <li class="d-flex justify-content-between">
-                  <span class="tx-medium">Kurikulum</span>
-                  <span class="">2018</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Periode</span>
-                  <span class="">Genap 2018/2019</span>
-                </li>
-                <li class="d-flex justify-content-between mt-2">
-                  <span class="tx-medium ">Pengajar</span>
-                  <span class="">Dr. Dra. Melania Suweni Muntini, MT</span>
-                </li>
-              </div>
-
-            </div>
+            <h6 class="tx-semibold mg-b-5">
+              Sal Zulal </h6>
+            <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+            <hr>
+            <a href="" class="dropdown-item" data-toggle="modal" data-target="#chgRoleUser">
+              <i data-feather="user"></i>Ganti hak akses
+            </a>
+            <a href="" class="dropdown-item">
+              <i data-feather="settings"></i>Kembali ke myITS SSO
+            </a>
+            <a href="{{ url('logout') }}" class="dropdown-item">
+              <i data-feather="log-out"></i>Keluar
+            </a>
           </div>
         </div>
+      </nav>
+    </div>
+    <div class="content-body">
+      <div class="container-fluid">
+        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
+          <div>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nilai per Kelas
+                </li>
+              </ol>
+            </nav>
+            <h4 class="mg-b-0 tx-spacing--1">Nilai per Kelas
+            </h4>
+          </div>
+
+        </div>
+
+        <div class="row row-xs justify-content-center">
+
+          <div class="col-lg-8 mb-3">
+            <div class="card card-body bg-gray-100">
+              <div class="d-flex justify-content-center col-12 pd-0">
+
+                <div class="d-flex justify-content-between" style="width: 40%;">
+                  <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Periode</div>
+                  <select class="form-control selectbiasa" style="width: 75%;">
+                    <option value="1" selected> Gasal 2019/2020</option>
+                    <option value="2">Genap 2018/2019</option>
+                    <option value="3">Gasal 2018/2019</option>
+                    <option value="4">Genap 2017/2018</option>
+                  </select>
+                </div>
+
+                <div class="d-flex justify-content-end" style="width: 20%">
+                  <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+                </div>
+              </div>
+              <hr class="mt-3 mb-2">
+              <div class="d-flex justify-content-center col-12 pd-0">
+                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Kelas</div>
+
+                <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
+                  <select class="form-control selectkelas col-12">
+                    <option label="Contoh: 2020 - AA000001 Bahasa Indonesia"></option>
+                    <option value="1">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
+                    <option value="2">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
+                    <option value="3">2018 - IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
+                    <option value="4">2018 - IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
+                    <option value="5">2018 - IF184101 Dasar Pemrograman (4) _ 19/30</option>
+                  </select>
+                </form>
+
+                <div class="d-flex justify-content-end" style="width: 20%">
+                  <a href="" class="btn btn-primary" style="width: 80%;">Pilih</a>
+                </div>
+              </div>
+
+              <!-- <hr class="mt-3 mb-2"> -->
+
+              <div class="row mt-2">
+                <div class="col-lg-6">
+                  <li class="d-flex justify-content-between">
+                    <span class="tx-medium">Mata Kuliah</span>
+                    <span class="">SF4404 - Fisika Matematika III</span>
+                  </li>
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium ">Kelas</span>
+                    <span class="">A</span>
+                  </li>
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium ">Program Studi</span>
+                    <span class="">S1 Fisika</span>
+                  </li>
+                </div>
+
+                <div class="col-lg-6">
+                  <li class="d-flex justify-content-between">
+                    <span class="tx-medium">Kurikulum</span>
+                    <span class="">2018</span>
+                  </li>
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium ">Periode</span>
+                    <span class="">Genap 2018/2019</span>
+                  </li>
+                  <li class="d-flex justify-content-between mt-2">
+                    <span class="tx-medium ">Pengajar</span>
+                    <span class="">Dr. Dra. Melania Suweni Muntini, MT</span>
+                  </li>
+                </div>
+
+              </div>
+            </div>
+          </div>
 
 
-        <div class="col-lg-10 mb-3">
-          <div class="card">
-            <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-center" style="width: 25%;">NRP</th>
-                        <th class="text-center">Nama Mahasiswa</th>
-                        <th class="text-center" style="width: 15%;">Nilai</th>
-                      </tr>
-                    </thead>
+          <div class="col-lg-8 mb-3">
+            <div class="card">
+              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-center" style="width: 25%;">NRP</th>
+                          <th class="text-center">Nama Mahasiswa</th>
+                          <th class="text-center" style="width: 15%;">Nilai</th>
+                        </tr>
+                      </thead>
 
-                    <tbody>
-                      <tr>
-                        <td class="text-center">05111640000009</td>
-                        <td>Sal Zulal</td>
-                        <td class="text-center">A</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">05111640000013</td>
-                        <td>Muhammad Raihan Anindita</td>
-                        <td class="text-center">A</td>
-                      </tr>
-                      <tr class="bg-warning">
-                        <td class="text-center align-middle">05111640000014</td>
-                        <td>Sal Zulal<br>
-                          <small><i>Belum Mengisi Kuesioner<i></small>
-                        </td>
-                        <td class="text-center align-middle">*</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">05111640000015</td>
-                        <td>Muhammad Raihan Anindita</td>
-                        <td class="text-center">A</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">05111640000009</td>
-                        <td>Sal Zulal</td>
-                        <td class="text-center">A</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">05111640000013</td>
-                        <td>Muhammad Raihan Anindita</td>
-                        <td class="text-center">A</td>
-                      </tr>
-                      <tr class="bg-warning">
-                        <td class="text-center align-middle">05111640000014</td>
-                        <td>Sal Zulal<br>
-                          <small><i>Belum Mengisi Kuesioner<i></small>
-                        </td>
-                        <td class="text-center align-middle">*</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">05111640000015</td>
-                        <td>Muhammad Raihan Anindita</td>
-                        <td class="text-center">A</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">05111640000009</td>
+                          <td>Sal Zulal</td>
+                          <td class="text-center">A</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">05111640000013</td>
+                          <td>Muhammad Raihan Anindita</td>
+                          <td class="text-center">A</td>
+                        </tr>
+                        <tr class="bg-warning">
+                          <td class="text-center align-middle">05111640000014</td>
+                          <td>Sal Zulal<br>
+                            <small><i>Belum Mengisi Kuesioner<i></small>
+                          </td>
+                          <td class="text-center align-middle">*</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">05111640000015</td>
+                          <td>Muhammad Raihan Anindita</td>
+                          <td class="text-center">A</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">05111640000009</td>
+                          <td>Sal Zulal</td>
+                          <td class="text-center">A</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">05111640000013</td>
+                          <td>Muhammad Raihan Anindita</td>
+                          <td class="text-center">A</td>
+                        </tr>
+                        <tr class="bg-warning">
+                          <td class="text-center align-middle">05111640000014</td>
+                          <td>Sal Zulal<br>
+                            <small><i>Belum Mengisi Kuesioner<i></small>
+                          </td>
+                          <td class="text-center align-middle">*</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">05111640000015</td>
+                          <td>Muhammad Raihan Anindita</td>
+                          <td class="text-center">A</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
 
-      </div><!-- row -->
-    </div><!-- container -->
-  </div><!-- content -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div>
+  </div>
 
 
 
@@ -488,17 +631,10 @@
 
   <script src="../../assets/js/chart.chartjs.js"></script>
   <script src="../../assets/js/dashforge.js"></script>
+  <script src="../../assets/js/dashforge.aside.js"></script>
   <script>
     $(function () {
       'use strict'
-
-      $('.selectsmt').select2({
-        minimumResultsForSearch: Infinity
-      });
-
-      $('.selectmhs').select2({
-        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
-      });
 
       $('.selectkelas').select2({
         placeholder: 'Contoh: AA000001 Bahasa Indonesia',
