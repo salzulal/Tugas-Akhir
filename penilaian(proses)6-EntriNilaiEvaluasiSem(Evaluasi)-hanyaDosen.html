@@ -73,7 +73,7 @@
         <li class="nav-item">
           <a href="{{ url('dashboard') }}" class="nav-link">
             <i data-feather="home"></i>
-            <span>Dashboard</span>
+            <span>Beranda</span>
           </a>
         </li>
         <li class="nav-item">
@@ -453,7 +453,7 @@
           <div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Evaluasi Pembelajaran</li>
               </ol>
             </nav>
@@ -464,45 +464,46 @@
 
         <div class="row row-xs justify-content-center">
 
-          <div class="col-lg-8 mb-3">
+          <div class="col-12 col-xl-8 mb-3">
             <div class="card card-body bg-gray-100">
 
               <div class="row">
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between">
-                    <span class="tx-medium">Mata Kuliah</span>
-                    <span class="">SF4404 - Fisika Matematika III</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Kelas</span>
-                    <span class="">A</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Program Studi</span>
-                    <span class="">S1 Fisika</span>
-                  </li>
+                <div class="col-xl-6">
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-0 tx-semibold tx-md-medium">Mata Kuliah</div>
+                    <div class="col-md-8 mt-1 mt-md-0 ml-3 ml-md-0 text-md-right">SF4404 - Fisika Matematika III</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Kelas</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">A</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Program Studi</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">S1 Fisika</div>
+                  </div>
                 </div>
+                <div class="col-xl-6">
 
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between">
-                    <span class="tx-medium">Kurikulum</span>
-                    <span class="">2018</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Periode</span>
-                    <span class="">Genap 2018/2019</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Pengajar</span>
-                    <span class="">Dr. Dra. Melania Suweni Muntini, MT</span>
-                  </li>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-0 tx-semibold tx-md-medium">Kurikulum</div>
+                    <div class="col-md-8 mt-1 mt-md-0 ml-3 ml-md-0 text-md-right">2018</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Periode</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Genap 2018/2019</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Pengajar</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Dr. Dra. Melania Suweni Muntini, MT
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-              </div> <!-- row -->
             </div> <!-- cardbody -->
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-12 col-xl-8">
             <div class="alert alert-warning" role="alert">
               <ul style="list-style-type:circle; margin: 0px;">
                 <li>Sebelum mengisi nilai masing-masing mahasiswa, anda harus mengisi
@@ -515,382 +516,384 @@
             </div>
           </div>
 
-          <div class="col-lg-12 mb-3">
+          <div class="col-12 mb-3">
             <div class="card">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class=" table asesmen">
-                      <thead>
-                        <tr>
-                          <th class="text-center" style="width: 5%;">No</th>
-                          <th class="text-center">CP MK yang Terpenuhi</th>
-                          <th class="text-center" style="width: 30%;">Asesmen</th>
-                          <th class="text-center" style="width: 15%;">Bobot (%)</th>
-                          <th class="text-center" style="width: 5%;"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="text-center align-middle">1</td>
-                          <td class="text-center align-middle">
-                            <select class="form-control selectbiasa" style="width: 100%;">
-                              <option disabled selected>Pilih Sub CP</option>
-                              <option value="1">Sub CP MK 1.1</option>
-                              <option value="2">Sub CP MK 1.2</option>
-                              <option value="3">Sub CP MK 2.1</option>
-                              <option value="4">Sub CP MK 2.2</option>
-                              <option value="5">Sub CP MK 2.3</option>
-                              <option value="6">Sub CP MK 3.1</option>
-                              <option value="7">...</option>
-                            </select>
-                          </td>
-                          <td><input type="text" class="form-control" value="Kehadiran"></td>
-                          <td><input type="text" class="form-control" value="5"></td>
+              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table asesmen">
+                    <thead>
+                      <tr>
+                        <th class="text-center" style="width: 5%;">No</th>
+                        <th class="text-center" style="width: 45%;">CP MK yang Terpenuhi</th>
+                        <th class="text-center" style="width: 30%;">Asesmen</th>
+                        <th class="text-center" style="width: 15%;">Bobot (%)</th>
+                        <th class="text-center" style="width: 5%;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled selected>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value="Kehadiran"></td>
+                        <td><input type="text" class="form-control" value="5"></td>
 
-                          <td class="text-center align-middle"><button type="button" class="ibtnDel"
-                              data-feather="trash-2" style="width:20px; height:20px;"></button></td>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center align-middle">2</td>
-                          <td class="text-center align-middle">
-                            <select class="form-control selectbiasa" style="width: 100%;">
-                              <option disabled selected>Pilih Sub CP</option>
-                              <option value="1">Sub CP MK 1.1</option>
-                              <option value="2">Sub CP MK 1.2</option>
-                              <option value="3">Sub CP MK 2.1</option>
-                              <option value="4">Sub CP MK 2.2</option>
-                              <option value="5">Sub CP MK 2.3</option>
-                              <option value="6">Sub CP MK 3.1</option>
-                              <option value="7">...</option>
-                            </select>
-                          <td><input type="text" class="form-control" value="Sikap"></td>
-                          </td>
-                          <td><input type="text" class="form-control" value="5"></td>
-                          <td class="text-center align-middle"><button type="button" class="ibtnDel"
-                              data-feather="trash-2" style="width:20px; height:20px;"></button></td>
-                        </tr>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled selected>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        <td><input type="text" class="form-control" value="Sikap"></td>
+                        </td>
+                        <td><input type="text" class="form-control" value="5"></td>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                      </tr>
 
-                        <tr>
-                          <td class="text-center align-middle">3</td>
-                          <td class="text-center align-middle">
-                            <select class="form-control selectbiasa" style="width: 100%;">
-                              <option disabled selected>Pilih Sub CP</option>
-                              <option value="1">Sub CP MK 1.1</option>
-                              <option value="2">Sub CP MK 1.2</option>
-                              <option value="3">Sub CP MK 2.1</option>
-                              <option value="4">Sub CP MK 2.2</option>
-                              <option value="5">Sub CP MK 2.3</option>
-                              <option value="6">Sub CP MK 3.1</option>
-                              <option value="7">...</option>
-                            </select>
-                          </td>
-                          <td><input type="text" class="form-control" value="Tugas 1"></td>
-                          <td><input type="text" class="form-control" value="10"></td>
-                          <td class="text-center align-middle"><button type="button" class="ibtnDel"
-                              data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                      <tr>
+                        <td class="text-center align-middle">3</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled selected>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value="Tugas 1"></td>
+                        <td><input type="text" class="form-control" value="10"></td>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
 
-                        </tr>
+                      </tr>
 
-                        <tr>
-                          <td class="text-center align-middle">4</td>
-                          <td class="text-center align-middle">
-                            <select class="form-control selectbiasa" style="width: 100%;">
-                              <option disabled selected>Pilih Sub CP</option>
-                              <option value="1">Sub CP MK 1.1</option>
-                              <option value="2">Sub CP MK 1.2</option>
-                              <option value="3">Sub CP MK 2.1</option>
-                              <option value="4">Sub CP MK 2.2</option>
-                              <option value="5">Sub CP MK 2.3</option>
-                              <option value="6">Sub CP MK 3.1</option>
-                              <option value="7">...</option>
-                            </select>
-                          </td>
-                          <td><input type="text" class="form-control" value="Tugas Kelompok 1"></td>
-                          <td><input type="text" class="form-control" value="10"></td>
-                          <td class="text-center align-middle"><button type="button" class="ibtnDel"
-                              data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                      <tr>
+                        <td class="text-center align-middle">4</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled selected>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value="Tugas Kelompok 1"></td>
+                        <td><input type="text" class="form-control" value="10"></td>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
 
-                        </tr>
+                      </tr>
 
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle">
-                            <select class="form-control selectbiasa" style="width: 100%;">
-                              <option disabled selected></option>
-                              <option value="1">Sub CP MK 1.1</option>
-                              <option value="2">Sub CP MK 1.2</option>
-                              <option value="3">Sub CP MK 2.1</option>
-                              <option value="4">Sub CP MK 2.2</option>
-                              <option value="5">Sub CP MK 2.3</option>
-                              <option value="6">Sub CP MK 3.1</option>
-                              <option value="7">...</option>
-                            </select>
-                          </td>
-                          <td><input type="text" class="form-control" value=""></td>
-                          <td><input type="text" class="form-control" value=""></td>
-                          <td class="text-center align-middle"><button type="button" class="addrow"
-                              data-feather="plus-circle" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="text-center"></th>
-                          <th class="text-center"></th>
-                          <th class="text-right">Total Bobot (%):</th>
-                          <th class="text-center">100</th>
-                          <th></th>
-                        </tr>
-                        <tr>
-                        </tr>
-                      </tfoot>
-                    </table>
-
-                  </div>
-                </div>
-              </div><!-- col -->
-            </div>
-          </div><!-- row -->
-
-          <div class="col-lg-12 mb-3">
-            <div class="card">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th rowspan="2" class="text-center align-middle">NRP</th>
-                          <th rowspan="2" class="text-center align-middle">Nama Mahasiswa</th>
-                          <th class="text-center align-middle" style="width: 8%;">Kehadiran</th>
-                          <th class="text-center align-middle" style="width: 8%;">Sikap</th>
-                          <th class="text-center align-middle" style="width: 8%;">Tugas 1</th>
-                          <th class="text-center align-middle" style="width: 8%;">Tugas Kelompok 1</th>
-                          <th class="text-center align-middle" style="width: 8%;">ETS</th>
-                          <th class="text-center align-middle" style="width: 8%;">Kuis 1</th>
-                          <th class="text-center align-middle" style="width: 8%;">Kuis 2</th>
-                          <th class="text-center align-middle" style="width: 8%;">ETS</th>
-                          <th rowspan="2" class="text-center align-middle">N.A.</th>
-                          <th rowspan="2" class="text-center align-middle">N.H.</th>
-                        </tr>
-                        <tr>
-                          <th class="text-center">5 %</th>
-                          <th class="text-center">5 %</th>
-                          <th class="text-center">10 %</th>
-                          <th class="text-center">10 %</th>
-                          <th class="text-center">20 %</th>
-                          <th class="text-center">15 %</th>
-                          <th class="text-center">15 %</th>
-                          <th class="text-center">20 %</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="text-center align-middle">01111440000017</td>
-                          <td class="align-middle">Dimas Bagus Yudhistira</td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td class="text-center align-middle">2.0</td>
-                          <td class="text-center align-middle">E</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center align-middle">01111640000010</td>
-                          <td class="align-middle">Hilmy Yafi' Zuhair</td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td class="text-center align-middle">2.0</td>
-                          <td class="text-center align-middle">E</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center align-middle">01111640000015</td>
-                          <td class="align-middle">Lintang Kinasih Wibawaning Utomo</td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td class="text-center align-middle">2.0</td>
-                          <td class="text-center align-middle">E</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center align-middle">01111440000017</td>
-                          <td class="align-middle">Dimas Bagus Yudhistira</td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td class="text-center align-middle">2.0</td>
-                          <td class="text-center align-middle">E</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center align-middle">01111640000010</td>
-                          <td class="align-middle">Hilmy Yafi' Zuhair</td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td class="text-center align-middle">2.0</td>
-                          <td class="text-center align-middle">E</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center align-middle">01111640000015</td>
-                          <td class="align-middle">Lintang Kinasih Wibawaning Utomo</td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td align="center" class="align-middle"><input type="text" class="form-control text-center"
-                              style="width: 90%;" value="50"></td>
-                          <td class="text-center align-middle">2.0</td>
-                          <td class="text-center align-middle">E</td>
-                        </tr>
-
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="d-flex justify-content-end">
-                    <form class="form-inline">
-                      <a href="" class="btn btn-primary ml-2"><button data-feather="save" class="mr-2"></button>Simpan
-                        Nilai</a>
-                    </form>
-                  </div>
-
-                  <hr class="mb-3 mt-3">
-                  <span class="tx-medium">Unggah nilai melalui berkas</span>
-                  <div class="d-flex justify-content-between mt-2">
-                    <a href="" class="btn btn-outline-primary ">Unduh <i>template</i> berkas</a>
-
-                    <form class="form-inline d-flex justify-content-end col-8 pd-0">
-                      <div class="custom-file col-6">
-                        <input type="file" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Pilih Berkas</label>
-                      </div>
-                      <a href="" class="btn btn-primary ml-2">Unggah</a>
-                    </form>
-                  </div>
-
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td class="text-center align-middle"></td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled selected></option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value=""></td>
+                        <td><input type="text" class="form-control" value=""></td>
+                        <td class="text-center align-middle"><button type="button" class="addrow"
+                            data-feather="plus-circle" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center"></th>
+                        <th class="text-center"></th>
+                        <th class="text-right">Total Bobot (%):</th>
+                        <th class="text-center">100</th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                      </tr>
+                    </tfoot>
+                  </table>
 
                 </div>
               </div>
-              <div class="d-flex justify-content-end bg-gray-200">
-                <form class="form-inline mr-4">
-                  <a href="" class="btn btn-primary m-3"><button data-feather="save" class="mr-2"></button>Simpan Nilai
-                    Permanen</a>
-                </form>
+            </div>
+          </div><!-- row -->
+
+          <div class="col-12 mb-3">
+            <div class="card">
+              <div class="card-body  mr-3 ml-3">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th rowspan="2" class="text-center align-middle">NRP</th>
+                        <th rowspan="2" class="text-center align-middle">Nama Mahasiswa</th>
+                        <th class="text-center align-middle" style="width: 8%;">Kehadiran</th>
+                        <th class="text-center align-middle" style="width: 8%;">Sikap</th>
+                        <th class="text-center align-middle" style="width: 8%;">Tugas 1</th>
+                        <th class="text-center align-middle" style="width: 8%;">Tugas Kelompok 1</th>
+                        <th class="text-center align-middle" style="width: 8%;">ETS</th>
+                        <th class="text-center align-middle" style="width: 8%;">Kuis 1</th>
+                        <th class="text-center align-middle" style="width: 8%;">Kuis 2</th>
+                        <th class="text-center align-middle" style="width: 8%;">ETS</th>
+                        <th rowspan="2" class="text-center align-middle">N.A.</th>
+                        <th rowspan="2" class="text-center align-middle">N.H.</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">5 %</th>
+                        <th class="text-center">5 %</th>
+                        <th class="text-center">10 %</th>
+                        <th class="text-center">10 %</th>
+                        <th class="text-center">20 %</th>
+                        <th class="text-center">15 %</th>
+                        <th class="text-center">15 %</th>
+                        <th class="text-center">20 %</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center align-middle">01111440000017</td>
+                        <td class="align-middle">Dimas Bagus Yudhistira</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td class="text-center align-middle">2.0</td>
+                        <td class="text-center align-middle">E</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">01111640000010</td>
+                        <td class="align-middle">Hilmy Yafi' Zuhair</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td class="text-center align-middle">2.0</td>
+                        <td class="text-center align-middle">E</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">01111640000015</td>
+                        <td class="align-middle">Lintang Kinasih Wibawaning Utomo</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td class="text-center align-middle">2.0</td>
+                        <td class="text-center align-middle">E</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">01111440000017</td>
+                        <td class="align-middle">Dimas Bagus Yudhistira</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td class="text-center align-middle">2.0</td>
+                        <td class="text-center align-middle">E</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">01111640000010</td>
+                        <td class="align-middle">Hilmy Yafi' Zuhair</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td class="text-center align-middle">2.0</td>
+                        <td class="text-center align-middle">E</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">01111640000015</td>
+                        <td class="align-middle">Lintang Kinasih Wibawaning Utomo</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;" value="50"></td>
+                        <td class="text-center align-middle">2.0</td>
+                        <td class="text-center align-middle">E</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="row m-0 d-flex justify-content-end">
+                  <div class="col-12 col-md-8 d-flex justify-content-end pd-0">
+                    <a href="" class="col-12 col-md-auto btn btn-primary"><button data-feather="save"
+                        class="mr-2"></button>Simpan Nilai</a>
+                  </div>
+                </div>
+
+
+                <hr class="mb-3">
+                <div class="tx-medium">Unggah nilai melalui berkas</div>
+                <div class="row m-0 mt-2 d-flex justify-content-between">
+                  <a href="" class="col-12 col-md-auto btn btn-outline-primary">Unduh <i>template</i> berkas</a>
+
+                  <form class="col-12 col-md-8 form-inline d-flex justify-content-end pd-0">
+                    <div class="custom-file col-12 col-md-6 mt-1 mt-md-0 ">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">Pilih Berkas</label>
+                    </div>
+                    <a href="" class="col-12 col-md-auto mt-1 mt-md-0 btn btn-primary ml-2">Unggah</a>
+                  </form>
+                </div>
+              </div>
+
+              <div class="card-body m-0 bg-gray-200">
+                <div class="row mr-3 ml-3 d-flex justify-content-end">
+                  <div class="col-12 col-md-8 d-flex justify-content-end pd-0">
+                    <a href="" class="col-12 col-md-auto btn btn-primary"><button data-feather="save"
+                        class="mr-2"></button>Simpan
+                      Nilai
+                      Permanen</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-8 mb-3">
+          <div class="col-12 col-xl-8 mb-3">
             <div class="card bg-gray-100">
               <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
                 <h5 class="tx-16">Statistik</h5>
               </div>
               <div class="card-body" style="padding-top: 0px;">
                 <div class="row">
-                  <div class="col-lg-6">
-                    <li class="d-flex justify-content-between mt-2">
-                      <span class="tx-medium">Nilai Minimum</span>
-                      <span class="">0</span>
-                    </li>
-                    <li class="d-flex justify-content-between mt-2">
-                      <span class="tx-medium ">Nilai Maksimum</span>
-                      <span class="">0</span>
-                    </li>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-8 mt-1 mt-md-0 tx-semibold tx-md-medium">Nilai Minimum</div>
+                      <div class="col mt-1 mt-md-0 ml-3 ml-md-0 text-right">0</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8 mt-1 mt-md-2 tx-semibold tx-md-medium">Nilai Maksimum</div>
+                      <div class="col mt-1 mt-md-2 ml-3 ml-md-0 text-right">0</div>
+                    </div>
                   </div>
+                  <div class="col-md-6">
 
-                  <div class="col-lg-6">
-                    <li class="d-flex justify-content-between mt-2">
-                      <span class="tx-medium">Rata-rata</span>
-                      <span class="">0 (0)</span>
-                    </li>
-                    <li class="d-flex justify-content-between mt-2">
-                      <span class="tx-medium ">Standar Deviasi</span>
-                      <span class="">0</span>
-                    </li>
+                    <div class="row">
+                      <div class="col-8 mt-1 mt-md-0 tx-semibold tx-md-medium">Rata-rata</div>
+                      <div class="col mt-1 mt-md-0 ml-3 ml-md-0 text-right">0 (0)</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8 mt-1 mt-md-2 tx-semibold tx-md-medium">Standar Deviasi</div>
+                      <div class="col mt-1 mt-md-2 ml-3 ml-md-0 text-right">0</div>
+                    </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
 
-          <div class="col-lg-8 mb-3">
+          <div class="col-12 col-xl-8 mb-3">
             <div class="card bg-gray-100">
 
               <ul class="nav nav-line nav-justified mt-2" id="tabedit" role="tablist">
@@ -911,8 +914,9 @@
 
                   <div class="card-body" style="padding-top: 0px;">
                     <div class="text-right">Total Data: <b>40</b></div>
-
-                    <canvas id="grafikdistribusi" width="100" height="50"></canvas>
+                    <div class="table-responsive">
+                      <canvas id="grafikdistribusi" style="height: 400px;" class="table"></canvas>
+                    </div>
 
                     <div class="text-center mt-2">
                       <medium>A: 86-100; AB: 76-85; B: 66-75; BC: 61-65; C: 56-60; D: 41-55; E:
@@ -924,20 +928,15 @@
                 <div class="tab-pane fade  text-center" id="tab_cpl" role="tabpanel" aria-labelledby="cpl-tab">
 
                   <div class="card-body" style="padding-top: 0px;">
-
-                    <canvas id="grafikcpl" width="100" height="50"></canvas>
-
+                    <div class="table-responsive">
+                      <canvas id="grafikcpl" style="height: 400px;" class="table"></canvas>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-
-
-
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -947,7 +946,7 @@
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../lib/feather-icons/feather.min.js"></script>
-
+  <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="../../lib/prismjs/prism.js"></script>
   <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
@@ -983,6 +982,8 @@
           }]
         },
         options: {
+          responsive: false,
+          maintainAspectRatio: false,
           scales: {
             yAxes: [{
               ticks: {
@@ -1043,7 +1044,8 @@
           type: 'boxplot',
           data: boxplotData,
           options: {
-            responsive: true,
+            responsive: false,
+            maintainAspectRatio: false,
             legend: {
               position: 'top',
             },

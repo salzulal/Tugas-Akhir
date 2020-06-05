@@ -73,7 +73,7 @@
         <li class="nav-item">
           <a href="{{ url('dashboard') }}" class="nav-link">
             <i data-feather="home"></i>
-            <span>Dashboard</span>
+            <span>Beranda</span>
           </a>
         </li>
         <li class="nav-item">
@@ -453,7 +453,7 @@
           <div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Formulir Rencana Studi</li>
               </ol>
             </nav>
@@ -464,9 +464,9 @@
 
         <div class="row row-xs justify-content-center">
 
-          <div class="col-lg-8 mb-4 d-flex justify-content-center">
+          <div class="col-12 col-xl-8 mb-4 d-flex justify-content-center">
 
-            <ul class="steps">
+            <ul class="steps d-none d-md-block">
               <li class="step-item disabled">
                 <div class="step-link">
                   <span class="step-icon"><i data-feather="file-plus"></i></span>
@@ -481,7 +481,38 @@
                   <span class="step-icon"><i data-feather="edit-2"></i></span>
                   <div>
                     <span class="step-title">Masa Perubahan</span>
-                    <span class="step-desc">1 Februari - 21 Februari</span>
+                    <span class="step-desc">1 Februari 2020 - 21 Februari 2020</span>
+                  </div>
+                </div>
+              </li>
+              <li class="step-item active">
+                <div class="step-link">
+                  <span class="step-icon"><i data-feather="trash"></i></span>
+                  <div>
+                    <span class="step-title">Masa Pembatalan</span>
+                    <span class="step-desc">22 Februari 2020 - 10 April 2020</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- mobile view -->
+            <ul class="steps steps-vertical d-md-none">
+              <li class="step-item disabled">
+                <div class="step-link">
+                  <span class="step-icon"><i data-feather="file-plus"></i></span>
+                  <div>
+                    <span class="step-title">Masa Pengisian</span>
+                    <span class="step-desc">27 Januari 2020 - 31 Januari 2020</span>
+                  </div>
+                </div>
+              </li>
+              <li class="step-item disabled">
+                <div class="step-link">
+                  <span class="step-icon"><i data-feather="edit-2"></i></span>
+                  <div>
+                    <span class="step-title">Masa Perubahan</span>
+                    <span class="step-desc">1 Februari 2020 - 21 Februari 2020</span>
                   </div>
                 </div>
               </li>
@@ -499,82 +530,92 @@
           </div>
 
 
-          <div class="col-lg-8 mb-3">
+          <div class="col-12 col-xl-8 mb-3">
             <div class="card card-body bg-gray-100">
               <div class="row">
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium">NRP</span>
-                    <span class="">05111640000009</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-3">
-                    <span class="tx-medium ">Nama</span>
-                    <span class="">Sal Zulal</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-3">
-                    <span class="tx-medium ">Program Studi</span>
-                    <span class="">S1 Informatika</span>
-                  </li>
-                  </li>
-                  <li class="d-flex justify-content-between mt-3">
-                    <span class="tx-medium ">Semester Tempuh</span>
-                    <span class="">7 / 8</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-3">
-                    <span class="tx-medium ">Status Keaktifan Semester Lalu</span>
-                    <span class="">Aktif</span>
-                  </li>
+                <div class="col-xl-6">
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">NRP</div>
+                    <div class="col-md mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">05111640000009</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-3 tx-semibold tx-md-medium">Nama</div>
+                    <div class="col-md-8 mt-1 mt-md-3 ml-3 ml-md-0 text-md-right">Sal Zulal</div>
+                  </div>
                 </div>
-
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between">
-                    <span class="tx-medium mt-2">Periode</span>
-                    <span>
-                      <div class="">
-                        <select class="form-control selectsmt">
-                          <option value="1" selected> Gasal 2019/2020</option>
-                          <option value="2">Genap 2018/2019</option>
-                          <option value="3">Gasal 2018/2019</option>
-                          <option value="4">Genap 2017/2018</option>
-                        </select>
-                      </div>
-                    </span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Dosen Wali</span>
-                    <span class="">Yudhi Purwananto, S.Kom, M.Kom</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-3">
-                    <span class="tx-medium ">IPK / IPS</span>
-                    <span class="">4,00 / 4,00</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-3">
-                    <span class="tx-medium ">IP SKEM</span>
-                    <span class="">3,2 (Lulus)</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-3">
-                    <span class="tx-medium ">Batas / Sisa SKS</span>
-                    <span class="">18 / 3</span>
-                  </li>
+                <div class="col-xl-6">
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Periode</div>
+                    <div class="col-md mt-1 text-md-right">
+                      <select class="form-control selectbiasa">
+                        <option value="1" selected> Gasal 2019/2020</option>
+                        <option value="2">Genap 2018/2019</option>
+                        <option value="3">Gasal 2018/2019</option>
+                        <option value="4">Genap 2017/2018</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-1 tx-semibold tx-md-medium">Program Studi</div>
+                    <div class="col-md-8 mt-1 mt-md-1 ml-3 ml-md-0 text-md-right">S1 Informatika</div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-3 tx-semibold tx-md-medium">Dosen Wali</div>
+                    <div class="col-md-8 mt-1 mt-md-3 ml-3 ml-md-0 text-md-right">Yudhi Purwananto, S.Kom, M.Kom</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-3 tx-semibold tx-md-medium">Semester Tempuh</div>
+                    <div class="col-md mt-1 mt-md-3 ml-3 ml-md-0 text-md-right">7 / 8</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 mt-1 mt-md-3 tx-semibold tx-md-medium">Status Keaktifan Semester Lalu</div>
+                    <div class="col-md mt-1 mt-md-3 ml-3 ml-md-0 text-md-right">Aktif</div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-3 tx-semibold tx-md-medium">IPK / IPS</div>
+                    <div class="col-md mt-1 mt-md-3 ml-3 ml-md-0 text-md-right">4,00 / 4,00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-3 tx-semibold tx-md-medium">IP SKEM</div>
+                    <div class="col-md mt-1 mt-md-3 ml-3 ml-md-0 text-md-right">3,2 (Lulus)</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-3 tx-semibold tx-md-medium">Batas / Sisa SKS</div>
+                    <div class="col-md mt-1 mt-md-3 ml-3 ml-md-0 text-md-right">18 / 3</div>
+                  </div>
                 </div>
 
               </div>
+
             </div>
           </div>
 
-          <div class="col-lg-8 d-flex justify-content-between mb-3">
-            <div class="">
-              <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary mr-2">Mata Kuliah Harus
+          <div class="row col-xl-8 d-flex justify-content-between mb-3">
+            <div class="col-12 col-md-auto pd-0">
+              <a href="#modalkelas" data-toggle="modal"
+                class="col-12 col-md-auto btn btn-sm btn-outline-primary mr-0 mr-md-2">Mata
+                Kuliah
+                Harus
                 Diulang</a>
-              <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary mr-2">Mata Kuliah Wajib
+              <a href="#modalkelas" data-toggle="modal"
+                class="col-12 col-md-auto btn btn-sm btn-outline-primary  mr-0 mr-md-2 mt-1 mt-md-0">Mata Kuliah
+                Wajib
                 Diambil</a>
-              <a href="#modalkelas" data-toggle="modal" class="btn btn-sm btn-outline-primary">Pengambilan Melanggar
+              <a href="#modalkelas" data-toggle="modal"
+                class="col-12 col-md-auto btn btn-sm btn-outline-primary mt-1 mt-md-0">Pengambilan
+                Melanggar
                 Prasyarat</a>
             </div>
-            <a href="" class="btn btn-sm btn-primary">Cetak KRSM</a>
+            <div class="col-12 col-md-auto pd-0 d-md-flex justify-content-end">
+              <a href="" class="col-12 col-md-auto btn btn-sm btn-primary mt-1 mt-md-0">Cetak KRSM</a>
+            </div>
           </div>
 
-          <div class="col-lg-8 mb-3">
+          <div class="col-12 col-xl-8 mb-3">
             <div class="card">
               <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
                 <div class="mg-b-10 mg-sm-b-0">
@@ -661,19 +702,23 @@
                     </tfoot>
                   </table>
                 </div>
-                <div class="alert alert-primary text-center tx-medium" role="alert">Formulir Rencana Studi telah
-                  disetujui
+
+                <div class="row alert alert-primary d-sm-flex justify-content-end tx-medium mr-2 ml-2" role="alert">
+                  <div class="col-12 text-center">Formulir Rencana Studi telah
+                    disetujui
+                  </div>
                 </div>
 
               </div>
+
             </div>
           </div>
-
-        </div><!-- row -->
+        </div>
 
       </div><!-- container -->
-    </div>
+    </div><!-- content -->
   </div>
+
 
   <div class="modal fade" id="modalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
     aria-hidden="true">
@@ -750,47 +795,38 @@
 
               <tbody>
                 <tr>
-                  <td>KI141301</td>
-                  <td>Dasar Pemrograman</td>
-                  <td class="text-center">4</td>
-                  <td class="text-center">
-                    C
-                  </td>
-                  <td>Dwi Sunaryono, S.Kom., M.Kom. </td>
-                  <td class="text-center">40</td>
-                  <td class="text-center">
-                    <span style="display:inline-block; width:100px" class="badge badge-warning">Dalam Antrian</span>
+                  <td class="text-center align-middle">KI141301</td>
+                  <td class="align-middle">Dasar Pemrograman</td>
+                  <td class="text-center align-middle">4</td>
+                  <td class="text-center align-middle">C</td>
+                  <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom.</td>
+                  <td class="text-center align-middle">40</td>
+                  <td class="text-center align-middle">
+                    <span style="display:inline-block; width:90px" class="badge badge-warning">Dalam Antrian</span>
                   </td>
                 </tr>
-
                 <tr>
-                  <td>KI141302</td>
-                  <td>Matematika Diskrit</td>
-                  <td class="text-center">3</td>
-                  <td class="text-center">
-                    A
-                  </td>
-                  <td>Ir. Esther Hanaya, M.Sc</td>
-                  <td class="text-center">40</td>
-                  <td class="text-center">
-                    <span style="display:inline-block; width:100px" class="badge badge-danger">Gagal</span>
+                  <td class="text-center align-middle">KI141302</td>
+                  <td class="align-middle">Matematika Diskrit</td>
+                  <td class="text-center align-middle">3</td>
+                  <td class="text-center align-middle">A</td>
+                  <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
+                  <td class="text-center align-middle">40</td>
+                  <td class="text-center align-middle">
+                    <span style="display:inline-block; width:90px" class="badge badge-danger">Gagal</span>
                   </td>
                 </tr>
-
                 <tr>
-                  <td>KI141302</td>
-                  <td>Matematika Diskrit</td>
-                  <td class="text-center">3</td>
-                  <td class="text-center">
-                    A
-                  </td>
-                  <td>Ir. Esther Hanaya, M.Sc</td>
-                  <td class="text-center">40</td>
-                  <td class="text-center">
-                    <span style="display:inline-block; width:100px" class="badge badge-success">Berhasil</span>
+                  <td class="text-center align-middle">KI141302</td>
+                  <td class="align-middle">Matematika Diskrit</td>
+                  <td class="text-center align-middle">3</td>
+                  <td class="text-center align-middle">A</td>
+                  <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
+                  <td class="text-center align-middle">40</td>
+                  <td class="text-center align-middle">
+                    <span style="display:inline-block; width:90px" class="badge badge-success">Berhasil</span>
                   </td>
                 </tr>
-
               </tbody>
             </table>
           </div>
@@ -799,7 +835,6 @@
       </div>
     </div>
   </div>
-
   <div class="modal fade" id="modalpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -827,14 +862,14 @@
               <tbody>
                 <tr>
                   <td class="text-center">1</td>
-                  <td>05111640000009</td>
+                  <td class="text-center">05111640000009</td>
                   <td>Sal Zulal</td>
                   <td class="text-center">19 Maret 2020 - 13.50</td>
                 </tr>
 
                 <tr>
                   <td class="text-center">2</td>
-                  <td>05111640000009</td>
+                  <td class="text-center">05111640000009</td>
                   <td>Sal Zulal</td>
                   <td class="text-center">19 Maret 2020 - 13.51</td>
                 </tr>
@@ -846,7 +881,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -867,7 +901,7 @@
 
       // Select2
 
-      $('.selectsmt').select2({
+      $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
 

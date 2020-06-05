@@ -73,7 +73,7 @@
         <li class="nav-item">
           <a href="{{ url('dashboard') }}" class="nav-link">
             <i data-feather="home"></i>
-            <span>Dashboard</span>
+            <span>Beranda</span>
           </a>
         </li>
         <li class="nav-item">
@@ -453,7 +453,7 @@
           <div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Hasil Evaluasi per Mahasiswa</li>
               </ol>
             </nav>
@@ -464,14 +464,18 @@
 
         <div class="row row-xs justify-content-center">
 
-          <div class="col-lg-8 mb-3">
-            <div class="card card-body bg-gray-100">
-              <div class="d-flex justify-content-between col-12">
-                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Mahasiswa</div>
 
-                <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
-                  <select class="form-control selectmhs  col-12">
+          <div class="col-12 col-xl-8 mb-3">
+            <div class="card card-body bg-gray-100">
+              <div class="row m-0 d-flex justify-content-between">
+                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
+                  style="padding-top: 7.5px;">
+                  Mahasiswa</div>
+
+                <form class="col-12 col-md-8 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectmhs col-12" style="max-width: 100%;">
                     <option label="Contoh: 05111640000009 - Sal Zulal"></option>
+
                     <option value="1">05111640000009 - Sal Zulal</option>
                     <option value="2">05111640000010 - Faridatul Nur Aidah</option>
                     <option value="3">05111640000011 - Dandy Naufaldi</option>
@@ -481,8 +485,8 @@
                   </select>
                 </form>
 
-                <div class="d-flex justify-content-end" style="width: 20%">
-                  <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+                <div class="col-12 col-md-2 mb-1 mb-md-0 pd-md-l-0 d-flex justify-content-end ">
+                  <a href="" class="btn btn-primary pd-l-1 pd-r-1" style="width: 100%;">Tampilkan</a>
                 </div>
               </div>
             </div>
@@ -490,8 +494,7 @@
 
 
 
-
-          <div class="col-lg-8">
+          <div class="col-12 col-xl-8">
             <div class="card mb-2">
               <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
                 <h5 class="tx-16">Perkuliahan pada: GASAL 2017/2018</h5>

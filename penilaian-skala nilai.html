@@ -73,7 +73,7 @@
         <li class="nav-item">
           <a href="{{ url('dashboard') }}" class="nav-link">
             <i data-feather="home"></i>
-            <span>Dashboard</span>
+            <span>Beranda</span>
           </a>
         </li>
         <li class="nav-item">
@@ -453,7 +453,7 @@
           <div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Pengaturan Skala Nilai</li>
               </ol>
             </nav>
@@ -465,233 +465,230 @@
         <div class="row row-xs justify-content-center">
 
 
-          <div class="col-lg-4">
+          <div class="col-md-8 col-lg-6 col-xl-4">
             <div class="card">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th class="text-center" style="width: 40%;">Nilai Huruf</th>
-                          <th class="text-center">Batas Atas Nilai</th>
-                          <th class="text-center" style="width: 20%;"></th>
-                        </tr>
-                      </thead>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-center align-middle" style="width: 35%;">Nilai Huruf</th>
+                        <th class="text-center align-middle" style="width: 35%;">Batas Atas Nilai</th>
+                        <th class="" style="width: 30%;"></th>
+                      </tr>
+                    </thead>
 
-                      <tbody>
-                        <tr id="show1">
-                          <td class="text-center">_</td>
-                          <td class="text-center">0</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit1"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit1" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="_">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="0">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show1"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show1"></button>
-                          </td>
-                        </tr>
+                    <tbody>
+                      <tr id="show1">
+                        <td class="text-center align-middle">_</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit1"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit1" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="_">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="0">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show1"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show1"></button>
+                        </td>
+                      </tr>
 
-                        <tr id="show2">
-                          <td class="text-center">A</td>
-                          <td class="text-center">4</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit2"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit2" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="A">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="4">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show2"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show2"></button>
-                          </td>
-                        </tr>
+                      <tr id="show2">
+                        <td class="text-center align-middle">A</td>
+                        <td class="text-center align-middle">4</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit2"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit2" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="A">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="4">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show2"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show2"></button>
+                        </td>
+                      </tr>
 
-                        <tr id="show3">
-                          <td class="text-center">AB</td>
-                          <td class="text-center">3.5</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit3"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit3" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="AB">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="3.5">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show3"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show3"></button>
-                          </td>
-                        </tr>
+                      <tr id="show3">
+                        <td class="text-center align-middle">AB</td>
+                        <td class="text-center align-middle">3.5</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit3"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit3" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="AB">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="3.5">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show3"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show3"></button>
+                        </td>
+                      </tr>
 
-                        <tr id="show4">
-                          <td class="text-center">B</td>
-                          <td class="text-center">3</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit4"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit4" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="B">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="3">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show4"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show4"></button>
-                          </td>
-                        </tr>
+                      <tr id="show4">
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">3</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit4"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit4" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="B">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="3">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show4"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show4"></button>
+                        </td>
+                      </tr>
 
-                        <tr id="show5">
-                          <td class="text-center">BC</td>
-                          <td class="text-center">2.5</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit5"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit5" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="BC">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="2.5">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show5"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show5"></button>
-                          </td>
-                        </tr>
+                      <tr id="show5">
+                        <td class="text-center align-middle">BC</td>
+                        <td class="text-center align-middle">2.5</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit5"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit5" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="BC">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="2.5">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show5"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show5"></button>
+                        </td>
+                      </tr>
 
-                        <tr id="show6">
-                          <td class="text-center">C</td>
-                          <td class="text-center">2</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit6"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit6" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="C">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="2">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show6"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show6"></button>
-                          </td>
-                        </tr>
+                      <tr id="show6">
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit6"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit6" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="C">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="2">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show6"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show6"></button>
+                        </td>
+                      </tr>
 
-                        <tr id="show7">
-                          <td class="text-center">D</td>
-                          <td class="text-center">1</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit7"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit7" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="D">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="1">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show7"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show7"></button>
-                          </td>
-                        </tr>
+                      <tr id="show7">
+                        <td class="text-center align-middle">D</td>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit7"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit7" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="D">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="1">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show7"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show7"></button>
+                        </td>
+                      </tr>
 
-                        <tr id="show8">
-                          <td class="text-center">E</td>
-                          <td class="text-center">0</td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="edit"
-                              style="width:20px; height:20px;" id="btnedit" data-target="edit8"></button>
-                            <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
-                        <tr id="edit8" style="display:none;">
-                          <td>
-                            <input type="text" class="form-control text-center" value="E">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center" value="0">
-                          </td>
-                          <td class="text-center align-middle">
-                            <button class="swtch mr-1" type="button" data-feather="save"
-                              style="width:20px; height:20px;" id="btnsave" data-target="show8"></button>
-                            <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
-                              id="btncancel" data-target="show8"></button>
-                          </td>
-                        </tr>
+                      <tr id="show8">
+                        <td class="text-center align-middle">E</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit8"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit8" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="E">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="0">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show8"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show8"></button>
+                        </td>
+                      </tr>
 
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <td>
-                            <input type="text" class="form-control text-center">
-                          </td>
-                          <td>
-                            <input type="text" class="form-control text-center">
-                          </td>
-                          <td class="text-center align-middle"><button type="button" class="addrow"
-                              data-feather="plus-circle" style="width:20px; height:20px;"></button>
-                          </td>
-                        </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>
+                          <input type="text" class="form-control text-center">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center">
+                        </td>
+                        <td class="text-center align-middle"><button type="button" class="addrow"
+                            data-feather="plus-circle" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
 
-                      </tfoot>
-                    </table>
+                    </tfoot>
+                  </table>
 
-                  </div>
                 </div>
-
               </div>
             </div>
 

@@ -73,7 +73,7 @@
         <li class="nav-item">
           <a href="{{ url('dashboard') }}" class="nav-link">
             <i data-feather="home"></i>
-            <span>Dashboard</span>
+            <span>Beranda</span>
           </a>
         </li>
         <li class="nav-item">
@@ -453,7 +453,7 @@
           <div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Nilai per Kelas
                 </li>
               </ol>
@@ -466,30 +466,37 @@
 
         <div class="row row-xs justify-content-center">
 
-          <div class="col-lg-8 mb-3">
+          <div class="col-12 col-xl-8 mb-3">
             <div class="card card-body bg-gray-100">
-              <div class="d-flex justify-content-center col-12 pd-0">
 
-                <div class="d-flex justify-content-between" style="width: 40%;">
-                  <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 25%;">Periode</div>
-                  <select class="form-control selectbiasa" style="width: 75%;">
+              <div class="row pd-0 d-flex justify-content-center">
+                <div class=" col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle"
+                  style=" padding-top: 7.5px;">
+                  Periode</div>
+
+                <form class="col-12 col-md-4 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectbiasa col-12" style="max-width: 100%;">
                     <option value="1" selected> Gasal 2019/2020</option>
                     <option value="2">Genap 2018/2019</option>
                     <option value="3">Gasal 2018/2019</option>
                     <option value="4">Genap 2017/2018</option>
                   </select>
-                </div>
+                </form>
 
-                <div class="d-flex justify-content-end" style="width: 20%">
-                  <a href="" class="btn btn-primary" style="width: 80%;">Tampilkan</a>
+                <div class="col-12 col-md-2 mb-1 mb-md-0 d-flex justify-content-end pd-md-l-0">
+                  <a href="" class="btn btn-primary pd-r-1 pd-l-1" style="width: 100%;">Tampilkan</a>
                 </div>
               </div>
-              <hr class="mt-3 mb-2">
-              <div class="d-flex justify-content-center col-12 pd-0">
-                <div class="tx-medium align-middle" style="padding-top: 7.5px; width: 10%;">Kelas</div>
 
-                <form class="form-inline d-sm-flex justify-content-end" style="width: 70%;">
-                  <select class="form-control selectkelas col-12">
+              <hr class="mt-3 mb-2">
+
+              <div class="row pd-0 d-flex justify-content-between">
+                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
+                  style="padding-top: 7.5px;">
+                  Kelas</div>
+
+                <form class="col-12 col-md-8 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectkelas col-12" style="max-width: 100%;">
                     <option label="Contoh: 2020 - AA000001 Bahasa Indonesia"></option>
                     <option value="1">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
                     <option value="2">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
@@ -499,111 +506,109 @@
                   </select>
                 </form>
 
-                <div class="d-flex justify-content-end" style="width: 20%">
-                  <a href="" class="btn btn-primary" style="width: 80%;">Pilih</a>
+                <div class="col-12 col-md-2 mb-1 mb-md-0 d-flex justify-content-end ">
+                  <a href="" class="btn btn-primary" style="width: 100%;">Pilih</a>
                 </div>
               </div>
 
               <!-- <hr class="mt-3 mb-2"> -->
-
-              <div class="row mt-2">
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between">
-                    <span class="tx-medium">Mata Kuliah</span>
-                    <span class="">SF4404 - Fisika Matematika III</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Kelas</span>
-                    <span class="">A</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Program Studi</span>
-                    <span class="">S1 Fisika</span>
-                  </li>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Mata Kuliah</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">SF4404 - Fisika Matematika III</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Kelas</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">A</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Program Studi</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">S1 Fisika</div>
+                  </div>
                 </div>
+                <div class="col-xl-6">
 
-                <div class="col-lg-6">
-                  <li class="d-flex justify-content-between">
-                    <span class="tx-medium">Kurikulum</span>
-                    <span class="">2018</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Periode</span>
-                    <span class="">Genap 2018/2019</span>
-                  </li>
-                  <li class="d-flex justify-content-between mt-2">
-                    <span class="tx-medium ">Pengajar</span>
-                    <span class="">Dr. Dra. Melania Suweni Muntini, MT</span>
-                  </li>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Kurikulum</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">2018</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Periode</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Genap 2018/2019</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Pengajar</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Dr. Dra. Melania Suweni Muntini, MT
+                    </div>
+                  </div>
                 </div>
-
               </div>
+
             </div>
           </div>
 
 
-          <div class="col-lg-8 mb-3">
+          <div class="col-12 col-xl-8 mb-3">
             <div class="card">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th class="text-center" style="width: 25%;">NRP</th>
-                          <th class="text-center">Nama Mahasiswa</th>
-                          <th class="text-center" style="width: 15%;">Nilai</th>
-                        </tr>
-                      </thead>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-center" style="width: 25%;">NRP</th>
+                        <th class="text-center">Nama Mahasiswa</th>
+                        <th class="text-center" style="width: 15%;">Nilai</th>
+                      </tr>
+                    </thead>
 
-                      <tbody>
-                        <tr>
-                          <td class="text-center">05111640000009</td>
-                          <td>Sal Zulal</td>
-                          <td class="text-center">A</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">05111640000013</td>
-                          <td>Muhammad Raihan Anindita</td>
-                          <td class="text-center">A</td>
-                        </tr>
-                        <tr class="bg-warning">
-                          <td class="text-center align-middle">05111640000014</td>
-                          <td>Sal Zulal<br>
-                            <small><i>Belum Mengisi Kuesioner<i></small>
-                          </td>
-                          <td class="text-center align-middle">*</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">05111640000015</td>
-                          <td>Muhammad Raihan Anindita</td>
-                          <td class="text-center">A</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">05111640000009</td>
-                          <td>Sal Zulal</td>
-                          <td class="text-center">A</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">05111640000013</td>
-                          <td>Muhammad Raihan Anindita</td>
-                          <td class="text-center">A</td>
-                        </tr>
-                        <tr class="bg-warning">
-                          <td class="text-center align-middle">05111640000014</td>
-                          <td>Sal Zulal<br>
-                            <small><i>Belum Mengisi Kuesioner<i></small>
-                          </td>
-                          <td class="text-center align-middle">*</td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">05111640000015</td>
-                          <td>Muhammad Raihan Anindita</td>
-                          <td class="text-center">A</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">05111640000009</td>
+                        <td>Sal Zulal</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">05111640000013</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                      <tr class="bg-warning">
+                        <td class="text-center align-middle">05111640000014</td>
+                        <td>Sal Zulal<br>
+                          <small><i>Belum Mengisi Kuesioner<i></small>
+                        </td>
+                        <td class="text-center align-middle">*</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">05111640000015</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">05111640000009</td>
+                        <td>Sal Zulal</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">05111640000013</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                      <tr class="bg-warning">
+                        <td class="text-center align-middle">05111640000014</td>
+                        <td>Sal Zulal<br>
+                          <small><i>Belum Mengisi Kuesioner<i></small>
+                        </td>
+                        <td class="text-center align-middle">*</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">05111640000015</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -635,6 +640,9 @@
   <script>
     $(function () {
       'use strict'
+      $('.selectbiasa').select2({
+        minimumResultsForSearch: Infinity
+      });
 
       $('.selectkelas').select2({
         placeholder: 'Contoh: AA000001 Bahasa Indonesia',
