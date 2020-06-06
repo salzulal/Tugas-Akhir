@@ -182,23 +182,50 @@
         </li>
         <li class="nav-label mg-t-25">FRS</li>
         <li class="nav-item">
-          <a href="frs-mahasiswa- mahasiswa.html" class="nav-link">
+          <a href="frs-mahasiswa- adminAKAD.html" class="nav-link">
             <i data-feather="book"></i>
             <span>FRS</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="perwalian-list_wali-dosen.html" class="nav-link">
+            <i data-feather="users"></i>
+            <span>Perwalian Mahasiswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="perwalian-list_ankwali-dosen.html" class="nav-link">
+            <i data-feather="users"></i>
+            <span>Daftar Anak Wali per Dosen</span>
+          </a>
+        </li>
         <li class="nav-label mg-t-25">Penilaian</li>
-
+        <li class="nav-item">
+          <a href="penilaian(proses)4-PengisianNilaiPerMhs.html" class="nav-link">
+            <i data-feather="user"></i>
+            <span>Hasil Evaluasi per Mahasiswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="penilaian(proses)5-EntriNilaiEvaluasiSem-hanyaDosen.html" class="nav-link">
+            <i data-feather="check-square"></i>
+            <span>Evaluasi Pembelajaran</span>
+          </a>
+        </li>
         <li class="nav-item with-sub">
           <a href="#" class="nav-link">
             <i data-feather="bar-chart"></i>
             <span>Laporan</span>
           </a>
           <ul>
+            <li><a href="penilaian(laporan)1-NilaiPerKelas.html">Nilai per Kelas</a></li>
             <li><a href="penilaian(laporan)2-NilaiPerSemesterMahasiswa.html">Nilai per Semester</a></li>
             <li><a href="penilaian(laporan)3-RankingIPK.html">Peringkat IPK</a></li>
             <li><a href="penilaian(laporan)4-RankingIPS.html">Peringkat IPS</a></li>
-          </ul>
+            <li><a href="penilaian(laporan)5-DaftarIPSSeluruhMhs.html">Daftar IPS
+                Mahasiswa</a></li>
+            <li><a href="penilaian(laporan)6-RekapNilaiPerKelas.html">Rekap Nilai Per
+                Kelas</a></li>
         </li>
         <li class="nav-label mg-t-25">Presensi</li>
         <li class="nav-item">
@@ -366,7 +393,6 @@
       </ul>
     </div>
   </aside>
-
   <div class="content ht-100v pd-0">
     <div class="content-header align-items-center justify-content-between">
       <nav class="nav">
@@ -492,12 +518,36 @@
                 </div>
               </li>
             </ul>
+            <!--  -->
 
           </div>
 
 
           <div class="col-12 col-xl-8 mb-3">
             <div class="card card-body bg-gray-100">
+
+              <div class="row pd-0 mb-2 d-flex justify-content-between">
+                <div class="col-12 col-md-2 mb-1 tx-semibold tx-md-medium align-middle " style="padding-top: 7.5px;">
+                  Mahasiswa</div>
+
+                <form class="col-12 col-md-8 mb-1 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectmhs col-12" style="max-width: 100%;">
+                    <option label="Contoh: 05111640000009 - Sal Zulal"></option>
+
+                    <option value="1">05111640000009 - Sal Zulal</option>
+                    <option value="2">05111640000010 - Faridatul Nur Aidah</option>
+                    <option value="3">05111640000011 - Dandy Naufaldi</option>
+                    <option value="4">05111640000012 - Raden Teja Kusuma</option>
+                    <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
+                    <option value="6">05111640000014 - Nuzha Musyarifa</option>
+                  </select>
+                </form>
+
+                <div class="col-12 col-md-2 mb-1 pd-md-l-0 d-flex justify-content-end ">
+                  <a href="" class="btn btn-primary pd-l-1 pd-r-1" style="width: 100%;">Tampilkan</a>
+                </div>
+              </div>
+              <hr class="mb-1 mt-0">
 
               <div class="row">
                 <div class="col-xl-6">
@@ -676,10 +726,13 @@
                 </div>
 
                 <div class="row alert alert-danger d-sm-flex justify-content-end tx-medium mr-2 ml-2" role="alert">
-                  <div class="col-12 text-center">Formulir Rencana Studi belum
+                  <div class="col-12 col-md-8 text-center" style=" padding-top: 7.5px;">Formulir Rencana Studi belum
                     disetujui
                   </div>
+                  <a href="#modalsetuju" data-toggle="modal" class="col-12 col-md-2 btn btn-sm btn-primary mt-1 mt-md-0"
+                    style="width: 100px;">Setujui</a>
                 </div>
+
               </div>
             </div>
           </div>
@@ -835,9 +888,9 @@
           </div>
         </div>
 
-      </div>
+      </div><!-- container -->
     </div>
-  </div>
+  </div><!-- content -->
 
   <div class="modal fade" id="modalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
     aria-hidden="true">
@@ -1020,6 +1073,26 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="modalsetuju" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Persetujuan FRS</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah anda yakin menyetujui FRS (05111640000009) Sal Zulal?</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="frs-mahasiswa- adminAKAD - Approved.html" type="button" class="btn btn-primary tx-13">Setujui</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../../lib/jquery/jquery.min.js"></script>
   <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1043,9 +1116,15 @@
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
+
+      $('.selectmhs').select2({
+        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
+      });
+
       $('.selectkelas').select2({
         placeholder: 'Contoh: AA000001 Bahasa Indonesia',
       });
+
     });
   </script>
 </body>

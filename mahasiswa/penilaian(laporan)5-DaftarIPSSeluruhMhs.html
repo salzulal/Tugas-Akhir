@@ -182,101 +182,22 @@
         </li>
         <li class="nav-label mg-t-25">FRS</li>
         <li class="nav-item">
-          <a href="frs-mahasiswa- adminAKAD.html" class="nav-link">
+          <a href="frs-mahasiswa- mahasiswa.html" class="nav-link">
             <i data-feather="book"></i>
             <span>FRS</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="frs-mahasiswa- mahasiswa.html" class="nav-link">
-            <i data-feather="book"></i>
-            <span>FRS (mahasiswa)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="perwalian-list_wali-adminAKAD.html" class="nav-link">
-            <i data-feather="users"></i>
-            <span>Perwalian Mahasiswa (admin)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="perwalian-list_wali-dosen.html" class="nav-link">
-            <i data-feather="users"></i>
-            <span>Perwalian Mahasiswa (dosen)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="perwalian-list_ankwali-adminAKAD.html" class="nav-link">
-            <i data-feather="list"></i>
-            <span>Daftar Anak Wali per Dosen (admin)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="perwalian-list_ankwali-dosen.html" class="nav-link">
-            <i data-feather="users"></i>
-            <span>Daftar Anak Wali per Dosen (dosen)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="frs-PengaturanJadwal.html" class="nav-link">
-            <i data-feather="calendar"></i>
-            <span>Pengaturan Jadwal FRS</span>
-          </a>
-        </li>
         <li class="nav-label mg-t-25">Penilaian</li>
-        <li class="nav-item">
-          <a href="penilaian(proses)1-PengisianNilaiPerKelas-AdminAKAD.html" class="nav-link">
-            <i data-feather="edit"></i>
-            <span>Ubah Nilai per Kelas</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)3-PengisianNilaiPerMhs-admin.html" class="nav-link">
-            <i data-feather="user"></i>
-            <span>Hasil Evaluasi per Mahasiswa (admin)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)4-PengisianNilaiPerMhs.html" class="nav-link">
-            <i data-feather="user"></i>
-            <span>Hasil Evaluasi per Mahasiswa (admin)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)5-EntriNilaiEvaluasiSem-hanyaDosen.html" class="nav-link">
-            <i data-feather="check-square"></i>
-            <span>Evaluasi Pembelajaran</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)7-ListValidasiNINA-hanyaAdmin.html" class="nav-link">
-            <i data-feather="list"></i>
-            <span>Validasi Evaluasi Berkala</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian-skala nilai.html" class="nav-link">
-            <i data-feather="edit"></i>
-            <span>Konversi Skala Nilai</span>
-          </a>
-        </li>
+
         <li class="nav-item with-sub">
           <a href="#" class="nav-link">
             <i data-feather="bar-chart"></i>
             <span>Laporan</span>
           </a>
           <ul>
-            <li><a href="penilaian(laporan)1-NilaiPerKelas.html">Nilai per Kelas</a></li>
             <li><a href="penilaian(laporan)2-NilaiPerSemesterMahasiswa.html">Nilai per Semester</a></li>
             <li><a href="penilaian(laporan)3-RankingIPK.html">Peringkat IPK</a></li>
             <li><a href="penilaian(laporan)4-RankingIPS.html">Peringkat IPS</a></li>
-            <li><a href="penilaian(laporan)5-DaftarIPSSeluruhMhs.html">Daftar IPS
-                Mahasiswa</a></li>
-            <li><a href="penilaian(laporan)6-RekapNilaiPerKelas.html">Rekap Nilai Per
-                Kelas</a></li>
-            <li><a href="penilaian(laporan)7-InfoPermanenNINA.html">Info Permanen NINA</a></li>
-            <li><a href="penilaian(laporan)8-PengumpulanNilai-PresentaseNilai.html">Persentase
-                Pengumpulan Nilai</a></li>
           </ul>
         </li>
         <li class="nav-label mg-t-25">Presensi</li>
@@ -499,10 +420,10 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Rekapitulasi Nilai per Kelas</li>
+                <li class="breadcrumb-item active" aria-current="page">Daftar IPS untuk Seluruh Angkatan</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing-1">Rekapitulasi Nilai per Kelas</h4>
+            <h4 class="mg-b-0 tx-spacing-1">Daftar IPS untuk Seluruh Angkatan</h4>
           </div>
 
         </div>
@@ -534,78 +455,48 @@
           </div>
         </div>
 
-
         <div class="row row-xs justify-content-center">
           <div class="col-12 col-xl-8">
             <div class="card">
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class=" table">
+                  <table id="tabelips" class="table ">
                     <thead>
                       <tr>
-                        <th rowspan="2" class="text-center align-middle" style="width: 7%;">No</th>
-                        <th rowspan="2" class="text-center align-middle">Mata Kuliah</th>
-                        <th rowspan="2" class="text-center align-middle" style="width: 10%;">Kelas</th>
-                        <th colspan="8" class="text-center">Rekapitulasi Nilai</th>
-                        <th colspan="2" class="text-center">Rata-rata</th>
-                      </tr>
-                      <tr>
-                        <th class="text-center">A</th>
-                        <th class="text-center">AB</th>
-                        <th class="text-center">B</th>
-                        <th class="text-center">BC</th>
-                        <th class="text-center">C</th>
-                        <th class="text-center">D</th>
-                        <th class="text-center">E</th>
-                        <th class="text-center">Jml</th>
-                        <th class="text-center">Raw</th>
-                        <th class="text-center">IP</th>
+                        <th class="text-center" style="width: 25%;">NRP</th>
+                        <th class="text-center">Nama</th>
+                        <th class="text-center" style="width: 10%;">SKS</th>
+                        <th class="text-center" style="width: 10%;">IPS</th>
                       </tr>
                     </thead>
 
                     <tbody>
                       <tr>
-                        <td class="text-center align-middle">1</td>
-                        <td class="align-middle">KM4101 - Matematika 1</td>
-                        <td class="text-center align-middle">1</td>
-                        <td class="text-center align-middle">0</td>
-                        <td class="text-center align-middle">3</td>
-                        <td class="text-center align-middle">4</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">1</td>
-                        <td class="text-center align-middle">14</td>
-                        <td class="text-center align-middle">60</td>
-                        <td class="text-center align-middle">2.4</td>
+                        <td class="text-center">05111640000009</td>
+                        <td>Sal Zulal</td>
+                        <td class="text-center">18</td>
+                        <td class="text-center">3.41</td>
                       </tr>
-                    </tbody>
-                    <tbody>
                       <tr>
-                        <td class="text-center align-middle">17</td>
-                        <td class="align-middle">RE4801 - Keselamatan dan Kesehatan Kerja</td>
-                        <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">0</td>
-                        <td class="text-center align-middle">1</td>
-                        <td class="text-center align-middle">0</td>
-                        <td class="text-center align-middle">0</td>
-                        <td class="text-center align-middle">0</td>
-                        <td class="text-center align-middle">0</td>
-                        <td class="text-center align-middle">0</td>
-                        <td class="text-center align-middle">1</td>
-                        <td class="text-center align-middle">83.3</td>
-                        <td class="text-center align-middle">3.5</td>
+                        <td class="text-center">05111640000090</td>
+                        <td>Sal Zulal 2</td>
+                        <td class="text-center">18</td>
+                        <td class="text-center">2.41</td>
                       </tr>
                     </tbody>
                   </table>
 
 
                 </div>
-
               </div>
+
             </div>
           </div>
+
+
         </div>
+
+
       </div>
     </div>
   </div>
@@ -633,6 +524,39 @@
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
+
+
+
+      $('#tabelips').dataTable({
+        // responsive: true,
+        // paging: false,
+        // bInfo: false,
+        // searching: false,
+        // order: false,
+        // responsive: {
+        //   details: false
+        // },
+        language: {
+          searchPlaceholder: 'Cari...',
+          search: '',
+          lengthMenu: 'Tampilkan _MENU_ data/halaman',
+          info: "Menampilkan _START_-_END_ dari _TOTAL_ data",
+          infoFiltered: "(Disaring dari total _MAX_ data)",
+          infoEmpty: "Tidak ada data yang ditampilkan",
+          emptyTable: "Data kosong",
+          paginate: { next: "Berikutnya", previous: "Sebelumnya" },
+          zeroRecords: "Tidak ada data yang cocok",
+          loadingRecords: "Sedang memuat...",
+          processing: "Sedang memproses...",
+        },
+        "columns": [
+          { "orderable": true },
+          { "orderable": true },
+          { "orderable": false },
+          { "orderable": true }
+        ]
+      });
+
 
 
       // Select2

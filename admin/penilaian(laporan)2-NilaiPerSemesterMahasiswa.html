@@ -469,31 +469,33 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Daftar Anak Wali per Dosen</li>
+                <li class="breadcrumb-item active" aria-current="page">Nilai per Semester Mahasiswa</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1">Daftar Anak Wali per Dosen</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Nilai per Semester Mahasiswa</h4>
           </div>
 
         </div>
 
         <div class="row row-xs justify-content-center">
 
-
           <div class="col-12 col-xl-8 mb-3">
             <div class="card card-body bg-gray-100">
               <div class="row m-0 d-flex justify-content-between">
                 <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
                   style="padding-top: 7.5px;">
-                  Dosen Wali</div>
+                  Mahasiswa</div>
 
                 <form class="col-12 col-md-8 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
-                  <select class="form-control selectdosen col-12" style="max-width: 100%;">
-                    <option label="Contoh: 510140807 - Rizky Januar Akbar, S.Kom., M.Eng."></option>
-                    <option value="1">Anton (9 Mahasiswa Wali Terdaftar)</option>
-                    <option value="2">Budi (4 Mahasiswa Wali Terdaftar)</option>
-                    <option value="3">Caca (6 Mahasiswa Wali Terdaftar)</option>
-                    <option value="4">Dimas (2 Mahasiswa Wali Terdaftar)</option>
+                  <select class="form-control selectmhs col-12" style="max-width: 100%;">
+                    <option label="Contoh: 05111640000009 - Sal Zulal"></option>
+
+                    <option value="1">05111640000009 - Sal Zulal</option>
+                    <option value="2">05111640000010 - Faridatul Nur Aidah</option>
+                    <option value="3">05111640000011 - Dandy Naufaldi</option>
+                    <option value="4">05111640000012 - Raden Teja Kusuma</option>
+                    <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
+                    <option value="6">05111640000014 - Nuzha Musyarifa</option>
                   </select>
                 </form>
 
@@ -505,116 +507,237 @@
           </div>
 
 
+
           <div class="col-12 col-xl-8">
-            <div class="card">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <h5 class="tx-16">Daftar Anak Wali</h5>
+
+            <div class="card mb-2">
+              <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
+                <h5 class="tx-16">GASAL 2017/2018</h5>
               </div>
 
-              <div class="card-body">
+              <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
                 <div class="table-responsive">
                   <table class="table">
-                    <col width="10%">
-                    <col width="25%">
-                    <col width="55%">
-                    <col width="10%">
-
                     <thead>
                       <tr>
-                        <th class="text-center">No</th>
-                        <th class="text-center">NRP</th>
-                        <th class="text-center">Nama</th>
-                        <th class="text-center"></th>
+                        <th class="text-center">Kode MK</th>
+                        <th class="text-center">Mata Kuliah</th>
+                        <th class="text-center">SKS</th>
+                        <th class="text-center">N. Huruf</th>
+                        <th class="text-center">S*N</th>
                       </tr>
                     </thead>
 
                     <tbody>
                       <tr>
-                        <td class="text-center">1</td>
-                        <td class="text-center">05111640000009</td>
-                        <td>Sal Zulal</td>
-                        <td class="text-center align-middle"><button type="button" href="#modalhapus"
-                            data-toggle="modal" data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Dasar Pemrograman</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">4</td>
                       </tr>
-
                       <tr>
-                        <td class="text-center">2</td>
-                        <td class="text-center">05111640000019</td>
-                        <td>Muhammad Sal Zulal</td>
-                        <td class="text-center align-middle"><button type="button" href="#modalhapus"
-                            data-toggle="modal" data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Matematika Diskrit</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">6</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Dasar Pemrograman</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">4</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Matematika Diskrit</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">6</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Dasar Pemrograman</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">4</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Matematika Diskrit</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">6</td>
                       </tr>
                     </tbody>
-                    <tfoot>
-                      <td></td>
-                      <td colspan="2">
-                        <select class="form-control selectmhs col-12">
-                          <option label="Contoh: 05111640000009 - Sal Zulal"></option>
-                          <option value="1">05111640000010 - Sal Zulal bin Sal</option>
-                          <option value="2">05111640000010 - Budi</option>
-                          <option value="3">05111640000010 - Caca</option>
-                          <option value="4">05111640000010 - Dimas</option>
-                        </select>
-                      </td>
-                      <td class="text-center align-middle"><button type="button" href="#modaltambah" data-toggle="modal"
-                          data-feather="plus-circle" style="width:20px; height:20px;"></button>
-                      </td>
-                    </tfoot>
                   </table>
                 </div>
               </div>
+
+              <div class="d-flex justify-content-center bg-gray-100">
+                <div class="col-lg-3 mb-2 mt-2">
+                  <div class="row">
+                    <div class="col">
+                      <li class="d-flex justify-content-between">
+                        <span class="tx-medium">Jumlah SKS</span>
+                        <span class="">18 SKS</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <span class="tx-medium ">IPS</span>
+                        <span class="">2.17</span>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
+            <div class="card mb-2">
+              <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
+                <h5 class="tx-16">GENAP 2017/2018</h5>
+              </div>
+
+              <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-center">Kode MK</th>
+                        <th class="text-center">Mata Kuliah</th>
+                        <th class="text-center">SKS</th>
+                        <th class="text-center">N. Huruf</th>
+                        <th class="text-center">S*N</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Dasar Pemrograman</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">4</td>
+                      </tr>
+                      <tr class="bg-warning">
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Matematika Diskrit<br>
+                          <small><b>Belum mengisi kuesioner<b></td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">6</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Dasar Pemrograman</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">4</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Matematika Diskrit</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center bg-gray-100">
+                <div class="col-lg-3 mb-2 mt-2">
+                  <div class="row">
+                    <div class="col">
+                      <li class="d-flex justify-content-between">
+                        <span class="tx-medium">Jumlah SKS</span>
+                        <span class="">18 SKS</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <span class="tx-medium ">IPS</span>
+                        <span class="">2.17</span>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card mb-2">
+              <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
+                <h5 class="tx-16">GASAL 2018/2019</h5>
+              </div>
+
+              <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-center">Kode MK</th>
+                        <th class="text-center">Mata Kuliah</th>
+                        <th class="text-center">SKS</th>
+                        <th class="text-center">N. Huruf</th>
+                        <th class="text-center">S*N</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Dasar Pemrograman</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">4</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Matematika Diskrit</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div><!-- card-body -->
+
+              <div class="d-flex justify-content-center bg-gray-100">
+                <div class="col-lg-3 mb-2 mt-2">
+                  <div class="row">
+                    <div class="col">
+                      <li class="d-flex justify-content-between">
+                        <span class="tx-medium">Jumlah SKS</span>
+                        <span class="">18 SKS</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <span class="tx-medium ">IPS</span>
+                        <span class="">2.17</span>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
           </div>
         </div>
-      </div>
-    </div>
+
+
+
+      </div><!-- row -->
+    </div><!-- container -->
+  </div>
   </div>
 
 
-  <div class="modal fade" id="modalhapus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Hapus Mahasiswa Wali</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <p>Apakah anda yakin menghapus (05111640000009) Sal Zulal dari daftar anak wali (510140807) Rizky Januar
-            Akbar,
-            S.Kom., M.Eng</p>
-        </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger tx-13">Hapus</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modaltambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Menambahkan Mahasiswa Wali</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <p>Mahasiswa (05111640000009) Sal Zulal tercatat sebagai mahasiswa wali dari dosen wali (051100018) Henning
-            Titi Ciptaningtyas, S.Kom., M.Kom.</p>
-          <p>Apakah yakin memindahkannya ke dosen (510140807) Rizky Januar Akbar, S.Kom., M.Eng?</p>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary tx-13">Pindahkan</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="../../../lib/jquery/jquery.min.js"></script>
   <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -637,14 +760,9 @@
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectdosen').select2({
-        placeholder: 'Contoh: 510140807 - Rizky Januar Akbar, S.Kom., M.Eng',
-      });
       $('.selectmhs').select2({
         placeholder: 'Contoh: 05111640000009 - Sal Zulal',
       });
-
-
 
       // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });

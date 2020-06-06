@@ -188,76 +188,28 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="frs-mahasiswa- mahasiswa.html" class="nav-link">
-            <i data-feather="book"></i>
-            <span>FRS (mahasiswa)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="perwalian-list_wali-adminAKAD.html" class="nav-link">
-            <i data-feather="users"></i>
-            <span>Perwalian Mahasiswa (admin)</span>
-          </a>
-        </li>
-        <li class="nav-item">
           <a href="perwalian-list_wali-dosen.html" class="nav-link">
             <i data-feather="users"></i>
-            <span>Perwalian Mahasiswa (dosen)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="perwalian-list_ankwali-adminAKAD.html" class="nav-link">
-            <i data-feather="list"></i>
-            <span>Daftar Anak Wali per Dosen (admin)</span>
+            <span>Perwalian Mahasiswa</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="perwalian-list_ankwali-dosen.html" class="nav-link">
             <i data-feather="users"></i>
-            <span>Daftar Anak Wali per Dosen (dosen)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="frs-PengaturanJadwal.html" class="nav-link">
-            <i data-feather="calendar"></i>
-            <span>Pengaturan Jadwal FRS</span>
+            <span>Daftar Anak Wali per Dosen</span>
           </a>
         </li>
         <li class="nav-label mg-t-25">Penilaian</li>
         <li class="nav-item">
-          <a href="penilaian(proses)1-PengisianNilaiPerKelas-AdminAKAD.html" class="nav-link">
-            <i data-feather="edit"></i>
-            <span>Ubah Nilai per Kelas</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)3-PengisianNilaiPerMhs-admin.html" class="nav-link">
-            <i data-feather="user"></i>
-            <span>Hasil Evaluasi per Mahasiswa (admin)</span>
-          </a>
-        </li>
-        <li class="nav-item">
           <a href="penilaian(proses)4-PengisianNilaiPerMhs.html" class="nav-link">
             <i data-feather="user"></i>
-            <span>Hasil Evaluasi per Mahasiswa (admin)</span>
+            <span>Hasil Evaluasi per Mahasiswa</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="penilaian(proses)5-EntriNilaiEvaluasiSem-hanyaDosen.html" class="nav-link">
             <i data-feather="check-square"></i>
             <span>Evaluasi Pembelajaran</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)7-ListValidasiNINA-hanyaAdmin.html" class="nav-link">
-            <i data-feather="list"></i>
-            <span>Validasi Evaluasi Berkala</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian-skala nilai.html" class="nav-link">
-            <i data-feather="edit"></i>
-            <span>Konversi Skala Nilai</span>
           </a>
         </li>
         <li class="nav-item with-sub">
@@ -274,10 +226,6 @@
                 Mahasiswa</a></li>
             <li><a href="penilaian(laporan)6-RekapNilaiPerKelas.html">Rekap Nilai Per
                 Kelas</a></li>
-            <li><a href="penilaian(laporan)7-InfoPermanenNINA.html">Info Permanen NINA</a></li>
-            <li><a href="penilaian(laporan)8-PengumpulanNilai-PresentaseNilai.html">Persentase
-                Pengumpulan Nilai</a></li>
-          </ul>
         </li>
         <li class="nav-label mg-t-25">Presensi</li>
         <li class="nav-item">
@@ -445,7 +393,6 @@
       </ul>
     </div>
   </aside>
-
   <div class="content ht-100v pd-0">
     <div class="content-header align-items-center justify-content-between">
       <nav class="nav">
@@ -499,10 +446,12 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nilai per Semester Mahasiswa</li>
+                <li class="breadcrumb-item active" aria-current="page">Nilai per Kelas
+                </li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1">Nilai per Semester Mahasiswa</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Nilai per Kelas
+            </h4>
           </div>
 
         </div>
@@ -511,261 +460,157 @@
 
           <div class="col-12 col-xl-8 mb-3">
             <div class="card card-body bg-gray-100">
-              <div class="row m-0 d-flex justify-content-between">
-                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
-                  style="padding-top: 7.5px;">
-                  Mahasiswa</div>
 
-                <form class="col-12 col-md-8 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
-                  <select class="form-control selectmhs col-12" style="max-width: 100%;">
-                    <option label="Contoh: 05111640000009 - Sal Zulal"></option>
+              <div class="row pd-0 d-flex justify-content-center">
+                <div class=" col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle"
+                  style=" padding-top: 7.5px;">
+                  Periode</div>
 
-                    <option value="1">05111640000009 - Sal Zulal</option>
-                    <option value="2">05111640000010 - Faridatul Nur Aidah</option>
-                    <option value="3">05111640000011 - Dandy Naufaldi</option>
-                    <option value="4">05111640000012 - Raden Teja Kusuma</option>
-                    <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
-                    <option value="6">05111640000014 - Nuzha Musyarifa</option>
+                <form class="col-12 col-md-4 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectbiasa col-12" style="max-width: 100%;">
+                    <option value="1" selected> Gasal 2019/2020</option>
+                    <option value="2">Genap 2018/2019</option>
+                    <option value="3">Gasal 2018/2019</option>
+                    <option value="4">Genap 2017/2018</option>
                   </select>
                 </form>
 
-                <div class="col-12 col-md-2 mb-1 mb-md-0 pd-md-l-0 d-flex justify-content-end ">
-                  <a href="" class="btn btn-primary pd-l-1 pd-r-1" style="width: 100%;">Tampilkan</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-12 col-xl-8">
-
-            <div class="card mb-2">
-              <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
-                <h5 class="tx-16">GASAL 2017/2018</h5>
-              </div>
-
-              <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-center">Kode MK</th>
-                        <th class="text-center">Mata Kuliah</th>
-                        <th class="text-center">SKS</th>
-                        <th class="text-center">N. Huruf</th>
-                        <th class="text-center">S*N</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">4</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Matematika Diskrit</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">6</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">4</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Matematika Diskrit</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">6</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">4</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Matematika Diskrit</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">6</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="col-12 col-md-2 mb-1 mb-md-0 d-flex justify-content-end pd-md-l-0">
+                  <a href="" class="btn btn-primary pd-r-1 pd-l-1" style="width: 100%;">Tampilkan</a>
                 </div>
               </div>
 
-              <div class="d-flex justify-content-center bg-gray-100">
-                <div class="col-lg-3 mb-2 mt-2">
+              <hr class="mt-3 mb-2">
+
+              <div class="row pd-0 d-flex justify-content-between">
+                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
+                  style="padding-top: 7.5px;">
+                  Kelas</div>
+
+                <form class="col-12 col-md-8 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectkelas col-12" style="max-width: 100%;">
+                    <option label="Contoh: 2020 - AA000001 Bahasa Indonesia"></option>
+                    <option value="1">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
+                    <option value="2">2018 - IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
+                    <option value="3">2018 - IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
+                    <option value="4">2018 - IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
+                    <option value="5">2018 - IF184101 Dasar Pemrograman (4) _ 19/30</option>
+                  </select>
+                </form>
+
+                <div class="col-12 col-md-2 mb-1 mb-md-0 d-flex justify-content-end ">
+                  <a href="" class="btn btn-primary" style="width: 100%;">Pilih</a>
+                </div>
+              </div>
+
+              <!-- <hr class="mt-3 mb-2"> -->
+              <div class="row">
+                <div class="col-xl-6">
                   <div class="row">
-                    <div class="col">
-                      <li class="d-flex justify-content-between">
-                        <span class="tx-medium">Jumlah SKS</span>
-                        <span class="">18 SKS</span>
-                      </li>
-                      <li class="d-flex justify-content-between">
-                        <span class="tx-medium ">IPS</span>
-                        <span class="">2.17</span>
-                      </li>
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Mata Kuliah</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">SF4404 - Fisika Matematika III</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Kelas</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">A</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Program Studi</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">S1 Fisika</div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Kurikulum</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">2018</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Periode</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Genap 2018/2019</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Pengajar</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Dr. Dra. Melania Suweni Muntini, MT
                     </div>
                   </div>
                 </div>
               </div>
 
             </div>
+          </div>
 
-            <div class="card mb-2">
-              <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
-                <h5 class="tx-16">GENAP 2017/2018</h5>
-              </div>
 
-              <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
+          <div class="col-12 col-xl-8 mb-3">
+            <div class="card">
+              <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th class="text-center">Kode MK</th>
-                        <th class="text-center">Mata Kuliah</th>
-                        <th class="text-center">SKS</th>
-                        <th class="text-center">N. Huruf</th>
-                        <th class="text-center">S*N</th>
+                        <th class="text-center" style="width: 25%;">NRP</th>
+                        <th class="text-center">Nama Mahasiswa</th>
+                        <th class="text-center" style="width: 15%;">Nilai</th>
                       </tr>
                     </thead>
 
                     <tbody>
                       <tr>
+                        <td class="text-center">05111640000009</td>
+                        <td>Sal Zulal</td>
+                        <td class="text-center">A</td>
+                      </tr>
                       <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">4</td>
+                        <td class="text-center">05111640000013</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
                       </tr>
                       <tr class="bg-warning">
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Matematika Diskrit<br>
-                          <small><b>Belum mengisi kuesioner<b></td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">6</td>
+                        <td class="text-center align-middle">05111640000014</td>
+                        <td>Sal Zulal<br>
+                          <small><i>Belum Mengisi Kuesioner<i></small>
+                        </td>
+                        <td class="text-center align-middle">*</td>
                       </tr>
                       <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">4</td>
+                        <td class="text-center">05111640000015</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
                       </tr>
                       <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Matematika Diskrit</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">6</td>
+                        <td class="text-center">05111640000009</td>
+                        <td>Sal Zulal</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">05111640000013</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
+                      </tr>
+                      <tr class="bg-warning">
+                        <td class="text-center align-middle">05111640000014</td>
+                        <td>Sal Zulal<br>
+                          <small><i>Belum Mengisi Kuesioner<i></small>
+                        </td>
+                        <td class="text-center align-middle">*</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">05111640000015</td>
+                        <td>Muhammad Raihan Anindita</td>
+                        <td class="text-center">A</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-
-              <div class="d-flex justify-content-center bg-gray-100">
-                <div class="col-lg-3 mb-2 mt-2">
-                  <div class="row">
-                    <div class="col">
-                      <li class="d-flex justify-content-between">
-                        <span class="tx-medium">Jumlah SKS</span>
-                        <span class="">18 SKS</span>
-                      </li>
-                      <li class="d-flex justify-content-between">
-                        <span class="tx-medium ">IPS</span>
-                        <span class="">2.17</span>
-                      </li>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
-
-            <div class="card mb-2">
-              <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
-                <h5 class="tx-16">GASAL 2018/2019</h5>
-              </div>
-
-              <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-center">Kode MK</th>
-                        <th class="text-center">Mata Kuliah</th>
-                        <th class="text-center">SKS</th>
-                        <th class="text-center">N. Huruf</th>
-                        <th class="text-center">S*N</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">4</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Matematika Diskrit</td>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">6</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div><!-- card-body -->
-
-              <div class="d-flex justify-content-center bg-gray-100">
-                <div class="col-lg-3 mb-2 mt-2">
-                  <div class="row">
-                    <div class="col">
-                      <li class="d-flex justify-content-between">
-                        <span class="tx-medium">Jumlah SKS</span>
-                        <span class="">18 SKS</span>
-                      </li>
-                      <li class="d-flex justify-content-between">
-                        <span class="tx-medium ">IPS</span>
-                        <span class="">2.17</span>
-                      </li>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-
           </div>
-        </div>
 
 
-
-      </div><!-- row -->
-    </div><!-- container -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div>
   </div>
-  </div>
-
 
 
 
@@ -779,22 +624,22 @@
   <script src="../../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
   <script src="../../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
   <script src="../../../lib/select2/js/select2.min.js"></script>
+  <script src="../../../lib/chart.js/Chart.bundle.min.js"></script>
 
+  <script src="../../../assets/js/chart.chartjs.js"></script>
   <script src="../../../assets/js/dashforge.js"></script>
   <script src="../../../assets/js/dashforge.aside.js"></script>
   <script>
     $(function () {
       'use strict'
-
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectmhs').select2({
-        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
+      $('.selectkelas').select2({
+        placeholder: 'Contoh: AA000001 Bahasa Indonesia',
       });
 
-      // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
     });
   </script>
