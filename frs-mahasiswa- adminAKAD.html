@@ -182,40 +182,82 @@
         </li>
         <li class="nav-label mg-t-25">FRS</li>
         <li class="nav-item">
-          <a href="{{ url('frs') }}" class="nav-link">
+          <a href="frs-mahasiswa- adminAKAD.html" class="nav-link">
             <i data-feather="book"></i>
             <span>FRS</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ url('frs/perwalian') }}" class="nav-link">
+          <a href="frs-mahasiswa- mahasiswa.html" class="nav-link">
+            <i data-feather="book"></i>
+            <span>FRS (mahasiswa)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="perwalian-list_wali-adminAKAD.html" class="nav-link">
             <i data-feather="users"></i>
-            <span>Perwalian</span>
+            <span>Perwalian Mahasiswa (admin)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="perwalian-list_wali-dosen.html" class="nav-link">
+            <i data-feather="users"></i>
+            <span>Perwalian Mahasiswa (dosen)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="perwalian-list_ankwali-adminAKAD.html" class="nav-link">
+            <i data-feather="list"></i>
+            <span>Daftar Anak Wali per Dosen (admin)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="perwalian-list_ankwali-dosen.html" class="nav-link">
+            <i data-feather="users"></i>
+            <span>Daftar Anak Wali per Dosen (dosen)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="frs-PengaturanJadwal.html" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Pengaturan Jadwal FRS</span>
           </a>
         </li>
         <li class="nav-label mg-t-25">Penilaian</li>
         <li class="nav-item">
-          <a href="{{ url('penilaian/pengisianNilai/kelas') }}" class="nav-link">
-            <i data-feather="users"></i>
-            <span>Pengisian Nilai Per Kelas</span>
+          <a href="penilaian(proses)1-PengisianNilaiPerKelas-AdminAKAD.html" class="nav-link">
+            <i data-feather="edit"></i>
+            <span>Ubah Nilai per Kelas</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ url('penilaian/pengisianNilai/mahasiswa') }}" class="nav-link">
+          <a href="penilaian(proses)3-PengisianNilaiPerMhs-admin.html" class="nav-link">
             <i data-feather="user"></i>
-            <span>Pengisian Nilai Per Mahasiswa</span>
+            <span>Hasil Evaluasi per Mahasiswa (admin)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ url('penilaian/evaluasi') }}" class="nav-link">
+          <a href="penilaian(proses)4-PengisianNilaiPerMhs.html" class="nav-link">
+            <i data-feather="user"></i>
+            <span>Hasil Evaluasi per Mahasiswa (admin)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="penilaian(proses)5-EntriNilaiEvaluasiSem-hanyaDosen.html" class="nav-link">
             <i data-feather="check-square"></i>
-            <span>Entri Nilai Evaluasi Sem</span>
+            <span>Evaluasi Pembelajaran</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ url('penilaian/validasiNina') }}" class="nav-link">
+          <a href="penilaian(proses)7-ListValidasiNINA-hanyaAdmin.html" class="nav-link">
             <i data-feather="list"></i>
-            <span>List Validasi NINA</span>
+            <span>Validasi Evaluasi Berkala</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="penilaian-skala nilai.html" class="nav-link">
+            <i data-feather="edit"></i>
+            <span>Konversi Skala Nilai</span>
           </a>
         </li>
         <li class="nav-item with-sub">
@@ -224,14 +266,17 @@
             <span>Laporan</span>
           </a>
           <ul>
-            <li><a href="{{ url('penilaian/laporan?page=nilai_per_kelas') }}">Nilai Per Kelas</a></li>
-            <li><a href="{{ url('penilaian/laporan?page=nilai_per_semester') }}">Nilai Per Semester</a></li>
-            <li><a href="{{ url('penilaian/laporan?page=ranking_ipk') }}">Ranking IPK</a></li>
-            <li><a href="{{ url('penilaian/laporan?page=ranking_ips') }}">Ranking IPS</a></li>
-            <li><a href="{{ url('penilaian/laporan?page=daftar_ips_seluruh_mhs') }}">Daftar IPS Mahasiswa</a></li>
-            <li><a href="{{ url('penilaian/laporan?page=rekap_nilai_per_kelas') }}">Rekap Nilai Per Kelas</a></li>
-            <li><a href="{{ url('penilaian/laporan?page=persentase_pengumpulan_nilai') }}">Persentase Pengumpulan
-                Nilai</a></li>
+            <li><a href="penilaian(laporan)1-NilaiPerKelas.html">Nilai per Kelas</a></li>
+            <li><a href="penilaian(laporan)2-NilaiPerSemesterMahasiswa.html">Nilai per Semester</a></li>
+            <li><a href="penilaian(laporan)3-RankingIPK.html">Peringkat IPK</a></li>
+            <li><a href="penilaian(laporan)4-RankingIPS.html">Peringkat IPS</a></li>
+            <li><a href="penilaian(laporan)5-DaftarIPSSeluruhMhs.html">Daftar IPS
+                Mahasiswa</a></li>
+            <li><a href="penilaian(laporan)6-RekapNilaiPerKelas.html">Rekap Nilai Per
+                Kelas</a></li>
+            <li><a href="penilaian(laporan)7-InfoPermanenNINA.html">Info Permanen NINA</a></li>
+            <li><a href="penilaian(laporan)8-PengumpulanNilai-PresentaseNilai.html">Persentase
+                Pengumpulan Nilai</a></li>
           </ul>
         </li>
         <li class="nav-label mg-t-25">Presensi</li>
@@ -732,8 +777,8 @@
                   <div class="col-12 col-md-8 text-center" style=" padding-top: 7.5px;">Formulir Rencana Studi belum
                     disetujui
                   </div>
-                  <a href="#" class="col-12 col-md-2 btn btn-sm btn-primary mt-1 mt-md-0"
-                    style="width: 100px;">Setujui</a>
+                  <a href="frs-mahasiswa- adminAKAD - Approved.html"
+                    class="col-12 col-md-2 btn btn-sm btn-primary mt-1 mt-md-0" style="width: 100px;">Setujui</a>
                 </div>
 
               </div>
