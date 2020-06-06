@@ -530,7 +530,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit1"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit1" style="display:none;">
@@ -554,7 +555,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit2"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit2" style="display:none;">
@@ -578,7 +580,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit3"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit3" style="display:none;">
@@ -602,7 +605,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit4"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit4" style="display:none;">
@@ -626,7 +630,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit5"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit5" style="display:none;">
@@ -650,7 +655,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit6"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit6" style="display:none;">
@@ -674,7 +680,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit7"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit7" style="display:none;">
@@ -698,7 +705,8 @@
                         <td class="text-center align-middle">
                           <button class="swtch mr-sm-1 " type="button" data-feather="edit"
                             style="width:20px; height:20px;" id="btnedit" data-target="edit8"></button>
-                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
                       <tr id="edit8" style="display:none;">
@@ -745,7 +753,26 @@
     </div>
   </div>
 
+  <div class="modal fade" id="modalhapusitem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Hapus Nilai Huruf</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah anda yakin menghapus skala nilai huruf A dengan batas nilai atas 4.0?</p>
+        </div>
 
+        <div class="modal-footer">
+          <a href="frs-mahasiswa- adminAKAD.html" type="button" class="btn btn-danger tx-13">Hapus</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../../lib/jquery/jquery.min.js"></script>
   <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>

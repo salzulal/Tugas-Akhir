@@ -538,7 +538,7 @@
                     </thead>
 
                     <tbody>
-                      <tr>
+                      <tr id="show1">
                         <td class="text-center align-middle">Gasal 2019/2020</td>
                         <td class="text-center align-middle">27 Januari 2020</td>
                         <td class="text-center align-middle">31 Januari 2020</td>
@@ -549,12 +549,69 @@
                         <td class="text-center align-middle">01 Mei 2020</td>
                         <td class="text-center align-middle">31 Mei 2020</td>
                         <td class="text-center align-middle">
-                          <button type="button" class="ibtnEdit" data-feather="edit"
-                            style="width:20px; height:20px;"></button>
-                          <button type="button" class="ibtnDel" data-feather="trash-2"
-                            style="width:20px; height:20px;"></button>
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit1"></button>
+                          <a href="#modalhapusitem" data-toggle="modal" type="button" data-feather="trash-2"
+                            style="width:20px; height:20px;"></a>
                         </td>
                       </tr>
+                      <tr id="edit1" style="display:none;">
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa">
+                            <option value="1" selected> Gasal 2019/2020</option>
+                            <option value="2">Genap 2018/2019</option>
+                            <option value="3">Gasal 2018/2019</option>
+                            <option value="4">Genap 2017/2018</option>
+                          </select>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="27-01-2020" id="datepicker1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="31-01-2020" id="datepicker2">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="01-02-2020" id="datepicker3">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="21-02-2020" id="datepicker4">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="22-02-2020" id="datepicker5">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="10-04-2020" id="datepicker6">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="01-05-2020" id="datepicker5">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" value="31-05-2020" id="datepicker6">
+                          </div>
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show1"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show1"></button>
+                        </td>
+                      </tr>
+
                     </tbody>
                     <tfoot>
                       <tr>
@@ -625,6 +682,26 @@
   </div>
 
 
+  <div class="modal fade" id="modalhapusitem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Hapus Nilai Huruf</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah anda yakin menghapus skala nilai huruf A dengan batas nilai atas 4.0?</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="frs-mahasiswa- adminAKAD.html" type="button" class="btn btn-danger tx-13">Hapus</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../../lib/jquery/jquery.min.js"></script>
   <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -647,6 +724,11 @@
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
+      $('.swtch').click(function () {
+        $(this).parent().parent().hide();
+        var target = '#' + $(this).data('target');
+        $(target).show();
+      })
 
 
       $('#datepicker1').datepicker({

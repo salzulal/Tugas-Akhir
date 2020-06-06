@@ -563,16 +563,16 @@
                         <td class="text-center">1</td>
                         <td class="text-center">05111640000009</td>
                         <td>Sal Zulal</td>
-                        <td class="text-center align-middle"><button type="button" data-feather="trash-2"
-                            style="width:20px; height:20px;"></button></td>
+                        <td class="text-center align-middle"><button type="button" href="#modalhapus"
+                            data-toggle="modal" data-feather="trash-2" style="width:20px; height:20px;"></button></td>
                       </tr>
 
                       <tr>
                         <td class="text-center">2</td>
-                        <td class="text-center">05111640000009</td>
-                        <td>Sal Zulal</td>
-                        <td class="text-center align-middle"><button type="button" data-feather="trash-2"
-                            style="width:20px; height:20px;"></button></td>
+                        <td class="text-center">05111640000019</td>
+                        <td>Muhammad Sal Zulal</td>
+                        <td class="text-center align-middle"><button type="button" href="#modalhapus"
+                            data-toggle="modal" data-feather="trash-2" style="width:20px; height:20px;"></button></td>
                       </tr>
                     </tbody>
                     <tfoot>
@@ -580,34 +580,50 @@
                       <td colspan="2">
                         <select class="form-control selectmhs col-12">
                           <option label="Contoh: 05111640000009 - Sal Zulal"></option>
-                          <option value="1">Anton</option>
-                          <option value="2">Budi</option>
-                          <option value="3">Caca</option>
-                          <option value="4">Dimas</option>
+                          <option value="1">05111640000010 - Sal Zulal bin Sal</option>
+                          <option value="2">05111640000010 - Budi</option>
+                          <option value="3">05111640000010 - Caca</option>
+                          <option value="4">05111640000010 - Dimas</option>
                         </select>
                       </td>
-                      <td class="text-center align-middle"><button type="button" href="#modal" data-toggle="modal"
+                      <td class="text-center align-middle"><button type="button" href="#modaltambah" data-toggle="modal"
                           data-feather="plus-circle" style="width:20px; height:20px;"></button>
                       </td>
                     </tfoot>
                   </table>
-
-
                 </div>
               </div>
-
             </div>
           </div>
-
-
         </div>
-
       </div>
     </div>
   </div>
 
 
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+  <div class="modal fade" id="modalhapus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Hapus Mahasiswa Wali</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah anda yakin menghapus (05111640000009) Sal Zulal dari daftar anak wali (510140807) Rizky Januar
+            Akbar,
+            S.Kom., M.Eng</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger tx-13">Hapus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modaltambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content tx-14">
@@ -617,9 +633,10 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          <p>Mahasiswa dengan nama (...) tercatat sebagai mahasiswa wali dari dosen wali (...). Apakah yakin
-            memindahkannya ke dosen (...)?</p>
+        <div class="modal-body text-center">
+          <p>Mahasiswa (05111640000009) Sal Zulal tercatat sebagai mahasiswa wali dari dosen wali (051100018) Henning
+            Titi Ciptaningtyas, S.Kom., M.Kom.</p>
+          <p>Apakah yakin memindahkannya ke dosen (510140807) Rizky Januar Akbar, S.Kom., M.Eng?</p>
         </div>
 
         <div class="modal-footer">

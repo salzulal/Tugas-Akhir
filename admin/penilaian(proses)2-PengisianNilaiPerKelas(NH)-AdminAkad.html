@@ -735,6 +735,14 @@
                   </table>
                 </div>
 
+                <div class="row m-0 d-flex justify-content-end">
+                  <div class="col-12 col-md-8 d-flex justify-content-end pd-0">
+                    <a href="#modalsimpan" data-toggle="modal" class="col-12 col-md-auto btn btn-primary"><button
+                        data-feather="save" class="mr-2"></button>Simpan Nilai</a>
+                  </div>
+                </div>
+
+
                 <hr class="mb-3">
                 <div class="tx-medium">Unggah nilai melalui berkas</div>
                 <div class="row m-0 mt-2 d-flex justify-content-between">
@@ -750,10 +758,12 @@
                 </div>
               </div>
 
+
               <div class="card-body m-0 bg-gray-200">
                 <div class="row mr-3 ml-3 d-flex justify-content-end">
                   <div class="col-12 col-md-8 d-flex justify-content-end pd-0">
-                    <a href="" class="col-12 col-md-auto btn btn-primary"><button data-feather="save"
+                    <a href="#modalsimpanpermanen" data-toggle="modal"
+                      class="col-12 col-md-auto btn btn-primary"><button data-feather="save"
                         class="mr-2"></button>Simpan
                       Nilai
                       Permanen</a>
@@ -768,6 +778,47 @@
     </div>
   </div>
 
+  <div class="modal fade" id="modalsimpan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Simpan Nilai</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah anda yakin menyimpan perubahan nilai kelas S4404- Fisika Matematika III?</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="" type="button" class="btn btn-primary tx-13">Simpan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalsimpanpermanen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Simpan Nilai Permanen</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah anda yakin menyimpan <b>permanen</b> perubahan nilai kelas S4404- Fisika Matematika III?</p>
+          <p>Nilai tidak dapat diubah lagi selanjutnya.</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="" type="button" class="btn btn-primary tx-13">Simpan Permanen</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="../../../lib/jquery/jquery.min.js"></script>
