@@ -31,23 +31,23 @@
   <meta name="author" content="ThemePixels">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicon.png">
 
   <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
 
   <!-- vendor css -->
-  <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="../../lib/typicons.font/typicons.css" rel="stylesheet">
-  <link href="../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+  <link href="../../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../../../lib/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/select2/css/select2.min.css" rel="stylesheet">
 
   <!-- DashForge CSS -->
-  <link rel="stylesheet" href="../../assets/css/dashforge.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.customs.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.demo.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.customs.css">
 
   <style>
     .nav-aside .with-sub .nav-link::after {
@@ -61,7 +61,7 @@
   <aside class="aside aside-fixed">
     <div class="aside-header">
       <a href="{{ url() }}" class="aside-logo">
-        <img class="ht-40-f pt-0 pt-lg-2" src="../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
+        <img class="ht-40-f pt-0 pt-lg-2" src="../../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
       </a>
       <a href="" class="aside-menu-link">
         <i data-feather="menu"></i>
@@ -499,10 +499,10 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Validasi Evaluasi Berkala</li>
+                <li class="breadcrumb-item active" aria-current="page">Rekapitulasi Nilai per Kelas</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1">Validasi Evaluasi Berkala</h4>
+            <h4 class="mg-b-0 tx-spacing-1">Rekapitulasi Nilai per Kelas</h4>
           </div>
 
         </div>
@@ -532,90 +532,79 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-12">
+
+        <div class="row row-xs justify-content-center">
+          <div class="col-12 col-xl-8">
             <div class="card">
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table">
+                  <table class=" table">
                     <thead>
                       <tr>
-                        <th class="text-center align-middle">No</th>
-                        <th class="text-center align-middle">Kurikulum</th>
-                        <th class="text-center align-middle">Kode MK</th>
-                        <th class="text-center align-middle">Nama MK</th>
-                        <th class="text-center align-middle">Dosen</th>
-                        <th class="text-center align-middle">SKS</th>
-                        <th class="text-center align-middle">Kelas</th>
-                        <th class="text-center align-middle">Tgl [P]</th>
-                        <th class="text-center align-middle"></th>
+                        <th rowspan="2" class="text-center align-middle" style="width: 7%;">No</th>
+                        <th rowspan="2" class="text-center align-middle">Mata Kuliah</th>
+                        <th rowspan="2" class="text-center align-middle" style="width: 10%;">Kelas</th>
+                        <th colspan="8" class="text-center">Rekapitulasi Nilai</th>
+                        <th colspan="2" class="text-center">Rata-rata</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">A</th>
+                        <th class="text-center">AB</th>
+                        <th class="text-center">B</th>
+                        <th class="text-center">BC</th>
+                        <th class="text-center">C</th>
+                        <th class="text-center">D</th>
+                        <th class="text-center">E</th>
+                        <th class="text-center">Jml</th>
+                        <th class="text-center">Raw</th>
+                        <th class="text-center">IP</th>
                       </tr>
                     </thead>
 
                     <tbody>
                       <tr>
                         <td class="text-center align-middle">1</td>
-                        <td class="text-center align-middle">2018</td>
-                        <td class="text-center align-middle">SF4404</td>
-                        <td class="align-middle">Fisika Matematika</td>
-                        <td class="align-middle">M. Rachimoellah</td>
-                        <td class="text-center align-middle">4</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle"></td>
-                        <td class="text-center align-middle"><a
-                            href="penilaian(proses)8-ListValidasiNINA(validasi)-hanyaAdmin.html"
-                            class="text-primary text-bold">Validasi</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">2</td>
-                        <td class="text-center align-middle">2018</td>
-                        <td class="text-center align-middle">SF4404</td>
-                        <td class="align-middle">Analisa & Pengolahan Data</td>
-                        <td class="align-middle">Prida Novarita Trisanti</td>
-                        <td class="text-center align-middle">4</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle"></td>
-                        <td class="text-center align-middle"><a
-                            href="penilaian(proses)8-ListValidasiNINA(validasi)-hanyaAdmin.html"
-                            class="text-primary text-bold">Validasi</td>
-                      </tr>
-                      <tr>
+                        <td class="align-middle">KM4101 - Matematika 1</td>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">0</td>
                         <td class="text-center align-middle">3</td>
-                        <td class="text-center align-middle">2018</td>
-                        <td class="text-center align-middle">SF4404</td>
-                        <td class="align-middle">Dinamika dan Pengendalian Proses</td>
-                        <td class="align-middle">Donny Satria Bhuana</td>
                         <td class="text-center align-middle">4</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle"></td>
-                        <td class="text-center align-middle"><a
-                            href="penilaian(proses)8-ListValidasiNINA(validasi)-hanyaAdmin.html"
-                            class="text-primary text-bold">Validasi</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">14</td>
+                        <td class="text-center align-middle">60</td>
+                        <td class="text-center align-middle">2.4</td>
                       </tr>
-                      <tr class="bg-gray-100">
-                        <td class="text-center align-middle">4</td>
-                        <td class="text-center align-middle">2018</td>
-                        <td class="text-center align-middle">SF4404</td>
-                        <td class="align-middle">Dinamika dan Pengendalian Proses</td>
-                        <td class="align-middle">Donny Satria Bhuana</td>
-                        <td class="text-center align-middle">4</td>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td class="text-center align-middle">17</td>
+                        <td class="align-middle">RE4801 - Keselamatan dan Kesehatan Kerja</td>
                         <td class="text-center align-middle">B</td>
-                        <td class="text-center align-middle">27-05-2020<br>07:15:55</td>
-                        <td class="text-center align-middle"><a
-                            href="penilaian(proses)8-ListValidasiNINA(validasi)-hanyaAdmin.html"
-                            class="text-primary text-bold">Validasi Ulang</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">83.3</td>
+                        <td class="text-center align-middle">3.5</td>
                       </tr>
-
                     </tbody>
                   </table>
+
+
                 </div>
+
               </div>
-
             </div>
-
-
           </div>
-
         </div>
       </div>
     </div>
@@ -624,19 +613,19 @@
 
 
 
-  <script src="../../lib/jquery/jquery.min.js"></script>
-  <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../lib/feather-icons/feather.min.js"></script>
-  <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-  <script src="../../lib/prismjs/prism.js"></script>
-  <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-  <script src="../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
-  <script src="../../lib/select2/js/select2.min.js"></script>
+  <script src="../../../lib/jquery/jquery.min.js"></script>
+  <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../lib/feather-icons/feather.min.js"></script>
+  <script src="../../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../../../lib/prismjs/prism.js"></script>
+  <script src="../../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+  <script src="../../../lib/select2/js/select2.min.js"></script>
 
-  <script src="../../assets/js/dashforge.js"></script>
-  <script src="../../assets/js/dashforge.aside.js"></script>
+  <script src="../../../assets/js/dashforge.js"></script>
+  <script src="../../../assets/js/dashforge.aside.js"></script>
   <script>
     $(function () {
       'use strict'
@@ -644,7 +633,6 @@
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
       });
-
 
 
       // Select2

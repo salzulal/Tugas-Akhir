@@ -31,23 +31,23 @@
   <meta name="author" content="ThemePixels">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicon.png">
 
   <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
 
   <!-- vendor css -->
-  <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="../../lib/typicons.font/typicons.css" rel="stylesheet">
-  <link href="../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+  <link href="../../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../../../lib/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/select2/css/select2.min.css" rel="stylesheet">
 
   <!-- DashForge CSS -->
-  <link rel="stylesheet" href="../../assets/css/dashforge.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.customs.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.demo.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.customs.css">
 
   <style>
     .nav-aside .with-sub .nav-link::after {
@@ -61,7 +61,7 @@
   <aside class="aside aside-fixed">
     <div class="aside-header">
       <a href="{{ url() }}" class="aside-logo">
-        <img class="ht-40-f pt-0 pt-lg-2" src="../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
+        <img class="ht-40-f pt-0 pt-lg-2" src="../../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
       </a>
       <a href="" class="aside-menu-link">
         <i data-feather="menu"></i>
@@ -499,30 +499,30 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Persentase Pengumpulan Nilai</li>
+                <li class="breadcrumb-item active" aria-current="page">Peringkat IPS</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing-1">Persentase Pengumpulan Nilai</h4>
+            <h4 class="mg-b-0 tx-spacing-1">Peringkat IPS</h4>
           </div>
+
         </div>
+
         <div class="row row-xs justify-content-center">
+
           <div class="col-12 col-xl-8 mb-3">
             <div class="card card-body bg-gray-100">
               <div class="row m-0 d-flex justify-content-between">
 
                 <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
                   style="padding-top: 7.5px;">
-                  Fakultas</div>
+                  Angkatan</div>
 
                 <form class="col-12 col-md-3 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
-                  <select class="form-control selectfakultas col-12" style="max-width: 100%;">
-                    <option label="Contoh: FTEIC"></option>
-                    <option value="1">MIPA</option>
-                    <option value="2">FTI</option>
-                    <option value="3">FTSP</option>
-                    <option value="4">FTK</option>
-                    <option value="5">FTIf</option>
-                    <option value="6">UPM SOSHUM</option>
+                  <select class="form-control selectbiasa col-12" style="max-width: 100%;">
+                    <option selected>2018</option>
+                    <option value="1">2017</option>
+                    <option value="2">2018</option>
+                    <option value="3">2019</option>
                   </select>
                 </form>
 
@@ -547,45 +547,41 @@
             </div>
           </div>
 
-
           <div class="col-12 col-xl-8">
             <div class="card">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <div class="mg-b-10 mg-sm-b-0">
-                  <h5 class="mg-b-5 tx-16">Fakultas Teknologi Informasi</h5>
-                </div>
-              </div>
-
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table">
+
+                  <table id="tabelranking" class="table">
                     <thead>
                       <tr>
-                        <th class="text-center">Kode Program Studi</th>
-                        <th class="text-center">Program Studi</th>
-                        <th class="text-center">Terkumpul</th>
-                        <th class="text-center">Jml Kelas</th>
-                        <th class="text-center">Presentase (%)</th>
+                        <th class="text-center" style="width: 7%;">No</th>
+                        <th class="text-center" style="width: 25%;">NRP</th>
+                        <th class="text-center">Nama</th>
+                        <th class="text-center" style="width: 10%;">SKS</th>
+                        <th class="text-center" style="width: 10%;">IPS</th>
                       </tr>
                     </thead>
 
                     <tbody>
                       <tr>
-                        <td class="text-center">51100</td>
-                        <td>Teknik Informatika</td>
-                        <td class="text-center">102</td>
-                        <td class="text-center">102</td>
-                        <td class="text-center">100%</td>
+                        <td class="text-center">1</td>
+                        <td class="text-center">05111640000009</td>
+                        <td>Sal Zulal</td>
+                        <td class="text-center">18</td>
+                        <td class="text-center">3.41</td>
                       </tr>
                       <tr>
-                        <td class="text-center">51100</td>
-                        <td>Teknik Informatika</td>
-                        <td class="text-center">102</td>
-                        <td class="text-center">102</td>
-                        <td class="text-center">100%</td>
+                        <td class="text-center">250</td>
+                        <td class="text-center">05111640000090</td>
+                        <td>Sal Zulal 2</td>
+                        <td class="text-center">18</td>
+                        <td class="text-center">2.41</td>
                       </tr>
                     </tbody>
                   </table>
+
+
                 </div>
               </div>
 
@@ -602,19 +598,19 @@
 
 
 
-  <script src="../../lib/jquery/jquery.min.js"></script>
-  <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../lib/feather-icons/feather.min.js"></script>
-  <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-  <script src="../../lib/prismjs/prism.js"></script>
-  <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-  <script src="../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
-  <script src="../../lib/select2/js/select2.min.js"></script>
+  <script src="../../../lib/jquery/jquery.min.js"></script>
+  <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../lib/feather-icons/feather.min.js"></script>
+  <script src="../../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../../../lib/prismjs/prism.js"></script>
+  <script src="../../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+  <script src="../../../lib/select2/js/select2.min.js"></script>
 
-  <script src="../../assets/js/dashforge.js"></script>
-  <script src="../../assets/js/dashforge.aside.js"></script>
+  <script src="../../../assets/js/dashforge.js"></script>
+  <script src="../../../assets/js/dashforge.aside.js"></script>
   <script>
     $(function () {
       'use strict'
@@ -623,9 +619,36 @@
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectfakultas').select2({
-        placeholder: 'Contoh: FTEIC',
+
+
+      $('#tabelranking').dataTable({
+        // responsive: true,
+        // paging: false,
+        // bInfo: false,
+        // searching: false,
+        // order: false,
+        language: {
+          searchPlaceholder: 'Cari...',
+          search: '',
+          lengthMenu: 'Tampilkan _MENU_ data/halaman',
+          info: "Menampilkan _START_-_END_ dari _TOTAL_ data",
+          infoFiltered: "(Disaring dari total _MAX_ data)",
+          infoEmpty: "Tidak ada data yang ditampilkan",
+          emptyTable: "Data kosong",
+          paginate: { next: "Berikutnya", previous: "Sebelumnya" },
+          zeroRecords: "Tidak ada data yang cocok",
+          loadingRecords: "Sedang memuat...",
+          processing: "Sedang memproses...",
+        },
+        "columns": [
+          { "orderable": true },
+          { "orderable": true },
+          { "orderable": false },
+          { "orderable": false },
+          { "orderable": true }
+        ]
       });
+
 
 
       // Select2

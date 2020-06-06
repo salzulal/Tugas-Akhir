@@ -31,23 +31,23 @@
   <meta name="author" content="ThemePixels">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicon.png">
 
   <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
 
   <!-- vendor css -->
-  <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="../../lib/typicons.font/typicons.css" rel="stylesheet">
-  <link href="../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+  <link href="../../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../../../lib/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/select2/css/select2.min.css" rel="stylesheet">
 
   <!-- DashForge CSS -->
-  <link rel="stylesheet" href="../../assets/css/dashforge.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.customs.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.demo.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.customs.css">
 
   <style>
     .nav-aside .with-sub .nav-link::after {
@@ -61,7 +61,7 @@
   <aside class="aside aside-fixed">
     <div class="aside-header">
       <a href="{{ url() }}" class="aside-logo">
-        <img class="ht-40-f pt-0 pt-lg-2" src="../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
+        <img class="ht-40-f pt-0 pt-lg-2" src="../../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
       </a>
       <a href="" class="aside-menu-link">
         <i data-feather="menu"></i>
@@ -499,10 +499,10 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Hasil Evaluasi per Mahasiswa</li>
+                <li class="breadcrumb-item active" aria-current="page">Pengaturan Skala Nilai</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1">Hasil Evaluasi per Mahasiswa</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Pengaturan Skala Nilai</h4>
           </div>
 
         </div>
@@ -510,254 +510,257 @@
         <div class="row row-xs justify-content-center">
 
 
-          <div class="col-12 col-xl-8 mb-3">
-            <div class="card card-body bg-gray-100">
-              <div class="row m-0 d-flex justify-content-between">
-                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
-                  style="padding-top: 7.5px;">
-                  Mahasiswa</div>
-
-                <form class="col-12 col-md-8 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
-                  <select class="form-control selectmhs col-12" style="max-width: 100%;">
-                    <option label="Contoh: 05111640000009 - Sal Zulal"></option>
-
-                    <option value="1">05111640000009 - Sal Zulal</option>
-                    <option value="2">05111640000010 - Faridatul Nur Aidah</option>
-                    <option value="3">05111640000011 - Dandy Naufaldi</option>
-                    <option value="4">05111640000012 - Raden Teja Kusuma</option>
-                    <option value="5">05111640000013 - Muhammad Raihan Anindita</option>
-                    <option value="6">05111640000014 - Nuzha Musyarifa</option>
-                  </select>
-                </form>
-
-                <div class="col-12 col-md-2 mb-1 mb-md-0 pd-md-l-0 d-flex justify-content-end ">
-                  <a href="" class="btn btn-primary pd-l-1 pd-r-1" style="width: 100%;">Tampilkan</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-12 col-xl-8">
-            <div class="card mb-2">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <span>
-                  <h5 class="tx-16">Perkuliahan pada: GENAP 2017/2018</h5>
-                </span>
-
-              </div>
-
+          <div class="col-md-8 col-lg-6 col-xl-4">
+            <div class="card">
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th class="text-center">Kode</th>
-                        <th class="text-center">Mata Kuliah</th>
-                        <th class="text-center">Kelas</th>
-                        <th class="text-center">Nilai</th>
-                        <th class="text-center"></th>
+                        <th class="text-center align-middle" style="width: 35%;">Nilai Huruf</th>
+                        <th class="text-center align-middle" style="width: 35%;">Batas Atas Nilai</th>
+                        <th class="" style="width: 30%;"></th>
                       </tr>
                     </thead>
 
                     <tbody>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">A</td>
+                      <tr id="show1">
+                        <td class="text-center align-middle">_</td>
+                        <td class="text-center align-middle">0</td>
                         <td class="text-center align-middle">
-                          <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                            style="width:20px; height:20px;"></a>
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit1"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
                         </td>
                       </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141302</td>
-                        <td class="align-middle">Matematika Diskrit</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle">
-                          <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                            style="width:20px; height:20px;"></a>
+                      <tr id="edit1" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="_">
                         </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="0">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show1"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show1"></button>
+                        </td>
+                      </tr>
 
+                      <tr id="show2">
+                        <td class="text-center align-middle">A</td>
+                        <td class="text-center align-middle">4</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit2"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
                       </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                      <tr id="edit2" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="A">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="4">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show2"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show2"></button>
+                        </td>
                       </tr>
+
+                      <tr id="show3">
+                        <td class="text-center align-middle">AB</td>
+                        <td class="text-center align-middle">3.5</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit3"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit3" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="AB">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="3.5">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show3"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show3"></button>
+                        </td>
+                      </tr>
+
+                      <tr id="show4">
+                        <td class="text-center align-middle">B</td>
+                        <td class="text-center align-middle">3</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit4"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit4" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="B">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="3">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show4"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show4"></button>
+                        </td>
+                      </tr>
+
+                      <tr id="show5">
+                        <td class="text-center align-middle">BC</td>
+                        <td class="text-center align-middle">2.5</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit5"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit5" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="BC">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="2.5">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show5"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show5"></button>
+                        </td>
+                      </tr>
+
+                      <tr id="show6">
+                        <td class="text-center align-middle">C</td>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit6"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit6" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="C">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="2">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show6"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show6"></button>
+                        </td>
+                      </tr>
+
+                      <tr id="show7">
+                        <td class="text-center align-middle">D</td>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit7"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit7" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="D">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="1">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show7"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show7"></button>
+                        </td>
+                      </tr>
+
+                      <tr id="show8">
+                        <td class="text-center align-middle">E</td>
+                        <td class="text-center align-middle">0</td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="edit"
+                            style="width:20px; height:20px;" id="btnedit" data-target="edit8"></button>
+                          <button type="button" data-feather="trash-2" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr id="edit8" style="display:none;">
+                        <td>
+                          <input type="text" class="form-control text-center" value="E">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center" value="0">
+                        </td>
+                        <td class="text-center align-middle">
+                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
+                            style="width:20px; height:20px;" id="btnsave" data-target="show8"></button>
+                          <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
+                            id="btncancel" data-target="show8"></button>
+                        </td>
+                      </tr>
+
                     </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>
+                          <input type="text" class="form-control text-center">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control text-center">
+                        </td>
+                        <td class="text-center align-middle"><button type="button" class="addrow"
+                            data-feather="plus-circle" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+
+                    </tfoot>
                   </table>
+
                 </div>
               </div>
             </div>
-            <div class="card mb-2">
-              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
-                <span>
-                  <h5 class="tx-16">Perkuliahan pada: GASAL 2017/2018</h5>
-                </span>
 
-              </div>
-
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-center">Kode</th>
-                        <th class="text-center">Mata Kuliah</th>
-                        <th class="text-center">Kelas</th>
-                        <th class="text-center">Nilai</th>
-                        <th class="text-center"></th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <td class="text-center align-middle">KI141301</td>
-                        <td class="align-middle">Dasar Pemrograman</td>
-                        <td class="text-center align-middle">C</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle">
-                          <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                            style="width:20px; height:20px;"></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">KI141302</td>
-                        <td class="align-middle">Matematika Diskrit</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle">
-                          <a type="button" href="#modal" data-feather="edit" data-toggle="modal"
-                            style="width:20px; height:20px;"></a>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
 
           </div>
 
         </div>
-
-
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-      <div class="modal-content tx-14">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Ubah Nilai Mahasiswa</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th rowspan="2" class="text-center align-middle">NRP</th>
-                  <th rowspan="2" class="text-center align-middle">Nama Mahasiswa</th>
-                  <th class="text-center align-middle" style="width: 6%;">Kehadiran</th>
-                  <th class="text-center align-middle" style="width: 6%;">Sikap</th>
-                  <th class="text-center align-middle" style="width: 6%;">Tugas 1</th>
-                  <th class="text-center align-middle" style="width: 6%;">Tugas Kelompok 1</th>
-                  <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                  <th class="text-center align-middle" style="width: 6%;">Kuis 1</th>
-                  <th class="text-center align-middle" style="width: 6%;">Kuis 2</th>
-                  <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                  <th colspan="2" class="text-center align-middle">Sebelum</th>
-                  <th colspan="2" class="text-center align-middle">Sesudah</th>
-                </tr>
-                <tr>
-                  <th class="text-center">5 %</th>
-                  <th class="text-center">5 %</th>
-                  <th class="text-center">10 %</th>
-                  <th class="text-center">10 %</th>
-                  <th class="text-center">20 %</th>
-                  <th class="text-center">15 %</th>
-                  <th class="text-center">15 %</th>
-                  <th class="text-center">20 %</th>
-                  <th class="text-center">N.A.</th>
-                  <th class="text-center">N.H.</th>
-                  <th class="text-center">N.A.</th>
-                  <th class="text-center">N.H.</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td class="text-center align-middle">01111440000017</td>
-                  <td class="align-middle">Dimas Bagus Yudhistira</td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td align="center" class="align-middle"><input type="text" class="form-control" style="width: 50px;"
-                      value="50"></td>
-                  <td class="text-center align-middle">2.0</td>
-                  <td class="text-center align-middle">E</td>
-                  <td class="text-center align-middle"></td>
-                  <td class="text-center align-middle"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" class="close" data-dismiss="modal"
-            aria-label="Close">Batal</button>
-          <button type="button" class="btn btn-primary">Simpan</button>
-        </div>
       </div>
     </div>
   </div>
 
 
 
-  <script src="../../lib/jquery/jquery.min.js"></script>
-  <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../lib/feather-icons/feather.min.js"></script>
-  <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-  <script src="../../lib/prismjs/prism.js"></script>
-  <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-  <script src="../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
-  <script src="../../lib/select2/js/select2.min.js"></script>
+  <script src="../../../lib/jquery/jquery.min.js"></script>
+  <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../lib/feather-icons/feather.min.js"></script>
+  <script src="../../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../../../lib/prismjs/prism.js"></script>
+  <script src="../../../lib/jqueryui/jquery-ui.min.js"></script>
+  <script src="../../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+  <script src="../../../lib/select2/js/select2.min.js"></script>
 
-  <script src="../../assets/js/dashforge.js"></script>
-  <script src="../../assets/js/dashforge.aside.js"></script>
+  <script src="../../../assets/js/dashforge.js"></script>
+  <script src="../../../assets/js/dashforge.aside.js"></script>
   <script>
     $(function () {
       'use strict'
@@ -766,10 +769,30 @@
         minimumResultsForSearch: Infinity
       });
 
-      $('.selectmhs').select2({
-        placeholder: 'Contoh: 05111640000009 - Sal Zulal',
-      });
+      $('.swtch').click(function () {
+        $(this).parent().parent().hide();
+        var target = '#' + $(this).data('target');
+        $(target).show();
+      })
 
+      $('#datepicker1').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker2').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker3').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker4').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker5').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker6').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
 
       // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });

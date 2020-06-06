@@ -31,23 +31,23 @@
   <meta name="author" content="ThemePixels">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicon.png">
 
   <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
 
   <!-- vendor css -->
-  <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="../../lib/typicons.font/typicons.css" rel="stylesheet">
-  <link href="../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
-  <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+  <link href="../../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../../../lib/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/select2/css/select2.min.css" rel="stylesheet">
 
   <!-- DashForge CSS -->
-  <link rel="stylesheet" href="../../assets/css/dashforge.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
-  <link rel="stylesheet" href="../../assets/css/dashforge.customs.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.demo.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.customs.css">
 
   <style>
     .nav-aside .with-sub .nav-link::after {
@@ -61,7 +61,7 @@
   <aside class="aside aside-fixed">
     <div class="aside-header">
       <a href="{{ url() }}" class="aside-logo">
-        <img class="ht-40-f pt-0 pt-lg-2" src="../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
+        <img class="ht-40-f pt-0 pt-lg-2" src="../../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
       </a>
       <a href="" class="aside-menu-link">
         <i data-feather="menu"></i>
@@ -499,137 +499,147 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Informasi Permanen dan Validasi Isian Evaluasi
-                  Berkala</li>
+                <li class="breadcrumb-item active" aria-current="page">Pengaturan Jadwal</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing-1">Informasi Permanen dan Validasi Isian Evaluasi Berkala</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Pengaturan Jadwal</h4>
           </div>
-        </div>
-        <div class="row row-xs justify-content-center">
 
-
-
-          <div class="col-12 col-md-6 col-xl-4 mb-3">
-            <div class="card card-body bg-gray-100">
-
-              <div class="row m-0 d-flex justify-content-between">
-                <div class=" col-12 col-md-2 pd-md-0 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle"
-                  style=" padding-top: 7.5px;">
-                  Periode</div>
-
-                <form class="col-12 col-md-6 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
-                  <select class="form-control selectbiasa col-12" style="max-width: 100%;">
-                    <option value="1" selected> Gasal 2019/2020</option>
-                    <option value="2">Genap 2018/2019</option>
-                    <option value="3">Gasal 2018/2019</option>
-                    <option value="4">Genap 2017/2018</option>
-                  </select>
-                </form>
-
-                <div class="col-12 col-md-4 pd-md-0 mb-1 mb-md-0 d-flex justify-content-end ">
-                  <a href="" class="btn btn-primary pd-r-1 pd-l-1" style="width: 100%;">Tampilkan</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="row row-xs justify-content-center">
-          <div class="col-12 col-xl-8">
-            <div class="alert alert-primary text-center" role="alert">
-
-              <b>DIF</b> : Jarak antara pengumpulan nilai dengan waktu ujian (hari)<br>
-              <span class="bg-success" style="width: 50px;">&emsp;&emsp;</span> : DIF antara 0 sampai 7<br>
-              <span class="bg-danger" style="width: 50px;">&emsp;&emsp;</span> : DIF kurang dari 0 atau lebih dari
-              25<br>
-            </div>
-          </div>
 
 
-          <div class="col-12 col-xl-8">
+          <div class="col-12">
             <div class="card">
               <div class="card-body">
                 <div class="table-responsive">
-                  <table id="tabel" class="table">
+                  <table class="table">
                     <thead>
                       <tr>
-                        <th class="text-center align-middle">Kode MK</th>
-                        <th class="text-center align-middle">Mata Kuliah</th>
-                        <th class="text-center align-middle">Kelas</th>
-                        <th class="text-center align-middle">NIP</th>
-                        <th class="text-center align-middle">Dosen</th>
-                        <th class="text-center align-middle">Simpan</th>
-                        <th class="text-center align-middle">Ujian</th>
-                        <th class="text-center align-middle">DIF</th>
-                        <th class="text-center align-middle">Permanen</th>
-                        <th class="text-center align-middle">Verifier</th>
+                        <th rowspan="2" class="text-center align-middle" style="width: 16%;">Periode</th>
+                        <th colspan="2" class="text-center align-middle">Pengisian FRS</th>
+                        <th colspan="2" class="text-center align-middle">Perubahan FRS</th>
+                        <th colspan="2" class="text-center align-middle">Pembatalan FRS</th>
+                        <th colspan="2" class="text-center align-middle">Pengisian Nilai</th>
+                        <th rowspan="2" style="width: 7%;"></th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">Mulai</th>
+                        <th class="text-center">Selesai</th>
+                        <th class="text-center">Mulai</th>
+                        <th class="text-center">Selesai</th>
+                        <th class="text-center">Mulai</th>
+                        <th class="text-center">Selesai</th>
+                        <th class="text-center">Mulai</th>
+                        <th class="text-center">Selesai</th>
+
                       </tr>
                     </thead>
 
                     <tbody>
                       <tr>
-                        <td class="text-center align-middle">SF4801</td>
-                        <td class="align-middle">Tugas Akhir</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle">132300563</td>
-                        <td class="align-middle">Suyatno</td>
-                        <td class="text-center align-middle"></td>
-                        <td class="text-center align-middle"></td>
-                        <td class="bg-success"></td>
-                        <td class="text-center align-middle"><i data-feather="x" style="width:14px; height:14px;"></i>
-                        </td>
-                        <td class="text-center align-middle"><i data-feather="check"
-                            style="width:14px; height:14px;"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-center align-middle">SF4801</td>
-                        <td class="align-middle">Fisika Radiologi dan Dosimetri</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="text-center align-middle">132300563</td>
-                        <td class="align-middle">Melania Suweni Muntini</td>
-                        <td class="text-center align-middle"></td>
-                        <td class="text-center align-middle"></td>
-                        <td class="bg-danger"></td>
-                        <td class="text-center align-middle"><i data-feather="check"
-                            style="width:14px; height:14px;"></i>
-                        </td>
-                        <td class="text-center align-middle"><i data-feather="check"
-                            style="width:14px; height:14px;"></i>
+                        <td class="text-center align-middle">Gasal 2019/2020</td>
+                        <td class="text-center align-middle">27 Januari 2020</td>
+                        <td class="text-center align-middle">31 Januari 2020</td>
+                        <td class="text-center align-middle">1 Februari 2020</td>
+                        <td class="text-center align-middle">21 Februari 2020</td>
+                        <td class="text-center align-middle">22 Februari 2020</td>
+                        <td class="text-center align-middle">10 April 2020</td>
+                        <td class="text-center align-middle">01 Mei 2020</td>
+                        <td class="text-center align-middle">31 Mei 2020</td>
+                        <td class="text-center align-middle">
+                          <button type="button" class="ibtnEdit" data-feather="edit"
+                            style="width:20px; height:20px;"></button>
+                          <button type="button" class="ibtnDel" data-feather="trash-2"
+                            style="width:20px; height:20px;"></button>
                         </td>
                       </tr>
                     </tbody>
+                    <tfoot>
+                      <tr>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa">
+                            <option value="1" selected> Gasal 2019/2020</option>
+                            <option value="2">Genap 2018/2019</option>
+                            <option value="3">Gasal 2018/2019</option>
+                            <option value="4">Genap 2017/2018</option>
+                          </select>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker2">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker3">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker4">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker5">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker6">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker5">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker6">
+                          </div>
+                        </td>
+                        <td class="text-center align-middle">
+                          <button type="button" class="addrow" data-feather="plus-circle"
+                            style="width:20px; height:20px;"></button>
+                        </td>
+                    </tfoot>
                   </table>
                 </div>
               </div>
-
             </div>
+
+
           </div>
 
-
         </div>
-
       </div>
     </div>
   </div>
 
 
 
+  <script src="../../../lib/jquery/jquery.min.js"></script>
+  <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../lib/feather-icons/feather.min.js"></script>
+  <script src="../../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../../../lib/prismjs/prism.js"></script>
+  <script src="../../../lib/jqueryui/jquery-ui.min.js"></script>
+  <script src="../../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+  <script src="../../../lib/select2/js/select2.min.js"></script>
 
-  <script src="../../lib/jquery/jquery.min.js"></script>
-  <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../lib/feather-icons/feather.min.js"></script>
-  <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-  <script src="../../lib/prismjs/prism.js"></script>
-  <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
-  <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-  <script src="../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
-  <script src="../../lib/select2/js/select2.min.js"></script>
-
-  <script src="../../assets/js/dashforge.js"></script>
-  <script src="../../assets/js/dashforge.aside.js"></script>
+  <script src="../../../assets/js/dashforge.js"></script>
+  <script src="../../../assets/js/dashforge.aside.js"></script>
   <script>
     $(function () {
       'use strict'
@@ -639,40 +649,24 @@
       });
 
 
-      $('#tabel').dataTable({
-        // responsive: true,
-        // paging: false,
-        // bInfo: false,
-        // searching: false,
-        // order: false,
-        language: {
-          searchPlaceholder: 'Cari...',
-          search: '',
-          lengthMenu: 'Tampilkan _MENU_ data/halaman',
-          info: "Menampilkan _START_-_END_ dari _TOTAL_ data",
-          infoFiltered: "(Disaring dari total _MAX_ data)",
-          infoEmpty: "Tidak ada data yang ditampilkan",
-          emptyTable: "Data kosong",
-          paginate: { next: "Berikutnya", previous: "Sebelumnya" },
-          zeroRecords: "Tidak ada data yang cocok",
-          loadingRecords: "Sedang memuat...",
-          processing: "Sedang memproses...",
-        },
-        "columns": [
-          { "orderable": true },
-          { "orderable": true },
-          { "orderable": false },
-          { "orderable": true },
-          { "orderable": true },
-          { "orderable": false },
-          { "orderable": false },
-          { "orderable": false },
-          { "orderable": false },
-          { "orderable": false }
-        ]
+      $('#datepicker1').datepicker({
+        dateFormat: 'dd-mm-yy'
       });
-
-
+      $('#datepicker2').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker3').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker4').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker5').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker6').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
 
       // Select2
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
