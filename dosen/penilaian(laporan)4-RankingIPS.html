@@ -195,7 +195,7 @@
         </li>
         <li class="nav-item">
           <a href="perwalian-list_ankwali-dosen.html" class="nav-link">
-            <i data-feather="users"></i>
+            <i data-feather="list"></i>
             <span>Daftar Anak Wali per Dosen</span>
           </a>
         </li>
@@ -460,11 +460,12 @@
                   Angkatan</div>
 
                 <form class="col-12 col-md-3 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
-                  <select class="form-control selectbiasa col-12" style="max-width: 100%;">
-                    <option selected>2018</option>
-                    <option value="1">2017</option>
-                    <option value="2">2018</option>
-                    <option value="3">2019</option>
+                  <select class="form-control selectangkatan col-12" style="max-width: 100%;">
+                    <option label="Pilih Tahun"></option>
+                    <option value="1">2016</option>
+                    <option value="2">2017</option>
+                    <option value="3">2018</option>
+                    <option value="4">2019</option>
                   </select>
                 </form>
 
@@ -482,55 +483,13 @@
                 </form>
 
                 <div class="col-12 col-md-2 mb-1 mb-md-0 pd-md-l-0 d-flex justify-content-end ">
-                  <a href="" class="btn btn-primary pd-l-1 pd-r-1" style="width: 100%;">Tampilkan</a>
+                  <a href="penilaian(laporan)4-RankingIPS_2.html" class="btn btn-primary pd-l-1 pd-r-1"
+                    style="width: 100%;">Tampilkan</a>
                 </div>
 
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-xl-8">
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-
-                  <table id="tabelranking" class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-center" style="width: 7%;">No</th>
-                        <th class="text-center" style="width: 25%;">NRP</th>
-                        <th class="text-center">Nama</th>
-                        <th class="text-center" style="width: 10%;">SKS</th>
-                        <th class="text-center" style="width: 10%;">IPS</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <td class="text-center">1</td>
-                        <td class="text-center">05111640000009</td>
-                        <td>Sal Zulal</td>
-                        <td class="text-center">18</td>
-                        <td class="text-center">3.41</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">250</td>
-                        <td class="text-center">05111640000090</td>
-                        <td>Sal Zulal 2</td>
-                        <td class="text-center">18</td>
-                        <td class="text-center">2.41</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
 
         </div>
       </div>
@@ -559,6 +518,10 @@
 
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
+      });
+      $('.selectangkatan').select2({
+        placeholder: 'Pilih Tahun',
+        minimumResultsForSearch: Infinity,
       });
 
 

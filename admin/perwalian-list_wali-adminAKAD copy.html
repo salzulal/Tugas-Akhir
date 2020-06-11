@@ -1,0 +1,2136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Twitter -->
+  <meta name="twitter:site" content="@themepixels">
+  <meta name="twitter:creator" content="@themepixels">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DashForge">
+  <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
+  <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="http://themepixels.me/dashforge">
+  <meta property="og:title" content="DashForge">
+  <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
+
+  <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+  <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+
+  <!-- Meta -->
+  <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+  <meta name="author" content="ThemePixels">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicon.png">
+
+  <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
+
+  <!-- vendor css -->
+  <link href="../../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../../../lib/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="../../../lib/select2/css/select2.min.css" rel="stylesheet">
+
+  <!-- DashForge CSS -->
+  <link rel="stylesheet" href="../../../assets/css/dashforge.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.demo.css">
+  <link rel="stylesheet" href="../../../assets/css/dashforge.customs.css">
+
+  <style>
+    .nav-aside .with-sub .nav-link::after {
+      margin-right: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <aside class="aside aside-fixed">
+    <div class="aside-header">
+      <a href="{{ url() }}" class="aside-logo">
+        <img class="ht-40-f pt-0 pt-lg-2" src="../../../assets/img/MyITS Academics-blue.png" alt="Logo myITS Academics">
+      </a>
+      <a href="" class="aside-menu-link">
+        <i data-feather="menu"></i>
+        <i data-feather="x"></i>
+      </a>
+    </div>
+    <div class="aside-body">
+      <ul class="nav nav-aside">
+        <li class="nav-item">
+          <a href="{{ url('dashboard') }}" class="nav-link">
+            <i data-feather="home"></i>
+            <span>Beranda</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url() }}" class="nav-link">
+            <i data-feather="user"></i>
+            <span>Biodata</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url() }}" class="nav-link">
+            <i data-feather="activity"></i>
+            <span>Keaktifan per semester</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Administrasi</li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="file-text"></i>
+            <span>Permohonan Surat Aktif</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="file"></i>
+            <span>Pengajuan Cuti</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Kurikulum</li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/rmk') }}" class="nav-link">
+            <i data-feather="grid"></i><span>Rumpun Mata Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-item with-sub">
+          <a href="" class="nav-link"><i data-feather="file"></i><span>Mata Kuliah</span></a>
+          <ul>
+            <li>
+              <a href="{{ url('kurikulum/matakuliah') }}">
+                <i data-feather="book-open"></i><span>Daftar Mata Kuliah</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('kurikulum/matakuliah/matkulprasyarat') }}">
+                <i data-feather="check-square"></i><span>Mata Kuliah Prasyarat</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/datakurikulum') }}" class="nav-link">
+            <i data-feather="briefcase"></i><span>Daftar Kurikulum</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/cpl') }}" class="nav-link">
+            <i data-feather="check"></i><span>Manajemen CPL</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/profillulusan') }}" class="nav-link">
+            <i data-feather="users"></i><span>Profil Lulusan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('kurikulum/pustaka') }}" class="nav-link">
+            <i data-feather="book"></i><span>Manajemen Pustaka</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Ekuivalensi</li>
+        <li class="nav-item">
+          <a href="{{ url('ekuivalensi') }}" class="nav-link">
+            <i data-feather="refresh-cw"></i>
+            <span>Proses Ekuivalensi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ekuivalensi/dataekuivalensi') }}" class="nav-link">
+            <i data-feather="database"></i>
+            <span>Data Ekuivalensi</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Penjadwalan</li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan/ruangan') }}" class="nav-link">
+            <i data-feather="box"></i>
+            <span>Ruangan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan/periode') }}" class="nav-link">
+            <i data-feather="clock"></i>
+            <span>Periode Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan/kelas') }}" class="nav-link">
+            <i data-feather="clipboard"></i>
+            <span>Kelas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('penjadwalan') }}" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Penjadwalan Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">FRS</li>
+        <li class="nav-item">
+          <a href="frs-mahasiswa- adminAKAD.html" class="nav-link">
+            <i data-feather="book"></i>
+            <span>FRS</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="perwalian-list_wali-adminAKAD.html" class="nav-link">
+            <i data-feather="users"></i>
+            <span>Perwalian Mahasiswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="perwalian-list_ankwali-adminAKAD.html" class="nav-link">
+            <i data-feather="list"></i>
+            <span>Daftar Anak Wali per Dosen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="frs-PengaturanJadwal.html" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Pengaturan Jadwal FRS</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Penilaian</li>
+        <li class="nav-item">
+          <a href="penilaian(proses)1-PengisianNilaiPerKelas-AdminAKAD.html" class="nav-link">
+            <i data-feather="edit"></i>
+            <span>Ubah Nilai per Kelas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="penilaian(proses)3-PengisianNilaiPerMhs-admin.html" class="nav-link">
+            <i data-feather="user"></i>
+            <span>Ubah Nilai per Mahasiswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="penilaian(proses)7-ListValidasiNINA-hanyaAdmin.html" class="nav-link">
+            <i data-feather="list"></i>
+            <span>Validasi Nilai Berkala</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="penilaian-skala nilai.html" class="nav-link">
+            <i data-feather="edit"></i>
+            <span>Skala Konversi Nilai</span>
+          </a>
+        </li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="bar-chart"></i>
+            <span>Laporan</span>
+          </a>
+          <ul>
+            <li><a href="penilaian(laporan)1-NilaiPerKelas.html">Nilai per Kelas</a></li>
+            <li><a href="penilaian(laporan)2-NilaiPerSemesterMahasiswa.html">Nilai per Semester</a></li>
+            <li><a href="penilaian(laporan)3-RankingIPK.html">Peringkat IPK</a></li>
+            <li><a href="penilaian(laporan)4-RankingIPS.html">Peringkat IPS</a></li>
+            <li><a href="penilaian(laporan)5-DaftarIPSSeluruhMhs.html">Daftar IPS
+                Mahasiswa</a></li>
+            <li><a href="penilaian(laporan)6-RekapNilaiPerKelas.html">Rekap Nilai per
+                Kelas</a></li>
+            <li><a href="penilaian(laporan)7-InfoPermanenNINA.html">Info Permanen NINA</a></li>
+            <li><a href="penilaian(laporan)8-PengumpulanNilai-PresentaseNilai.html">Persentase
+                Pengumpulan Nilai</a></li>
+          </ul>
+        </li>
+        <li class="nav-label mg-t-25">Presensi</li>
+        <li class="nav-item">
+          <a href="{{ url('presensi') }}" class="nav-link">
+            <i data-feather="check-square"></i>
+            <span>Presensi Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('presensi?page=prodi') }}" class="nav-link">
+            <i data-feather="list"></i>
+            <span>Daftar Presensi Prodi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('presensi?page=rekap') }}" class="nav-link">
+            <i data-feather="bar-chart-2"></i>
+            <span>Rekapitulasi Kehadiran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('presensi?page=validasi') }}" class="nav-link">
+            <i data-feather="check"></i>
+            <span>Validasi Izin Mahasiswa</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">IPD</li>
+        <li class="nav-item"><a href="{{ url('ipd/kuesioner') }}" class="nav-link">
+            <i data-feather="slack"></i>
+            <span>Kuesioner</span>
+          </a>
+        </li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="bar-chart"></i>
+            <span>Rekapitulasi IPD</span>
+          </a>
+          <ul>
+            <li><a href="{{ url('ipd') }}">Rerata IPD Departemen</a></li>
+            <li><a href="{{ url('ipd/chart/rerataipddosen') }}">Rerata IPD Dosen</a></li>
+            <li><a href="{{ url('ipd/chart/rerataitempertanyaan') }}">Rerata Item Pertanyaan</a></li>
+            <li><a href="{{ url('ipd/chart/prosentasenaikturunipd') }}">Prosentase Naik Turun IPD</a></li>
+            <li><a href="{{ url('ipd/chart/prosentaseitempertanyaan') }}">Prosentase Item Pertanyaan</a>
+            </li>
+            <li><a href="{{ url('ipd/chart/trenrerataipd') }}">Tren Rerata IPD</a></li>
+          </ul>
+        </li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="help-circle"></i>
+            <span>Pertanyaan</span>
+          </a>
+          <ul>
+            <li><a href="{{ url('ipd/pertanyaan') }}">Pertanyaan IPD</a></li>
+            <li><a href="{{ url('ipd/pertanyaan/jeniskuesioner') }}">Jenis Kuesioner</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="{{ url('ipd/hasil') }}" class="nav-link"><i data-feather="book"></i>
+            <span>Hasil Kuesioner</span></a></li>
+        <li class="nav-label mg-t-25">SAR</li>
+        <li class="nav-item">
+          <a href="{{ url('sar') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 1 - Tim Mutu ITS</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/sar-fakultas') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 2 - Tim Mutu Fakultas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/sar-departemen') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 3 - Tim Mutu Departemen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/sar-rmk-dosen') }}" class="nav-link">
+            <i data-feather="target"></i>
+            <span>SAR 4 & 5 - SAR RMK & Dosen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/rekap-sar') }}" class="nav-link">
+            <i data-feather="pie-chart"></i>
+            <span>Rekap SAR Semester</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('sar/laporan-sar') }}" class="nav-link">
+            <i data-feather="bar-chart-2"></i>
+            <span>Laporan Evaluasi SAR</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Tugas Akhir</li>
+        <li class="nav-item">
+          <a href="{{ url('ta/tasaya') }}" class="nav-link">
+            <i data-feather="file-text"></i>
+            <span>TA saya</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/sidangta') }}" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Sidang TA</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/tawarantopik') }}" class="nav-link">
+            <i data-feather="calendar"></i>
+            <span>Tawaran Topik</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/bimbingansaya') }}" class="nav-link">
+            <i data-feather="check"></i>
+            <span>Bimbingan Saya</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/daftartaprodi') }}" class="nav-link">
+            <i data-feather="book"></i>
+            <span>Daftar TA Prodi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('ta/pengaturanta') }}" class="nav-link">
+            <i data-feather="book"></i>
+            <span>Pengaturan TA</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Referensi</li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="arrow-down-circle"></i>
+            <span>Jalur Masuk</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i data-feather="link"></i>
+            <span>Kerjasama</span>
+          </a>
+        </li>
+        <li class="nav-label mg-t-25">Pengaturan</li>
+        <li class="nav-item with-sub">
+          <a href="#" class="nav-link">
+            <i data-feather="settings"></i>
+            <span>Jadwal</span>
+          </a>
+          <ul>
+            <li>
+              <a href="#">FRS</a>
+            </li>
+            <li>
+              <a href="{{ url('ipd/setting') }}">IPD</a>
+            </li>
+            <li>
+              <a href="#">SAR</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+
+  <div class="content ht-100v pd-0">
+    <div class="content-header align-items-center justify-content-between">
+      <nav class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="dropdown">
+            ID <i data-feather="chevron-down" class="wd-15 ht-15"></i>
+          </a>
+          <div class="dropdown-menu tx-13">
+            <a href="{{ url('lang') }}?locale=id-ID"
+              class="dropdown-item {% if locale == 'id-ID' %}active{% endif %}">ID</a>
+            <a href="{{ url('lang') }}?locale=en-US"
+              class="dropdown-item {% if locale == 'en-US' %}active{% endif %}">EN</a>
+          </div>
+        </li>
+      </nav>
+      <nav class="nav">
+        <a href="{{ url('presensi/kehadiran/qrscan') }}" class="btn btn-outline-secondary btn-sm rounded-pill mr-2">
+          <i class="fa fa-qrcode mr-1"></i> Scan QR
+        </a>
+        <div class="dropdown dropdown-profile">
+          <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+            <div class="avatar avatar-sm">
+              <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+            </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="avatar avatar-lg mg-b-15">
+              <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+            </div>
+            <h6 class="tx-semibold mg-b-5">
+              Sal Zulal </h6>
+            <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+            <hr>
+            <a href="" class="dropdown-item" data-toggle="modal" data-target="#chgRoleUser">
+              <i data-feather="user"></i>Ganti hak akses
+            </a>
+            <a href="" class="dropdown-item">
+              <i data-feather="settings"></i>Kembali ke myITS SSO
+            </a>
+            <a href="{{ url('logout') }}" class="dropdown-item">
+              <i data-feather="log-out"></i>Keluar
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="content-body">
+      <div class="container-fluid">
+        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
+          <div>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Perwalian Mahasiswa</li>
+              </ol>
+            </nav>
+            <h4 class="mg-b-0 tx-spacing--1">Perwalian Mahasiswa</h4>
+          </div>
+
+        </div>
+
+        <div class="row row-xs justify-content-center">
+
+
+          <div class="col-12 col-xl-8 mb-3">
+            <div class="card card-body bg-gray-100">
+              <div class="row m-0 d-flex justify-content-between">
+                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
+                  style="padding-top: 7.5px;">
+                  Dosen Wali</div>
+
+                <form class="col-12 col-md-10 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectdosen col-12" style="max-width: 100%;">
+                    <option label="Contoh: 510140807 - Rizky Januar Akbar, S.Kom., M.Eng."></option>
+                    <option value="1">132320036 - Royyana Muslim I, S.Kom., M.Kom., Ph.D (5 Mahasiswa Wali Terdaftar)
+                    </option>
+                    <option value="2">510000001 - Hudan Studiawan, S.Kom., M.Kom. (4 Mahasiswa Wali Terdaftar)</option>
+                    <option value="3">510000002 - Adhatus Solichah Ahmadiyah, S.Kom, M.Sc (6 Mahasiswa Wali Terdaftar)
+                    </option>
+                    <option value="4">510000003 - Baskoro Adi Pratomo, S.Kom., M.Kom. (2 Mahasiswa Wali Terdaftar)
+                    </option>
+                    <option value="5">051100018 - Henning Titi Ciptaningtyas, S.Kom., M.Kom. (6 Mahasiswa Wali
+                      Terdaftar)
+                  </select>
+                </form>
+              </div>
+
+              <div class="row m-0 mt-md-2 d-flex justify-content-between">
+                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium align-middle "
+                  style="padding-top: 7.5px;">
+                  Angkatan</div>
+
+                <form class="col-12 col-md-3 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectangkatan col-12" style="max-width: 100%;">
+                    <option label="Pilih Tahun"></option>
+                    <option value="1">2016</option>
+                    <option value="2">2017</option>
+                    <option value="3">2018</option>
+                    <option value="4">2019</option>
+                  </select>
+                </form>
+
+                <div class="col-12 col-md-2 mb-1 mb-md-0 tx-semibold tx-md-medium text-md-center align-middle"
+                  style="padding-top: 7.5px;">
+                  Periode</div>
+
+                <form class="col-12 col-md-3 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
+                  <select class="form-control selectbiasa col-12" style="max-width: 100%;">
+                    <option value="1" selected> Gasal 2019/2020</option>
+                    <option value="2">Genap 2018/2019</option>
+                    <option value="3">Gasal 2018/2019</option>
+                    <option value="4">Genap 2017/2018</option>
+                  </select>
+                </form>
+
+                <div class="col-12 col-md-2 mb-1 mb-md-0 pd-md-l-0 d-flex justify-content-end ">
+                  <a href="" class="btn btn-primary pd-l-1 pd-r-1" style="width: 100%;">Tampilkan</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-12 col-xl-8">
+            <div class="card">
+              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+                <div class="mg-b-10 mg-sm-b-0">
+                  <h5 class="mg-b-5 tx-16">Daftar Anak Wali</h5>
+                </div>
+
+              </div>
+
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th class="text-center" style="width: 10%;">No</th>
+                        <th class="text-center">Mahasiswa</th>
+                        <th class="text-center" style="width: 40%;">Status</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr href="#modaldetail" data-toggle="modal">
+                        <td class="text-center align-middle">1</td>
+                        <td class="align-middle"><a href="#modaldetail" data-toggle="modal"> <b>Sal Zulal</b></a><br>
+                          05111640000009
+                        </td>
+                        <td class="align-middle">FRS: <b class="text-success">OK</b><br>Mahasiswa aktif (18 SKS)</td>
+                      </tr>
+                      <tr href="#modaldetail" data-toggle="modal">
+                        <td class="text-center align-middle">2</td>
+                        <td class="align-middle"><a href="#modaldetail" data-toggle="modal"> <b>Sal Zulal</b></a><br>
+                          05111640000009
+                        </td>
+                        <td class="align-middle">FRS: <b class="text-danger">Belum disetujui</b><br>Mahasiswa tidak
+                          aktif
+                          (18 SKS)
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modaldetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel3">Detail Mahasiswa</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="card card-body bg-gray-100  mb-3">
+            <div class="row">
+              <div class="col-12 col-lg-3 d-flex justify-content-center">
+                <div><img src="https://via.placeholder.com/256x320" style=" max-width: 95%;"></div>
+              </div>
+              <div class="col-12 col-lg-9 mt-2 mt-lg-0">
+                <h3>Sal Zulal</h3>
+                <h5>05111640000009</h5>
+
+                <div class="row ml-0 ml-md-1 ml-lg-3">
+                  <div class="col pd-0">
+                    <div class="row">
+                      <div class="col-7 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Status</div>
+                      <div class="col mt-1 mt-md-2 ml-md-0">Normal</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-7 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SKS Ambil</div>
+                      <div class="col mt-1 mt-md-2 ml-md-0">23</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-7 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">IPK / IPS</div>
+                      <div class="col mt-1 mt-md-2 ml-md-0">3.28 / 3.41</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-7 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Status Semester Lalu</div>
+                      <div class="col mt-1 mt-md-2 ml-md-0">Normal</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-7 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SKS Tempuh</div>
+                      <div class="col mt-1 mt-md-2 ml-md-0">81</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-7 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SKS Lulus</div>
+                      <div class="col mt-1 mt-md-2 ml-md-0">58</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row m-0 d-flex justify-content-end mt-4 mb-3">
+                  <a href="" class="col-12 col-md-3 col-lg-auto btn btn-sm btn-outline-primary mr-md-2">Ekivalensi
+                    2014-2018</a>
+                  <a href=""
+                    class="col-12 col-md-3 col-lg-auto btn btn-sm btn-outline-primary mr-md-2 mt-1 mt-md-0">Transkrip
+                    Mahasiswa</a>
+                  <a href="" class="col-12 col-md-3 col-lg-auto btn btn-sm btn-primary  mt-1 mt-md-0">FRS Mahasiswa</a>
+                </div>
+
+              </div> <!-- card -->
+            </div>
+          </div>
+
+          <ul class="nav nav-line nav-justified" id="tabedit" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" id="tab-informasi" data-toggle="tab" href="#tab_informasi" role="tab"
+                aria-controls="informasi" aria-selected="false">Informasi Mahasiswa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="tab-nilai" data-toggle="tab" href="#tab_nilai" role="tab"
+                aria-controls="nilai" aria-selected="true">Nilai</a>
+            </li>
+          </ul>
+
+          <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="tabContent">
+
+            <div class="tab-pane fade" id="tab_informasi" role="tabpanel" aria-labelledby="informasi-tab">
+              <div class="row">
+                <!-- show on lg<= -->
+                <div class="col-lg-3 text-center d-none d-lg-block">
+                  <div class="nav flex-column nav-line" id="v-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-biodata-tab" data-toggle="tab" href="#v-biodata" role="tab"
+                      aria-controls="v-biodata" aria-selected="true">Biodata</a>
+                    <a class="nav-link" id="v-akademik-tab" data-toggle="tab" href="#v-akademik" role="tab"
+                      aria-controls="v-akademik" aria-selected="false">Riwayat Akademik</a>
+                    <a class="nav-link" id="v-pekerjaan-tab" data-toggle="tab" href="#v-pekerjaan" role="tab"
+                      aria-controls="v-pekerjaan" aria-selected="false">Pekerjaan</a>
+                    <a class="nav-link" id="v-orangtua-tab" data-toggle="tab" href="#v-orangtua" role="tab"
+                      aria-controls="v-orangtua" aria-selected="false">Orang Tua</a>
+                  </div>
+                </div>
+
+                <!-- show on sm< & <lg -->
+                <div class="col-12 d-lg-none d-none d-sm-block mb-3">
+                  <ul class="nav nav-line nav-justified" id="tabedit" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="v-biodata-tab" data-toggle="tab" href="#v-biodata" role="tab"
+                        aria-controls="v-biodata" aria-selected="true">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="v-akademik-tab" data-toggle="tab" href="#v-akademik" role="tab"
+                        aria-controls="v-akademik" aria-selected="false">Riwayat Akademik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="v-pekerjaan-tab" data-toggle="tab" href="#v-pekerjaan" role="tab"
+                        aria-controls="v-pekerjaan" aria-selected="false">Pekerjaan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="v-orangtua-tab" data-toggle="tab" href="#v-orangtua" role="tab"
+                        aria-controls="v-orangtua" aria-selected="false">Orang Tua</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- show on <md -->
+                <div class="col-12 d-md-none mb-3">
+                  <form>
+                    <select class="form-control selectbiasa2" style="width: 100%;" id='mySelect'>
+                      <option value='0'>Biodata</option>
+                      <option value='1'>Riwayat Akademik</option>
+                      <option value='2'>Pekerjaan</option>
+                      <option value='3'>Orang Tua</option>
+                    </select>
+                  </form>
+                  <ul class="nav nav-line nav-justified" id="myTab" role="tablist" style="display:none;">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="v-biodata-tab" data-toggle="tab" href="#v-biodata" role="tab"
+                        aria-controls="v-biodata" aria-selected="true">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="v-akademik-tab" data-toggle="tab" href="#v-akademik" role="tab"
+                        aria-controls="v-akademik" aria-selected="false">Riwayat Akademik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="v-pekerjaan-tab" data-toggle="tab" href="#v-pekerjaan" role="tab"
+                        aria-controls="v-pekerjaan" aria-selected="false">Pekerjaan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="v-orangtua-tab" data-toggle="tab" href="#v-orangtua" role="tab"
+                        aria-controls="v-orangtua" aria-selected="false">Orang Tua</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-9">
+                  <div class="tab-content" id="v-tabContent">
+                    <!-- biodata -->
+                    <div class="tab-pane fade show active" id="v-biodata" role="tabpanel"
+                      aria-labelledby="v-biodata-tab">
+                      <!-- div biodata -->
+                      <div id="biodata">
+                        <div class="row d-flex justify-content-between mb-1 pd-0">
+                          <h5 class="col-4 col-sm-6">Biodata Mahasiswa</h5>
+                          <div class="col-8 col-sm-6 d-flex justify-content-end">
+                            <button type="button" class="btn btn-sm btn-primary m-2" id="btnedit"
+                              data-target="suntingbiodata"><i data-feather="edit" style="width:13px; height:13px;"
+                                class="mr-1 mr-md-2"></i>Sunting</button>
+                          </div>
+                        </div>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">NRP</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">05111640000009</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Sal Zulal</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Lengkap</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Sal Zulal</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jenis Kelamin</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Laki-laki</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Dosen Wali</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Henning Titi Ciptaningtyas,
+                                S.Kom., M.Kom
+                                (051100018)</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Alamat Tinggal</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 ml-md-3 pd-0 pd-md-3">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 25%;">Jalan</td>
+                                        <td class="">Jl. Keputih</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 25%;">Kota</td>
+                                        <td class="">Surabaya</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 25%;">Kode Pos</td>
+                                        <td class="">60000</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Telepon</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">088888888888</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Email</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">email@email.com</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Homepage</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Tanggal Lahir</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">01 Januari 2001</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Tempat Lahir</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Surabaya</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Agama</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Islam</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Status Menikah</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Belum Menikah</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Kewarganegaraan</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Gol. Darah</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">A</div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <!-- div sunting biodata-->
+                      <div id="suntingbiodata" style="display:none;">
+                        <h5 class=" mb-3">Sunting Biodata Mahasiswa</h5>
+
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3 mb-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">NRP</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="05111640000009">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="Sal Zulal">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Lengkap</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="Sal Zulal">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jenis Kelamin</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="1" selected>Laki-laki</option>
+                                  <option value="2">Perempuan</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Dosen Wali</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectmodal2" style="width: 100%;" value="Laki-laki">
+                                  <option value="pick" selected>Henning Titi Ciptaningtyas, S.Kom., M.Kom
+                                    (051100018)</option>
+                                  <option value="1">Anton</option>
+                                  <option value="2">Budi</option>
+                                  <option value="3">Caca</option>
+                                  <option value="4">Dimas</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Alamat Tinggal</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 pd-0 pd-md-l-15">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium align-middle" style="width: 25%;">Jalan</td>
+                                        <td><textarea class="form-control">Jl. Keputih</textarea></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium align-middle" style="width: 25%;">Kode Kota</td>
+                                        <td><input type="text" class="form-control" value="Surabaya"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium align-middle" style="width: 25%;">Kode Pos</td>
+                                        <td><input type="text" class="form-control" value="60000"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Telepon</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="088888888888">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Email</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="email@email.com">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Homepage</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Tanggal Lahir</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" id="datepicker1" value="01 Januari 2001"></div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Tempat Lahir</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="Surabaya">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Agama</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="Islam">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Status Menikah</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="Belum Menikah">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Kewarganegaraan</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Gol. Darah</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="A">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row m-0 d-flex justify-content-end">
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-secondary mr-2" id="btnbatal"
+                              data-target="biodata">Batal</button>
+                          </div>
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-primary" id="btnsimpan"
+                              data-target="biodata"><i data-feather="save" style="width:13px; height:13px;"></i>&emsp;
+                              Simpan</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- akademik -->
+                    <div class="tab-pane fade" id="v-akademik" role="tabpanel" aria-labelledby="v-akademik-tab">
+                      <!-- div Akademik -->
+                      <div id="akademik">
+                        <div class="row d-flex justify-content-between mb-1 pd-0">
+                          <h5 class="col-4 col-sm-6">Informasi Akademik</h5>
+                          <div class="col-8 col-sm-6 d-flex justify-content-end">
+                            <button type="button" class="btn btn-sm btn-primary m-2" id="btnedit"
+                              data-target="suntingakademik"><i data-feather="edit" style="width:13px; height:13px;"
+                                class="mr-1 mr-md-2"></i>Sunting</button>
+                          </div>
+                        </div>
+
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jalur Penerimaan</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">PMDK Reguler/SNMPTN undangan
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Tgl Masuk ITS</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">1 Juni 2016</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Sumber Beasiswa</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SPMB Pilihan Ke</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Non SPMB Pilihan Ke
+                              </div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">No Ujian Masuk</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">4160083546</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Gugus</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SLTA Asal</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 ml-md-3 pd-0 pd-md-3">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">SLTA </td>
+                                        <td class="">20523844</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kode Jurusan</td>
+                                        <td class="">015</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Tahun Ijazah</td>
+                                        <td class="">2016</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kota/Kab.</td>
+                                        <td class="">-</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SLTA STK</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 ml-md-3 pd-0 pd-md-3">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <thead>
+                                      <tr>
+                                        <td colspan="5" class="">Menyerahkan STK: Tidak</td>
+                                      </tr>
+                                      <tr>
+                                        <th colspan="2" class="tx-medium text-center">NEM</th>
+                                        <th colspan="3" class="tx-medium text-center">Nilai</th>
+                                      </tr>
+                                      <tr>
+                                        <th class="tx-medium text-center">Tmp</th>
+                                        <th class="tx-medium text-center">Nilai</th>
+                                        <th class="tx-medium text-center">Fisika</th>
+                                        <th class="tx-medium text-center">Mat</th>
+                                        <th class="tx-medium text-center">Bhs Ing</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="text-center">6 </td>
+                                        <td class="text-center">466.5</td>
+                                        <td class="text-center">90</td>
+                                        <td class="text-center">90</td>
+                                        <td class="text-center">90</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Prestasi</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 ml-md-3 pd-0 pd-md-3">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Pendidikan</td>
+                                      <td class="">Tidak</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Seni</td>
+                                      <td class="">Tidak</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Olahraga</td>
+                                      <td class="">Tidak</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nilai Test</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 ml-md-3 pd-0 pd-md-3">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Toefl</td>
+                                      <td class="">-</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">TPA</td>
+                                      <td class="">-</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Psikotest</td>
+                                      <td class="">-</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <h5 class=" mb-3">Khusus S2/S3</h5>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jalur Penerimaan S2/S3
+                              </div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pendidikan S1</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 ml-md-3 pd-0 pd-md-3">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Asal </td>
+                                        <td class="">-</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Jurusan</td>
+                                        <td class="">-</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">IPK S1
+                              </div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- div Sunting Akademik-->
+                      <div id="suntingakademik" style="display:none;">
+                        <h5 class=" mb-3">Sunting Informasi Akademik</h5>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3 mb-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jalur Penerimaan</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectmodal2" style="width: 100%;" value="Laki-laki">
+                                  <option value="1" selected>PKM Kemitraan</option>
+                                  <option value="2">PMDK Prestasi</option>
+                                  <option value="3">Bidikmisi</option>
+                                  <option value="4">SNMPTN utul/SBMPTN</option>
+                                  <option value="5">Lintas Jalur Reguler</option>
+                                  <option value="6">Lintas Jalur Extensi</option>
+                                  <option value="7">Profesi Keahlian</option>
+                                  <option value="8">D3 Reguler</option>
+                                  <option value="9">P Unggulan Mandiri</option>
+                                  <option value="10">D3 Kerjasama</option>
+                                  <option value="11">UM Desa</option>
+                                  <option value="12">PMDK Madura</option>
+                                  <option value="13">D4</option>
+                                  <option value="14">S3 Kerjasama</option>
+                                  <option value="15">SNMPTN Undangan</option>
+                                  <option value="16">Pindahan</option>
+                                  <option value="17">S2 Kerjasama</option>
+                                  <option value="18">PKM Mandiri</option>
+                                  <option value="19">S2 Reguler</option>
+                                  <option value="20">S3 Reguler</option>
+                                  <option value="21">Matrikulasi/PraPasca</option>
+                                  <option value="22">S1 Kerjasama</option>
+                                  <option value="23">MMT</option>
+                                  <option value="24">S1 Ekstensi</option>
+                                  <option value="25">D3 Ekstensi</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Tgl Masuk ITS
+                                (dd-mm-yyyy)</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" id="datepicker2" value="1 Juni 2016">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Sumber Beasiswa</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SPMB Pilihan Ke</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Non SPMB Pilihan Ke
+                              </div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">No Ujian Masuk</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="4160083546">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Gugus</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SLTA Asal</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 pd-0 pd-md-l-15">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">SLTA </td>
+                                        <td><input type="text" class="form-control" value="20523844"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kode Jurusan</td>
+                                        <td><input type="text" class="form-control" value="015"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Tahun Ijazah</td>
+                                        <td><input type="text" class="form-control" value="2016"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kota/Kab.</td>
+                                        <td><input type="text" class="form-control" value="-"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">SLTA STK</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 pd-0 pd-md-l-15">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <thead>
+                                      <tr>
+                                        <td colspan="5" class="">Menyerahkan STK:
+                                          <select class="form-control selectbiasa2" style="width: 50%;">
+                                            <option value="1"> Ya</option>
+                                            <option value="2" selected>Tidak</option>
+                                          </select>
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th colspan="2" class="tx-medium text-center">NEM</th>
+                                        <th colspan="3" class="tx-medium text-center">Nilai</th>
+                                      </tr>
+                                      <tr>
+                                        <th class="tx-medium text-center">Tmp</th>
+                                        <th class="tx-medium text-center">Nilai</th>
+                                        <th class="tx-medium text-center">Fisika</th>
+                                        <th class="tx-medium text-center">Mat</th>
+                                        <th class="tx-medium text-center">Bhs Ing</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="">
+                                        <td><input type="text" class="form-control" value="6"></td>
+                                        <td><input type="text" class="form-control" value="466.5"></td>
+                                        <td><input type="text" class="form-control" value="90"></td>
+                                        <td><input type="text" class="form-control" value="90"></td>
+                                        <td><input type="text" class="form-control" value="90"></td>
+
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Prestasi</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 pd-0 pd-md-l-15">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Pendidikan</td>
+                                      <td>
+                                        <select class="form-control selectbiasa2" style="width: 100%;">
+                                          <option value="1"> Ya</option>
+                                          <option value="2" selected>Tidak</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Seni</td>
+                                      <td>
+                                        <select class="form-control selectbiasa2" style="width: 100%;">
+                                          <option value="1"> Ya</option>
+                                          <option value="2" selected>Tidak</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Olahraga</td>
+                                      <td>
+                                        <select class="form-control selectbiasa2" style="width: 100%;">
+                                          <option value="1"> Ya</option>
+                                          <option value="2" selected>Tidak</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nilai Test</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 pd-0 pd-md-l-15">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Toefl</td>
+                                      <td><input type="text" class="form-control" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">TPA</td>
+                                      <td><input type="text" class="form-control" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tx-medium " style="width: 35%;">Psikotest</td>
+                                      <td><input type="text" class="form-control" value="-"></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <h5 class=" mb-3">Khusus S2/S3</h5>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3 mb-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jalur Penerimaan S2/S3
+                              </div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="1" selected>Seleksi BPPS</option>
+                                  <option value="2">Seleksi instansi / sendiri</option>
+                                  <option value="3">Kerjasama</option>
+                                  <option value="4">Pindahan</option>
+                                  <option value="5">PMDSU</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pendidikan S1</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 pd-0 pd-md-l-15">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Asal </td>
+                                        <td><input type="text" class="form-control" value="-"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Jurusan</td>
+                                        <td><input type="text" class="form-control" value="-"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">IPK S1</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row m-0 d-flex justify-content-end">
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-secondary mr-2" id="btnbatal"
+                              data-target="akademik">Batal</button>
+                          </div>
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-primary" id="btnsimpan"
+                              data-target="akademik"><i data-feather="save" style="width:13px; height:13px;"></i>&emsp;
+                              Simpan</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- pekerjaan -->
+                    <div class="tab-pane fade" id="v-pekerjaan" role="tabpanel" aria-labelledby="v-pekerjaan-tab">
+                      <!-- div pekerjaan -->
+                      <div id="pekerjaan">
+                        <div class="row d-flex justify-content-between mb-1 pd-0">
+                          <h5 class="col-4 col-sm-6">Informasi Pekerjaan Mahasiswa</h5>
+                          <div class="col-8 col-sm-6 d-flex justify-content-end">
+                            <button type="button" class="btn btn-sm btn-primary m-2" id="btnedit"
+                              data-target="suntingpekerjaan"><i data-feather="edit" style="width:13px; height:13px;"
+                                class="mr-1 mr-md-2"></i>Sunting</button>
+                          </div>
+                        </div>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pekerjaan</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Instansi</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Alamat Instansi</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">No Telp Instansi</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">No Fax Instansi</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jabatan</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">, Lainnya: </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pendapatan</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- div sunting pekerjaan -->
+                      <div id="suntingpekerjaan" style="display:none;">
+                        <h5 class=" mb-3">Sunting Informasi Pekerjaan Mahasiswa</h5>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3 mb-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pekerjaan</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="_" selected>-</option>
+                                  <option value="01"> Guru / dosen negeri</option>
+                                  <option value="02">Pegawai negeri, bukan guru / dosen</option>
+                                  <option value="03">A B R I</option>
+                                  <option value="04">Guru / dosen swasta</option>
+                                  <option value="05">Pegawai swasta, bukan guru / dosen</option>
+                                  <option value="06">Pedagang / wiraswasta</option>
+                                  <option value="07">Profesional perorangan</option>
+                                  <option value="08">Petani / nelayan</option>
+                                  <option value="09">Buruh</option>
+                                  <option value="10">Pensiunan pegawai negeri / ABRI</option>
+                                  <option value="11">Pensiunan swasta</option>
+                                  <option value="12">Lain - lain</option>
+                                  <option value="13">Pegawai BUMN / BUMD</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Instansi</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Alamat Instansi</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">No Telp Instansi</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">No Fax Instansi</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">No Ujian Masuk</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="4160083546">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Jabatan</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="_" selected>-</option>
+                                  <option value="1">Staff</option>
+                                  <option value="2">Kepala seksi</option>
+                                  <option value="3">Kepala sub bagian</option>
+                                  <option value="4">Supervisor</option>
+                                  <option value="5">Lainnya, sebutkan</option>
+                                </select>
+                                <span class="col-2 " style="padding-top: 7.5px;">, Lainnya: </span>
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="_" selected>-</option>
+                                  <option value="1">Staff</option>
+                                  <option value="2">Kepala seksi</option>
+                                  <option value="3">Kepala sub bagian</option>
+                                  <option value="4">Supervisor</option>
+                                  <option value="5">Lainnya, sebutkan</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pendapatan</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="_" selected>-</option>
+                                  <option value="1">Sampai dengan Rp. 500.000</option>
+                                  <option value="2">Rp. 500.001 - Rp. 1.000.000</option>
+                                  <option value="3">Rp. 1.000.001 - Rp. 1.500.000</option>
+                                  <option value="4">Rp. 1.500.001 - Rp. 2.000.000</option>
+                                  <option value="5">Rp. 2.000.001 - Rp. 2.500.000</option>
+                                  <option value="6">Rp. 2.500.001 - Rp. 3.000.000</option>
+                                  <option value="7">Rp. 3.000.001 - Rp. 4.000.000</option>
+                                  <option value="8">Rp. 4.000.001 - Rp. 5.000.000</option>
+                                  <option value="9">Rp. 5.000.001 - Rp. 7.500.000</option>
+                                  <option value="10">Rp. 7.500.001 - Rp. 10.000.000</option>
+                                  <option value="11">Rp. 10.000.001 - Rp. 15.000.000</option>
+                                  <option value="12">Lebih dari Rp. 15.000.000</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row m-0 d-flex justify-content-end">
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-secondary mr-2"
+                              id="btnbatal">Batal</button>
+                          </div>
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-primary" id="btnsimpan"
+                              data-target="pekerjaan"><i data-feather="save" style="width:13px; height:13px;"></i>&emsp;
+                              Simpan</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- orang tua -->
+                    <div class="tab-pane fade" id="v-orangtua" role="tabpanel" aria-labelledby="v-orangtua-tab">
+                      <!-- div orang tua -->
+                      <div id="orangtua">
+                        <div class="row d-flex justify-content-between mb-1 pd-0">
+                          <h5 class="col-4 col-sm-6">Informasi Orang Tua</h5>
+                          <div class="col-8 col-sm-6 d-flex justify-content-end">
+                            <button type="button" class="btn btn-sm btn-primary m-2" id="btnedit"
+                              data-target="suntingorangtua"><i data-feather="edit" style="width:13px; height:13px;"
+                                class="mr-1 mr-md-2"></i>Sunting</button>
+                          </div>
+                        </div>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Ayah</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Taufiq
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pekerjaan Ayah</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Pegawai BUMN / BUMD</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Ibu</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Asri</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pekerjaan Ibu</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Lain - lain</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pendapatan Orang Tua
+                              </div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">Lebih dari Rp. x</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Alamat Orang Tua
+                              </div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 ml-md-3 pd-0 pd-md-3">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 25%;">Jalan </td>
+                                        <td class="">Jl. Doho</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kota</td>
+                                        <td class="">205024</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kode Pos</td>
+                                        <td class="">68122</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Telepon</div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">0331333300</div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Keterangan
+                              </div>
+                              <div class="col-12 col-lg-auto mt-1 mt-md-2 ml-3 ml-md-0">-</div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- div sunting orangtua -->
+                      <div id="suntingorangtua" style="display:none;">
+                        <h5 class=" mb-3">Informasi Orang Tua</h5>
+
+                        <div class="row ml-0 ml-md-1 ml-lg-3 mb-3">
+                          <div class="col">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Ayah</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="Taufiq">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pekerjaan Ayah
+                              </div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="_">-</option>
+                                  <option value="01"> Guru / dosen negeri</option>
+                                  <option value="02">Pegawai negeri, bukan guru / dosen</option>
+                                  <option value="03">A B R I</option>
+                                  <option value="04">Guru / dosen swasta</option>
+                                  <option value="05">Pegawai swasta, bukan guru / dosen</option>
+                                  <option value="06">Pedagang / wiraswasta</option>
+                                  <option value="07">Profesional perorangan</option>
+                                  <option value="08">Petani / nelayan</option>
+                                  <option value="09">Buruh</option>
+                                  <option value="10">Pensiunan pegawai negeri / ABRI</option>
+                                  <option value="11">Pensiunan swasta</option>
+                                  <option value="12">Lain - lain</option>
+                                  <option value="13" selected>Pegawai BUMN / BUMD</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Nama Ibu</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="Asri">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pekerjaan Ibu</div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="_">-</option>
+                                  <option value="01"> Guru / dosen negeri</option>
+                                  <option value="02">Pegawai negeri, bukan guru / dosen</option>
+                                  <option value="03">A B R I</option>
+                                  <option value="04">Guru / dosen swasta</option>
+                                  <option value="05">Pegawai swasta, bukan guru / dosen</option>
+                                  <option value="06">Pedagang / wiraswasta</option>
+                                  <option value="07">Profesional perorangan</option>
+                                  <option value="08">Petani / nelayan</option>
+                                  <option value="09">Buruh</option>
+                                  <option value="10">Pensiunan pegawai negeri / ABRI</option>
+                                  <option value="11">Pensiunan swasta</option>
+                                  <option value="12" selected>Lain - lain</option>
+                                  <option value="13">Pegawai BUMN / BUMD</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Pendapatan Orang Tua
+                              </div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <select class="form-control selectbiasa2" style="width: 100%;">
+                                  <option value="_" selected>-</option>
+                                  <option value="1">Sampai dengan Rp. 500.000</option>
+                                  <option value="2">Rp. 500.001 - Rp. 1.000.000</option>
+                                  <option value="3">Rp. 1.000.001 - Rp. 1.500.000</option>
+                                  <option value="4">Rp. 1.500.001 - Rp. 2.000.000</option>
+                                  <option value="5">Rp. 2.000.001 - Rp. 2.500.000</option>
+                                  <option value="6">Rp. 2.500.001 - Rp. 3.000.000</option>
+                                  <option value="7">Rp. 3.000.001 - Rp. 4.000.000</option>
+                                  <option value="8">Rp. 4.000.001 - Rp. 5.000.000</option>
+                                  <option value="9">Rp. 5.000.001 - Rp. 7.500.000</option>
+                                  <option value="10">Rp. 7.500.001 - Rp. 10.000.000</option>
+                                  <option value="11">Rp. 10.000.001 - Rp. 15.000.000</option>
+                                  <option value="12">Lebih dari Rp. 15.000.000</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Alamat Orang Tua</div>
+                              <div class="col-12 col-md-7 mt-1 mt-md-2 ml-0 pd-0 pd-md-l-15">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered col-12">
+                                    <tbody>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 25%;">Jalan </td>
+                                        <td><textarea class="form-control">Jl. Doho</textarea></td>
+
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kode Kota</td>
+                                        <td><input type="text" class="form-control" value="205024"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tx-medium " style="width: 35%;">Kode Pos</td>
+                                        <td><input type="text" class="form-control" value="68122"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Telepon
+                              </div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="0331333300">
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-4 mt-1 mt-md-2 tx-semibold tx-md-medium">Keterangan
+                              </div>
+                              <div class="col-12 col-lg-8 mt-1 mt-md-2 ml-0 pd-0">
+                                <input type="text" class="form-control" value="-">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row m-0 d-flex justify-content-end">
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-secondary mr-2" id="btnbatal"
+                              data-target="orangtua">Batal</button>
+                          </div>
+                          <div class="col-6 col-sm-auto pd-1">
+                            <button type="button" class="col-12 col-sm-auto btn btn-sm btn-primary" id="btnsimpan"
+                              data-target="orangtua"><i data-feather="save" style="width:13px; height:13px;"></i>&emsp;
+                              Simpan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade show active" id="tab_nilai" role="tabpanel" aria-labelledby="nilai-tab">
+
+              <div class="card mb-2">
+                <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
+                  <h5 class="tx-16">GASAL 2018/2019</h5>
+                </div>
+
+                <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Kode MK</th>
+                          <th class="text-center">Mata Kuliah</th>
+                          <th class="text-center">Kelas</th>
+                          <th class="text-center">SKS</th>
+                          <th class="text-center">N. Huruf</th>
+                          <th class="text-center">S*N</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Dasar Pemrograman</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">C</td>
+                          <td class="text-center align-middle">4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Matematika Diskrit</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">B</td>
+                          <td class="text-center align-middle">6</td>
+                        </tr>
+                        <tr class="bg-warning">
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Matematika Diskrit<br>
+                            <small><b>Belum mengisi kuesioner<b></td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">B</td>
+                          <td class="text-center align-middle">6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center bg-gray-100">
+                  <div class="col-lg-3 mb-2 mt-2">
+                    <div class="row">
+                      <div class="col">
+                        <li class="d-flex justify-content-between">
+                          <span class="tx-medium">Jumlah SKS</span>
+                          <span class="">18 SKS</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <span class="tx-medium ">IPS</span>
+                          <span class="">2.17</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card mb-2">
+                <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
+                  <h5 class="tx-16">GENAP 2017/2018</h5>
+                </div>
+
+                <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Kode MK</th>
+                          <th class="text-center">Mata Kuliah</th>
+                          <th class="text-center">Kelas</th>
+                          <th class="text-center">SKS</th>
+                          <th class="text-center">N. Huruf</th>
+                          <th class="text-center">S*N</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Dasar Pemrograman</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">C</td>
+                          <td class="text-center align-middle">4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Dasar Pemrograman</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">C</td>
+                          <td class="text-center align-middle">4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Matematika Diskrit</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">B</td>
+                          <td class="text-center align-middle">6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center bg-gray-100">
+                  <div class="col-lg-3 mb-2 mt-2">
+                    <div class="row">
+                      <div class="col">
+                        <li class="d-flex justify-content-between">
+                          <span class="tx-medium">Jumlah SKS</span>
+                          <span class="">18 SKS</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <span class="tx-medium ">IPS</span>
+                          <span class="">2.17</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card mb-2">
+                <div class="card-header d-sm-flex justify-content-center bd-b-0 pd-t-20 pd-b-0">
+                  <h5 class="tx-16">GASAL 2017/2018</h5>
+                </div>
+
+                <div class="card-body" style="padding-bottom: 0px; padding-top: 0px;">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Kode MK</th>
+                          <th class="text-center">Mata Kuliah</th>
+                          <th class="text-center">Kelas</th>
+                          <th class="text-center">SKS</th>
+                          <th class="text-center">N. Huruf</th>
+                          <th class="text-center">S*N</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Dasar Pemrograman</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">C</td>
+                          <td class="text-center align-middle">4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Matematika Diskrit</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">B</td>
+                          <td class="text-center align-middle">6</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Dasar Pemrograman</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">C</td>
+                          <td class="text-center align-middle">4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Matematika Diskrit</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">B</td>
+                          <td class="text-center align-middle">6</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Dasar Pemrograman</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">C</td>
+                          <td class="text-center align-middle">4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center align-middle">KI141301</td>
+                          <td class="align-middle">Matematika Diskrit</td>
+                          <td class="text-center align-middle">A</td>
+                          <td class="text-center align-middle">2</td>
+                          <td class="text-center align-middle">B</td>
+                          <td class="text-center align-middle">6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center bg-gray-100">
+                  <div class="col-lg-3 mb-2 mt-2">
+                    <div class="row">
+                      <div class="col">
+                        <li class="d-flex justify-content-between">
+                          <span class="tx-medium">Jumlah SKS</span>
+                          <span class="">18 SKS</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <span class="tx-medium ">IPS</span>
+                          <span class="">2.17</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../../../lib/jquery/jquery.min.js"></script>
+  <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../lib/feather-icons/feather.min.js"></script>
+  <script src="../../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../../../lib/prismjs/prism.js"></script>
+  <script src="../../../lib/jqueryui/jquery-ui.min.js"></script>
+  <script src="../../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+  <script src="../../../lib/select2/js/select2.min.js"></script>
+
+  <script src="../../../assets/js/dashforge.js"></script>
+  <script src="../../../assets/js/dashforge.aside.js"></script>
+  <script>
+    $(function () {
+      'use strict'
+
+      $('.selectbiasa').select2({
+        minimumResultsForSearch: Infinity
+      });
+      $('.selectbiasa2').select2({
+        minimumResultsForSearch: Infinity,
+        dropdownParent: $('#v-tabContent')
+      });
+      $('.selectdosen').select2({
+        placeholder: 'Pilih Dosen',
+      });
+      $('.selectmodal2').select2({
+        dropdownParent: $('#v-tabContent')
+      });
+      $('.selectangkatan').select2({
+        placeholder: 'Pilih Tahun',
+        minimumResultsForSearch: Infinity,
+      });
+
+      $('#mySelect').on('change', function (e) {
+        $('#myTab li a').eq($(this).val()).tab('show');
+      });
+
+      $('.btn').click(function () {
+        $(this).parent().parent().parent().hide();
+        var target = '#' + $(this).data('target');
+        $(target).show();
+      })
+
+      $('#tab_selector').on('change', function (e) {
+        $('.form-tabs li a').eq($(this).val()).tab('show');
+      });
+
+      $('#datepicker1').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker2').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+
+      // Select2
+      $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
+    });
+  </script>
+</body>
+
+</html>

@@ -221,13 +221,13 @@
         <li class="nav-item">
           <a href="penilaian(proses)7-ListValidasiNINA-hanyaAdmin.html" class="nav-link">
             <i data-feather="list"></i>
-            <span>Validasi Evaluasi Berkala</span>
+            <span>Validasi Nilai Berkala</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="penilaian-skala nilai.html" class="nav-link">
             <i data-feather="edit"></i>
-            <span>Konversi Skala Nilai</span>
+            <span>Skala Konversi Nilai</span>
           </a>
         </li>
         <li class="nav-item with-sub">
@@ -567,17 +567,19 @@
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" value="01-05-2020" id="datepicker5">
+                            <input type="text" class="form-control" value="01-05-2020" id="datepicker7">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" value="31-05-2020" id="datepicker6">
+                            <input type="text" class="form-control" value="31-05-2020" id="datepicker8">
                           </div>
                         </td>
                         <td class="text-center align-middle">
-                          <button class="swtch mr-sm-1 " type="button" data-feather="save"
-                            style="width:20px; height:20px;" id="btnsave" data-target="show1"></button>
+                          <a href="frs-PengaturanJadwal_2.html">
+                            <button type="button" class="tx-black" data-feather="save"
+                              style="width:20px; height:20px;"></button>
+                          </a>
                           <button class="swtch" type="button" data-feather="x-square" style="width:20px; height:20px;"
                             id="btncancel" data-target="show1"></button>
                         </td>
@@ -596,42 +598,42 @@
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker1">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker11">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker2">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker12">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker3">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker13">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker4">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker14">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker5">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker15">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker6">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker16">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker5">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker17">
                           </div>
                         </td>
                         <td>
                           <div class="">
-                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker6">
+                            <input type="text" class="form-control" placeholder="dd-mm-yyyy" id="datepicker18">
                           </div>
                         </td>
                         <td class="text-center align-middle">
@@ -664,13 +666,13 @@
           </button>
         </div>
         <div class="modal-body text-center">
-          <p>Apakah anda yakin menghapus skala nilai huruf A dengan batas nilai atas 4.0?</p>
+          <p>Apakah Anda yakin untuk menghapus jadwal periode Gasal 2019/2020?</p>
         </div>
 
         <div class="modal-footer">
           <div class="col-6 col-sm-auto pd-1">
-            <a href="frs-PengaturanJadwal.html" type="button" class="col-12 col-sm-auto btn btn-sm btn-secondary mr-1"
-              data-target="pekerjaan">Batal</a>
+            <a href="frs-PengaturanJadwal.html" type="button"
+              class="col-12 col-sm-auto btn btn-sm btn-secondary mr-1">Batal</a>
           </div>
           <div class="col-6 col-sm-auto pd-1">
             <a href="frs-PengaturanJadwal.html" type="button" class="col-12 col-sm-auto btn btn-sm btn-danger tx-13">
@@ -709,7 +711,7 @@
         $(target).show();
       })
 
-
+      // harusnya class tapi error
       $('#datepicker1').datepicker({
         dateFormat: 'dd-mm-yy'
       });
@@ -726,6 +728,36 @@
         dateFormat: 'dd-mm-yy'
       });
       $('#datepicker6').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker7').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker8').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker11').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker12').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker13').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker14').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker15').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker16').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker17').datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+      $('#datepicker18').datepicker({
         dateFormat: 'dd-mm-yy'
       });
 

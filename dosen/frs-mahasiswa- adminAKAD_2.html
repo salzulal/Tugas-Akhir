@@ -389,6 +389,7 @@
     </div>
   </aside>
 
+
   <div class="content ht-100v pd-0">
     <div class="content-header align-items-center justify-content-between">
       <nav class="nav">
@@ -418,7 +419,7 @@
             <div class="avatar avatar-lg mg-b-15">
               <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
             </div>
-            <h6 class="tx-semibold mg-b-5">
+            <h6 class="tx-semibold tx-md-medium mg-b-5">
               Sal Zulal </h6>
             <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
             <hr>
@@ -455,7 +456,7 @@
           <div class="col-12 col-xl-8 mb-4 d-flex justify-content-center">
 
             <ul class="steps d-none d-md-block">
-              <li class="step-item disabled">
+              <li class="step-item active">
                 <div class="step-link">
                   <span class="step-icon"><i data-feather="file-plus"></i></span>
                   <div>
@@ -464,7 +465,7 @@
                   </div>
                 </div>
               </li>
-              <li class="step-item active">
+              <li class="step-item disabled">
                 <div class="step-link">
                   <span class="step-icon"><i data-feather="edit-2"></i></span>
                   <div>
@@ -486,7 +487,7 @@
 
             <!-- mobile view -->
             <ul class="steps steps-vertical d-md-none">
-              <li class="step-item disabled">
+              <li class="step-item active">
                 <div class="step-link">
                   <span class="step-icon"><i data-feather="file-plus"></i></span>
                   <div>
@@ -495,7 +496,7 @@
                   </div>
                 </div>
               </li>
-              <li class="step-item active">
+              <li class="step-item disabled">
                 <div class="step-link">
                   <span class="step-icon"><i data-feather="edit-2"></i></span>
                   <div>
@@ -630,17 +631,9 @@
 
           <div class="col-12 col-xl-8 mb-3">
             <div class="card">
-
-              <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
-                <strong>Persetujuan FRS berhasil</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-
               <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
                 <div class="mg-b-10 mg-sm-b-0">
-                  <h5 class="mg-b-5 tx-16">Kelas yang Diambil Semester Ini</h5>
+                  <h5 class="mg-b-5 tx-16">Kelas yang Berhasil Diambil Semester Ini</h5>
                 </div>
               </div>
 
@@ -654,7 +647,7 @@
                         <th class="text-center">SKS</th>
                         <th class="text-center">Kelas</th>
                         <th class="text-center">Dosen</th>
-                        <th class="text-center">Nilai</th>
+                        <th class="text-center"></th>
                       </tr>
                     </thead>
 
@@ -665,7 +658,8 @@
                         <td class="text-center align-middle">4</td>
                         <td class="text-center align-middle">C</td>
                         <td class="align-middle">Dwi Sunaryono, S.Kom., M.Kom. </td>
-                        <td class="text-center align-middle">-</td>
+                        <td class="text-center align-middle"><a href="#modalbatalkelas" data-toggle="modal"
+                            class="text-danger text-bold">Batalkan</a></td>
                       </tr>
 
                       <tr>
@@ -674,47 +668,60 @@
                         <td class="text-center align-middle">3</td>
                         <td class="text-center align-middle">A</td>
                         <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                        <td class="text-center align-middle">-</td>
+                        <td class="text-center align-middle"><a href="#modalbatalkelas" data-toggle="modal"
+                            class="text-danger text-bold">Batalkan</a></td>
                       </tr>
 
                       <tr class="bg-gray-100">
                         <td class="text-center align-middle">KI141302</td>
-                        <td class="align-middle"> Matematika Diskrit<br>
+                        <td class="align-middle"> Kalkulus I<br>
                           <small><i>Kelas paket tidak dapat dibatalkan<i></small>
                         </td>
                         <td class="text-center align-middle">3</td>
-                        <td class="text-center align-middle">A</td>
-                        <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                        <td class="text-center align-middle">-</td>
+                        <td class="text-center align-middle">43</td>
+                        <td class="align-middle">Dra. Farida Agustini Widjajati, MS</td>
+                        <td class="text-center align-middle"><a href="#modalbatalkelas" data-toggle="modal"
+                            class="text-danger text-bold">Batalkan</a></td>
                       </tr>
 
                       <tr>
                         <td class="text-center align-middle">KI141302</td>
-                        <td class="align-middle"> Matematika Diskrit<br>
+                        <td class="align-middle">Sistem Basis Data<br>
                           <small><i>Mata kuliah semester atas<i></small>
                         </td>
                         <td class="text-center align-middle">3</td>
                         <td class="text-center align-middle">A</td>
-                        <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                        <td class="text-center align-middle">-</td>
+                        <td class="align-middle">Adhatus Solichah Ahmadiyah, S.Kom, M.Sc</td>
+                        <td class="text-center align-middle"><a href="#modalbatalkelas" data-toggle="modal"
+                            class="text-danger text-bold">Batalkan</a></td>
                       </tr>
 
                       <tr>
                         <td class="text-center align-middle">KI141302</td>
-                        <td class="align-middle"> Matematika Diskrit<br>
+                        <td class="align-middle"> Sistem dan Teknologi Informasi<br>
                           <small><i>Mata kuliah semester bawah<i></small>
                         </td>
                         <td class="text-center align-middle">3</td>
                         <td class="text-center align-middle">A</td>
-                        <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
-                        <td class="text-center align-middle">-</td>
+                        <td class="align-middle">Rully Soelaiman, S.Kom.M.Kom</td>
+                        <td class="text-center align-middle"><a href="#modalbatalkelas" data-toggle="modal"
+                            class="text-danger text-bold">Batalkan</a></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">UG184909</td>
+                        <td class="align-middle"> Bahasa Inggris</td>
+                        <td class="text-center align-middle">3</td>
+                        <td class="text-center align-middle">22</td>
+                        <td class="align-middle">Hermanto, S.S., M.Pd.</td>
+                        <td class="text-center align-middle"><a href="#modalbatalkelas" data-toggle="modal"
+                            class="text-danger text-bold">Batalkan</a></td>
                       </tr>
                     </tbody>
                     <tfoot>
                       <tr>
                         <td></td>
                         <td class="text-right">Total SKS</td>
-                        <td class="text-center">16</td>
+                        <td class="text-center">19</td>
                         <td> </td>
                         <td></td>
                         <td></td>
@@ -725,12 +732,161 @@
                 </div>
 
                 <div class="row alert alert-primary d-sm-flex justify-content-end tx-medium mr-2 ml-2" role="alert">
-                  <div class="col-12 col-md-8 text-center" style=" padding-top: 7.5px;">Formulir Rencana Studi telah
+                  <div class="col-12 col-md-8 text-center" style=" padding-top: 7.5px;">Formulir Rencana Studi belum
                     disetujui
                   </div>
-                  <a href="#modalbatalsetuju" data-toggle="modal"
-                    class="col-12 col-md-2 btn btn-sm btn-danger mt-1 mt-md-0" style="width: 100px;">Batalkan</a>
+                  <a href="#modalsetuju" data-toggle="modal" class="col-12 col-md-2 btn btn-sm btn-primary mt-1 mt-md-0"
+                    style="width: 100px;">Setujui</a>
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-8 mb-2">
+            <div class="card bg-white">
+              <div class="card-header d-sm-flex justify-content-between bd-b-0 pd-t-20 pd-b-0">
+                <div class="mg-b-10 mg-sm-b-0">
+                  <h5 class="mg-b-5 tx-16">Pilihan Kelas dalam Antrian</h5>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-center">Kode</th>
+                        <th class="text-center">Mata Kuliah</th>
+                        <th class="text-center">SKS</th>
+                        <th class="text-center">Kelas</th>
+                        <th class="text-center">Dosen</th>
+                        <th class="text-center">Kuota</th>
+                        <th class="text-center">Status</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="text-center align-middle">KI141301</td>
+                        <td class="align-middle">Matematika Informatika</td>
+                        <td class="text-center align-middle">4</td>
+                        <td class="text-center align-middle">C</td>
+                        <td class="align-middle">Bilqis Amaliah, S.Kom., M.Kom. </td>
+                        <td class="text-center align-middle">40</td>
+                        <td class="text-center align-middle">
+                          <span style="display:inline-block; width:90px" class="badge badge-warning">Dalam
+                            Antrian</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">KI141302</td>
+                        <td class="align-middle">Struktur Data</td>
+                        <td class="text-center align-middle">3</td>
+                        <td class="text-center align-middle">A</td>
+                        <td class="align-middle"> Ir. FX. Arunanto, M.Sc</td>
+                        <td class="text-center align-middle">40</td>
+                        <td class="text-center align-middle">
+                          <span style="display:inline-block; width:90px" class="badge badge-warning">Dalam
+                            Antrian</span>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-8 mb-2">
+            <div class="d-flex justify-content-center">
+              <a href="#modalriwayat" class="btn btn-link btn-block" data-toggle="modal">Lihat Seluruh Riwayat Pemilihan
+                Kelas</a>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-xl-8 mb-3">
+            <div class="card bg-white">
+              <div class="card-body bg-gray-100">
+
+
+
+                <div class="row pd-0 mb-2 d-flex justify-content-between">
+                  <div class="col-12 col-md-2 mb-1 tx-semibold tx-md-medium align-middle " style="padding-top: 7.5px;">
+                    Kelas Dep.
+                  </div>
+                  <form class="col-12 col-md-7 mb-1 d-sm-flex justify-content-end form-inline">
+                    <select class="form-control selectkelas col-12" style="max-width: 100%;">
+                      <option label="Contoh: AA000001 Bahasa Indonesia"></option>
+                      <option value="1">IF184406 Analisis dan Perancangan Sistem Informasi (3) A 39/39</option>
+                      <option value="2">IF184406 Analisis dan Perancangan Sistem Informasi (3) B 39/39</option>
+                      <option value="3">IF184957 Analisis Jejaring Sosial (3) _ 23/35</option>
+                      <option value="4">IF184934 Animasi Komputer dan Pemodelan 3D (3) _ 15/35</option>
+                      <option value="5">IF184101 Dasar Pemrograman (4) _ 19/30</option>
+                    </select>
+                  </form>
+                  <div class="col-12 col-md-3 mb-1 d-flex justify-content-end ">
+                    <a href="" class="btn btn-primary mr-2" style="width: 100%;">Ambil</a>
+                    <a href="" class="btn btn-link" style="width: 100%;" data-toggle="modal" data-target="#modalpeserta"
+                      data-dismiss="modal">Peserta</a>
+                  </div>
+                </div>
+
+                <div class="row pd-0 mb-2 d-flex justify-content-between">
+                  <div class="col-12 col-md-2 mb-1 tx-semibold tx-md-medium align-middle " style="padding-top: 7.5px;">
+                    Kelas UPMB
+                  </div>
+                  <form class="col-12 col-md-7 mb-1 d-sm-flex justify-content-end form-inline">
+                    <select class="form-control selectkelas col-12" style="max-width: 100%;">
+                      <option label="Contoh: AA000001 Bahasa Indonesia"></option>
+                      <option value="1">UG184905 Agama Islam (2) 44 20/40</option>
+                      <option value="2">UG184906 Agama Islam (2) 45 20/40</option>
+                      <option value="3">UG184907 Agama Buddha (3) 20 20/40</option>
+                      <option value="4">UG184908 Agama Buddha (3) 21 20/40</option>
+                      <option value="5">UG184909 Bahasa Inggris (3) 22 20/40</option>
+                    </select>
+                  </form>
+                  <div class="col-12 col-md-3 mb-1 d-flex justify-content-end ">
+                    <a href="" class="btn btn-primary mr-2" style="width: 100%;">Ambil</a>
+                    <a href="" class="btn btn-link" style="width: 100%;" data-toggle="modal" data-target="#modalpeserta"
+                      data-dismiss="modal">Peserta</a>
+                  </div>
+                </div>
+
+                <div class="row pd-0 d-flex justify-content-between">
+                  <div class="col-12 col-md-2 mb-1 tx-semibold tx-md-medium align-middle " style="padding-top: 7.5px;">
+                    Kelas
+                    Pengayaan
+                  </div>
+                  <form class="col-12 col-md-7 mb-1 d-sm-flex justify-content-end form-inline">
+                    <select class="form-control selectkelas col-12" style="max-width: 100%;">
+                      <option label="Contoh: AA000001 Bahasa Indonesia"></option>
+                      <option value="1">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik
+                        Informatika
+                        FTIK</option>
+                      <option value="2">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik
+                        Informatika
+                        FTIK</option>
+                      <option value="3">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik
+                        Informatika
+                        FTIK</option>
+                      <option value="4">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik
+                        Informatika
+                        FTIK</option>
+                      <option value="5">IF184406 Analisis dan Perancangan Sistem Informasi (3) P 39/39| Teknik
+                        Informatika
+                        FTIK</option>
+                    </select>
+                  </form>
+                  <div class="col-12 col-md-3 mb-1 d-flex justify-content-end ">
+                    <a href="" class="btn btn-primary mr-2" style="width: 100%;">Ambil</a>
+                    <a href="" class="btn btn-link" style="width: 100%;" data-toggle="modal" data-target="#modalpeserta"
+                      data-dismiss="modal">Peserta</a>
+                  </div>
+                </div>
+
 
               </div>
 
@@ -739,9 +895,8 @@
         </div>
 
       </div><!-- container -->
-    </div><!-- content -->
-  </div>
-
+    </div>
+  </div><!-- content -->
 
   <div class="modal fade" id="modalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
     aria-hidden="true">
@@ -841,10 +996,10 @@
                 </tr>
                 <tr>
                   <td class="text-center align-middle">KI141302</td>
-                  <td class="align-middle">Matematika Diskrit</td>
+                  <td class="align-middle">Sistem Digital </td>
                   <td class="text-center align-middle">3</td>
                   <td class="text-center align-middle">A</td>
-                  <td class="align-middle">Ir. Esther Hanaya, M.Sc</td>
+                  <td class="align-middle">Henning Titi Ciptaningtyas, S.Kom., M.Kom </td>
                   <td class="text-center align-middle">40</td>
                   <td class="text-center align-middle">
                     <span style="display:inline-block; width:90px" class="badge badge-success">Berhasil</span>
@@ -863,7 +1018,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content tx-14">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel3">Daftar Peserta: KI141301 - Dasar Pemrograman - C</h6>
+          <h6 class="modal-title" id="exampleModalLabel3">Daftar Peserta: UG184909 - Bahasa Inggris - 22</h6>
           <button type="button" class="close" data-toggle="modal" data-target="#modaltambahkelas" data-dismiss="modal"
             aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -904,35 +1059,62 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="modalbatalsetuju" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+  <div class="modal fade" id="modalbatalkelas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content tx-14">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Pembatalan Persetujuan FRS</h6>
+          <h6 class="modal-title" id="exampleModalLabel4">Pembatalan Pengambilan Kelas</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body text-center">
-          <p>Apakah Anda yakin untuk membatalkan persetujuan FRS (05111640000009) Sal Zulal?</p>
+          <p>Apakah Anda yakin untuk menghapus UG184909 - Bahasa Inggris (22) dari daftar mata kuliah yang diambil?</p>
         </div>
 
         <div class="modal-footer">
           <div class="col-6 col-sm-auto pd-1">
-            <a href="frs-mahasiswa- adminAKAD - Approved.html" type="button"
+            <a href="frs-mahasiswa- adminAKAD_2.html" type="button"
               class="col-12 col-sm-auto btn btn-sm btn-secondary mr-1">Batal</a>
           </div>
           <div class="col-6 col-sm-auto pd-1">
             <a href="frs-mahasiswa- adminAKAD.html" type="button"
               class="col-12 col-sm-auto btn btn-sm btn-danger tx-13">
-              Batalkan</a>
+              Hapus</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="modal fade" id="modalsetuju" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Persetujuan FRS</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah Anda yakin untuk menyetujui FRS (05111640000009) Sal Zulal?</p>
+        </div>
 
+        <div class="modal-footer">
+          <div class="col-6 col-sm-auto pd-1">
+            <a href="frs-mahasiswa- adminAKAD.html" type="button"
+              class="col-12 col-sm-auto btn btn-sm btn-secondary mr-1">Batal</a>
+          </div>
+          <div class="col-6 col-sm-auto pd-1">
+            <a href="frs-mahasiswa- adminAKAD - Approved.html" type="button"
+              class="col-12 col-sm-auto btn btn-sm btn-primary tx-13">
+              Setujui</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../../lib/jquery/jquery.min.js"></script>
   <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -959,6 +1141,10 @@
 
       $('.selectmhs').select2({
         placeholder: 'Contoh: 05111640000009 - Sal Zulal',
+      });
+
+      $('.selectkelas').select2({
+        placeholder: 'Contoh: AA000001 Bahasa Indonesia',
       });
 
     });

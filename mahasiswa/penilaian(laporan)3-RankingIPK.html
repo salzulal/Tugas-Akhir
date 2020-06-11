@@ -439,11 +439,12 @@
                   Angkatan</div>
 
                 <form class="col-12 col-md-6 mb-1 mb-md-0 d-sm-flex justify-content-end form-inline">
-                  <select class="form-control selectbiasa col-12" style="max-width: 100%;">
-                    <option selected>2018</option>
-                    <option value="1">2017</option>
-                    <option value="2">2018</option>
-                    <option value="3">2019</option>
+                  <select class="form-control selectangkatan col-12" style="max-width: 100%;">
+                    <option label="Pilih Tahun"></option>
+                    <option value="1">2016</option>
+                    <option value="2">2017</option>
+                    <option value="3">2018</option>
+                    <option value="4">2019</option>
                   </select>
                 </form>
 
@@ -527,6 +528,10 @@
 
       $('.selectbiasa').select2({
         minimumResultsForSearch: Infinity
+      });
+      $('.selectangkatan').select2({
+        placeholder: 'Pilih Tahun',
+        minimumResultsForSearch: Infinity,
       });
 
 

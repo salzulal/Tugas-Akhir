@@ -53,6 +53,17 @@
     .nav-aside .with-sub .nav-link::after {
       margin-right: 20px;
     }
+
+    table {
+      width: 100%;
+    }
+
+    .thtruncate {
+      max-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   </style>
 
 </head>
@@ -188,46 +199,22 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="perwalian-list_wali-adminAKAD.html" class="nav-link">
+          <a href="perwalian-list_wali-dosen.html" class="nav-link">
             <i data-feather="users"></i>
             <span>Perwalian Mahasiswa</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="perwalian-list_ankwali-adminAKAD.html" class="nav-link">
+          <a href="perwalian-list_ankwali-dosen.html" class="nav-link">
             <i data-feather="list"></i>
             <span>Daftar Anak Wali per Dosen</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="frs-PengaturanJadwal.html" class="nav-link">
-            <i data-feather="calendar"></i>
-            <span>Pengaturan Jadwal FRS</span>
-          </a>
-        </li>
         <li class="nav-label mg-t-25">Penilaian</li>
         <li class="nav-item">
-          <a href="penilaian(proses)1-PengisianNilaiPerKelas-AdminAKAD.html" class="nav-link">
-            <i data-feather="edit"></i>
-            <span>Ubah Nilai per Kelas</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)3-PengisianNilaiPerMhs-admin.html" class="nav-link">
-            <i data-feather="user"></i>
-            <span>Ubah Nilai per Mahasiswa</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian(proses)7-ListValidasiNINA-hanyaAdmin.html" class="nav-link">
-            <i data-feather="list"></i>
-            <span>Validasi Nilai Berkala</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="penilaian-skala nilai.html" class="nav-link">
-            <i data-feather="edit"></i>
-            <span>Skala Konversi Nilai</span>
+          <a href="penilaian(proses)5-EntriNilaiEvaluasiSem-hanyaDosen.html" class="nav-link">
+            <i data-feather="check-square"></i>
+            <span>Evaluasi Pembelajaran</span>
           </a>
         </li>
         <li class="nav-item with-sub">
@@ -244,9 +231,6 @@
                 Mahasiswa</a></li>
             <li><a href="penilaian(laporan)6-RekapNilaiPerKelas.html">Rekap Nilai per
                 Kelas</a></li>
-            <li><a href="penilaian(laporan)7-InfoPermanenNINA.html">Info Permanen NINA</a></li>
-            <li><a href="penilaian(laporan)8-PengumpulanNilai-PresentaseNilai.html">Persentase
-                Pengumpulan Nilai</a></li>
           </ul>
         </li>
         <li class="nav-label mg-t-25">Presensi</li>
@@ -415,8 +399,6 @@
       </ul>
     </div>
   </aside>
-
-
   <div class="content ht-100v pd-0">
     <div class="content-header align-items-center justify-content-between">
       <nav class="nav">
@@ -470,10 +452,10 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Validasi Nilai Berkala</li>
+                <li class="breadcrumb-item active" aria-current="page">Evaluasi Pembelajaran</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1">Validasi Nilai Berkala</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Evaluasi Pembelajaran</h4>
           </div>
 
         </div>
@@ -487,15 +469,15 @@
                 <div class="col-xl-6">
                   <div class="row">
                     <div class="col-md mt-1 mt-md-0 tx-semibold tx-md-medium">Mata Kuliah</div>
-                    <div class="col-md-8 mt-1 mt-md-0 ml-3 ml-md-0 text-md-right">KI141301 - Dasar Pemrograman</div>
+                    <div class="col-md-8 mt-1 mt-md-0 ml-3 ml-md-0 text-md-right">SF4404 - Fisika Matematika III</div>
                   </div>
                   <div class="row">
                     <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Kelas</div>
-                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">C</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">A</div>
                   </div>
                   <div class="row">
                     <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Program Studi</div>
-                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">S1 Informatika</div>
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">S1 Fisika</div>
                   </div>
                 </div>
                 <div class="col-xl-6">
@@ -510,7 +492,7 @@
                   </div>
                   <div class="row">
                     <div class="col-md mt-1 mt-md-2 tx-semibold tx-md-medium">Pengajar</div>
-                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Dwi Sunaryono, S.Kom., M.Kom.
+                    <div class="col-md-8 mt-1 mt-md-2 ml-3 ml-md-0 text-md-right">Dr. Dra. Melania Suweni Muntini, MT
                     </div>
                   </div>
                 </div>
@@ -519,260 +501,363 @@
             </div> <!-- cardbody -->
           </div>
 
-
           <div class="col-12 col-xl-8">
-            <div class="alert alert-warning text-center" role="alert">
-              Data ini <b class="text-danger">BELUM</b> disimpan secara permanen oleh dosen yang bersangkutan
+            <div class="alert alert-warning" role="alert">
+              <ul style="list-style-type:circle; margin: 0px;">
+                <li>Sebelum mengisi nilai masing-masing mahasiswa, anda harus mengisi
+                  komposisi dan asesmen yang akan anda berikan pada form berikut ini.</li>
+                <li>Komposisi harus diisi minimal sesuai dengan peraturan akademik
+                  tahun
+                  2009 pasal 18 ayat 1.</li>
+                <li>Jumlah total persentase harus 100%.</li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-12 col-xl-8 mb-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="mb-2">Tanggal Ujian: </div>
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-center">No</th>
-                        <th class="text-center">CP MK yang Terpenuhi</th>
-                        <th class="text-center">Asesmen</th>
-                        <th class="text-center" style="width: 15%;">Persentase (%)</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <td class="text-center">1</td>
-                        <td>Sub CP MK 1.1</td>
-                        <td>Kehadiran</td>
-                        <td class="text-center">5</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">2</td>
-                        <td>Sub CP MK 1.2</td>
-                        <td>Sikap</td>
-                        <td class="text-center">5</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">3</td>
-                        <td>Sub CP MK 1.3</td>
-                        <td>Tugas 1</td>
-                        <td class="text-center">10</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">4</td>
-                        <td>Sub CP MK 2.1</td>
-                        <td>Tugas Kelompok 1</td>
-                        <td class="text-center">10</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">5</td>
-                        <td>Sub CP MK 2.1</td>
-                        <td>ETS</td>
-                        <td class="text-center">20</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">6</td>
-                        <td>Sub CP MK 2.2</td>
-                        <td>Kuis 1</td>
-                        <td class="text-center">15</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">7</td>
-                        <td>Sub CP MK 3.1</td>
-                        <td>Kuis </td>
-                        <td class="text-center">15</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">8</td>
-                        <td>Sub CP MK 3.2</td>
-                        <td>EAS</td>
-                        <td class="text-center">20</td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="col-12 mb-3">
             <div class="card">
+              <!-- <h5 class="tx-16">Daftar Anak Wali</h5> -->
               <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table asesmen">
+                    <thead>
+                      <tr>
+                        <th class="text-center" style="width: 5%;">No</th>
+                        <th class="text-center" style="width: 45%;">CP MK yang Terpenuhi</th>
+                        <th class="text-center" style="width: 30%;">Asesmen</th>
+                        <th class="text-center" style="width: 15%;">Bobot (%)</th>
+                        <th class="text-center" style="width: 5%;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center align-middle">1</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled>Pilih Sub CP</option>
+                            <option value="1" selected>Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value="Kehadiran"></td>
+                        <td><input type="text" class="form-control" value="15"></td>
+
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">2</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2" selected>Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        <td><input type="text" class="form-control" value="Sikap"></td>
+                        </td>
+                        <td><input type="text" class="form-control" value="15"></td>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center align-middle">3</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3" selected>Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value="Tugas 1"></td>
+                        <td><input type="text" class="form-control" value="20"></td>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+
+                      </tr>
+
+                      <tr>
+                        <td class="text-center align-middle">4</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4" selected>Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value="Tugas Kelompok 1"></td>
+                        <td><input type="text" class="form-control" value="20"></td>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+
+                      </tr>
+                      <tr>
+                        <td class="text-center align-middle">5</td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled>Pilih Sub CP</option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5" selected>Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value="EAS"></td>
+                        <td><input type="text" class="form-control" value="30"></td>
+                        <td class="text-center align-middle"><button type="button" class="ibtnDel"
+                            data-feather="trash-2" style="width:20px; height:20px;"></button></td>
+
+                      </tr>
+
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td class="text-center align-middle"></td>
+                        <td class="text-center align-middle">
+                          <select class="form-control selectbiasa" style="width: 100%;">
+                            <option disabled selected></option>
+                            <option value="1">Sub CP MK 1.1</option>
+                            <option value="2">Sub CP MK 1.2</option>
+                            <option value="3">Sub CP MK 2.1</option>
+                            <option value="4">Sub CP MK 2.2</option>
+                            <option value="5">Sub CP MK 2.3</option>
+                            <option value="6">Sub CP MK 3.1</option>
+                            <option value="7">...</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" value=""></td>
+                        <td><input type="text" class="form-control" value=""></td>
+                        <td class="text-center align-middle"><button type="button" class="addrow"
+                            data-feather="plus-circle" style="width:20px; height:20px;"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center"></th>
+                        <th class="text-center"></th>
+                        <th class="text-right">Total Bobot (%):</th>
+                        <th class="text-center"></th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                      </tr>
+                    </tfoot>
+                  </table>
+
+                </div>
+                <div class="row m-0 mr-3 d-flex justify-content-end">
+                  <div class="col-12 col-md-8 d-flex justify-content-end pd-0">
+                    <a href="penilaian(proses)6-EntriNilaiEvaluasiSem(Evaluasi)-hanyaDosen_2.html"
+                      class="col-12 col-md-auto btn btn-primary"><button data-feather="save"
+                        class="mr-2"></button>Simpan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- row -->
+
+          <div class="col-12 mb-3">
+            <div class="card">
+              <div class="card-body  mr-3 ml-3">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
                         <th rowspan="2" class="text-center align-middle">NRP</th>
                         <th rowspan="2" class="text-center align-middle">Nama Mahasiswa</th>
-                        <th class="text-center align-middle" style="width: 6%;">Kehadiran</th>
-                        <th class="text-center align-middle" style="width: 6%;">Sikap</th>
-                        <th class="text-center align-middle" style="width: 6%;">Tugas 1</th>
-                        <th class="text-center align-middle" style="width: 6%;">Tugas Kelompok 1</th>
-                        <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                        <th class="text-center align-middle" style="width: 6%;">Kuis 1</th>
-                        <th class="text-center align-middle" style="width: 6%;">Kuis 2</th>
-                        <th class="text-center align-middle" style="width: 6%;">ETS</th>
-                        <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.A.</th>
-                        <th rowspan="2" class="text-center align-middle" style="width: 6%;">N.H.</th>
+                        <th class="thtruncate text-center align-middle" style="width: 8%;">Kehadiran</th>
+                        <th class="thtruncate text-center align-middle" style="width: 8%;">Sikap</th>
+                        <th class="thtruncate text-center align-middle" style="width: 8%;">Tugas 1</th>
+                        <th class="thtruncate text-center align-middle" style="width: 8%;">Tugas Kelompok 1</th>
+                        <th class="thtruncate text-center align-middle" style="width: 8%;">EAS</th>
+                        <th rowspan="2" class="text-center align-middle" style="width: 4%;">N.A.</th>
+                        <th rowspan="2" class="text-center align-middle" style="width: 4%;">N.H.</th>
                       </tr>
                       <tr>
                         <th class="text-center">5 %</th>
                         <th class="text-center">5 %</th>
                         <th class="text-center">10 %</th>
                         <th class="text-center">10 %</th>
-                        <th class="text-center">20 %</th>
-                        <th class="text-center">15 %</th>
-                        <th class="text-center">15 %</th>
                         <th class="text-center">20 %</th>
                       </tr>
                     </thead>
-
                     <tbody>
                       <tr>
-                        <td class="text-center">05111640000004</td>
-                        <td>Dewi Sekarini</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">50</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">100</td>
-                        <td class="text-center">85</td>
-                        <td class="text-center">AB</td>
+                        <td class="text-center align-middle">01111440000017</td>
+                        <td class="align-middle">Dimas Bagus Yudhistira</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td class="text-center align-middle"></td>
+                        <td class="text-center align-middle"></td>
                       </tr>
                       <tr>
-                        <td class="text-center">05111640000006</td>
-                        <td>Rahadian Putra</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">50</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">100</td>
-                        <td class="text-center">85</td>
-                        <td class="text-center">AB</td>
+                        <td class="text-center align-middle">01111640000010</td>
+                        <td class="align-middle">Hilmy Yafi' Zuhair</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td class="text-center align-middle"></td>
+                        <td class="text-center align-middle"></td>
                       </tr>
                       <tr>
-                        <td class="text-center">05111640000009</td>
-                        <td>Sal Zulal</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">50</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">100</td>
-                        <td class="text-center">85</td>
-                        <td class="text-center">AB</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">01111440000017</td>
-                        <td>Dimas Bagus Yudhistira</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">50</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">100</td>
-                        <td class="text-center">85</td>
-                        <td class="text-center">AB</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">01111640000010</td>
-                        <td>Hilmy Yafi' Zuhair</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">50</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">100</td>
-                        <td class="text-center">85</td>
-                        <td class="text-center">AB</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">01111640000015</td>
-                        <td>Lintang Kinasih Wibawaning Utomo</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">70</td>
-                        <td class="text-center">50</td>
-                        <td class="text-center">80</td>
-                        <td class="text-center">100</td>
-                        <td class="text-center">85</td>
-                        <td class="text-center">AB</td>
+                        <td class="text-center align-middle">01111640000015</td>
+                        <td class="align-middle">Lintang Kinasih Wibawaning Utomo</td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td align="center" class="align-middle"><input type="text" class="form-control text-center"
+                            style="width: 90%;"></td>
+                        <td class="text-center align-middle"></td>
+                        <td class="text-center align-middle"></td>
                       </tr>
 
                     </tbody>
                   </table>
                 </div>
-                <div class="text-center mt-2">
-                  <medium>A: 86-100; AB: 76-85; B: 66-75; BC: 61-65; C: 56-60; D: 41-55; E:
-                    0-40</medium>
+
+                <div class="row m-0 d-flex justify-content-end">
+                  <div class="col-12 col-md-8 d-flex justify-content-end pd-0">
+                    <a href="#modalsimpan" data-toggle="modal" class="col-12 col-md-auto btn btn-primary"><button
+                        data-feather="save" class="mr-2"></button>Simpan Nilai</a>
+                  </div>
                 </div>
 
+
+                <hr class="mb-3">
+                <div class="tx-medium">Unggah nilai melalui berkas</div>
+                <div class="row m-0 mt-2 d-flex justify-content-between">
+                  <a href="" class="col-12 col-md-auto btn btn-outline-primary">Unduh <i>template</i> berkas</a>
+
+                  <form class="col-12 col-md-8 form-inline d-flex justify-content-end pd-0">
+                    <div class="custom-file col-12 col-md-6 mt-1 mt-md-0 ">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">Pilih Berkas</label>
+                    </div>
+                    <a href="" class="col-12 col-md-auto mt-1 mt-md-0 btn btn-primary ml-2">Unggah</a>
+                  </form>
+                </div>
               </div>
+
 
               <div class="card-body m-0 bg-gray-200">
                 <div class="row mr-3 ml-3 d-flex justify-content-end">
                   <div class="col-12 col-md-8 d-flex justify-content-end pd-0">
-                    <a href="#modalvalidasi" data-toggle="modal" class="col-12 col-md-2 btn btn-primary">Validasi</a>
+                    <a href="#modalsimpanpermanen" data-toggle="modal"
+                      class="col-12 col-md-auto btn btn-primary"><button data-feather="save"
+                        class="mr-2"></button>Simpan
+                      Nilai
+                      Permanen</a>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-
 
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="modalvalidasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+  <div class="modal fade" id="modalsimpan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content tx-14">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel4">Validasi Nilai</h6>
+          <h6 class="modal-title" id="exampleModalLabel4">Simpan Nilai</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body text-center">
-          <p>Apakah Anda yakin untuk memvalidasi nilai kelas S4404 - Fisika Matematika III (A)?</p>
+          <p>Apakah Anda yakin untuk menyimpan perubahan nilai kelas S4404 - Fisika Matematika III (A)?</p>
         </div>
 
         <div class="modal-footer">
           <div class="col-6 col-sm-auto pd-1">
-            <a href="penilaian(proses)8-ListValidasiNINA(validasi)-hanyaAdmin.html" type="button"
-              class="col-12 col-sm-auto btn btn-sm btn-secondary mr-1">Batal</a>
+            <a href="#" type="button" class="col-12 col-sm-auto btn btn-sm btn-secondary mr-1">Batal</a>
           </div>
           <div class="col-6 col-sm-auto pd-1">
-            <a href="penilaian(proses)7-ListValidasiNINA-hanyaAdmin_2.html" type="button"
+            <a href="penilaian(proses)6-EntriNilaiEvaluasiSem(Evaluasi)-hanyaDosen_3.html" type="button"
               class="col-12 col-sm-auto btn btn-sm btn-primary tx-13">
-              Validasi</a>
+              Simpan</a>
           </div>
         </div>
 
       </div>
     </div>
   </div>
+  <div class="modal fade" id="modalsimpanpermanen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content tx-14">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel4">Simpan Nilai Permanen</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah Anda yakin untuk menyimpan <b>permanen</b> perubahan nilai kelas S4404 - Fisika Matematika III (A)?
+          </p>
+          <p>Nilai tidak dapat diubah lagi selanjutnya.</p>
+        </div>
 
+        <div class="modal-footer">
+          <div class="col-6 col-sm-auto pd-1">
+            <a href="#" type="button" class="col-12 col-sm-auto btn btn-sm btn-secondary mr-1">Batal</a>
+          </div>
+          <div class="col-6 col-sm-auto pd-1">
+            <a href="#" type="button" class="col-12 col-sm-auto btn btn-sm btn-primary tx-13">
+              Simpan Permanen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../../lib/jquery/jquery.min.js"></script>
   <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -784,19 +869,131 @@
   <script src="../../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
   <script src="../../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
   <script src="../../../lib/select2/js/select2.min.js"></script>
-  <script src="../../../lib/chart.js/Chart.bundle.min.js"></script>
+  <script src="../../../lib/chart.js/dist/Chart.bundle.min.js"></script>
 
-  <script src="../../../assets/js/chart.chartjs.js"></script>
   <script src="../../../assets/js/dashforge.js"></script>
   <script src="../../../assets/js/dashforge.aside.js"></script>
+
+  <!-- boxplot -->
+  <script src="../../../lib/chartjs-chart-box-and-violin-plot/build/Chart.BoxPlot.js"></script>
+  <!--  -->
+
+
   <script>
     $(function () {
       'use strict'
 
 
+      var ctx = document.getElementById('grafikdistribusi').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: [['A', '5', '12.5 %'], ['AB', '15', '37.5 %'], ['B', '10', '25 %'], ['BC', '5', '12.5 %'], ['C', '3', '7.5 %'], ['D', '2', '5 %'], ['E', '0', '0 %']],
+          datasets: [{
+            label: 'Presentase Data',
+            data: [12.5, 37.5, 25, 12.5, 7.5, 5, 0],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: false,
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      });
+
+      function randomValues(count, min, max) {
+        const delta = max - min;
+        return Array.from({ length: count }).map(() => Math.random() * delta + min);
+      }
+
+      const boxplotData = {
+        // define label tree
+        labels: ['CPL1', 'CPL2', 'CPL3', 'CPL4', 'CPL5'],
+        datasets: [
+          {
+            label: 'Dataset 1',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1,
+            outlierColor: '#999999',
+            padding: 10,
+            itemRadius: 0,
+            data: [
+              randomValues(100, 0, 100),
+              randomValues(100, 0, 20),
+              randomValues(100, 20, 70),
+              randomValues(100, 60, 100),
+              randomValues(40, 50, 100)
+            ]
+          }
+
+        ]
+      };
+      window.onload = () => {
+        const ctx = document.getElementById("grafikcpl").getContext("2d");
+        window.myBar = new Chart(ctx, {
+          type: 'boxplot',
+          data: boxplotData,
+          options: {
+            responsive: false,
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: false,
+              text: ''
+            }
+          }
+        });
+
+      };
+
+
       $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
     });
+
+    var counter = 5;
+
+
+    $("table.asesmen").on("click", ".addrow", function (event) {
+      var newRow = $("<tr>");
+      var cols = "";
+
+      cols += '<td class="text-center align-middle" name="noasesmen' + counter + '">' + counter + '</td>';
+      cols += '<td class="text-center align-middle" name="selectcp' + counter + '"><select class="form-control selectbiasa" style="width: 100%;"><option disabled selected > Pilih Sub CP</><option value="1">Sub CP MK 1.1</option><option value="2">Sub CP MK 1.2</option><option value="3">Sub CP MK 2.1</option><option value="4">Sub CP MK 2.2</option><option value="5">Sub CP MK 2.3</option><option value="6">Sub CP MK 3.1</option><option value="7">...</option></select></td> ';
+      cols += '<td><input type="text" class="form-control" name="namaasesmen' + counter + '" value="... (nama asesmen dari kurikulum)"></td>';
+      cols += '<td><input type="text" class="form-control" name="bobotasesmen' + counter + '" value=""></td>';
+
+      cols += '<td class="text-center align-middle"><button type="button" class="ibtnDel" data-feather="trash-2" style="width:20px; height:20px;"></button></td>';
+      newRow.append(cols);
+      $("table.asesmen").append(newRow);
+      counter++;
+      feather.replace();
+      $('.selectbiasa').select2({
+        minimumResultsForSearch: Infinity
+      });
+    });
+
+    $("table.asesmen").on("click", ".ibtnDel", function (event) {
+      $(this).closest("tr").remove();
+      counter -= 1
+    });
+
+    $('.selectbiasa').select2({
+      minimumResultsForSearch: Infinity
+    });
+
   </script>
 </body>
+
 
 </html>
